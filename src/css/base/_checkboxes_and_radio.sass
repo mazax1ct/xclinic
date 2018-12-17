@@ -1,0 +1,66 @@
+.checkbox-label,
+.radio-label
+  display: block
+  font-size: 14px
+  font-weight: 500
+  margin-bottom: 20px
+  position: relative
+  padding-left: 30px
+  transition: color 0.3s
+
+  &:last-child
+    margin-bottom: 0
+
+  &.disabled
+    &:focus
+      outline: none
+
+  &:focus
+    outline: 1px dotted inherit
+
+    input[type="checkbox"]:checked + .checkbox-icon,
+    input[type="radio"]:checked + .radio-icon
+      background-color: #c8962c
+
+  input[type="checkbox"],
+  input[type="radio"]
+    display: none
+
+.checkbox-icon,
+.radio-icon
+  border: 2px solid #b8b8b8
+  background-color: #b8b8b8
+  cursor: pointer
+  display: inline-block
+  height: 13px
+  left: 0
+  position: absolute
+  top: 3px
+  transition: background-color 0.3s
+  vertical-align: middle
+  width: 13px
+
+  @media(min-width: 1200px)
+    top: 6px
+
+.radio-icon
+  border-radius: 50%
+
+input[type="checkbox"]:checked + .checkbox-icon,
+input[type="radio"]:checked + .radio-icon
+  background-color: #343835
+
+.checkbox-text,
+.radio-text
+  cursor: pointer
+
+input[type="checkbox"]:disabled ~ .checkbox-text,
+input[type="checkbox"].disabled ~ .checkbox-text,
+input[type="checkbox"]:disabled ~ .checkbox-icon,
+input[type="checkbox"].disabled ~ .checkbox-icon,
+input[type="radio"]:disabled ~ .radio-text,
+input[type="radio"].disabled ~ .radio-text,
+input[type="radio"]:disabled ~ .radio-icon,
+input[type="radio"].disabled ~ .radio-icon
+  cursor: default
+  opacity: 0.5

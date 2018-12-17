@@ -1,0 +1,151 @@
+.main-menu
+  display: none
+
+  @media(min-width: 1200px)
+    display: block
+    left: 50%
+    position: absolute
+    transform: translateX(-50%)
+    top: 0
+
+  &.is-open
+    background-color: #fff
+    display: block
+    height: 100%
+    left: 0
+    overflow-y: auto
+    position: fixed
+    padding-top: 80px
+    top: 0
+    width: 100%
+    z-index: 100
+
+    @media(min-width: 768px)
+      padding-top: 160px
+
+    @media(min-width: 1200px)
+      height: auto
+      left: 50%
+      position: absolute
+      padding-top: 0
+      width: auto
+      z-index: 1
+
+  &__list
+    list-style: none
+
+    @media(min-width: 1200px)
+      display: flex
+
+  &__list-item
+    list-style: none
+
+    &:nth-child(2)
+      @media(min-width: 1200px)
+        margin-right: 80px
+
+      @media(min-width: 1600px)
+        margin-right: 144px
+
+    &:nth-child(3)
+      @media(min-width: 1200px)
+        margin-left: 80px
+
+      @media(min-width: 1600px)
+        margin-left: 144px
+
+    &--no_desktop
+      @media(min-width: 1200px)
+        display: none
+
+  &__link
+    color: #101820
+    display: block
+    font-size: 22px
+    line-height: 36px
+    padding-top: 62px
+    padding-bottom: 62px
+    text-align: center
+    text-decoration: none
+    transition: color 0.3s
+
+    @media(min-width: 768px) and (max-width: 1199px)
+      padding-top: 102px
+      padding-bottom: 102px
+
+    @media(min-width: 1200px)
+      font-size: 16px
+      padding-left: 20px
+      padding-right: 20px
+
+    @media(min-width: 1400px)
+      padding-left: 45px
+      padding-right: 45px
+
+    @media(min-width: 1500px)
+      font-size: 18px
+
+    &:hover,
+    &.is-active
+      text-decoration: none
+
+      @media(min-width: 1200px)
+        color: #97999b
+
+      span
+        &::after
+          @media(min-width: 1200px)
+            opacity: 1
+
+    span
+      @media(min-width: 1200px)
+        position: relative
+
+      &::after
+        @media(min-width: 1200px)
+          border-bottom: 2px solid #97999b
+          bottom: -10px
+          content: ""
+          height: 2px
+          left: 0
+          opacity: 0
+          position: absolute
+          top: auto
+          transition: opacity 0.3s
+          width: 100%
+
+    &--color_1
+      @media(max-width: 1199px)
+        background-color: #ced0de
+
+    &--color_2
+      @media(max-width: 1199px)
+        background-color: #bdbfd4
+
+    &--color_3
+      @media(max-width: 1199px)
+        background-color: #cddbd5
+
+    &--color_4
+      @media(max-width: 1199px)
+        background-color: #ede8e5
+
+    &--color_5
+      @media(max-width: 1199px)
+        background-color: #f1f2fa
+
+.sub-menu
+  &__list
+
+  &__list-item
+
+  &__link
+    display: block
+    font-size: 16px
+    line-height: 26px
+    padding-top: 27px
+    padding-bottom: 27px
+    padding-left: 48px
+
+    @media(min-width: 768px)
+      padding-left: 72px

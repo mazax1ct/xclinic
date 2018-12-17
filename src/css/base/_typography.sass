@@ -1,0 +1,179 @@
+body
+  color: #222
+  font-family: "Harmonia Sans Pro", sans-serif
+  font-size: 15px
+  line-height: 1.6
+
+  @media(min-width: 1200px)
+    font-size: 17px
+    line-height: 1.8
+
+  @media(min-width: 1900px)
+    font-size: 18px
+    line-height: 1.666
+
+a
+  color: #222
+  //transition: color 0.3s
+
+  &:hover
+    text-decoration: underline
+
+b
+  font-weight: 700
+
+h1,.h1,
+h2,.h2,
+h3,.h3,
+h4,.h4,
+h5,.h5,
+h6,.h6
+  color: #343835
+  font-weight: 700
+  line-height: 1.2
+
+h2,.h2
+  font-size: 18px
+  font-weight: 500
+
+  @media(min-width: 768px)
+    font-size: 23px
+
+h3,.h3
+  font-size: 15px
+  font-weight: 500
+
+  @media(min-width: 768px)
+    font-size: 20px
+
+.page-title
+  font-family: "Constantia", serif
+  font-size: 27px
+  font-weight: 400
+  line-height: 1.2
+  margin-bottom: 24px
+
+  @media(min-width: 768px)
+    margin-bottom: 30px
+
+  @media(min-width: 1200px)
+    font-size: 30px
+    margin-bottom: 36px
+
+  & + .search-title
+    margin-top: -22px
+
+    @media(min-width: 1200px)
+      margin-top: -40px
+
+.page-title2
+  font-size: 20px
+  font-weight: 900
+  line-height: 1
+  letter-spacing: 2px
+  margin-bottom: 40px
+  text-align: center
+  text-transform: uppercase
+
+  @media(min-width: 768px)
+    font-size: 23px
+    margin-bottom: 48px
+
+.search-title
+  color: #bababa
+  font-size: 17px
+  margin-bottom: 48px
+
+.collection-title
+  font-family: "Constantia", serif
+  font-size: 28px
+  font-weight: 400
+  line-height: 1.2
+  margin-bottom: 24px
+  text-align: center
+
+  @media(min-width: 768px)
+    font-size: 34px
+    margin-bottom: 24px
+
+  //@media(min-width: 960px)
+    margin-bottom: 36px
+
+.to-catalog
+  margin-bottom: 48px
+  text-align: center
+
+  @media(min-width: 960px)
+    margin-bottom: 96px
+
+  &__link
+    color: #343835
+    font-size: 14px
+    font-weight: 900
+    letter-spacing: 2px
+    text-transform: uppercase
+    transition: color 0.3s
+    text-decoration: none
+
+    &:hover
+      color: #b8b8b8
+
+      .to-catalog__link-icon
+        fill: #b8b8b8
+
+  &__link-icon
+    fill: #343835
+    height: 11px
+    margin-left: 5px
+    transition: fill 0.3s
+    width: 11px
+
+ul
+  list-style-type: '– '
+  list-style-position: inside
+  padding-left: 0
+
+ol
+  list-style-position: inside
+  padding-left: 0
+
+h1,.h1,
+h2,.h2,
+h3,.h3,
+h4,.h4,
+h5,.h5,
+h6,.h6,
+p,
+ul,
+ol,
+table,
+.table-responsive
+  margin-top: 0
+  margin-bottom: 20px
+
+  @media(min-width: 1200px)
+    margin-bottom: 30px
+
+  &:last-child
+    margin-bottom: 0
+
+table
+  border-collapse: collapse
+  max-width: 100%
+  text-align: left
+  width: 100%
+
+  th
+    color: #b8b8b8
+    font-weight: 400
+
+  th,
+  td
+    border: none
+    padding: 5px 0
+    vertical-align: top
+
+img
+  height: auto
+  max-width: 100%
+  vertical-align: top

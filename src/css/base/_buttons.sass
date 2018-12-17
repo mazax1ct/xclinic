@@ -1,0 +1,54 @@
+.button
+  background-color: #fff
+  border: 1px solid #000
+  color: #343835
+  cursor: pointer
+  display: inline-block
+  font-family: "Raleway", sans-serif
+  font-size: 13px
+  font-weight: 900
+  height: 50px
+  line-height: 18px
+  letter-spacing: 1px
+  padding: 15px 20px
+  text-decoration: none
+  text-align: center
+  text-transform: uppercase
+  transition: color 0.3s, background-color 0.3s
+  vertical-align: middle
+
+  &:hover,
+  &:active
+    background-color: #000
+    border-color: #000
+    color: #fff
+
+  &--dark
+    background-color: #000
+    color: #fff
+
+    &:hover
+      background-color: #343835
+      border-color: #343835
+
+  &--gold
+    background-color: #d09b2b
+    border: 1px solid #d09b2b
+    color: #fff
+
+    &:hover,
+    &:active
+      background-color: #d5a541
+      border: 1px solid #d5a541
+      color: #fff
+
+  &:focus
+    outline: 1px dotted #000
+
+  &:disabled,
+  &.disabled
+    cursor: default
+    opacity: 0.5
+
+    &:focus
+      outline: none

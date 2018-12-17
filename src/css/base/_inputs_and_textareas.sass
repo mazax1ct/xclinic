@@ -1,0 +1,86 @@
+.input,
+.textarea
+  background-color: #fff
+  border: 1px solid #b8b8b8
+  color: inherit
+  font-size: 16px
+  line-height: 26px
+  transition: border-color 0.3s, background-color 0.3s
+  width: 100%
+
+  &:hover
+    border-color: #b8b8b8
+
+  &:focus
+    border-color: #343835
+
+  &.error
+    border-color: #d42300
+    background-color: #fdf4f2
+
+    &:hover,
+    &:focus
+      border-color: #d42300
+      background-color: #fdf4f2
+
+  &:disabled
+    background-color: #fff
+    border-color: #f3f3f3
+    opacity: 0.5
+
+    &:hover
+      background-color: #fff
+      border-color: #f3f3f3
+
+.input
+  height: 60px
+  padding: 17px 30px
+
+.textarea
+  height: 140px
+  padding: 17px 30px
+  resize: none
+
+/*placeholder*/
+.input::-webkit-input-placeholder
+  color: #b8b8b8
+  opacity: 1
+
+.input::-moz-placeholder
+  color: #b8b8b8
+  opacity: 1
+
+.input:-ms-input-placeholder
+  color: #b8b8b8
+  opacity: 1
+
+.textarea::-webkit-input-placeholder
+  color: #b8b8b8
+  opacity: 1
+
+.textarea::-moz-placeholder
+  color: #b8b8b8
+  opacity: 1
+
+.textarea:-ms-input-placeholder
+  color: #b8b8b8
+  opacity: 1
+
+/*:focus placeholder*/
+.input:focus::-webkit-input-placeholder
+  opacity: 0
+
+.input:focus::-moz-placeholder
+  opacity: 0
+
+.input:focus:-ms-input-placeholder
+  opacity: 0
+
+.textarea:focus::-webkit-input-placeholder
+  opacity: 0
+
+.textarea:focus::-moz-placeholder
+  opacity: 0
+
+.textarea:focus:-ms-input-placeholder
+  opacity: 0
