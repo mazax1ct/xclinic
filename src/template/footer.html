@@ -1,12 +1,27 @@
 <footer class="footer">
   <div class="footer__inner">
+    <button class="js-footer-menu-opener footer-menu-opener" type="button" title="Открыть меню"><span class="footer-menu-opener__burger"></span></button>
+
     <div class="footer__social">
       <a class="social-link" href="#" title="vk.com" rel="noreferrer noopener"><svg class="social-link__icon social-link__icon--vk" aria-hidden="true"><use xlink:href="#vk"/></svg></a>
       <a class="social-link" href="#" title="facebook.com" rel="noreferrer noopener"><svg class="social-link__icon social-link__icon--fb" aria-hidden="true"><use xlink:href="#fb"/></svg></a>
       <a class="social-link" href="#" title="twitter.com" rel="noreferrer noopener"><svg class="social-link__icon social-link__icon--tw" aria-hidden="true"><use xlink:href="#tw"/></svg></a>
       <a class="social-link" href="#" title="instagram.com" rel="noreferrer noopener"><svg class="social-link__icon social-link__icon--inst" aria-hidden="true"><use xlink:href="#inst"/></svg></a>
-      <a class="social-link" href="#" title="youtube.com" rel="noreferrer noopener"><svg class="social-link__icon social-link__icon--yt" aria-hidden="true"><use xlink:href="#yt"/></svg></a>
     </div>
-    <div class="footer__logo"><img src="images/logo.svg" alt="XClinic"></div>
+    <div class="footer__bottom">
+      <div class="footer__subscribe subscribe">
+        <h3 class="subscribe__title">Подписаться на рассылку:</h3>
+        <form class="subscribe__form" action="/">
+          <label class="subscribe__form-label" for="subscribe_email">
+            <input class="subscribe__form-input" id="subscribe_email" type="text" value="" placeholder="Ваш e-mail">
+          </label>
+          <button class="subscribe__form-button" type="submit">Подписаться</button>
+        </form>
+      </div>
+      <div class="footer__copyright-block">
+        <div class="footer__logo"><img src="images/logo.svg" alt="XClinic"></div>
+        <p class="footer__copyright">© “X-Клиника” Все права защищены</p>
+      </div>
+    </div>
   </div>
 </footer>
