@@ -66,4 +66,10 @@ $(document).ready(function() {
       ]
     });
   }
+
+  //открытие/закрытие меню в футере
+  $(".js-footer-menu-opener").click(function() {
+    $(this).toggleClass("is-active");
+    $(".footer-menu").toggleClass("is-open");
+  });
 });
