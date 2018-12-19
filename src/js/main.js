@@ -72,4 +72,71 @@ $(document).ready(function() {
     $(this).toggleClass("is-active");
     $(".footer-menu").toggleClass("is-open");
   });
+
+  //слайдер партнеров
+  if ($('.js-partners-slider').length) {
+    $('.js-partners-slider').slick({
+      auto: false,
+      infinite: false,
+      edgeFriction: 0,
+      dots: true,
+      mobileFirst: true,
+      arrows: false,
+      slidesToShow: 1,
+      responsive: [
+        {
+          breakpoint: 959,
+          settings: {
+            slidesToScroll: 5,
+            slidesToShow: 5,
+            dots: false
+          }
+        },
+        {
+          breakpoint: 599,
+          settings: {
+            slidesToScroll: 3,
+            slidesToShow: 3
+          }
+        },
+        {
+          breakpoint: 479,
+          settings: {
+            slidesToScroll: 2,
+            slidesToShow: 2
+          }
+        }
+      ]
+    });
+  }
+
+  //слайдер последних новостей
+  if ($('.js-last-news-slider').length) {
+    $('.js-last-news-slider').slick({
+      auto: false,
+      infinite: false,
+      edgeFriction: 0,
+      dots: true,
+      mobileFirst: true,
+      arrows: false,
+      slidesToShow: 1,
+      responsive: [
+        {
+          breakpoint: 959,
+          settings: {
+            slidesToScroll: 1,
+            slidesToShow: 3,
+            dots: false
+          }
+        },
+        {
+          breakpoint: 767,
+          settings: {
+            slidesToScroll: 1,
+            slidesToShow: 2
+          }
+        }
+      ]
+    });
+  }
 });

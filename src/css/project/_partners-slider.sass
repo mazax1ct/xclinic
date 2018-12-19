@@ -1,0 +1,33 @@
+.partners-slider-block
+  background: url('../images/backgrounds/bg_1.png') no-repeat 50% 50% transparent
+  display: flex
+  flex-direction: column
+  justify-content: center
+  min-height: 400px
+  position: relative
+
+.partners-slider
+  position: static
+  padding-bottom: 0
+
+  &__slide
+    align-items: center
+    display: flex !important
+    justify-content: center
+    min-height: 80px
+
+  &__image
+    flex-shrink: 0
+
+  .slick-dots
+    li
+      button
+        &::before
+          background-color: #222
+
+      &.slick-active
+        button
+          border-color: #7b7faa
+
+          &::before
+            background-color: #7b7faa
