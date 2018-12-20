@@ -1,0 +1,40 @@
+.filter-menu
+  display: flex
+  margin-bottom: 40px
+  overflow-x: auto
+  padding-left: 48px
+  position: relative
+  z-index: 0
+
+  @media(min-width: 768px)
+    justify-content: center
+    margin-bottom: 80px
+    padding-left: 0
+
+  @media(min-width: 1200px)
+    justify-content: flex-start
+    margin-bottom: 0
+
+  &__button
+    border: none
+    background-color: transparent
+    cursor: pointer
+    font-size: 16px
+    height: 40px
+    padding-left: 24px
+    padding-right: 24px
+    transition: color 0.3s, background-color 0.3s
+
+    @media(min-width: 768px)
+      font-size: 18px
+      height: 80px
+      padding-left: 40px
+      padding-right: 40px
+
+    @media(min-width: 1200px)
+      height: 160px
+
+    &:hover,
+    &.is-active
+      background-color: #fff
+      color: #7b7faa

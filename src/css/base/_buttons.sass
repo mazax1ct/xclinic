@@ -1,27 +1,24 @@
 .button
   background-color: #fff
-  border: 1px solid #000
-  color: #343835
+  border: 1px solid #fff
+  color: #7b7faa
   cursor: pointer
   display: inline-block
-  font-family: "Raleway", sans-serif
-  font-size: 13px
-  font-weight: 900
-  height: 50px
+  font-family: "Harmonia Sans Pro", sans-serif
+  font-size: 18px
+  font-weight: 600
+  height: 80px
   line-height: 18px
-  letter-spacing: 1px
+  min-width: 240px
   padding: 15px 20px
   text-decoration: none
   text-align: center
-  text-transform: uppercase
   transition: color 0.3s, background-color 0.3s
   vertical-align: middle
 
   &:hover,
   &:active
-    background-color: #000
-    border-color: #000
-    color: #fff
+    text-decoration: none
 
   &--dark
     background-color: #000
@@ -43,7 +40,7 @@
       color: #fff
 
   &:focus
-    outline: 1px dotted #000
+    outline: 1px dotted #7b7faa
 
   &:disabled,
   &.disabled
@@ -52,3 +49,8 @@
 
     &:focus
       outline: none
+
+a.button
+  align-items: center
+  display: inline-flex
+  justify-content: center

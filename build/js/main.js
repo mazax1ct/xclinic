@@ -124,9 +124,8 @@ $(document).ready(function() {
         {
           breakpoint: 959,
           settings: {
-            slidesToScroll: 1,
-            slidesToShow: 3,
-            dots: false
+            slidesToScroll: 3,
+            slidesToShow: 3
           }
         },
         {
@@ -137,6 +136,37 @@ $(document).ready(function() {
           }
         }
       ]
+    });
+
+    //фильтрация списка новостей и переключение ссылки на раздел
+    var filtered = false;
+
+    $('.js-filter').on('click', function() {
+      if (filtered === false) {
+        $('.js-last-news-slider').slick('slickFilter', $('.last-news-slider__slide[data-type=' + $(this).attr("data-type") + ']'));
+        $(".filter-menu__button").removeClass("is-active");
+        $(this).addClass("is-active");
+        $(".js-news-link").attr("href", $(this).attr("data-link"));
+        filtered = true;
+      } else {
+        $('.js-last-news-slider').slick('slickUnfilter');
+        filtered = false;
+        $('.js-last-news-slider').slick('slickFilter', $('.last-news-slider__slide[data-type=' + $(this).attr("data-type") + ']'));
+        $(".filter-menu__button").removeClass("is-active");
+        $(this).addClass("is-active");
+        $(".js-news-link").attr("href", $(this).attr("data-link"));
+        filtered = true;
+      }
+    });
+
+    $('.js-filter-remove').on('click', function() {
+      if (filtered === true) {
+        $('.js-last-news-slider').slick('slickUnfilter');
+        $(".filter-menu__button").removeClass("is-active");
+        $(this).addClass("is-active");
+        $(".js-news-link").attr("href", $(this).attr("data-link"));
+        filtered = false;
+      }
     });
   }
 });

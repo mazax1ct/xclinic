@@ -51,10 +51,16 @@
   display: inline-block;
   width: 28px;
   height: 28px;
-  margin: 0 16px;
+  margin: 0 3px;
   padding: 0;
   cursor: pointer;
   vertical-align: top;
+}
+
+@media(min-width: 768px) {
+  .slick-dots li {
+    margin: 0 16px;
+  }
 }
 
 .slick-dots li button {
@@ -70,6 +76,7 @@
   border: 2px solid transparent;
   outline: none;
   background: transparent;
+  transition: border-color 0.3s;
 }
 
 .slick-dots li button:focus,
@@ -78,7 +85,7 @@
 }
 
 .slick-dots li button:before {
-  background-color: #fff;
+  background-color: #222;
   border-radius: 50%;
   position: absolute;
   top: 50%;
@@ -91,8 +98,14 @@
   color: black;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  transition: background-color 0.3s;
+}
+
+.slick-dots li.slick-active button:before,
+.slick-dots li button:hover::before {
+  background-color: #7b7faa
 }
 
 .slick-dots li.slick-active button {
-  border-color: #fff
+  border-color: #7b7faa
 }
