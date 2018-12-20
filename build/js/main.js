@@ -169,4 +169,17 @@ $(document).ready(function() {
       }
     });
   }
+
+  //слайдер "x-клиника сегодня"
+  if ($('.js-today-slider').length) {
+    $('.js-today-slider').slick({
+      auto: false,
+      mobileFirst: true,
+      slidesToShow: 1,
+      infinite: true,
+      edgeFriction: 0,
+      arrows: false,
+      dots: true,
+    });
+  }
 });
