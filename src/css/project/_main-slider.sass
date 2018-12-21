@@ -33,8 +33,10 @@
       padding-bottom: 390px
 
   &__image
+    flex-shrink: 0
     height: 480px
     left: 50%
+    min-width: 1048px
     max-width: initial
     position: absolute
     top: 0
@@ -43,6 +45,7 @@
 
     @media(min-width: 768px)
       height: 880px
+      min-width: 1920px
 
   &__slide-title,
   &__slide-text,
@@ -50,6 +53,10 @@
     position: relative
     text-align: center
     z-index: 1
+
+  &__slide-title,
+  &__slide-text
+    max-width: 100%
 
   &__slide-title
     font-size: 16px

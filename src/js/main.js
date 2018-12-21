@@ -144,7 +144,8 @@ $(document).ready(function() {
     $('.js-filter').on('click', function() {
       if (filtered === false) {
         $('.js-last-news-slider').slick('slickFilter', $('.last-news-slider__slide[data-type=' + $(this).attr("data-type") + ']'));
-        $(".filter-menu__button").removeClass("is-active");
+        $(".js-filter").removeClass("is-active");
+        $(".js-filter-remove").removeClass("is-active");
         $(this).addClass("is-active");
         $(".js-news-link").attr("href", $(this).attr("data-link"));
         filtered = true;
@@ -152,7 +153,8 @@ $(document).ready(function() {
         $('.js-last-news-slider').slick('slickUnfilter');
         filtered = false;
         $('.js-last-news-slider').slick('slickFilter', $('.last-news-slider__slide[data-type=' + $(this).attr("data-type") + ']'));
-        $(".filter-menu__button").removeClass("is-active");
+        $(".js-filter").removeClass("is-active");
+        $(".js-filter-remove").removeClass("is-active");
         $(this).addClass("is-active");
         $(".js-news-link").attr("href", $(this).attr("data-link"));
         filtered = true;
@@ -162,7 +164,7 @@ $(document).ready(function() {
     $('.js-filter-remove').on('click', function() {
       if (filtered === true) {
         $('.js-last-news-slider').slick('slickUnfilter');
-        $(".filter-menu__button").removeClass("is-active");
+        $(".js-filter").removeClass("is-active");
         $(this).addClass("is-active");
         $(".js-news-link").attr("href", $(this).attr("data-link"));
         filtered = false;
@@ -182,4 +184,26 @@ $(document).ready(function() {
       dots: true,
     });
   }
+
+  //слайдер "x-клиника сегодня"
+  if ($('.js-about-slider').length) {
+    $('.js-about-slider').slick({
+      auto: false,
+      mobileFirst: true,
+      slidesToShow: 1,
+      infinite: true,
+      edgeFriction: 0,
+      arrows: false,
+      dots: true,
+      fade: true
+    });
+  }
+
+  //переключение табов программ
+  $('.js-programs-tab').on('click', function() {
+    $(".js-programs-tab").removeClass("is-active");
+    $(this).addClass("is-active");
+    $('.programs-tab').removeClass("is-active");
+    $('.programs-tab[data-type=' + $(this).attr("data-type") + ']').addClass("is-active");
+  });
 });

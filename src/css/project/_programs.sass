@@ -1,0 +1,196 @@
+.programs-block
+  margin-bottom: 160px
+  position: relative
+
+  @media(min-width: 768px)
+    margin-bottom: 190px
+
+  &__inner
+    position: relative
+
+    &::after
+      @media(min-width: 1200px)
+        background: url("../images/backgrounds/bg_4.png") no-repeat 0 0 transparent
+        content: ""
+        height: 414px
+        left: -180px
+        position: absolute
+        top: 225px
+        width: 231px
+        z-index: -1
+
+  &__title-block
+    margin-bottom: 70px
+    padding-left: 48px
+    padding-right: 48px
+
+    @media(min-width: 768px)
+      align-items: center
+      display: flex
+      justify-content: space-between
+      padding-left: 96px
+      padding-right: 96px
+
+    @media(min-width: 1200px)
+      align-items: flex-start
+      flex-direction: column
+      justify-content: flex-start
+      height: 320px
+      left: 0
+      margin-bottom: 0
+      position: absolute
+      padding: 78px
+      top: 160px
+      width: calc(100% / 3)
+      z-index: 1
+
+  &__title
+    font-size: 30px
+    margin-bottom: 30px
+
+    @media(min-width: 768px) and (max-width: 1199px)
+      margin-bottom: 0
+
+    @media(min-width: 768px)
+      font-size: 36px
+
+  &__link
+    color: #9ea1bd
+    font-size: 18px
+
+    &:hover
+      text-decoration: none
+
+  &__filter-menu
+    @media(min-width: 1200px)
+      justify-content: flex-end
+
+  &__button-block
+    text-align: center
+
+.programs-tabs
+  margin-bottom: 80px
+
+  @media(min-width: 1200px)
+    margin-bottom: 110px
+
+.programs-tab
+  display: none
+
+  &.is-active
+    display: block
+
+.programs-list
+  position: relative
+  max-width: 960px
+  margin-left: auto
+  margin-right: auto
+
+  @media(min-width: 640px)
+    display: flex
+    flex-wrap: wrap
+
+  @media(min-width: 1200px)
+    max-width: 1440px
+    padding-left: calc(100% / 3)
+
+.program
+  color: #fff
+  display: block
+  max-width: 480px
+  margin-left: auto
+  margin-right: auto
+  overflow: hidden
+  position: relative
+
+  @media(min-width: 640px)
+    margin-left: 0
+    margin-right: 0
+
+  &:hover
+    .program__title
+      text-decoration: underline
+
+  &--big
+    max-width: 960px
+
+    .program__inner
+      @media(min-width: 768px)
+        padding-top: 78px
+        padding-bottom: 78px
+
+      @media(min-width: 960px)
+        padding-left: 78px
+        padding-right: 78px
+
+    .program__type
+      @media(min-width: 768px)
+        margin-bottom: 100px
+
+    .program__title
+      @media(min-width: 768px)
+        font-size: 46px
+        line-height: 1.4
+
+  &--small
+    @media(min-width: 640px)
+      width: 50%
+
+    .program__inner
+      @media(min-width: 960px)
+        background-color: #fff
+        height: 320px
+        position: static
+        padding: 78px
+
+    .program__type
+      @media(min-width: 960px)
+        color: #7c80aa
+        margin-bottom: auto
+
+    .program__title
+      @media(min-width: 960px)
+        color: #353535
+        margin-bottom: auto
+
+    .program__icon
+      @media(min-width: 960px)
+        fill: #7c80aa
+
+  &:last-child
+    @media(min-width: 1200px)
+      left: 0
+      position: absolute
+      top: 320px
+      width: calc(100% / 3)
+
+  &__inner
+    display: flex
+    flex-direction: column
+    height: 100%
+    left: 0
+    position: absolute
+    padding: 48px
+    top: 0
+    width: 100%
+    z-index: 1
+
+  &__type
+    font-size: 16px
+    margin-bottom: 40px
+
+    @media(min-width: 768px)
+      font-size: 18px
+
+  &__title
+    font-size: 30px
+    line-height: 1.2
+
+    @media(min-width: 768px)
+      font-size: 28px
+
+  &__icon
+    fill: #fff
+    height: 11px
+    margin-top: auto
+    width: 68px
