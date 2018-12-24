@@ -1,5 +1,39 @@
 .today-block
-  margin-bottom: 230px
+  padding-bottom: 230px
+  position: relative
+  overflow: hidden
+
+  @media(min-width: 960px)
+    background: url("../images/backgrounds/bg_9.png") no-repeat 100% 100% transparent
+
+  @media(min-width: 1400px)
+    overflow: visible
+
+  &::before
+    background: url("../images/backgrounds/bg_7.png") no-repeat 0 0 transparent
+    content: ""
+    height: 477px
+    left: auto
+    position: absolute
+    right: -170px
+    top: 0
+    width: 396px
+    z-index: -1
+
+    @media(min-width: 1200px)
+      right: 50px
+
+    @media(min-width: 1400px)
+      background: url("../images/backgrounds/bg_8.png") no-repeat 0 0 transparent
+      height: 480px
+      top: -170px
+      width: 694px
+
+    @media(min-width: 1900px)
+      height: 480px
+      left: auto
+      right: 50px
+      top: -150px
 
   &__small-title
     margin-bottom: 100px
