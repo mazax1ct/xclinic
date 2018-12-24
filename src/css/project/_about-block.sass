@@ -49,30 +49,42 @@
       top: -50px
 
   &__inner
-    @media(min-width: 1200px)
+    @media(min-width: 960px)
       display: flex
       justify-content: space-between
-      padding-left: 78px
-      padding-right: 78px
+      padding-left: 62px
+      padding-right: 62px
 
   &__left
-    min-width: 500px
+    display: none
 
-    @media(max-width: 1199px)
-      display: none
+    @media(min-width: 960px)
+      align-items: center
+      display: flex
+      min-width: 40%
 
-    @media(min-width: 1500px)
-      min-width: 640px
+    img
+      flex-shrink: 0
 
   &__right
-    @media(min-width: 1200px)
-      padding-top: 80px
+    @media(min-width: 960px)
+      min-width: 60%
+      padding-left: 62px
+      //padding-top: 80px
 
   &__small-title
-    margin-bottom: 100px
+    margin-bottom: 80px
 
-    @media(min-width: 1200px)
+    @media(min-width: 960px)
+      padding-right: 62px
       text-align: right
+
+  &__text
+    background-color: #fff
+    padding: 48px
+
+    @media(min-width: 768px)
+      padding: 62px
 
   &__title
     margin-bottom: 110px
@@ -84,7 +96,6 @@
       margin-bottom: 80px
 
     @media(min-width: 1200px)
-      margin-bottom: 100px
       padding-left: 0
       padding-right: 0
       text-align: right
