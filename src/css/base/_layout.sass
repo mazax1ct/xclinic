@@ -26,28 +26,37 @@ body
     min-height: 100%
     height: auto !important
     height: 100%
-    margin-bottom: -960px
+    margin-bottom: -900px
 
   &::after
     @media (min-width: 1200px)
       content: ""
       display: block
-      height: 960px
+      height: 900px
       width: 100%
 
 .container
   max-width: 1152px
   margin-left: auto
   margin-right: auto
+  padding-left: 15px
+  padding-right: 15px
+
+  &--no_paddings
+    padding-left: 0
+    padding-right: 0
 
 .page-content
   padding-top: 80px
-  padding-bottom: 80px
 
   @media (min-width: 768px)
     padding-top: 128px
-    padding-bottom: 128px
-
 
   @media (min-width: 1200px)
     padding-top: 0
+
+  &--main_page
+    padding-bottom: 80px
+
+    @media (min-width: 768px)
+      padding-bottom: 128px

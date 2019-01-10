@@ -3,10 +3,10 @@
   padding: 70px 48px 75px
 
   @media (min-width: 768px)
-    padding: 140px 62px 80px
+    padding: 80px 62px 80px
 
   @media (min-width: 1200px)
-    height: 960px
+    height: 900px
     padding-bottom: 0
 
   @media (min-width: 1500px)
@@ -17,6 +17,10 @@
     max-width: 1152px
     margin-left: auto
     margin-right: auto
+
+    @media(min-width: 1200px)
+      padding-left: 15px
+      padding-right: 15px
 
   &__top
     @media(min-width: 1200px)
@@ -272,12 +276,6 @@
       margin-right: 30px
       text-align: right
 
-    //@media(min-width: 1400px)
-      margin-right: 60px
-
-    //@media(min-width: 1600px)
-      margin-right: 90px
-
   &__form
     @media(min-width: 768px)
       display: flex
@@ -290,12 +288,10 @@
       margin-bottom: 0
       flex-grow: 1
 
-    //@media(min-width: 1400px)
-      width: 400px
-
   &__form-input
     background-color: #f1f2fa
     border: 1px solid #f1f2fa
+    box-shadow: none
     color: #101820
     font-family: "Harmonia Sans Pro", sans-serif
     font-size: 18px
@@ -312,6 +308,16 @@
 
     &:focus
       border-color: #e4e6f5
+      box-shadow: none
+
+      &::-webkit-input-placeholder
+        opacity: 0
+
+      &::-moz-placeholder
+        opacity: 0
+
+      &:-ms-input-placeholder
+        opacity: 0
 
     &::-webkit-input-placeholder
       color: #101820

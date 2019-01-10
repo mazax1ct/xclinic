@@ -1,0 +1,33 @@
+.page-banner
+  align-items: center
+  background-position: 50% 50%
+  background-repeat: no-repeat
+  background-color: #e6e8f6
+  display: flex
+  justify-content: center
+  min-height: 200px
+
+  @media(min-width: 768px)
+    min-height: 384px
+
+  &--big
+    @media(min-width: 768px)
+      margin-bottom: -128px
+      min-height: 448px
+      padding-bottom: 128px
+
+    &:last-child
+      margin-bottom: 0
+
+  &__title
+    color: #fff
+    font-size: 30px
+    margin-bottom: 0
+    text-align: center
+
+    @media(min-width: 768px)
+      font-size: 48px
+
+  &__title-small
+    display: block
+    font-size: 16px

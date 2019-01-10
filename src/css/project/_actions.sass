@@ -1,0 +1,102 @@
+.actions-list
+  margin-bottom: 90px
+
+  @media(min-width: 768px)
+    display: flex
+    flex-wrap: wrap
+
+.action
+  background-color: #fff
+  display: flex
+  flex-direction: column
+  max-width: 480px
+  margin-left: auto
+  margin-right: auto
+  margin-bottom: 20px
+  text-decoration: none
+
+  @media(min-width: 768px)
+    margin: 0
+    width: 50%
+
+  @media(min-width: 960px)
+    width: 33.333%
+
+  &:hover
+    text-decoration: none
+
+    .action__title
+      text-decoration: underline
+
+  &--reverse
+    @media(min-width: 768px)
+      flex-direction: column-reverse
+
+  &__description
+    display: flex
+    flex-grow: 1
+    flex-direction: column
+    padding: 48px
+
+    @media(min-width: 1200px)
+      padding: 62px
+
+  &__date
+    color: #9ea1bd
+    margin-bottom: 22px
+
+  &__title
+    color: #222
+    font-size: 18px
+    margin-bottom: 28px
+
+    @media(min-width: 1200px)
+      font-size: 20px
+
+  &__icon
+    fill: #7c80aa
+    height: 11px
+    margin-top: auto
+    width: 68px
+
+.action-detail
+  background-color: #fff
+  margin-bottom: 48px
+  padding-top: 48px
+  padding-bottom: 48px
+
+  @media(min-width: 1200px)
+    margin-bottom: 96px
+    padding-top: 62px
+    padding-bottom: 62px
+
+.action-desc
+  &__row
+    margin-bottom: 20px
+
+    @media(min-width: 768px)
+      align-items: center
+      display: flex
+      margin-bottom: 62px
+
+    &:last-child
+      margin-bottom: 0
+
+  &__label
+    min-width: 200px
+
+    @media(min-width: 768px)
+      margin-bottom: 0
+
+    @media(min-width: 1200px)
+      min-width: 320px
+
+  &__text
+    color: #97999b
+
+  &__buttons
+    @media(min-width: 440px)
+      align-items: center
+      display: flex
+      flex-direction: row-reverse
+      justify-content: space-between

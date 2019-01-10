@@ -51,10 +51,18 @@
   display: inline-block;
   width: 28px;
   height: 28px;
-  margin: 0 16px;
+  margin-left: 3px;
+  margin-right: 3px;
   padding: 0;
   cursor: pointer;
   vertical-align: top;
+}
+
+@media(min-width: 768px) {
+  .slick-dots li {
+    margin-left: 16px;
+    margin-right: 16px;
+  }
 }
 
 .slick-dots li button {
