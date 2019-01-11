@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=Edge">
 
-  <title>X-Clinic - акция</title>
+  <title>X-Clinic - контакты</title>
 
   <meta name="description" content="">
 
@@ -131,64 +131,45 @@
       <a class="header__booking-button" href="#">On-line бронирование</a>
     </header>
     <div class="page-content">
-      <div class="page-banner" style="background-image: url('images/backgrounds/banner_action.jpg')">
+      <div class="page-banner page-banner--big" style="background-image: url('images/backgrounds/banner_contacts.jpg')">
         <h1 class="page-banner__title">
-          <span class="page-banner__title-small">Акции</span>
-          Name action
+          <span class="page-banner__title-small">Клиника</span>
+          Контакты
         </h1>
       </div>
-      <div class="action-detail">
-        <div class="container">
-          <div class="action-desc">
-            <div class="action-desc__row">
-              <p class="action-desc__label">Цель процедуры</p>
-              <div class="action-desc__text">
-                <p>Aliquam interdum tempor scelerisque. Fusce sed dignissim ipsum. In tempus velit at purus cursus rhoncus. Vivamus tincidunt lectus sed magna laoreet finibus. Quisque efficitur iaculis eros at eleifend. Aenean efficitur ornare enim non eleifend. Maecenas non mi scelerisque, cursus tortor id, rhoncus diam.Pellentesque sit amet massa in ligula tempus sagittis. Quisque eget mollis libero. Sed et risus nec velit dignissim auctor sit amet sit amet nibh. Duis aliquam quam non nisl sagittis tincidunt.</p>
-                <p>Vivamus tincidunt lectus sed magna laoreet finibus. Quisque efficitur iaculis eros at eleifend. Aenean efficitur ornare enim non eleifend. Maecenas non mi scelerisque, cursus tortor id, rhoncus diam. Pellentesque sit amet massa in ligula tempus sagittis. Quisque eget mollis libero. Sed et risus nec velit dignissim auctor sit amet sit amet nibh. Duis aliquam quam non nisl sagittis tincidunt. Suspendisse tincidunt libero sed leo venenatis, quis congue nulla eleifend.</p>
-                <p>Quisque efficitur iaculis eros at eleifend. Aenean efficitur ornare enim non eleifend. Maecenas non mi scelerisque, cursus tortor id, rhoncus diam. Pellentesque sit amet massa in ligula tempus sagittis.</p>
-              </div>
-            </div>
-            <div class="action-desc__row">
-              <p class="action-desc__label">Продолжительность</p>
-              <div class="action-desc__text">
-                <p>7 дней</p>
-              </div>
-            </div>
-            <div class="action-desc__buttons">
-              <a class="button button--dark" href="#">Заказать процедуру</a>
-              <a class="back-link" href="actions.html"><svg class="back-link__icon" aria-hidden="true"><use xlink:href="#arrow_left"/></svg> Назад к списку</a>
-            </div>
-          </div>
-        </div>
-      </div>
       <div class="container">
-        <div class="also-block">
-          <h2 class="also-block__title">Другие процедуры</h2>
-          <div class="also-list">
-            <a class="also-link" href="#">
-              <span class="also-link__description">
-                <span class="also-link__title">Омоложение печени</span>
-                <span class="also-link__pseudo-link">Подробнее</span>
-              </span>
-              <img src="images/content/img_34.jpg" alt="">
-            </a>
-            <a class="also-link" href="#">
-              <span class="also-link__description">
-                <span class="also-link__title">Омоложение сердца</span>
-                <span class="also-link__pseudo-link">Подробнее</span>
-              </span>
-              <img src="images/content/img_35.jpg" alt="">
-            </a>
-            <a class="also-link" href="#">
-              <span class="also-link__description">
-                <span class="also-link__title">В Карелии организована горячая линия по вопросам медицины</span>
-                <span class="also-link__pseudo-link">Подробнее</span>
-              </span>
-              <img src="images/content/img_36.jpg" alt="">
-            </a>
+        <div class="contacts">
+          <div class="contacts__block contacts-info">
+            <p class="contacts-info__text">Maecenas non mi scelerisque, cursus tortor id, rhoncus diam. Pellentesque sit amet massa in ligula tempus sagittis. Quisque eget mollis libero. Sed et risus nec velit dignissim auctor sit amet sit amet nibh.</p>
+            <p class="contacts__label">Телефон в Санкт-Петербурге:</p>
+            <p><a class="contacts__phone" href="tel:88003003525">8 800 300 35 25</a></p>
+            <p class="contacts__label">Адрес:</p>
+            <p class="contacts__address">г. Санкт-Петербург, ул. Корпусная, д. 9</p>
+            <p class="contacts__label">E-mail:</p>
+            <p><a class="contacts__email" href="mailto:xclinic@xclinic.ru">xclinic@xclinic.ru</a></p>
+          </div>
+          <div class="contacts__block contacts-form">
+            <p class="contacts-form__title">Свяжитесь с нами</p>
+            <form action="">
+              <label class="contacts-form__label" for="name">
+                <input id="name" class="input" name="name" type="text" value="" placeholder="Имя">
+              </label>
+              <label class="contacts-form__label" for="phone">
+                <input id="phone" class="input" name="phone" type="text" value="" placeholder="Телефон">
+              </label>
+              <label class="contacts-form__label" for="email">
+                <input id="email" class="input" name="email" type="text" value="" placeholder="E-mail">
+              </label>
+              <label class="contacts-form__label" for="name">
+                <textarea id="message" class="textarea" name="message" placeholder="Ваше сообщение"></textarea>
+              </label>
+              <button class="contacts-form__button button button--dark" type="button">Отправить</button>
+            </form>
+
           </div>
         </div>
       </div>
+      <div id="contacts-map" class="contacts-map"></div>
       <nav class="bottom-menu">
         <div class="bottom-menu__inner">
           <a class="bottom-menu__link" href="#">Ресторан</a>
@@ -268,7 +249,120 @@
   <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
   <script type="text/javascript" src="js/slick.min.js"></script>
   <script type="text/javascript" src="js/main.js"></script>
-  <script type="text/javascript" src="js/jquery.fancybox.min.js"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDfgRF4t3ph-ZJSEXkxIJr-H08zNYQvqb4&callback=initContactsMap" async defer></script>
+  <script>
+    function initContactsMap() {
+      var myLatLng = { lat: 59.990094, lng: 30.318777 };
+
+      var stylesArray = [
+        {
+          "featureType": "administrative",
+          "elementType": "labels.text.fill",
+          "stylers": [
+            {
+              "color": "#444444"
+            }
+          ]
+        },
+        {
+          "featureType": "landscape",
+          "elementType": "all",
+          "stylers": [
+            {
+              "color": "#f2f2f2"
+            }
+          ]
+        },
+        {
+          "featureType": "poi",
+          "elementType": "all",
+          "stylers": [
+            {
+              "visibility": "off"
+            }
+          ]
+        },
+        {
+          "featureType": "road",
+          "elementType": "all",
+          "stylers": [
+            {
+              "saturation": -100
+            },
+            {
+              "lightness": 45
+            }
+          ]
+        },
+        {
+          "featureType": "road.highway",
+          "elementType": "all",
+          "stylers": [
+            {
+              "visibility": "simplified"
+            }
+          ]
+        },
+        {
+          "featureType": "road.arterial",
+          "elementType": "labels.icon",
+          "stylers": [
+            {
+              "visibility": "off"
+            }
+          ]
+        },
+        {
+          "featureType": "transit",
+          "elementType": "all",
+          "stylers": [
+            {
+              "visibility": "off"
+            }
+          ]
+        },
+        {
+          "featureType": "water",
+          "elementType": "all",
+          "stylers": [
+            {
+              "color": "#dedee4"
+            },
+            {
+              "visibility": "on"
+            }
+          ]
+        }
+      ];
+
+      var map = new google.maps.Map(document.getElementById("contacts-map"), {
+        zoom: 11,
+        center: myLatLng,
+        scrollwheel: false,
+        zoomControl: false,
+        scaleControl: false,
+        mapTypeControl: false,
+        streetViewControl: false,
+        styles: stylesArray
+      });
+
+      var icon = {
+        path: "M31.1,6.9c-6-7.5-17.1-8.8-24.6-2.7c-6.7,5.4-8.4,14.7-4.4,22c0.1,0.2,0.2,0.4,0.4,0.6c0.4,0.7,0.9,1.4,1.4,2c0.6,0.8,13.8,15.9,13.8,15.9s12.6-14.9,13.2-15.5c0.7-0.8,1.3-1.7,1.8-2.5l0,0c0.1-0.2,0.2-0.3,0.3-0.5C36.1,20.1,35.7,12.5,31.1,6.9z M21.3,21.7c-2.6,2.1-6.5,1.7-8.6-0.9c-2.1-2.6-1.7-6.5,0.9-8.6c2.6-2.1,6.5-1.7,8.6,0.9C24.4,15.8,24,19.6,21.3,21.7z",
+        fillColor: '#85848d',
+        fillOpacity: 1,
+        anchor: new google.maps.Point(17, 45),
+        strokeWeight: 0,
+        scale: 1
+      };
+
+      var marker = new google.maps.Marker({
+        position: myLatLng,
+        map: map,
+        draggable: false,
+        icon: icon
+      });
+    }
+  </script>
 </body>
 
 </html>

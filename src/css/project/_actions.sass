@@ -61,9 +61,13 @@
 
 .action-detail
   background-color: #fff
+  margin-top: -40px
   margin-bottom: 48px
   padding-top: 48px
   padding-bottom: 48px
+
+  @media(min-width: 768px)
+    margin-top: -80px
 
   @media(min-width: 1200px)
     margin-bottom: 96px
@@ -83,6 +87,7 @@
       margin-bottom: 0
 
   &__label
+    color: #222
     min-width: 200px
 
     @media(min-width: 768px)
@@ -91,12 +96,17 @@
     @media(min-width: 1200px)
       min-width: 320px
 
-  &__text
-    color: #97999b
-
   &__buttons
-    @media(min-width: 440px)
+    @media(min-width: 540px)
       align-items: center
       display: flex
       flex-direction: row-reverse
       justify-content: space-between
+
+    .button
+      margin-bottom: 15px
+      max-width: 320px
+      width: 100%
+
+      @media(min-width: 480px)
+        margin-bottom: 0

@@ -2,7 +2,7 @@ html
   hyphens: auto
 
 body
-  color: #222
+  color: #97999b
   font-family: "Harmonia Sans Pro", sans-serif
   font-size: 15px
   line-height: 1.6
@@ -53,26 +53,6 @@ h3,.h3
     padding-bottom: 5px
     vertical-align: top
 
-.page-title
-  font-family: "Constantia", serif
-  font-size: 27px
-  font-weight: 400
-  line-height: 1.2
-  margin-bottom: 24px
-
-  @media(min-width: 768px)
-    margin-bottom: 30px
-
-  @media(min-width: 1200px)
-    font-size: 30px
-    margin-bottom: 36px
-
-  & + .search-title
-    margin-top: -22px
-
-    @media(min-width: 1200px)
-      margin-top: -40px
-
 ul
   list-style-type: '– '
   list-style-position: inside
@@ -120,3 +100,127 @@ img
   height: auto
   max-width: 100%
   vertical-align: top
+
+.text-block1,
+.text-block2,
+.text-block3
+  margin-top: 40px
+  margin-bottom: 40px
+
+  @media(min-width: 768px)
+    margin-top: 80px
+    margin-bottom: 80px
+
+  &:first-child
+    margin-top: 0
+
+  &:last-child
+    margin-bottom: 0
+
+.text-block1
+  &__inner
+    background-color: #fff
+    padding: 24px
+
+    @media(min-width: 768px)
+      padding: 48px
+
+    @media(min-width: 1200px)
+      padding: 62px
+
+  &__title
+    color: #222
+    font-size: 26px
+    line-height: 1.2
+    margin-bottom: 35px
+    text-align: center
+
+    @media(min-width: 768px)
+      font-size: 30px
+
+    @media(min-width: 1200px)
+      font-size: 38px
+
+.text-block2
+  align-items: center
+  color: #222
+  display: flex
+  font-size: 20px
+  justify-content: center
+  line-height: 1.2
+  min-height: 332px
+  position: relative
+  text-align: center
+
+  @media(min-width: 768px)
+    font-size: 24px
+    max-width: 76%
+    margin-left: auto
+    margin-right: auto
+
+  @media(min-width: 1200px)
+    font-size: 28px
+
+  &::after,
+  &::before
+    content: ""
+    left: 50%
+    position: absolute
+    top: 50%
+    transform: translate(-50%, -50%)
+    z-index: -1
+
+  &::before
+    background-color: #f3f7f6
+    height: 256px
+    width: 256px
+
+  &::after
+    background: url("../images/backgrounds/bg_4.png") no-repeat 0 0 / 185px 331px transparent
+    height: 331px
+    width: 185px
+
+.text-block3
+  @media(min-width: 960px)
+    display: flex
+
+  &__text
+    background-color: #fff
+    padding: 24px
+
+    @media(min-width: 768px)
+      padding: 48px
+
+    @media(min-width: 1200px)
+      padding: 62px
+
+  &__title
+    color: #222
+    font-size: 26px
+    line-height: 1.2
+    margin-bottom: 35px
+
+    @media(min-width: 768px)
+      font-size: 30px
+
+    @media(min-width: 1200px)
+      font-size: 38px
+
+  &__image-block
+    overflow: hidden
+    position: relative
+    text-align: center
+
+    @media(min-width: 960px)
+      min-width: 39%
+
+  &__image
+    @media(min-width: 960px)
+      height: 110%
+      left: 50%
+      min-width: 100%
+      object-fit: cover
+      position: absolute
+      top: 50%
+      transform: translate(-50%, -50%)
+      width: auto
