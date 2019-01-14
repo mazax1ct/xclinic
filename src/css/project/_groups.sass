@@ -1,0 +1,91 @@
+.group
+  background-color: #fff
+  display: block
+  margin-bottom: 20px
+  max-width: 480px
+  margin-left: auto
+  margin-right: auto
+  text-decoration: none
+
+  @media(min-width: 768px)
+    display: flex
+    max-width: 100%
+    margin-bottom: 48px
+
+  &--reverse
+    @media(min-width: 768px)
+      flex-direction: row-reverse
+
+  &:hover
+    text-decoration: none
+
+    .group__title,
+    .group__more
+      text-decoration: underline
+
+  &:last-child
+    margin-bottom: 0
+
+  &__image,
+  &__description,
+  &__title,
+  &__preview-text,
+  &__more
+    display: block
+
+  &__image-block
+    @media(min-width: 768px)
+      min-width: 33.333%
+      position: relative
+      padding-bottom: 33.333%
+
+  &__image
+    @media(min-width: 768px)
+      height: 100%
+      left: auto
+      min-width: 100%
+      object-fit: cover
+      object-position: right
+      position: absolute
+      right: 0
+      top: 0
+      width: auto
+
+  &__description
+    display: block
+    padding: 24px
+
+    @media(min-width: 768px)
+      display: flex
+      flex-direction: column
+      justify-content: space-between
+      padding: 48px
+
+  &__title
+    font-size: 18px
+    line-height: 1.2
+    margin-bottom: 28px
+
+    @media(min-width: 768px)
+      font-size: 20px
+
+    @media(min-width: 1200px)
+      font-size: 28px
+
+
+  &__preview-text,
+  &__more
+    color: #97999b
+
+  &__preview-text
+    margin-bottom: 28px
+
+  &__more
+    @media(min-width: 768px)
+      text-align: right
+
+  &__more-icon
+    fill: #7c80aa
+    height: 11px
+    margin-left: 10px
+    width: 68px

@@ -1,0 +1,88 @@
+.certificates-list
+  @media(min-width: 768px)
+    display: flex
+    flex-wrap: wrap
+
+.certificate
+  background-color: #fff
+  display: block
+  margin-bottom: 20px
+  max-width: 480px
+  margin-left: auto
+  margin-right: auto
+  text-align: center
+  text-decoration: none
+
+  @media(min-width: 768px)
+    max-width: 100%
+    margin-bottom: 48px
+    width: calc(50% - 24px)
+
+  &:nth-child(even)
+    @media(min-width: 768px)
+      margin-left: 24px
+      margin-right: 0
+
+  &:nth-child(odd)
+    @media(min-width: 768px)
+      margin-right: 24px
+      margin-left: 0
+
+  &:last-child,
+  &:nth-last-child(2)
+    margin-bottom: 0
+
+  &:hover
+    text-decoration: none
+
+  &__image,
+  &__description,
+  &__title,
+  &__preview-text
+    display: block
+
+  &__image
+    padding-top: 24px
+    padding-left: 24px
+    padding-right: 24px
+
+    @media(min-width: 960px)
+      padding-top: 48px
+      padding-left: 48px
+      padding-right: 48px
+
+  &__description
+    display: block
+    padding: 24px
+
+    @media(min-width: 768px)
+      display: flex
+      flex-direction: column
+      justify-content: space-between
+
+    @media(min-width: 960px)
+      padding: 48px
+
+  &__title
+    font-size: 18px
+    line-height: 1.2
+    margin-bottom: 28px
+
+    @media(min-width: 768px)
+      font-size: 20px
+
+    @media(min-width: 1200px)
+      font-size: 28px
+
+  &__preview-text,
+  &__more
+    color: #97999b
+
+  &__preview-text
+    margin-bottom: 28px
+
+  &__more-icon
+    fill: #7c80aa
+    height: 11px
+    margin-left: 10px
+    width: 68px

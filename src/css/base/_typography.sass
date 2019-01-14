@@ -103,7 +103,8 @@ img
 
 .text-block1,
 .text-block2,
-.text-block3
+.text-block3,
+.text-block4
   margin-top: 40px
   margin-bottom: 40px
 
@@ -147,8 +148,8 @@ img
   display: flex
   font-size: 20px
   justify-content: center
-  line-height: 1.2
-  min-height: 332px
+  line-height: 1.5
+  min-height: 220px
   position: relative
   text-align: center
 
@@ -160,6 +161,7 @@ img
 
   @media(min-width: 1200px)
     font-size: 28px
+    min-height: 331px
 
   &::after,
   &::before
@@ -172,13 +174,22 @@ img
 
   &::before
     background-color: #f3f7f6
-    height: 256px
-    width: 256px
+    height: 168px
+    width: 168px
+
+    @media(min-width: 1200px)
+      height: 256px
+      width: 256px
 
   &::after
-    background: url("../images/backgrounds/bg_4.png") no-repeat 0 0 / 185px 331px transparent
-    height: 331px
-    width: 185px
+    background: url("../images/backgrounds/bg_4.png") no-repeat 0 0 / 122px 218px transparent
+    height: 218px
+    width: 122px
+
+    @media(min-width: 1200px)
+      background-size: 185px 331px
+      height: 331px
+      width: 185px
 
 .text-block3
   @media(min-width: 960px)
@@ -216,7 +227,46 @@ img
 
   &__image
     @media(min-width: 960px)
-      height: 110%
+      height: 100%
+      left: 50%
+      min-width: 100%
+      object-fit: cover
+      position: absolute
+      top: 50%
+      transform: translate(-50%, -50%)
+      width: auto
+
+.text-block4
+  @media(min-width: 960px)
+    display: flex
+
+  &__text
+    background-color: #fff
+    padding: 24px
+
+    @media(min-width: 768px)
+      padding: 48px
+
+    @media(min-width: 960px)
+      display: flex
+      flex-direction: column
+      justify-content: center
+
+    @media(min-width: 1200px)
+      padding: 62px
+
+  &__image-block
+    overflow: hidden
+    position: relative
+    text-align: center
+
+    @media(min-width: 960px)
+      min-width: 50%
+      padding-bottom: 50%
+
+  &__image
+    @media(min-width: 960px)
+      height: 100%
       left: 50%
       min-width: 100%
       object-fit: cover
