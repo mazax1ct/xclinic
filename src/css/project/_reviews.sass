@@ -1,0 +1,71 @@
+.review
+  margin-bottom: 20px
+
+  @media(min-width: 600px)
+    display: flex
+    margin-bottom: 48px
+
+  &--reverse
+    @media(min-width: 600px)
+      flex-direction: row-reverse
+
+  &__avatar-block
+    background-color: #e6e8f6
+    color: #222
+    padding: 24px
+    text-align: center
+
+    @media(min-width: 600px)
+      min-width: 200px
+
+    @media(min-width: 768px)
+      padding: 48px
+
+    @media(min-width: 960px)
+      min-width: 320px
+
+  &__avatar
+    margin-bottom: 30px
+
+    img
+      border-radius: 50%
+
+  &__author-name
+    font-size: 17px
+
+  &__author-about
+
+  &__text-block
+    background-color: #fff
+    padding: 24px
+    position: relative
+
+    @media(min-width: 768px)
+      padding: 48px
+
+    &::before,
+    &::after
+      @media(min-width: 768px)
+        color: #f1f2fa
+        content: '“'
+        font-size: 170px
+        line-height: 0px
+        pointer-events: none
+        position: absolute
+
+    &::before
+      left: 40px
+      top: 60px
+
+    &::after
+      bottom: 60px
+      right: 40px
+      transform: rotate(180deg)
+      transform-origin: 50% 50% 0
+
+  &__title
+    color: #222
+    font-size: 18px
+
+    @media(min-width: 768px)
+      font-size: 24px

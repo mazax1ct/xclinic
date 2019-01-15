@@ -7,6 +7,10 @@ body
   font-size: 15px
   line-height: 1.6
 
+  @media(min-width: 1200px)
+    font-size: 16px
+    line-height: 1.888
+
 a
   color: #222
 
@@ -104,7 +108,9 @@ img
 .text-block1,
 .text-block2,
 .text-block3,
-.text-block4
+.text-block4,
+.text-block5,
+.text-block6
   margin-top: 40px
   margin-bottom: 40px
 
@@ -236,6 +242,12 @@ img
       transform: translate(-50%, -50%)
       width: auto
 
+  a
+    color: #9ea1bd
+
+    &:hover
+      text-decoration: none
+
 .text-block4
   @media(min-width: 960px)
     display: flex
@@ -274,3 +286,132 @@ img
       top: 50%
       transform: translate(-50%, -50%)
       width: auto
+
+.text-block5
+  align-items: center
+  color: #222
+  display: flex
+  font-size: 20px
+  justify-content: center
+  line-height: 1.5
+  min-height: 168px
+  position: relative
+  text-align: center
+
+  @media(min-width: 768px)
+    font-size: 24px
+    max-width: 76%
+    margin-left: auto
+    margin-right: auto
+
+  @media(min-width: 1200px)
+    font-size: 38px
+    min-height: 220px
+
+  &::before
+    background: url("../images/backgrounds/bg_11.png") no-repeat 0 0 / 168px 168px transparent
+    content: ""
+    height: 168px
+    left: 50%
+    position: absolute
+    top: 50%
+    transform: translate(-50%, -50%)
+    width: 168px
+    z-index: -1
+
+    @media(min-width: 1200px)
+      background-size: 220px 220px
+      height: 220px
+      width: 220px
+
+.text-block6
+  align-items: center
+  color: #222
+  display: flex
+  font-size: 20px
+  justify-content: center
+  line-height: 1.5
+  min-height: 160px
+  position: relative
+  text-align: center
+
+  @media(min-width: 768px)
+    font-size: 24px
+    max-width: 76%
+    margin-left: auto
+    margin-right: auto
+
+  @media(min-width: 1200px)
+    font-size: 28px
+
+  &::after,
+  &::before
+    content: ""
+    left: 50%
+    position: absolute
+    top: 50%
+    transform: translate(-50%, -50%)
+    z-index: -1
+
+  &::before
+    background-color: #f3f7f6
+    height: 128px
+    width: 256px
+
+  &::after
+    background: url("../images/backgrounds/bg_12.png") no-repeat 0 0 / 134px 160px transparent
+    height: 160px
+    width: 134px
+
+.video
+  display: block
+  margin-left: auto
+  margin-right: auto
+  margin-top: 40px
+  margin-bottom: 40px
+  max-width: 640px
+  position: relative
+  text-decoration: none
+
+  @media(min-width: 768px)
+    margin-top: 120px
+    margin-bottom: 120px
+
+  &::after
+    background-color: #7b7faa
+    content: ""
+    height: 100%
+    left: 0
+    opacity: 0.7
+    position: absolute
+    top: 0
+    width: 100%
+    z-index: 1
+
+  &::before
+    @media(min-width: 768px)
+      background-color: #e6e8f6
+      content: ""
+      height: 500px
+      left: 50%
+      position: absolute
+      top: 50%
+      transform: translate(-50%, -50%)
+      width: 500px
+      z-index: -1
+
+  &__button
+    align-items: center
+    border-radius: 50%
+    border: 2px solid #fff
+    color: #fff
+    display: flex
+    font-size: 16px
+    height: 96px
+    justify-content: center
+    left: 50%
+    position: absolute
+    top: 50%
+    transform: translate(-50%, -50%)
+    width: 96px
+    z-index: 2
