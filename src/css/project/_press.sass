@@ -1,0 +1,158 @@
+.press-list
+  margin-bottom: 40px
+
+  @media(min-width: 768px)
+    display: flex
+    flex-wrap: wrap
+    margin-bottom: 80px
+
+  &:last-child
+    margin-bottom: 0
+
+.press
+  align-items: stretch
+  background-color: #fff
+  display: flex
+  min-height: 320px
+  margin-bottom: 20px
+  text-decoration: none
+
+  @media(min-width: 768px)
+    margin-bottom: 0
+    width: 50%
+
+  &--reverse
+    @media(min-width: 768px)
+      flex-direction: row-reverse
+
+  &:hover
+    text-decoration: none
+
+    .press__title
+      text-decoration: underline
+
+    .press__pseudo-link
+      text-decoration: none
+
+  &__logo
+    align-items: center
+    background-color: #d9dbea
+    display: flex
+    justify-content: center
+    min-height: 80px
+    min-width: 80px
+    padding: 24px
+    text-align: center
+    width: 80px
+
+    @media(min-width: 480px)
+      min-height: 120px
+      min-width: 120px
+      width: 120px
+
+    @media(min-width: 1200px)
+      min-height: 190px
+      min-width: 190px
+      width: 190px
+
+  &__about
+    display: flex
+    flex-direction: column
+    justify-content: center
+    padding: 20px
+
+    @media(min-width: 960px)
+      padding: 48px
+
+  &__title
+    color: #222
+    font-size: 18px
+    margin-bottom: 12px
+
+    @media(min-width: 960px)
+      font-size: 20px
+
+  &__text
+    color: #97999b
+    margin-bottom: 24px
+
+  &__pseudo-link
+    color: #97999b
+    text-decoration: underline
+
+.press-detail
+  background-color: #fff
+  padding: 48px 24px
+  position: relative
+
+  @media(min-width: 768px)
+    padding-left: 48px
+    padding-right: 48px
+
+  @media(min-width: 960px)
+    padding-top: 128px
+    padding-bottom: 128px
+
+  @media(min-width: 1200px)
+    padding-left: 62px
+    padding-right: 62px
+
+  &__back-block
+    @media(min-width: 768px)
+      margin-top: 60px
+
+  &__prev,
+  &__next
+    display: none
+    height: 48px
+    overflow: hidden
+    position: absolute
+    top: 50%
+    transform: translateY(-50%)
+    width: 48px
+
+    @media(min-width: 768px)
+      align-items: center
+      display: flex
+
+    @media(min-width: 1200px)
+      height: 68px
+      width: 68px
+
+  &__prev
+    left: 0
+
+    @media(min-width: 1200px)
+      left: -20px
+
+    @media(min-width: 1400px)
+      left: -88px
+
+    @media(min-width: 1500px)
+      left: -128px
+
+  &__next
+    right: 0
+    text-align: right
+
+    @media(min-width: 1200px)
+      right: -20px
+
+    @media(min-width: 1400px)
+      right: -88px
+
+    @media(min-width: 1500px)
+      right: -128px
+
+  &__prev-icon,
+  &__next-icon
+    fill: #97999b
+    height: 11px
+    min-width: 68px
+    width: 68px
+
+  &__next-icon
+    margin-left: -20px
+
+    @media(min-width: 1200px)
+      margin-left: 0

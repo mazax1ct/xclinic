@@ -1,0 +1,82 @@
+.spec-list
+  @media(min-width: 768px)
+    display: flex
+    flex-wrap: wrap
+
+.spec
+  background-color: #fff
+  margin-bottom: 20px
+
+  @media(min-width: 480px)
+    display: flex
+
+  @media(min-width: 768px)
+    margin-bottom: 48px
+    width: calc(50% - 24px)
+
+  &:nth-child(even)
+    @media(min-width: 768px)
+      margin-left: 24px
+      margin-right: 0
+
+  &:nth-child(odd)
+    @media(min-width: 768px)
+      margin-right: 24px
+      margin-left: 0
+
+  &:last-child,
+  &:nth-last-child(2)
+    @media(min-width: 768px)
+      margin-bottom: 0
+
+  &__avatar-block
+    align-items: center
+    display: flex
+    justify-content: center
+    min-width: 160px
+    padding: 24px 24px 0
+    position: relative
+    text-align: center
+    width: 160px
+
+    @media(min-width: 480px)
+      padding-bottom: 24px
+
+    @media(min-width: 1200px)
+      min-width: 190px
+      width: 190px
+
+    &::before
+      @media(min-width: 768px)
+        background-color: #d9dbea
+        content: ''
+        height: 100%
+        left: 0
+        position: absolute
+        top: 0
+        width: 50%
+
+  &__avatar
+    border-radius: 50%
+    position: relative
+    z-index: 1
+
+  &__about
+    display: flex
+    flex-direction: column
+    justify-content: center
+    padding: 24px
+
+    @media(min-width: 960px)
+      padding: 48px 24px 48px 0
+
+  &__name
+    color: #222
+    font-size: 18px
+    margin-bottom: 12px
+
+    @media(min-width: 960px)
+      font-size: 20px
+
+  &__feature
+    color: #222

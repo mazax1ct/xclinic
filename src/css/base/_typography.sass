@@ -252,6 +252,12 @@ img
   @media(min-width: 960px)
     display: flex
 
+  & + .gallery
+    margin-top: -40px
+
+    @media(min-width: 768px)
+      margin-top: -80px
+
   &__text
     background-color: #fff
     padding: 24px
@@ -266,6 +272,10 @@ img
 
     @media(min-width: 1200px)
       padding: 62px
+
+    &--big_paddings
+      @media(min-width: 1400px)
+        padding: 96px
 
   &__image-block
     overflow: hidden
@@ -362,6 +372,41 @@ img
     background: url("../images/backgrounds/bg_12.png") no-repeat 0 0 / 134px 160px transparent
     height: 160px
     width: 134px
+
+.text-block7
+  margin-top: 40px
+
+  @media(min-width: 768px)
+    margin-top: 80px
+
+  @media(min-width: 960px)
+    display: flex
+
+  &__text
+    background-color: #fff
+    color: #222
+    padding: 24px
+
+    @media(min-width: 768px)
+      padding: 48px
+
+    @media(min-width: 960px)
+      display: flex
+      flex-direction: column
+      justify-content: center
+
+    @media(min-width: 1200px)
+      padding: 62px
+
+  &__image-block
+    background-color: #d8d9e5
+    background-position: 50% 100%
+    background-size: auto 90%
+    background-repeat: no-repeat
+
+    @media(min-width: 960px)
+      min-width: 50%
+      padding-bottom: 50%
 
 .video
   display: block
