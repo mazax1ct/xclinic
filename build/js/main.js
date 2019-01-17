@@ -207,35 +207,66 @@ $(document).ready(function() {
     $('.programs-tab[data-type=' + $(this).attr("data-type") + ']').addClass("is-active");
   });
 
-  $('[data-fancybox="gallery"]').fancybox({
-    buttons: [
-      "close"
-    ],
-    btnTpl: {
-      close:
+  //fancy
+  if ($('[data-fancybox="gallery"]').length) {
+    $('[data-fancybox="gallery"]').fancybox({
+      buttons: [
+        "close"
+      ],
+      btnTpl: {
+        close:
+          '<button data-fancybox-close class="fancybox-button fancybox-button--close" title="Закрыть">' +
+          '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 10.6L6.6 5.2 5.2 6.6l5.4 5.4-5.4 5.4 1.4 1.4 5.4-5.4 5.4 5.4 1.4-1.4-5.4-5.4 5.4-5.4-1.4-1.4-5.4 5.4z"/></svg>' +
+          "</button>",
+        arrowLeft:
+          '<button data-fancybox-prev class="fancybox-button fancybox-button--arrow_left" title="Назад">' +
+          '<div><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M11.28 15.7l-1.34 1.37L5 12l4.94-5.07 1.34 1.38-2.68 2.72H19v1.94H8.6z"/></svg></div>' +
+          "</button>",
+        arrowRight:
+          '<button data-fancybox-next class="fancybox-button fancybox-button--arrow_right" title="Вперёд">' +
+          '<div><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M15.4 12.97l-2.68 2.72 1.34 1.38L19 12l-4.94-5.07-1.34 1.38 2.68 2.72H5v1.94z"/></svg></div>' +
+          "</button>",
+      }
+    });
+  }
+
+  if ($('[data-fancybox="video"]').length) {
+    $('[data-fancybox="video"]').fancybox({
+      buttons: [
+        "close"
+      ],
+      btnTpl: {
+        close:
         '<button data-fancybox-close class="fancybox-button fancybox-button--close" title="Закрыть">' +
         '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 10.6L6.6 5.2 5.2 6.6l5.4 5.4-5.4 5.4 1.4 1.4 5.4-5.4 5.4 5.4 1.4-1.4-5.4-5.4 5.4-5.4-1.4-1.4-5.4 5.4z"/></svg>' +
         "</button>",
-      arrowLeft:
-        '<button data-fancybox-prev class="fancybox-button fancybox-button--arrow_left" title="Назад">' +
-        '<div><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M11.28 15.7l-1.34 1.37L5 12l4.94-5.07 1.34 1.38-2.68 2.72H19v1.94H8.6z"/></svg></div>' +
-        "</button>",
-      arrowRight:
-        '<button data-fancybox-next class="fancybox-button fancybox-button--arrow_right" title="Вперёд">' +
-        '<div><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M15.4 12.97l-2.68 2.72 1.34 1.38L19 12l-4.94-5.07-1.34 1.38 2.68 2.72H5v1.94z"/></svg></div>' +
-        "</button>",
-    }
-  });
+      }
+    });
+  }
 
-  $('[data-fancybox="video"]').fancybox({
-    buttons: [
-      "close"
-    ],
-    btnTpl: {
-      close:
-      '<button data-fancybox-close class="fancybox-button fancybox-button--close" title="Закрыть">' +
-      '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 10.6L6.6 5.2 5.2 6.6l5.4 5.4-5.4 5.4 1.4 1.4 5.4-5.4 5.4 5.4 1.4-1.4-5.4-5.4 5.4-5.4-1.4-1.4-5.4 5.4z"/></svg>' +
-      "</button>",
-    }
-  });
+  //слайдер в блоге
+  if ($('.js-blog-slider').length) {
+    $('.js-blog-slider').slick({
+      auto: false,
+      mobileFirst: true,
+      slidesToShow: 1,
+      infinite: true,
+      edgeFriction: 0,
+      arrows: false,
+      dots: false,
+      asNavFor: '.js-blog-slider-nav'
+    });
+
+    $('.js-blog-slider-nav').slick({
+      slidesToShow: 3,
+      slidesToScroll: 1,
+      asNavFor: '.js-blog-slider',
+      dots: false,
+      arrows: false,
+      centerMode: true,
+      centerPadding: '0',
+      focusOnSelect: true
+    });
+  }
+
 });

@@ -1,0 +1,303 @@
+.blog-block
+  margin-bottom: 90px
+
+.blog-big
+  background-color: #fafafc
+  display: block
+  margin-bottom: 20px
+  max-width: 480px
+  margin-left: auto
+  margin-right: auto
+  text-decoration: none
+
+  @media(min-width: 768px)
+    display: flex
+    max-width: 100%
+    margin-bottom: 0
+
+  &:hover
+    text-decoration: none
+
+    .blog-big__title,
+    .blog-big__more
+      text-decoration: underline
+
+  &:last-child
+    margin-bottom: 0
+
+  &__image,
+  &__description,
+  &__date,
+  &__title,
+  &__preview-text,
+  &__more
+    display: block
+
+  &__image-block
+    @media(min-width: 768px)
+      min-width: 50%
+      position: relative
+      padding-bottom: 38.888%
+
+  &__image
+    @media(min-width: 768px)
+      height: 100%
+      left: auto
+      min-width: 100%
+      object-fit: cover
+      object-position: right
+      position: absolute
+      right: 0
+      top: 0
+      width: auto
+
+  &__description
+    display: block
+    padding: 24px
+
+    @media(min-width: 768px)
+      display: flex
+      flex-direction: column
+
+    @media(min-width: 960px)
+      padding: 48px
+
+  &__date
+    color: #7c80aa
+    margin-bottom: 24px
+
+  &__title
+    font-size: 18px
+    line-height: 1.3
+    margin-bottom: auto
+
+    @media(min-width: 768px)
+      font-size: 20px
+
+    @media(min-width: 1200px)
+      font-size: 22px
+
+  &__preview-text,
+  &__more
+    color: #97999b
+
+  &__preview-text
+    margin-bottom: 28px
+    margin-top: 28px
+
+.blog-list
+  @media(min-width: 768px)
+    display: flex
+    flex-wrap: wrap
+
+.blog
+  background-color: #fff
+  display: flex
+  flex-direction: column
+  max-width: 480px
+  margin-left: auto
+  margin-right: auto
+  margin-bottom: 20px
+  text-decoration: none
+
+  @media(min-width: 768px)
+    background-color: #fafafc
+    margin: 0
+    width: 33.333%
+
+  &:hover
+    text-decoration: none
+
+    .blog__title
+      text-decoration: underline
+
+    .blog__pseudo-link
+      text-decoration: none
+
+  &--reverse
+    @media(min-width: 768px)
+      background-color: #fff
+      flex-direction: column-reverse
+
+  &__description
+    display: flex
+    flex-grow: 1
+    flex-direction: column
+    padding: 24px
+
+    @media(min-width: 960px)
+      padding: 48px
+
+  &__date
+    color: #9ea1bd
+    margin-bottom: 22px
+
+  &__title
+    color: #222
+    display: block
+    font-size: 18px
+    line-height: 1.6
+    margin-bottom: 24px
+
+    @media(min-width: 1200px)
+      font-size: 20px
+
+  &__preview-text
+    color: #97999b
+    display: block
+    margin-bottom: 24px
+
+  &__pseudo-link
+    color: #9ea1bd
+    text-decoration: underline
+
+.blog-detail
+  position: relative
+
+  & + .also-block
+   margin-top: 40px
+
+   @media(min-width: 768px)
+     margin-top: 80px
+
+  &__block
+    background-color: #fff
+    padding: 48px 24px
+
+    @media(min-width: 768px)
+      padding-left: 48px
+      padding-right: 48px
+
+    @media(min-width: 960px)
+      padding-top: 128px
+      padding-bottom: 128px
+
+    @media(min-width: 1200px)
+      padding-left: 62px
+      padding-right: 62px
+
+  &__date
+    color: #7b7faa
+    margin-bottom: 24px
+
+  &__back-block
+    @media(min-width: 768px)
+      margin-top: 60px
+
+  &__prev,
+  &__next
+    display: none
+    height: 48px
+    overflow: hidden
+    position: absolute
+    top: 50%
+    transform: translateY(-50%)
+    width: 48px
+
+    @media(min-width: 960px)
+      align-items: center
+      display: flex
+
+    @media(min-width: 1200px)
+      height: 68px
+      width: 68px
+
+  &__prev
+    left: 0
+
+    @media(min-width: 1200px)
+      left: -20px
+
+    @media(min-width: 1400px)
+      left: -88px
+
+    @media(min-width: 1500px)
+      left: -128px
+
+  &__next
+    right: 0
+    text-align: right
+
+    @media(min-width: 1200px)
+      right: -20px
+
+    @media(min-width: 1400px)
+      right: -88px
+
+    @media(min-width: 1500px)
+      right: -128px
+
+  &__prev-icon,
+  &__next-icon
+    fill: #97999b
+    height: 11px
+    min-width: 68px
+    width: 68px
+
+  &__next-icon
+    margin-left: -20px
+
+    @media(min-width: 1200px)
+      margin-left: 0
+
+.tags
+  @media(min-width: 768px)
+    margin-top: 60px
+
+.tag
+  color: #a5a5a5
+  display: inline-block
+  line-height: 16px
+  margin-bottom: 10px
+  margin-right: 10px
+  padding: 10px
+  text-decoration: none
+  vertical-align: top
+  white-space: nowrap
+
+  &:hover
+    text-decoration: none
+
+  &--1
+    background-color: #e2e3eb
+
+  &--2
+    background-color: #e1eae6
+
+  &--3
+    background-color: #f4f1ef
+
+.blog-slider
+  background-color: #fff
+
+.blog-slider-nav
+  max-width: 360px
+  margin-left: auto
+  margin-right: auto
+
+  @media(min-width: 768px)
+    margin-top: -60px
+
+  @media(min-width: 1200px)
+    margin-top: -80px
+    max-width: 480px
+
+  .slick-slide
+    cursor: pointer
+    position: relative
+
+    &::before
+      background-color: #fff
+      content: ''
+      height: 100%
+      left: 0
+      opacity: 0.4
+      position: absolute
+      top: 0
+      transition: opacity 0.3s
+      width: 100%
+      z-index: 1
+
+    &.slick-current
+      &::before
+        opacity: 0

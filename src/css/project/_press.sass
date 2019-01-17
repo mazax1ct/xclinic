@@ -10,12 +10,15 @@
     margin-bottom: 0
 
 .press
-  align-items: stretch
   background-color: #fff
-  display: flex
-  min-height: 320px
+  display: block
   margin-bottom: 20px
   text-decoration: none
+
+  @media(min-width: 480px)
+    align-items: stretch
+    display: flex
+    min-height: 320px
 
   @media(min-width: 768px)
     margin-bottom: 0
@@ -39,15 +42,21 @@
     background-color: #d9dbea
     display: flex
     justify-content: center
-    min-height: 80px
-    min-width: 80px
+    min-height: 120px
+    min-width: 120px
     padding: 24px
     text-align: center
-    width: 80px
+    width: 120px
 
-    @media(min-width: 480px)
+    @media(min-width: 768px)
+      align-items: center
+      background-color: #d9dbea
+      display: flex
+      justify-content: center
       min-height: 120px
       min-width: 120px
+      padding: 24px
+      text-align: center
       width: 120px
 
     @media(min-width: 1200px)
