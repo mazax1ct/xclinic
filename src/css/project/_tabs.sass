@@ -1,0 +1,43 @@
+.tabs-nav
+  background-color: #e6e8f6
+  display: flex
+  justify-content: space-between
+  overflow-x: auto
+  position: relative
+  z-index: 1
+
+  &__button
+    border: none
+    background-color: #e6e8f6
+    cursor: pointer
+    font-size: 15px
+    height: 64px
+    padding-left: 24px
+    padding-right: 24px
+    transition: color 0.3s, background-color 0.3s
+    white-space: nowrap
+
+    @media(min-width: 960px)
+      font-size: 15px
+      height: 128px
+      padding-left: 32px
+      padding-right: 32px
+
+    &:hover,
+    &.is-active
+      background-color: #fff
+      color: #7b7faa
+
+.tab
+  background-color: #fff
+  display: none
+  padding: 24px
+
+  @media(min-width: 768px)
+    padding: 48px
+
+  @media(min-width: 1200px)
+    padding: 62px
+
+  &.is-active
+    display: block

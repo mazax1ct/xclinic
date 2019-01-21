@@ -1,0 +1,335 @@
+.rooms-list
+  @media(min-width: 768px)
+    display: flex
+    flex-wrap: wrap
+
+.room
+  background-color: #fff
+  display: block
+  margin-bottom: 20px
+  max-width: 480px
+  margin-left: auto
+  margin-right: auto
+  text-decoration: none
+
+  @media(min-width: 768px)
+    max-width: 100%
+    margin-bottom: 48px
+    width: calc(50% - 24px)
+
+  &:nth-child(even)
+    @media(min-width: 768px)
+      margin-left: 24px
+      margin-right: 0
+
+  &:nth-child(odd)
+    @media(min-width: 768px)
+      margin-right: 24px
+      margin-left: 0
+
+  &:last-child,
+  &:nth-last-child(2)
+    margin-bottom: 0
+
+  &__images
+    display: flex
+    max-height: 315px
+
+  &__main-image
+    align-items: center
+    display: flex
+    flex-grow: 1
+    justify-content: center
+    overflow: hidden
+    max-height: 315px
+
+    img
+      display: block
+      max-height: 316px
+
+  &__thumbs
+    min-width: 20.56%
+    width: 20.56%
+
+  &__thumb
+    cursor: pointer
+    position: relative
+
+    &.is-active
+      cursor: default
+
+      &::before
+        opacity: 0
+
+    &::before
+      background-color: #fff
+      content: ''
+      height: 100%
+      left: 0
+      opacity: 0.5
+      position: absolute
+      top: 0
+      width: 100%
+      z-index: 1
+
+    img
+      display: block
+
+  &__description
+    background-color: #fff
+    padding: 24px
+    text-decoration: none
+
+    @media(min-width: 960px)
+      padding: 48px
+
+  &__title
+    font-size: 18px
+    line-height: 1.2
+    margin-bottom: 28px
+
+    @media(min-width: 768px)
+      font-size: 20px
+
+    @media(min-width: 1200px)
+      font-size: 28px
+
+    a
+      text-decoration: none
+
+      &:hover
+        .room__more
+          text-decoration: none
+
+  &__area
+    color: #7c80aa
+    margin-left: 15px
+
+  &__more
+    color: #9ea1bd
+    font-size: 15px
+    text-decoration: underline
+
+    @media(min-width: 1200px)
+      font-size: 16px
+
+  &__prop
+    align-items: center
+    color: #222
+    display: flex
+    margin-bottom: 12px
+
+  &__icon
+    fill: #97999b
+    height: 20px
+    margin-right: 15px
+    width: 20px
+
+  &__bottom-block
+    margin-top: 28px
+    text-align: center
+
+    @media(min-width: 480px) and (max-width: 767px)
+      align-items: center
+      display: flex
+      justify-content: space-between
+
+    @media(min-width: 960px)
+      align-items: center
+      display: flex
+      justify-content: space-between
+
+    .button
+      max-width: 280px
+      width: 100%
+
+  &__price
+    color: #222
+    font-size: 18px
+    white-space: nowrap
+
+    @media(min-width: 480px) and (max-width: 767px)
+      margin-bottom: 0
+      margin-right: 15px
+
+    @media(min-width: 960px)
+      margin-bottom: 0
+      margin-right: 15px
+
+    @media(min-width: 1200px)
+      font-size: 20px
+
+.room-detail
+  max-width: 1920px
+  margin-left: auto
+  margin-right: auto
+  margin-bottom: 48px
+
+  @media(min-width: 1200px)
+    margin-bottom: 96px
+
+  &__top
+    @media(min-width: 960px)
+      display: flex
+
+  &__image
+    @media(min-width: 960px)
+      display: flex
+      flex-basis: 65%
+      min-width: 65%
+      position: relative
+      width: 65%
+
+    img
+      @media(min-width: 960px)
+        height: 100%
+        left: 0
+        object-fit: cover
+        object-position: center
+        top: 0
+        width: 100%
+
+  &__about
+    background-color: #fff
+
+    @media(min-width: 960px)
+      display: flex
+      flex-direction: column
+      flex-basis: 35%
+      min-width: 35%
+      width: 35%
+
+  &__description
+    display: flex
+    flex-direction: column
+    flex-grow: 1
+    padding: 24px 24px 0
+
+    @media(min-width: 1200px)
+      padding: 48px 48px 0
+
+  &__thumbs
+    display: flex
+    justify-content: center
+
+  &__thumb
+    cursor: pointer
+    position: relative
+
+    &.is-active
+      cursor: default
+
+      &::before
+        opacity: 0
+
+    &::before
+      background-color: #fff
+      content: ''
+      height: 100%
+      left: 0
+      opacity: 0.5
+      position: absolute
+      top: 0
+      width: 100%
+      z-index: 1
+
+    img
+      display: block
+
+  &__title
+    color: #222
+    font-size: 24px
+    line-height: 1.2
+    margin-bottom: 28px
+
+    @media(min-width: 768px)
+      font-size: 30px
+
+    @media(min-width: 1200px)
+      font-size: 38px
+      margin-bottom: 48px
+
+  &__area
+    color: #7c80aa
+    margin-left: 15px
+    white-space: nowrap
+
+  &__prop
+    align-items: center
+    color: #222
+    display: flex
+    margin-bottom: 12px
+
+  &__prop-icon
+    fill: #97999b
+    height: 20px
+    margin-right: 15px
+    width: 20px
+
+  &__bottom-block
+    margin-top: 28px
+    margin-bottom: 42px
+
+    .button
+      max-width: 320px
+      width: 100%
+
+  &__price
+    color: #222
+    font-size: 18px
+    margin-bottom: 28px
+
+    @media(min-width: 768px)
+      font-size: 20px
+
+    @media(min-width: 1200px)
+      font-size: 22px
+
+  &__nav
+    background-color: #fafafa
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-between
+    margin-left: -24px
+    margin-right: -24px
+    margin-top: auto
+    padding: 4px 24px
+
+    @media(min-width: 1200px)
+      margin-left: -48px
+      margin-right: -48px
+      padding: 20px 48px
+
+  &__nav-link
+    align-items: center
+    color: #97999b
+    display: inline-flex
+    padding-top: 20px
+    padding-bottom: 20px
+    text-decoration: none
+
+    &:hover
+      text-decoration: underline
+
+    &:nth-child(2)
+      margin-left: auto
+
+  &__nav-icon
+    fill: #97999b
+    height: 11px
+    width: 68px
+
+  &__text
+    background-color: #fff
+    padding: 24px
+
+    @media(min-width: 768px)
+      padding: 48px
+
+    @media(min-width: 1200px)
+      padding: 62px
+
+  &__text-inner
+    max-width: 1122px
+    margin-left: auto
+    margin-right: auto

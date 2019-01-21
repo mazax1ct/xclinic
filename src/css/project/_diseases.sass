@@ -1,0 +1,49 @@
+.diseases-list
+  @media(min-width: 768px)
+    display: flex
+    flex-wrap: wrap
+
+  &__block
+    @media(min-width: 768px)
+      flex-basis: 50%
+      min-width: 50%
+      padding-right: 25px
+      width: 50%
+
+    @media(min-width: 960px)
+      display: flex
+      flex-wrap: wrap
+
+  &__column
+    margin-bottom: 40px
+
+    @media(min-width: 960px)
+      flex-basis: 50%
+      min-width: 50%
+      padding-right: 25px
+      width: 50%
+
+  &__title
+    color: #7b7faa
+    font-size: 18px
+    margin-bottom: 20px
+
+    @media(min-width: 768px)
+      font-size: 24px
+
+  &__list
+    list-style: none
+    margin-bottom: 40px
+
+    li
+      list-style: none
+
+  &__link
+    color: #97999b
+    display: inline-block
+    padding-top: 5px
+    padding-bottom: 5px
+    text-decoration: none
+
+    &:hover
+      color: #222

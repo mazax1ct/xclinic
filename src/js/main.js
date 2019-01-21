@@ -185,7 +185,7 @@ $(document).ready(function() {
     });
   }
 
-  //слайдер "x-клиника сегодня"
+  //слайдер "о клинике"
   if ($('.js-about-slider').length) {
     $('.js-about-slider').slick({
       auto: false,
@@ -269,4 +269,48 @@ $(document).ready(function() {
     });
   }
 
+  //переключение картинок номеров в списке
+  $('.room__thumbs .room__thumb').click(function() {
+    $(this).parent('.room__thumbs').children('.room__thumb').removeClass('is-active');
+    $(this).addClass('is-active');
+    $(this).parent('.room__thumbs').siblings('.room__main-image').find('img').attr('src', $(this).attr('data-image'));
+  });
+
+  //переключение картинок номера в деталке
+  $('.room-detail__thumbs .room-detail__thumb').click(function() {
+    $(this).parent('.room-detail__thumbs').children('.room-detail__thumb').removeClass('is-active');
+    $(this).addClass('is-active');
+    $('.room-detail__image').find('img').attr('src', $(this).attr('data-image'));
+  });
+
+  //главный баннер-слайдер
+  if ($('.js-reviews-slider').length) {
+    $('.js-reviews-slider').slick({
+      auto: false,
+      mobileFirst: true,
+      slidesToShow: 1,
+      infinite: true,
+      edgeFriction: 0,
+      arrows: false,
+      dots: true,
+      responsive: [
+        {
+          breakpoint: 1199,
+          settings: {
+            arrows: true,
+            prevArrow: '<button type="button" class="slick-prev" title="Назад"><svg class="slick-prev__icon" aria-hidden="true"><use xlink:href="#arrow_left"/></svg></button>',
+            nextArrow: '<button type="button" class="slick-next" title="Вперед"><svg class="slick-next__icon" aria-hidden="true"><use xlink:href="#arrow_right"/></svg></button>'
+          }
+        }
+      ]
+    });
+  }
+
+  //переключение табов болезней
+  $('.js-tab').on('click', function() {
+    $(".js-tab").removeClass("is-active");
+    $(this).addClass("is-active");
+    $('.tab').removeClass("is-active");
+    $('.tab[data-type=' + $(this).attr("data-type") + ']').addClass("is-active");
+  });
 });

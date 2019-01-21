@@ -5,6 +5,9 @@
     display: flex
     margin-bottom: 48px
 
+  &:last-child
+    margin-bottom: 0
+
   &--reverse
     @media(min-width: 600px)
       flex-direction: row-reverse
@@ -29,6 +32,7 @@
 
     img
       border-radius: 50%
+      display: inline-block
 
   &__author-name
     font-size: 17px
@@ -69,3 +73,39 @@
 
     @media(min-width: 768px)
       font-size: 24px
+
+.reviews-slider
+  margin-bottom: 80px
+
+  @media(min-width: 768px)
+    margin-bottom: 160px
+
+  .slick-dots
+    bottom: -54px
+    display: flex
+    justify-content: center
+
+    @media(min-width: 768px)
+      bottom: -105px
+
+  .slick-prev
+    left: -24px
+
+    @media(min-width: 1400px)
+      left: -88px
+
+    @media(min-width: 1500px)
+      left: -128px
+
+  .slick-next
+    right: -24px
+
+    @media(min-width: 1400px)
+      right: -88px
+
+    @media(min-width: 1500px)
+      right: -128px
+
+  .slick-prev__icon,
+  .slick-next__icon
+    fill: #7b7faa
