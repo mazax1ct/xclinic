@@ -80,22 +80,50 @@
 
 .programs-list
   position: relative
-  max-width: 960px
-  margin-left: auto
-  margin-right: auto
 
-  @media(min-width: 640px)
+  //@media(max-width: 639px)
+    margin-left: auto
+    margin-right: auto
+    max-width: 480px
+
+  @media(min-width: 480px)
     display: flex
     flex-wrap: wrap
 
-  @media(min-width: 1200px)
-    max-width: 1440px
-    padding-left: calc(100% / 3)
+  &--main
+    max-width: 960px
+    margin-left: auto
+    margin-right: auto
+
+    @media(min-width: 1200px)
+      max-width: 1440px
+      padding-left: calc(100% / 3)
+
+    .program
+      &:last-child
+        @media(min-width: 1200px)
+          left: 0
+          position: absolute
+          top: 320px
+          width: calc(100% / 3)
+
+      &--big
+        @media(min-width: 960px)
+          width: 100%
+
+        .program__image
+          @media(min-width: 960px)
+            height: auto
+            object-fit: initial
+            position: relative
+
+      &--small
+        @media(min-width: 960px)
+          width: 50%
 
 .program
   color: #fff
   display: block
-  max-width: 480px
   margin-left: auto
   margin-right: auto
   overflow: hidden
@@ -110,7 +138,16 @@
       text-decoration: underline
 
   &--big
-    max-width: 960px
+
+    @media(max-width: 479px)
+      height: 0
+      padding-bottom: 100%
+
+    @media(min-width: 640px)
+      max-width: 960px
+
+    @media(min-width: 960px)
+      width: calc(100% / 3 * 2)
 
     .program__inner
       @media(min-width: 768px)
@@ -121,25 +158,51 @@
         padding-left: 62px
         padding-right: 62px
 
+    .program__image
+      @media(max-width: 479px)
+        height: 100%
+        left: 0
+        object-fit: cover
+        position: absolute
+        top: 0
+        width: 100%
+
+      @media(min-width: 960px)
+        height: 100%
+        left: 0
+        object-fit: cover
+        position: absolute
+        top: 0
+        width: 100%
+
     .program__type
       @media(min-width: 768px)
         margin-bottom: 100px
 
     .program__title
-      @media(min-width: 768px)
-        font-size: 37px
+      @media(min-width: 640px)
+        font-size: 34px
         line-height: 1.4
 
   &--small
-    @media(min-width: 640px)
+    @media(min-width: 480px)
       width: 50%
 
+    @media(min-width: 960px)
+      width: calc(100% / 3)
+
+    & + .program--big
+      @media(max-width: 959px)
+        order: -1
+
     .program__inner
+      @media(min-width: 480px) and (max-width: 768px)
+        padding: 24px
+  
       @media(min-width: 960px)
         background-color: #fff
-        height: 320px
+        height: 260px
         position: static
-        padding: 62px
 
     .program__type
       @media(min-width: 960px)
@@ -155,14 +218,8 @@
       @media(min-width: 960px)
         fill: #7c80aa
 
-  &:last-child
-    @media(min-width: 1200px)
-      left: 0
-      position: absolute
-      top: 320px
-      width: calc(100% / 3)
-
   &__inner
+    background-color: rgba(0,0,0,0.1)
     display: flex
     flex-direction: column
     height: 100%
@@ -178,7 +235,7 @@
     margin-bottom: 40px
 
   &__title
-    font-size: 30px
+    font-size: 20px
     line-height: 1.2
 
     @media(min-width: 768px)
