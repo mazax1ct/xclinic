@@ -1,0 +1,464 @@
+.tarifs
+  background-color: #fff
+  margin-bottom: 40px
+  padding: 24px
+
+  @media(min-width: 768px)
+    margin-bottom: 80px
+    padding: 48px
+
+  &__inner
+    @media(min-width: 768px)
+      display: flex
+      margin-left: -5px
+      margin-right: -5px
+
+    @media(min-width: 1200px)
+      margin-left: -10px
+      margin-right: -10px
+
+  &__column
+    margin-bottom: 40px
+
+    @media(min-width: 768px)
+      font-size: 13px
+      margin-bottom: 0
+      padding-left: 5px
+      padding-right: 5px
+      width: 25%
+
+    @media(min-width: 960px)
+      font-size: 15px
+
+    @media(min-width: 1200px)
+      font-size: 16px
+      padding-left: 10px
+      padding-right: 10px
+
+    &--labels
+      display: none
+
+      @media(min-width: 768px)
+        display: block
+
+  &__column-title
+    align-items: center
+    color: #fff
+    display: flex
+    font-size: 16px
+    justify-content: center
+    min-height: 80px
+    margin-bottom: 0
+    padding-left: 12px
+    padding-right: 12px
+
+    @media(min-width: 768px)
+      font-size: 15px
+
+    @media(min-width: 960px)
+      min-height: 120px
+
+    @media(min-width: 1200px)
+      font-size: 18px
+
+    &--standart
+      background-color: #7b7faa
+
+    &--premium
+      background-color: #9bb8ac
+
+    &--vip
+      background-color: #dbd2cb
+      font-weight: 700
+
+  &__cells
+    &--labels
+      .tarifs__cell
+        &:nth-child(even)
+          background-color: #fbfbfc
+
+    &--features
+      .tarifs__cell
+        align-items: center
+        display: flex
+        justify-content: space-between
+
+        @media(min-width: 768px)
+          justify-content: center
+
+    &--standart
+      background-color: #f9fafd
+
+      .tarifs__cell
+        &:nth-child(even)
+          background-color: #f5f6fa
+
+      .tarifs__check
+        fill: #7b7faa
+
+      .tarifs__minus
+        color: #7b7faa
+
+    &--premium
+      background-color: #f5f8f7
+
+      .tarifs__cell
+        &:nth-child(even)
+          background-color: #f0f5f3
+
+      .tarifs__check
+        fill: #9bb8ac
+
+      .tarifs__minus
+        color: #9bb8ac
+
+    &--vip
+      background-color: #f8f6f5
+
+      .tarifs__cell
+        &:nth-child(even)
+          background-color: #f5f2f1
+
+      .tarifs__check
+        fill: #bbada3
+
+      .tarifs__minus
+        color: #bbada3
+
+  &__cell
+    align-items: center
+    display: flex
+    color: #222
+    line-height: 1.3
+    min-height: 80px
+    margin-bottom: 0
+    padding-left: 12px
+    padding-right: 12px
+
+  &__cell-label
+    margin-right: 12px
+
+    @media(min-width: 768px)
+      display: none
+
+  &__check
+    height: 20px
+    min-width: 20px
+    width: 20px
+
+  &__minus
+    min-width: 20px
+    text-align: center
+
+  &__radio-block
+    text-align: center
+    padding: 24px
+
+  &__radio-label
+    align-items: center
+    border: 1px solid #7b7faa
+    color: #7b7faa
+    cursor: pointer
+    display: inline-flex
+    font-size: 18px
+    justify-content: center
+    height: 80px
+    max-width: 320px
+    text-align: center
+    transition: background-color 0.3s, color 0.3s
+    width: 100%
+
+    @media(min-width: 768px) and (max-width: 959px)
+      font-size: 16px
+
+    &:hover
+      background-color: #7b7faa
+      color: #fff
+
+  &__radio
+    display: none
+
+    &:checked
+      & + .tarifs__radio-text
+        display: none
+
+      & ~ .tarifs__radio-checked-text
+        display: flex
+
+  &__radio-text
+    align-items: center
+    display: flex
+    height: 100%
+    justify-content: center
+    min-height: 80px
+    width: 100%
+
+  &__radio-checked-text
+    align-items: center
+    background-color: #7b7faa
+    color: #fff
+    display: none
+    height: 100%
+    justify-content: center
+    min-height: 80px
+    width: 100%
+
+.residence
+  background-color: #fff
+  margin-bottom: 40px
+  padding: 24px
+
+  @media(min-width: 768px)
+    display: flex
+    margin-bottom: 80px
+    padding: 48px
+
+  &__duration-block
+    margin-bottom: 40px
+
+    @media(min-width: 768px)
+      min-width: 30%
+      margin-bottom: 0
+      padding-right: 24px
+
+  &__rooms-block
+    @media(min-width: 768px)
+      padding-left: 24px
+
+  &__title
+    color: #222
+    font-size: 16px
+
+    @media(min-width: 1200px)
+      font-size: 18px
+
+.rooms
+  display: flex
+  flex-wrap: wrap
+  margin-left: -5px
+  margin-right: -5px
+
+  &__item
+    margin-bottom: 10px
+    padding-left: 5px
+    padding-right: 5px
+    width: 50%
+
+    @media(min-width: 768px)
+      margin-bottom: 0
+      width: 25%
+
+.room-radio
+  max-width: 210px
+  position: relative
+
+  &__label
+    cursor: pointer
+    display: block
+    padding-bottom: 80px
+    position: relative
+    z-index: 2
+
+    &:hover
+      .room-radio__image-caption
+        display: flex
+
+  &__radio
+    display: none
+
+    &:checked
+      & ~ .room-radio__link
+        z-index: 3
+
+      & + .room-radio__label .room-radio__image-block .room-radio__image-caption
+        display: flex
+
+      & + .room-radio__label .room-radio__title
+        display: none
+
+  &__image-block
+    display: block
+    position: relative
+
+  &__image-caption
+    align-items: center
+    background-color: rgba(123, 127, 170, 0.7)
+    color: #fff
+    display: none
+    flex-direction: column
+    height: 100%
+    justify-content: center
+    left: 0
+    position: absolute
+    top: 0
+    width: 100%
+
+  &__image-caption-check
+    fill: #fff
+    height: 20px
+    margin-bottom: 20px
+    width: 20px
+
+  &__title
+    align-items: center
+    background-color: #f9fafd
+    bottom: 0
+    color: #222
+    display: flex
+    font-size: 16px
+    height: 80px
+    justify-content: center
+    left: 0
+    position: absolute
+    top: auto
+    text-decoration: none
+    text-transform: uppercase
+    width: 100%
+
+  &__link
+    align-items: center
+    background-color: #adb0cb
+    bottom: 0
+    color: #fff
+    display: flex
+    height: 80px
+    justify-content: center
+    left: 0
+    position: absolute
+    top: auto
+    text-decoration: none
+    width: 100%
+    z-index: 1
+
+.result-form
+  background-color: #fff
+  margin-bottom: 40px
+  padding: 24px
+
+  @media(min-width: 768px)
+    margin-bottom: 80px
+    padding: 48px
+
+  &__inner
+    @media(min-width: 768px)
+      display: flex
+
+  &__title
+    color: #222
+    font-size: 20px
+
+    @media(min-width: 768px)
+      font-size: 26px
+
+    @media(min-width: 1200px)
+      font-size: 30px
+
+  &__block
+    margin-bottom: 40px
+
+    @media(min-width: 768px)
+      margin-bottom: 0
+      width: 50%
+
+    &:first-child
+      @media(min-width: 768px)
+        padding-right: 24px
+
+    &:last-child
+      margin-bottom: 0
+
+      @media(min-width: 768px)
+        padding-left: 24px
+
+  &__subtitle
+    color: #222
+
+  &__options
+    margin-bottom: 40px
+
+  &__option
+    align-items: center
+    display: flex
+    font-size: 13px
+    justify-content: space-between
+    line-height: 1.3
+    min-height: 80px
+    margin-bottom: 0
+    padding: 12px
+
+    @media(min-width: 480px)
+      font-size: 15px
+
+    @media(min-width: 1200px)
+      font-size: 16px
+
+    &:nth-child(even)
+      background-color: #fbfbfc
+
+  &__option-title
+    margin-right: 15px
+
+    @media(min-width: 1200px)
+      align-items: center
+      display: flex
+
+  &__option-icon
+    fill: #7b7faa
+    display: none
+    height: 20px
+    min-width: 20px
+    margin-right: 15px
+    width: 20px
+
+    @media(min-width: 1200px)
+      display: block
+
+  &__option-price
+    color: #222
+    white-space: nowrap
+
+  &__label
+    display: block
+    margin-bottom: 10px
+
+  &__button
+    width: 100%
+
+.datepicker-label
+  display: flex
+  max-width: 320px
+
+  &__button
+    align-items: center
+    background-color: #e6e8f6
+    cursor: pointer
+    display: flex
+    justify-content: center
+    padding: 0
+    height: 60px
+    min-width: 60px
+    text-align: center
+    width: 60px
+
+  &__button-icon
+    fill: #7b7faa
+    height: 20px
+    width: 20px
+
+.datepicker-here
+  background-color: #fbfbfc
+  border: 1px solid #fff
+  box-shadow: none
+  border-radius: 0
+  color: #97999b
+  font-size: 15px
+  height: 60px
+  line-height: 26px
+  padding: 17px 30px
+  transition: border-color 0.3s, background-color 0.3s
+  width: 180px
+
+  &:hover,
+  &:focus
+    border-color: #b8b8b8
+    box-shadow: none

@@ -313,4 +313,22 @@ $(document).ready(function() {
     $('.tab').removeClass("is-active");
     $('.tab[data-type=' + $(this).attr("data-type") + ']').addClass("is-active");
   });
+
+  //открытие попапа
+  if ($("[data-fancybox='form-popup']").length) {
+    $("[data-fancybox='form-popup']").fancybox({
+      touch: false,
+      infobar: false,
+      smallBtn: false,
+      buttons: ["close"],
+      animationEffect: false,
+      arrows: false,
+      btnTpl: {
+        close:
+      '<button data-fancybox-close class="fancybox-button fancybox-button--close" title="Закрыть">' +
+      '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 10.6L6.6 5.2 5.2 6.6l5.4 5.4-5.4 5.4 1.4 1.4 5.4-5.4 5.4 5.4 1.4-1.4-5.4-5.4 5.4-5.4-1.4-1.4-5.4 5.4z"/></svg>' +
+      "</button>",
+      }
+    });
+  }
 });

@@ -1,11 +1,12 @@
 .checkbox-label,
 .radio-label
+  color: #222
   display: block
-  font-size: 14px
-  font-weight: 500
+  line-height: 1.75
   margin-bottom: 20px
+  min-height: 28px
   position: relative
-  padding-left: 30px
+  padding-left: 38px
   transition: color 0.3s
 
   &:last-child
@@ -19,7 +20,7 @@
     outline: 1px dotted inherit
 
     input[type="checkbox"]:checked + .checkbox-icon,
-    input[type="radio"]:checked + .radio-icon
+    input[type="radio"]:checked + .radio-icon::after
       background-color: #c8962c
 
   input[type="checkbox"],
@@ -28,27 +29,34 @@
 
 .checkbox-icon,
 .radio-icon
-  border: 2px solid #b8b8b8
-  background-color: #b8b8b8
+  border: 2px solid #7b7faa
+  background-color: #e6e8f6
   cursor: pointer
   display: inline-block
-  height: 13px
+  height: 28px
   left: 0
   position: absolute
-  top: 3px
+  top: 0
   transition: background-color 0.3s
   vertical-align: middle
-  width: 13px
-
-  @media(min-width: 1200px)
-    top: 6px
+  width: 28px
 
 .radio-icon
   border-radius: 50%
 
+  &::after
+    border-radius: 50%
+    content: ""
+    height: 6px
+    left: 50%
+    position: absolute
+    top: 50%
+    transform: translate(-50%, -50%)
+    width: 6px
+
 input[type="checkbox"]:checked + .checkbox-icon,
-input[type="radio"]:checked + .radio-icon
-  background-color: #343835
+input[type="radio"]:checked + .radio-icon::after
+  background-color: #7b7faa
 
 .checkbox-text,
 .radio-text

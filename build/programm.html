@@ -74,6 +74,26 @@
         <path d="M15,15.6c0,3.1-2.5,5.6-5.6,5.6"/>
       </g>
     </symbol>
+    <symbol id="check" viewBox="0 0 20 20">
+      <polygon points="20,0 5,15 0,10 0,15 5,20 20,5"/>
+    </symbol>
+    <symbol id="calendar" viewBox="0 0 20 18.2">
+      <g>
+    		<rect y="0" width="20" height="4"/>
+    		<rect y="6" width="3.3" height="3.3"/>
+    		<rect y="10.4" width="3.3" height="3.3"/>
+    		<rect y="14.9" width="3.3" height="3.3"/>
+    		<rect x="5.6" y="6" width="3.3" height="3.3"/>
+    		<rect x="5.6" y="10.4" width="3.3" height="3.3"/>
+    		<rect x="5.6" y="14.9" width="3.3" height="3.3"/>
+    		<rect x="11.1" y="6" width="3.3" height="3.3"/>
+    		<rect x="11.1" y="10.4" width="3.3" height="3.3"/>
+    		<rect x="11.1" y="14.9" width="3.3" height="3.3"/>
+    		<rect x="16.7" y="6" width="3.3" height="3.3"/>
+    		<rect x="16.7" y="10.4" width="3.3" height="3.3"/>
+    		<rect x="16.7" y="14.9" width="3.3" height="3.3"/>
+    	</g>
+    </symbol>
   </svg>
   <div class="wrapper">
     <header class="header">
@@ -175,6 +195,224 @@
             <p>Nulla faucibus nec orci sit amet ornare. Aliquam interdum tempor scelerisque. Fusce sed dignissim ipsum. In tempus velit at purus cursus rhoncus. Vivamus tincidunt lectus sed magna laoreet finibus. Quisque efficitur iaculis eros at eleifend.</p>
           </div>
         </div>
+        <form action="">
+          <div class="tarifs">
+            <div class="tarifs__inner">
+              <div class="tarifs__column tarifs__column--labels">
+                <p class="tarifs__column-title"></p>
+                <div class="tarifs__cells tarifs__cells--labels">
+                  <p class="tarifs__cell">Sed et risus nec velit dignissim auctor</p>
+                  <p class="tarifs__cell">Vivamus tincidunt lectus</p>
+                  <p class="tarifs__cell">Vivamus tincidunt lectus</p>
+                  <p class="tarifs__cell">Vivamus tincidunt lectus</p>
+                  <p class="tarifs__cell">Vivamus tincidunt lectus</p>
+                  <p class="tarifs__cell">Vivamus tincidunt lectus</p>
+                  <p class="tarifs__cell">Vivamus tincidunt lectus</p>
+                  <p class="tarifs__cell">Vivamus tincidunt lectus</p>
+                  <p class="tarifs__cell">Vivamus tincidunt lectus</p>
+                  <p class="tarifs__cell">Vivamus tincidunt lectus</p>
+                </div>
+              </div>
+              <div class="tarifs__column">
+                <p class="tarifs__column-title tarifs__column-title--standart">Пакет «Стандарт»</p>
+                <div class="tarifs__cells tarifs__cells--features  tarifs__cells--standart">
+                  <p class="tarifs__cell"><span class="tarifs__cell-label">Sed et risus nec velit dignissim auctor</span> <svg class="tarifs__check" aria-hidden="true"><use xlink:href="#check"/></svg></p>
+                  <p class="tarifs__cell"><span class="tarifs__cell-label">Vivamus tincidunt lectus</span> <svg class="tarifs__check" aria-hidden="true"><use xlink:href="#check"/></svg></p>
+                  <p class="tarifs__cell"><span class="tarifs__cell-label">Vivamus tincidunt lectus</span> <svg class="tarifs__check" aria-hidden="true"><use xlink:href="#check"/></svg></p>
+                  <p class="tarifs__cell"><span class="tarifs__cell-label">Vivamus tincidunt lectus</span> <span class="tarifs__minus">&mdash;</span></p>
+                  <p class="tarifs__cell"><span class="tarifs__cell-label">Vivamus tincidunt lectus</span> <span class="tarifs__minus">&mdash;</span></p>
+                  <p class="tarifs__cell"><span class="tarifs__cell-label">Vivamus tincidunt lectus</span> <span class="tarifs__minus">&mdash;</span></p>
+                  <p class="tarifs__cell"><span class="tarifs__cell-label">Vivamus tincidunt lectus</span> <svg class="tarifs__check" aria-hidden="true"><use xlink:href="#check"/></svg></p>
+                  <p class="tarifs__cell"><span class="tarifs__cell-label">Vivamus tincidunt lectus</span> <span class="tarifs__minus">&mdash;</span></p>
+                  <p class="tarifs__cell"><span class="tarifs__cell-label">Vivamus tincidunt lectus</span> <span class="tarifs__minus">&mdash;</span></p>
+                  <p class="tarifs__cell"><span class="tarifs__cell-label">Vivamus tincidunt lectus</span> <span class="tarifs__minus">&mdash;</span></p>
+                  <div class="tarifs__radio-block">
+                    <label class="tarifs__radio-label" for="standart">
+                      <input id="standart" class="tarifs__radio" name="tarif" type="radio" value="standart">
+                      <span class="tarifs__radio-text">Выбрать</span>
+                      <span class="tarifs__radio-checked-text">Выбрано</span>
+                    </label>
+                  </div>
+                </div>
+              </div>
+              <div class="tarifs__column">
+                <p class="tarifs__column-title tarifs__column-title--premium">Пакет «Премиум»</p>
+                <div class="tarifs__cells tarifs__cells--features  tarifs__cells--premium">
+                  <p class="tarifs__cell"><span class="tarifs__cell-label">Vivamus tincidunt lectus</span> <svg class="tarifs__check" aria-hidden="true"><use xlink:href="#check"/></svg></p>
+                  <p class="tarifs__cell"><span class="tarifs__cell-label">Vivamus tincidunt lectus</span> <svg class="tarifs__check" aria-hidden="true"><use xlink:href="#check"/></svg></p>
+                  <p class="tarifs__cell"><span class="tarifs__cell-label">Vivamus tincidunt lectus</span> <svg class="tarifs__check" aria-hidden="true"><use xlink:href="#check"/></svg></p>
+                  <p class="tarifs__cell"><span class="tarifs__cell-label">Vivamus tincidunt lectus</span> <svg class="tarifs__check" aria-hidden="true"><use xlink:href="#check"/></svg></p>
+                  <p class="tarifs__cell"><span class="tarifs__cell-label">Vivamus tincidunt lectus</span> <svg class="tarifs__check" aria-hidden="true"><use xlink:href="#check"/></svg></p>
+                  <p class="tarifs__cell"><span class="tarifs__cell-label">Vivamus tincidunt lectus</span> <svg class="tarifs__check" aria-hidden="true"><use xlink:href="#check"/></svg></p>
+                  <p class="tarifs__cell"><span class="tarifs__cell-label">Vivamus tincidunt lectus</span> <svg class="tarifs__check" aria-hidden="true"><use xlink:href="#check"/></svg></p>
+                  <p class="tarifs__cell"><span class="tarifs__cell-label">Vivamus tincidunt lectus</span> <span class="tarifs__minus">&mdash;</span></p>
+                  <p class="tarifs__cell"><span class="tarifs__cell-label">Vivamus tincidunt lectus</span> <span class="tarifs__minus">&mdash;</span></p>
+                  <p class="tarifs__cell"><span class="tarifs__cell-label">Vivamus tincidunt lectus</span> <span class="tarifs__minus">&mdash;</span></p>
+                  <div class="tarifs__radio-block">
+                    <label class="tarifs__radio-label" for="premium">
+                      <input id="premium" class="tarifs__radio" name="tarif" type="radio" value="premium">
+                      <span class="tarifs__radio-text">Выбрать</span>
+                      <span class="tarifs__radio-checked-text">Выбрано</span>
+                    </label>
+                  </div>
+                </div>
+              </div>
+              <div class="tarifs__column">
+                <p class="tarifs__column-title tarifs__column-title--vip">Пакет «VIP»</p>
+                <div class="tarifs__cells tarifs__cells--features  tarifs__cells--vip">
+                  <p class="tarifs__cell"><span class="tarifs__cell-label">Vivamus tincidunt lectus</span> <svg class="tarifs__check" aria-hidden="true"><use xlink:href="#check"/></svg></p>
+                  <p class="tarifs__cell"><span class="tarifs__cell-label">Vivamus tincidunt lectus</span> <svg class="tarifs__check" aria-hidden="true"><use xlink:href="#check"/></svg></p>
+                  <p class="tarifs__cell"><span class="tarifs__cell-label">Vivamus tincidunt lectus</span> <svg class="tarifs__check" aria-hidden="true"><use xlink:href="#check"/></svg></p>
+                  <p class="tarifs__cell"><span class="tarifs__cell-label">Vivamus tincidunt lectus</span> <svg class="tarifs__check" aria-hidden="true"><use xlink:href="#check"/></svg></p>
+                  <p class="tarifs__cell"><span class="tarifs__cell-label">Vivamus tincidunt lectus</span> <svg class="tarifs__check" aria-hidden="true"><use xlink:href="#check"/></svg></p>
+                  <p class="tarifs__cell"><span class="tarifs__cell-label">Vivamus tincidunt lectus</span> <svg class="tarifs__check" aria-hidden="true"><use xlink:href="#check"/></svg></p>
+                  <p class="tarifs__cell"><span class="tarifs__cell-label">Vivamus tincidunt lectus</span> <svg class="tarifs__check" aria-hidden="true"><use xlink:href="#check"/></svg></p>
+                  <p class="tarifs__cell"><span class="tarifs__cell-label">Vivamus tincidunt lectus</span> <svg class="tarifs__check" aria-hidden="true"><use xlink:href="#check"/></svg></p>
+                  <p class="tarifs__cell"><span class="tarifs__cell-label">Vivamus tincidunt lectus</span> <svg class="tarifs__check" aria-hidden="true"><use xlink:href="#check"/></svg></p>
+                  <p class="tarifs__cell"><span class="tarifs__cell-label">Vivamus tincidunt lectus</span> <svg class="tarifs__check" aria-hidden="true"><use xlink:href="#check"/></svg></p>
+                  <div class="tarifs__radio-block">
+                    <label class="tarifs__radio-label" for="vip">
+                      <input id="vip" class="tarifs__radio" name="tarif" type="radio" value="vip">
+                      <span class="tarifs__radio-text">Выбрать</span>
+                      <span class="tarifs__radio-checked-text">Выбрано</span>
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="residence">
+            <div class="residence__duration-block">
+              <p class="residence__title">Длительность пребывания</p>
+              <label class="radio-label" for="duration_7">
+                <input id="duration_7" name="duration" type="radio" value="7" checked>
+                <span class="radio-icon"></span>
+                <span class="radio-text">7 дней</span>
+              </label>
+              <label class="radio-label" for="duration_14">
+                <input id="duration_14" name="duration" type="radio" value="14">
+                <span class="radio-icon"></span>
+                <span class="radio-text">14 дней</span>
+              </label>
+              <label class="radio-label" for="duration_21">
+                <input id="duration_21" name="duration" type="radio" value="21">
+                <span class="radio-icon"></span>
+                <span class="radio-text">21 день</span>
+              </label>
+            </div>
+            <div class="residence__rooms-block">
+              <p class="residence__title">Варианты размещения</p>
+              <div class="rooms">
+                <div class="rooms__item">
+                  <div class="room-radio">
+                    <input id="room_standart" class="room-radio__radio" name="room" type="radio" value="room_standart" checked>
+                    <label class="room-radio__label" for="room_standart">
+                      <span class="room-radio__image-block">
+                        <img src="images/content/img_126.jpg" alt="">
+                        <span class="room-radio__image-caption">
+                          <svg class="room-radio__image-caption-check" aria-hidden="true"><use xlink:href="#check"/></svg>
+                          СТАНДАРТ
+                        </span>
+                      </span>
+                      <span class="room-radio__title">СТАНДАРТ</span>
+                    </label>
+                    <a class="room-radio__link" href="rooms-detail.html" target="_blank">Подробнее</a>
+                  </div>
+                </div>
+                <div class="rooms__item">
+                  <div class="room-radio">
+                    <input id="room_comfort" class="room-radio__radio" name="room" type="radio" value="room_comfort">
+                    <label class="room-radio__label" for="room_comfort">
+                      <span class="room-radio__image-block">
+                        <img src="images/content/img_127.jpg" alt="">
+                        <span class="room-radio__image-caption">
+                          <svg class="room-radio__image-caption-check" aria-hidden="true"><use xlink:href="#check"/></svg>
+                          КОМФОРТ
+                        </span>
+                      </span>
+                      <span class="room-radio__title">КОМФОРТ</span>
+                    </label>
+                    <a class="room-radio__link" href="rooms-detail.html" target="_blank">Подробнее</a>
+                  </div>
+                </div>
+                <div class="rooms__item">
+                  <div class="room-radio">
+                    <input id="room_semilux" class="room-radio__radio" name="room" type="radio" value="room_semilux">
+                    <label class="room-radio__label" for="room_semilux">
+                      <span class="room-radio__image-block">
+                        <img src="images/content/img_128.jpg" alt="">
+                        <span class="room-radio__image-caption">
+                          <svg class="room-radio__image-caption-check" aria-hidden="true"><use xlink:href="#check"/></svg>
+                          ПОЛУЛЮКС
+                        </span>
+                      </span>
+                      <span class="room-radio__title">ПОЛУЛЮКС</span>
+                    </label>
+                    <a class="room-radio__link" href="rooms-detail.html" target="_blank">Подробнее</a>
+                  </div>
+                </div>
+                <div class="rooms__item">
+                  <div class="room-radio">
+                    <input id="room_lux" class="room-radio__radio" name="room" type="radio" value="room_lux">
+                    <label class="room-radio__label" for="room_lux">
+                      <span class="room-radio__image-block">
+                        <img src="images/content/img_129.jpg" alt="">
+                        <span class="room-radio__image-caption">
+                          <svg class="room-radio__image-caption-check" aria-hidden="true"><use xlink:href="#check"/></svg>
+                          ЛЮКС
+                        </span>
+                      </span>
+                      <span class="room-radio__title">ЛЮКС</span>
+                    </label>
+                    <a class="room-radio__link" href="rooms-detail.html" target="_blank">Подробнее</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="result-form">
+            <p class="result-form__title">Вы выбрали</p>
+            <div class="result-form__inner">
+              <div class="result-form__block">
+                <div class="result-form__options">
+                  <p class="result-form__option">
+                    <span class="result-form__option-title"><svg class="result-form__option-icon" aria-hidden="true"><use xlink:href="#check"/></svg> Программа «Полное восстановление организма» - пакет «Стандарт»</span>
+                    <span class="result-form__option-price">121 000 р</span>
+                  </p>
+                  <p class="result-form__option">
+                    <span class="result-form__option-title"><svg class="result-form__option-icon" aria-hidden="true"><use xlink:href="#check"/></svg> Размещение «Комфорт» на 14 дней</span>
+                    <span class="result-form__option-price">11 000 р</span>
+                  </p>
+                  <p class="result-form__option">
+                    <span class="result-form__option-title">Общая стоимость </span>
+                    <span class="result-form__option-price">132 000 р</span>
+                  </p>
+                </div>
+                <p class="result-form__subtitle">Выберите желаемую дату заезда:</p>
+                <label class="datepicker-label" for="datepicker">
+                  <input id="datepicker" type='text' class="datepicker-here" />
+                  <span class="datepicker-label__button"><svg class="datepicker-label__button-icon" aria-hidden="true"><use xlink:href="#calendar"/></svg></span>
+                </label>
+              </div>
+              <div class="result-form__block">
+                <p class="result-form__subtitle">Пожалуйста, укажите ваши контактные данные:</p>
+                <label class="result-form__label" for="name">
+                  <input id="name" class="input input--dark" name="name" type="text" value="" placeholder="Имя">
+                </label>
+                <label class="result-form__label" for="phone">
+                  <input id="phone" class="input input--dark" name="phone" type="text" value="" placeholder="Телефон">
+                </label>
+                <label class="result-form__label" for="email">
+                  <input id="email" class="input input--dark" name="email" type="text" value="" placeholder="E-mail">
+                </label>
+                <div class="result-form__label">
+                  <button class="result-form__button button button--dark" type="submit">Забронировать</button>
+                </div>
+                <a class="result-form__button button button--bordered" href="#form" data-fancybox="form-popup">Получить консультацию</a>
+              </div>
+            </div>
+          </div>
+        </form>
         <div class="js-reviews-slider reviews-slider">
           <div>
             <div class="review">
@@ -257,6 +495,24 @@
       </nav>
     </div>
   </div>
+  <div id="form" class="form-popup">
+    <p class="form-popup__title">Заполните поля:</p>
+    <p>Наш менеджер свяжется с вами для консультации.</p>
+    <form action="/">
+      <label class="form-popup__label" for="name_cons">
+        <input id="name_cons" class="input input--dark" name="name_cons" type="text" value="" placeholder="Имя" tabindex="-1">
+      </label>
+      <label class="form-popup__label" for="phone_cons">
+        <input id="phone_cons" class="input input--dark" name="phone_cons" type="text" value="" placeholder="Телефон">
+      </label>
+      <label class="form-popup__label" for="email_cons">
+        <input id="email_cons" class="input input--dark" name="email_cons" type="text" value="" placeholder="E-mail">
+      </label>
+      <div class="form-popup__label">
+        <button class="form-popup__button button button--dark" type="submit">Отправить</button>
+      </div>
+    </form>
+  </div>
   <footer class="footer">
     <div class="footer__inner">
       <div class="footer__top">
@@ -325,6 +581,40 @@
   <script type="text/javascript" src="js/main.js"></script>
   <script type="text/javascript" src="js/jquery.fancybox.min.js"></script>
   <script type="text/javascript" src="js/slick.min.js"></script>
+  <script type="text/javascript" src="js/datepicker.min.js"></script>
+
+  <script>
+    var todayDate = new Date(Date.now()); //сегодня
+    var selectedDate = new Date(Date.now() + 24*60*60*1000); //завтра
+    var daysInterval = 7; //период в днях
+    var initCal = false;
+
+    $('#datepicker').datepicker({
+      position: "bottom left",
+      moveToOtherMonthsOnSelect: false,
+      minDate: selectedDate,
+      onSelect: function(formattedDate, date, inst) {
+        selectedDate = date;
+        initCal = true;
+        inst.update();
+      },
+
+      onRenderCell: function(date, cellType) {
+        if (initCal == true && cellType == 'day' && date.getTime() >= selectedDate.getTime() && (date.getTime() < selectedDate.getTime() + daysInterval*24*60*60*1000)) {
+          return {
+            classes: '-interval-class-'
+          }
+        }
+      }
+    });
+
+    var datepicker = $('#datepicker').datepicker().data('datepicker');
+
+    $(document).on("change", "input[name=duration]", function(){
+      daysInterval = parseInt($(this).val());
+      datepicker.update();
+    });
+  </script>
 </body>
 
 </html>
