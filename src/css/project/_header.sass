@@ -21,18 +21,32 @@
     position: relative
 
   &__phone-block
-    display: none
+    //display: none
     line-height: 1
+    left: auto
+    position: absolute
+    right: 105px
+    top: 50%
+    transform: translateY(-50%)
     text-decoration: none
+
+    @media(min-width: 375px)
+      left: 50%
+      right: auto
+      transform: translate(-50%, -50%)
 
     @media(min-width: 1200px)
       align-items: flex-start
       display: flex
       flex-direction: column
       justify-content: center
+      left: auto
       margin-left: 0
       margin-right: auto
       padding-left: 40px
+      position: static
+      top: auto
+      transform: none
       width: 240px
       z-index: 2
 
@@ -49,15 +63,30 @@
   &__phone-title
     color: #97999b
     font-size: 12px
-    display: block
+    display: none
     margin-bottom: 8px
+
+    @media(min-width: 1200px)
+      display: block
 
     //@media(min-width: 1600px)
       font-size: 15px
 
   &__phone-number
     color: #101820
-    font-size: 16px
+    display: inline-block
+    font-size: 14px
+    padding-top: 10px
+    padding-bottom: 10px
+    white-space: nowrap
+
+    @media(min-width: 375px)
+      font-size: 16px
+
+    @media(min-width: 768px)
+      font-size: 16px
+      padding-top: 0
+      padding-bottom: 0
 
     //@media(min-width: 1600px)
       font-size: 20px
