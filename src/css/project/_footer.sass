@@ -1,12 +1,13 @@
 .footer
   background-color: #fff
-  padding: 70px 48px 75px
+  padding: 36px 48px 36px
 
   @media (min-width: 768px)
-    padding: 80px 62px 80px
+    padding-left: 62px
+    padding-right: 62px
 
-  @media (min-width: 1200px)
-    height: 900px
+  @media (min-width: 960px)
+    height: 600px
     padding-bottom: 0
 
   @media (min-width: 1500px)
@@ -26,37 +27,20 @@
     @media(min-width: 1200px)
       align-items: flex-start
       display: flex
-      margin-bottom: 100px
+      margin-bottom: 50px
 
   &__menu
     margin-bottom: 50px
-
-    @media(min-width: 768px)
-      margin-bottom: 110px
 
     @media(min-width: 1200px)
       flex-grow: 1
       margin-bottom: 0
 
   &__bottom
-    @media(min-width: 1200px)
-      align-items: flex-end
+    @media(min-width: 768px)
+      align-items: center
       display: flex
       justify-content: space-between
-
-  &__subscribe
-    margin-bottom: 80px
-    margin-left: auto
-    margin-right: auto
-    max-width: 578px
-
-    @media(min-width: 768px)
-      margin-bottom: 110px
-
-    @media(min-width: 1200px)
-      margin: 0
-      max-width: 100%
-      order: 2
 
   &__social
     display: flex
@@ -64,19 +48,10 @@
     margin-bottom: 90px
 
     @media(min-width: 768px)
-      margin-bottom: 120px
-
-    @media(min-width: 1200px)
       margin-bottom: 0
-      margin-top: 4px
-
-    @media(min-width: 1480px)
       margin-right: -17px
-
-  &__copyright-block
-    @media(min-width: 1200px)
-      align-items: flex-end
-      display: flex
+      max-width: 100%
+      order: 2
 
   &__logo
     margin-left: auto
@@ -116,9 +91,9 @@
   width: 48px
 
   @media(min-width: 768px)
-    margin-bottom: 110px
+    margin-bottom: 90px
 
-  @media(min-width: 1200px)
+  @media(min-width: 960px)
     display: none
 
   &__burger
@@ -159,7 +134,7 @@
   display: none
   line-height: 20px
 
-  @media(min-width: 1200px)
+  @media(min-width: 960px)
     display: block
     font-size: 15px
 
@@ -172,36 +147,56 @@
       display: flex
       flex-wrap: wrap
 
+    @media(min-width: 768px)
+      justify-content: space-between
+
   &__list
     list-style: none
-    margin: 0
-    padding: 0
+    margin-top: 0
+    margin-bottom: 30px
+    padding-left: 0
+    padding-right: 10px
+
+    &:last-child
+      margin-bottom: 0
 
     @media(min-width: 480px)
       width: 50%
 
     @media(min-width: 960px)
-      width: 25%
+      margin-bottom: 0
 
-    @media(min-width: 1400px)
-      max-width: 240px
+    &:nth-child(1),
+    &:nth-child(2),
+    &:nth-child(3),
+    &:nth-child(4)
+      @media(min-width: 768px)
+        width: 25%
 
-    &:first-child
-      @media(min-width: 1400px)
-        flex-grow: 1
-        max-width: 400px
+      @media(min-width: 960px)
+        width: auto
+
+    &:nth-child(5)
+      @media(min-width: 768px)
+        width: 100%
+
+      @media(min-width: 960px)
+        width: auto
 
   &__list-item
     list-style: none
+    margin-bottom: 10px
+
+    &:last-child
+      margin-bottom: 0
 
   &__title
     font-size: 18px
-    margin-bottom: 24px
 
   &__link
     display: inline-block
-    padding-top: 20px
-    padding-bottom: 20px
+    padding-top: 10px
+    padding-bottom: 10px
     text-decoration: none
     transition: color 0.3s
 
@@ -257,7 +252,7 @@
       height: 22px
       width: 22px
 
-.subscribe
+//.subscribe
   @media(min-width: 1200px)
     align-items: center
     display: flex
