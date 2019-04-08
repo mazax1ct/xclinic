@@ -235,16 +235,19 @@
           </span>
         </a>
       </div>
-      <nav class="bottom-menu">
-        <div class="bottom-menu__inner">
-          <a class="bottom-menu__link" href="restoraunt.html">Ресторан</a>
-          <a class="bottom-menu__link" href="children.html">Детский сад</a>
-          <a class="bottom-menu__link" href="partners.html">Партнеры</a>
-          <a class="bottom-menu__link" href="dosug.html">Досуг</a>
-          <a class="bottom-menu__link" href="market.html">Экомаркет</a>
-          <a class="bottom-menu__link" href="reviews.html">Отзывы</a>
+      <div class="subscribe">
+        <div class="subscribe__inner">
+          <h3 class="subscribe__title">Подписка на новости</h3>
+          <p class="subscribe__subtitle">Узнавайте о новостях и событиях первыми!</p>
+          <form class="subscribe__form" action="/">
+            <label class="subscribe__form-label" for="subscribe_email">
+              <input class="subscribe__form-input" id="subscribe_email" type="text" value="" placeholder="Введите e-mail">
+            </label>
+            <button class="subscribe__form-button" type="submit">Подписаться</button>
+          </form>
+          <p class="subscribe__note">В соответствии с Федеральным законом № 152-ФЗ «О персональных данных» от 27.07.2006, отправляя любую форму на этом сайте, вы подтверждаете свое<br> <a href="#">согласие на обработку персональных данных</a>.</p>
         </div>
-      </nav>
+      </div>
     </div>
   </div>
   <footer class="footer">
@@ -284,27 +287,27 @@
               <li class="footer-menu__list-item"><a class="footer-menu__link" href="#"><span class="footer-menu__link-text">Правила размещения</span></a></li>
               <li class="footer-menu__list-item"><a class="footer-menu__link" href="#"><span class="footer-menu__link-text">Способы оплаты</span></a></li>
             </ul>
+            <ul class="footer-menu__list">
+              <li class="footer-menu__list-item footer-menu__title"><a class="footer-menu__link" href="#"><span class="footer-menu__link-text">Другое</span></a></li>
+              <li class="footer-menu__list-item"><a class="footer-menu__link" href="restoraunt.html"><span class="footer-menu__link-text">Ресторан</span></a></li>
+              <li class="footer-menu__list-item"><a class="footer-menu__link" href="Детский сад"><span class="footer-menu__link-text">Детский сад</span></a></li>
+              <li class="footer-menu__list-item"><a class="footer-menu__link" href="partners.html"><span class="footer-menu__link-text">Партнеры</span></a></li>
+              <li class="footer-menu__list-item"><a class="footer-menu__link" href="dosug.html"><span class="footer-menu__link-text">Досуг</span></a></li>
+              <li class="footer-menu__list-item"><a class="footer-menu__link" href="market.html"><span class="footer-menu__link-text">Экомаркет</span></a></li>
+              <li class="footer-menu__list-item"><a class="footer-menu__link" href="reviews.html"><span class="footer-menu__link-text">Отзывы</span></a></li>
+            </ul>
           </div>
         </div>
+      </div>
+      <div class="footer__bottom">
         <div class="footer__social">
           <a class="social-link" href="#" title="vk.com" rel="noreferrer noopener"><svg class="social-link__icon social-link__icon--vk" aria-hidden="true"><use xlink:href="#vk"/></svg></a>
           <a class="social-link" href="#" title="facebook.com" rel="noreferrer noopener"><svg class="social-link__icon social-link__icon--fb" aria-hidden="true"><use xlink:href="#fb"/></svg></a>
           <a class="social-link" href="#" title="twitter.com" rel="noreferrer noopener"><svg class="social-link__icon social-link__icon--tw" aria-hidden="true"><use xlink:href="#tw"/></svg></a>
           <a class="social-link" href="#" title="instagram.com" rel="noreferrer noopener"><svg class="social-link__icon social-link__icon--inst" aria-hidden="true"><use xlink:href="#inst"/></svg></a>
         </div>
-      </div>
-      <div class="footer__bottom">
-        <div class="footer__subscribe subscribe">
-          <h3 class="subscribe__title">Подписаться на рассылку:</h3>
-          <form class="subscribe__form" action="/">
-            <label class="subscribe__form-label" for="subscribe_email">
-              <input class="subscribe__form-input" id="subscribe_email" type="text" value="" placeholder="Ваш e-mail">
-            </label>
-            <button class="subscribe__form-button" type="submit">Подписаться</button>
-          </form>
-        </div>
         <div class="footer__copyright-block">
-          <div class="footer__logo"><img src="images/logo.svg" alt="XClinic"></div>
+          <!--<div class="footer__logo"><img src="images/logo.svg" alt="XClinic"></div>-->
           <p class="footer__copyright">© “X-Clinic” Все права защищены</p>
         </div>
       </div>
