@@ -1,10 +1,7 @@
 .programs-block
   background: url("../images/backgrounds/bg_6.png") no-repeat 0 100% transparent
-  padding-bottom: 160px
+  padding-bottom: 80px
   position: relative
-
-  @media(min-width: 768px)
-    padding-bottom: 190px
 
   &__inner
     position: relative
@@ -24,6 +21,7 @@
     margin-bottom: 70px
     padding-left: 48px
     padding-right: 48px
+    text-align: center
 
     @media(min-width: 768px)
       align-items: center
@@ -36,18 +34,13 @@
       align-items: flex-start
       flex-direction: column
       justify-content: flex-start
-      height: 320px
-      left: 0
       margin-bottom: 0
-      position: absolute
-      padding: 62px
-      top: 160px
-      width: calc(100% / 3)
+      padding: 0
       z-index: 1
 
   &__title
     font-size: 30px
-    margin-bottom: 30px
+    margin-bottom: 20px
 
     @media(min-width: 768px) and (max-width: 1199px)
       margin-bottom: 0
@@ -69,9 +62,6 @@
 .programs-tabs
   margin-bottom: 80px
 
-  @media(min-width: 1200px)
-    margin-bottom: 110px
-
 .programs-tab
   display: none
 
@@ -86,16 +76,15 @@
     flex-wrap: wrap
 
   &--main
-    max-width: 960px
     margin-left: auto
     margin-right: auto
 
     @media(min-width: 1200px)
       max-width: 1440px
-      padding-left: calc(100% / 3)
+      //padding-left: calc(100% / 3)
 
     .program
-      &:last-child
+      //&:last-child
         @media(min-width: 1200px)
           left: 0
           position: absolute
@@ -104,6 +93,7 @@
 
       &--big
         @media(min-width: 960px)
+          max-height: 600px
           width: 100%
 
         .program__image
@@ -114,7 +104,7 @@
 
       &--small
         @media(min-width: 960px)
-          width: 50%
+          width: calc(100% / 3)
 
 .program
   color: #fff
@@ -133,15 +123,14 @@
       text-decoration: underline
 
   &--big
-
     @media(max-width: 479px)
       height: 0
       padding-bottom: 100%
 
-    @media(min-width: 640px)
+    //@media(min-width: 640px)
       max-width: 960px
 
-    @media(min-width: 960px)
+    //@media(min-width: 960px)
       width: calc(100% / 3 * 2)
 
     .program__inner
