@@ -175,6 +175,7 @@ $(document).ready(function() {
   //слайдер "x-клиника сегодня"
   if ($('.js-today-slider').length) {
     $('.js-today-slider').slick({
+      adaptiveHeight: true,
       auto: false,
       mobileFirst: true,
       slidesToShow: 1,

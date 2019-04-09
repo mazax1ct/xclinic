@@ -1,5 +1,5 @@
 .today-block
-  padding-bottom: 230px
+  margin-bottom: 80px
   position: relative
   overflow: hidden
 
@@ -36,7 +36,7 @@
       top: -150px
 
   &__small-title
-    margin-bottom: 80px
+    margin-bottom: 60px
 
     @media(min-width: 1200px)
       margin-left: 62px
@@ -55,7 +55,7 @@
 
     @media(min-width: 1200px)
       margin-left: 62px
-      margin-bottom: 160px
+      margin-bottom: 80px
       max-width: 490px
       padding-left: 0
       padding-right: 0
@@ -65,80 +65,42 @@
     overflow: hidden
     position: relative
 
-    @media(min-width: 768px)
-      padding-top: 400px
-
-    @media(min-width: 960px)
+    //@media(min-width: 960px)
       padding-top: 90px
 
     &::before
       @media(min-width: 768px) and (max-width: 959px)
         background-color: #e6e8f6
         content: ""
-        height: 560px
+        height: 400px
         left: 0
         position: absolute
         top: 160px
         width: 100%
         z-index: -1
 
-    &::after
-      @media(min-width: 768px)
-        background: url("../images/backgrounds/bg_2.png") no-repeat 0 0 / 100% auto transparent
-        content: ""
-        height: 662px
-        left: -35px
-        position: absolute
-        top: 0
-        width: 310px
-        z-index: -1
-
-      @media(min-width: 1200px)
-        left: 160px
-
   &__content-center
     margin-left: auto
     margin-right: auto
-    max-width: 560px
-
-    @media(min-width: 768px)
-      margin-right: 0
+    max-width: 480px
 
     @media(min-width: 960px)
-      align-items: flex-end
+      align-items: center
       display: flex
-      justify-content: flex-end
-      max-width: initial
-
-  &__slider
-    @media(min-width: 768px)
-      position: relative
-
-    @media(min-width: 960px)
-      margin-bottom: 160px
-      order: 2
-
-    &::before
-      @media(min-width: 960px)
-        background-color: #e6e8f6
-        content: ""
-        height: 448px
-        left: -880px
-        position: absolute
-        top: 50%
-        transform: translateY(-50%)
-        width: 880px
-        z-index: -1
+      max-width: inherit
 
 .today-slider
-  max-width: 560px
+  max-width: 480px
+
+  @media(min-width: 960px)
+    max-width: 50%
+    width: 50%
 
   &__slide
     background-color: #fff
     display: flex !important
     flex-direction: column
     justify-content: center
-    min-height: 576px
     padding-top: 48px
     padding-left: 24px
     padding-right: 24px
@@ -174,10 +136,14 @@
 .today-video
   margin-top: 0
   margin-bottom: 0
-  max-width: 480px
+  max-width: 560px
 
   @media(min-width: 768px)
-    margin: 0
+    margin-top: 0
+    margin-bottom: 0
+
+  @media(min-width: 960px)
+    margin-right: 0
 
   &::before
     display: none

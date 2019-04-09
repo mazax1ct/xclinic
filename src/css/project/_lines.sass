@@ -13,12 +13,16 @@
   display: block
   font-size: 15px
   font-weight: 600
-  line-height: 20px
-  padding-top: 110px
-  padding-bottom: 110px
+  height: 0
+  max-width: 384px
+  margin-left: auto
+  margin-right: auto
+  padding-bottom: 100%
+  position: relative
   text-decoration: none
-  text-transform: uppercase
-  text-align: center
+
+  @media(min-width: 384px)
+    padding-bottom: 384px
 
   @media(min-width: 768px)
     height: 0
@@ -29,6 +33,28 @@
     position: relative
     padding-bottom: calc(100% / 3)
     width: calc(100% / 3)
+
+  @media(min-width: 960px)
+    display: flex
+
+  &:hover
+    text-decoration: none
+
+    .line__text
+      &::after
+        opacity: 1
+
+    .line__image
+      @media(min-width: 768px)
+        opacity: 1
+
+    .line__pseudo-link
+      @media(min-width: 1200px)
+        opacity: 1
+        margin-top: 30px
+
+    &::after
+      opacity: 0.5
 
   &::after
     @media(min-width: 768px)
@@ -70,42 +96,39 @@
       @media(min-width: 768px)
         background-color: #dbd2cb
 
-  &:hover
-    text-decoration: none
-
-    .line__text
-      &::after
-        opacity: 1
-
-    &::after
-      opacity: 0
-
-  @media(min-width: 960px)
-    display: flex
-
   &__image
-    display: none
     left: 0
+    opacity: 0.1
+    position: absolute
     top: 0
+    width: 100%
+    transition: opacity 0.3s
+    z-index: 1
 
-    @media(min-width: 768px)
-      display: block
-      left: 0
-      position: absolute
-      top: 0
-      width: 100%
-      z-index: 1
+    @media(min-width: 768px) and (max-width: 1199px)
+      opacity: 1
 
-  &__text
-    position: relative
+  &__description
+    display: flex
+    flex-direction: column
+    height: 100%
+    left: 0
+    position: absolute
+    padding: 60px 20px
+    top: 0
+    width: 100%
 
     @media(min-width: 768px)
       left: 50%
+      padding-top: 30px
+      padding-bottom: 30px
       position: absolute
       top: 50%
       transform: translate(-50%, -50%)
-      white-space: nowrap
       z-index: 2
+
+    @media(min-width: 1200px)
+      padding: 60px 30px
 
     &::after
       border-bottom: 3px solid #fff
@@ -118,3 +141,37 @@
       top: auto
       transition: opacity 0.3s
       width: 100%
+
+  &__title
+    display: block
+    font-size: 18px
+    line-height: 1.4
+    margin-bottom: 30px
+    text-transform: uppercase
+
+    @media(max-width: 767px)
+      text-decoration: underline
+
+    @media(min-width: 1200px)
+      font-size: 24px
+
+  &__preview
+    display: block
+    margin-top: auto
+    margin-bottom: auto
+
+    @media(min-width: 768px) and (max-width: 959px)
+      font-size: 12px
+
+  &__pseudo-link
+    align-items: center
+    display: flex
+    margin-top: 0
+    opacity: 0
+    transition: all 0.3s
+
+  &__more-icon
+    fill: #fff
+    height: 11px
+    margin-left: 10px
+    width: 68px
