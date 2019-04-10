@@ -65,10 +65,7 @@
     overflow: hidden
     position: relative
 
-    //@media(min-width: 960px)
-      padding-top: 90px
-
-    &::before
+    //&::before
       @media(min-width: 768px) and (max-width: 959px)
         background-color: #e6e8f6
         content: ""
@@ -87,12 +84,29 @@
     @media(min-width: 960px)
       align-items: center
       display: flex
+      justify-content: center
       max-width: inherit
+      position: relative
+
+    &::after
+      @media(min-width: 960px)
+        background-color: #e6e8f6
+        content: ""
+        height: 450px
+        left: 0
+        position: absolute
+        top: 50%
+        transform: translateY(-50%)
+        width: 100%
+
 
 .today-slider
   max-width: 480px
 
   @media(min-width: 960px)
+    flex-grow: 1
+    min-height: 500px
+    order: 2
     max-width: 50%
     width: 50%
 
@@ -110,7 +124,11 @@
       padding-left: 48px
       padding-right: 48px
 
-    @media(min-width: 1200px)
+    @media(min-width: 960px)
+
+      min-height: 500px
+
+    @media(min-width: 1600px)
       padding-left: 62px
       padding-right: 62px
 
@@ -144,6 +162,14 @@
 
   @media(min-width: 960px)
     margin-right: 0
+    margin-left: 0
+    position: relative
+    width: 50%
+    z-index: 1
 
   &::before
     display: none
+
+  img
+    max-width: inherit
+    width: 100%
