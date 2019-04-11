@@ -1,0 +1,38 @@
+.pager
+  display: flex
+  justify-content: center
+  margin-top: 48px
+
+  &__item
+    list-style: none
+    margin-left: 5px
+    margin-right: 5px
+
+    &--arrow
+      @media(max-width: 767px)
+        display: none
+
+  &__link
+    align-items: center
+    background-color: #fff
+    color: #7c80aa
+    display: flex
+    justify-content: center
+    height: 30px
+    width: 30px
+
+    @media(min-width: 768px)
+      height: 48px
+      width: 48px
+
+    &.is-active
+      color: #222
+      font-weight: 700
+
+    &:hover
+      text-decoration: none
+
+  &__arrow
+    fill: #7c80aa
+    height: 11px
+    width: 30px
