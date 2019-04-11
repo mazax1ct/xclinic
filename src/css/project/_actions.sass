@@ -76,16 +76,26 @@
     padding-bottom: 62px
 
 .action-desc
+  &__columns
+    @media(min-width: 768px)
+      display: flex
+
+    .left-column
+      display: none
+
+      @media(min-width: 768px)
+        display: block
+        min-width: 30%
+        padding-right: 20px
+
+      @media(min-width: 1200px)
+        min-width: 320px
+
   &__row
     margin-bottom: 20px
 
     @media(min-width: 768px)
-      align-items: center
-      display: flex
-      margin-bottom: 62px
-
-    &:last-child
-      margin-bottom: 0
+      margin-bottom: 48px
 
   &__label
     color: #222
@@ -111,3 +121,15 @@
 
       @media(min-width: 480px)
         margin-bottom: 0
+
+.left-menu
+  list-style: none
+
+  &__item
+    margin-bottom: 15px
+
+  &__link
+    text-decoration: none
+
+    &.selected
+      text-decoration: underline
