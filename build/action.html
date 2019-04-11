@@ -12,7 +12,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="format-detection" content="telephone=no">
 
-  
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon/favicon-16x16.png">
+  <link rel="manifest" href="/images/favicon/site.webmanifest">
+  <link rel="mask-icon" href="/images/favicon/safari-pinned-tab.svg" color="#222222">
+  <link rel="shortcut icon" href="/images/favicon/favicon.ico">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-config" content="/images/favicon/browserconfig.xml">
+  <meta name="theme-color" content="#ffffff">
 
   <link rel="stylesheet" href="css/style.css"/>
 </head>
@@ -265,27 +273,44 @@
         <div class="also-block">
           <h2 class="also-block__title">Другие процедуры</h2>
           <div class="also-list">
-            <a class="also-link" href="#">
-              <span class="also-link__description">
-                <span class="also-link__title">Омоложение печени</span>
-                <span class="also-link__pseudo-link">Подробнее</span>
-              </span>
-              <img src="images/content/img_34.jpg" alt="">
-            </a>
-            <a class="also-link" href="#">
-              <span class="also-link__description">
-                <span class="also-link__title">Омоложение сердца</span>
-                <span class="also-link__pseudo-link">Подробнее</span>
-              </span>
-              <img src="images/content/img_35.jpg" alt="">
-            </a>
-            <a class="also-link" href="#">
-              <span class="also-link__description">
-                <span class="also-link__title">В Карелии организована горячая линия по вопросам медицины</span>
-                <span class="also-link__pseudo-link">Подробнее</span>
-              </span>
-              <img src="images/content/img_36.jpg" alt="">
-            </a>
+            <div class="js-also-list also-list__slider">
+              <div class="also-list__slide">
+                <a class="also-link" href="#">
+                  <span class="also-link__description">
+                    <span class="also-link__title">Омоложение печени</span>
+                    <span class="also-link__pseudo-link">Подробнее</span>
+                  </span>
+                  <img src="images/content/img_34.jpg" alt="">
+                </a>
+              </div>
+              <div class="also-list__slide">
+                <a class="also-link" href="#">
+                  <span class="also-link__description">
+                    <span class="also-link__title">Омоложение сердца</span>
+                    <span class="also-link__pseudo-link">Подробнее</span>
+                  </span>
+                  <img src="images/content/img_35.jpg" alt="">
+                </a>
+              </div>
+              <div class="also-list__slide">
+                <a class="also-link" href="#">
+                  <span class="also-link__description">
+                    <span class="also-link__title">В Карелии организована горячая линия по вопросам медицины</span>
+                    <span class="also-link__pseudo-link">Подробнее</span>
+                  </span>
+                  <img src="images/content/img_36.jpg" alt="">
+                </a>
+              </div>
+              <div class="also-list__slide">
+                <a class="also-link" href="#">
+                  <span class="also-link__description">
+                    <span class="also-link__title">Омоложение печени</span>
+                    <span class="also-link__pseudo-link">Подробнее</span>
+                  </span>
+                  <img src="images/content/img_34.jpg" alt="">
+                </a>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -343,7 +368,7 @@
             <ul class="footer-menu__list">
               <li class="footer-menu__list-item footer-menu__title"><a class="footer-menu__link" href="#"><span class="footer-menu__link-text">Другое</span></a></li>
               <li class="footer-menu__list-item"><a class="footer-menu__link" href="restoraunt.html"><span class="footer-menu__link-text">Ресторан</span></a></li>
-              <li class="footer-menu__list-item"><a class="footer-menu__link" href="Детский сад"><span class="footer-menu__link-text">Детский сад</span></a></li>
+              <li class="footer-menu__list-item"><a class="footer-menu__link" href="children.html"><span class="footer-menu__link-text">Детский сад</span></a></li>
               <li class="footer-menu__list-item"><a class="footer-menu__link" href="partners.html"><span class="footer-menu__link-text">Партнеры</span></a></li>
               <li class="footer-menu__list-item"><a class="footer-menu__link" href="dosug.html"><span class="footer-menu__link-text">Досуг</span></a></li>
               <li class="footer-menu__list-item"><a class="footer-menu__link" href="market.html"><span class="footer-menu__link-text">Экомаркет</span></a></li>
@@ -369,6 +394,7 @@
 
   <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
   <script type="text/javascript" src="js/main.js"></script>
+  <script type="text/javascript" src="js/slick.min.js"></script>
 </body>
 
 </html>

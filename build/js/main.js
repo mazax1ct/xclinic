@@ -332,4 +332,28 @@ $(document).ready(function() {
       }
     });
   }
+
+  //слайдер блока "смотрите также"
+  if ($('.js-also-list').length) {
+    $('.js-also-list').slick({
+      auto: false,
+      infinite: true,
+      edgeFriction: 0,
+      dots: false,
+      mobileFirst: true,
+      arrows: true,
+      prevArrow: '<button type="button" class="slick-prev" title="Назад"><svg class="slick-prev__icon" aria-hidden="true"><use xlink:href="#arrow_left"/></svg></button>',
+      nextArrow: '<button type="button" class="slick-next" title="Вперед"><svg class="slick-next__icon" aria-hidden="true"><use xlink:href="#arrow_right"/></svg></button>',
+      slidesToShow: 1,
+      responsive: [
+        {
+          breakpoint: 767,
+          settings: {
+            slidesToScroll: 3,
+            slidesToShow: 3
+          }
+        }
+      ]
+    });
+  }
 });
