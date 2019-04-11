@@ -374,7 +374,10 @@
     color: #222
 
   &__options
-    margin-bottom: 40px
+    margin-bottom: 20px
+
+    @media(min-width: 1200px)
+      margin-bottom: 40px
 
   &__option
     align-items: center
@@ -394,6 +397,14 @@
 
     &:nth-child(even)
       background-color: #fbfbfc
+
+    &--no_padding
+      line-height: 1.6
+      min-height: 0
+      padding: 0
+
+      @media(min-width: 1200px)
+        line-height: 1.888
 
   &__option-title
     margin-right: 15px
@@ -454,9 +465,13 @@
   font-size: 15px
   height: 60px
   line-height: 26px
-  padding: 17px 30px
+  padding: 17px 15px
   transition: border-color 0.3s, background-color 0.3s
-  width: 180px
+  width: calc(100% - 60px)
+
+  @media(min-width: 992px)
+    padding-left: 30px
+    padding-right: 30px
 
   &:hover,
   &:focus

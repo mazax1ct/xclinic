@@ -256,7 +256,7 @@
               <p class="room-detail__prop"><svg class="room-detail__prop-icon" aria-hidden="true"><use xlink:href="#view"/></svg>Вид на пляж</p>
               <div class="room-detail__bottom-block">
                 <p class="room-detail__price">от 25 000 р</p>
-                <a class="button button--dark" href="#">On-line бронирование</a>
+                <a class="button button--dark"href="#booking" data-fancybox="booking" data-auto-focus="false">On-line бронирование</a>
               </div>
               <div class="room-detail__nav">
                 <a class="room-detail__nav-link" href="#"><svg class="room-detail__nav-icon" aria-hidden="true"><use xlink:href="#arrow_left"/></svg> Предыдущая категория</a>
@@ -407,9 +407,87 @@
     </div>
   </footer>
 
+  <div id="booking" class="result-form form-popup form-popup--big">
+    <p class="result-form__title">Вы выбрали размещение в номере «Люкс»</p>
+    <div class="result-form__inner">
+      <div class="result-form__block">
+        <div class="result-form__options">
+          <p class="result-form__option result-form__option--no_padding">
+            <span class="result-form__option-title">Размещение «Люкс» на 14&nbsp;дней</span>
+            <span class="result-form__option-price">130 000 р</span>
+          </p>
+        </div>
+        <p class="result-form__subtitle">Выберите желаемую дату заезда и выезда:</p>
+        <label class="datepicker-label" for="datepicker">
+          <input id="datepicker" type='text' class="datepicker-here"/>
+          <span class="datepicker-label__button"><svg class="datepicker-label__button-icon" aria-hidden="true"><use xlink:href="#calendar"/></svg></span>
+        </label>
+      </div>
+      <div class="result-form__block">
+        <p class="result-form__subtitle">Пожалуйста, укажите ваши контактные данные:</p>
+        <label class="result-form__label" for="name">
+          <input id="name" class="input input--dark" name="name" type="text" value="" placeholder="Имя">
+        </label>
+        <label class="result-form__label" for="phone">
+          <input id="phone" class="input input--dark" name="phone" type="text" value="" placeholder="Телефон">
+        </label>
+        <label class="result-form__label" for="email">
+          <input id="email" class="input input--dark" name="email" type="text" value="" placeholder="E-mail">
+        </label>
+        <div class="result-form__label">
+          <button class="result-form__button button button--dark" type="submit">Забронировать</button>
+        </div>
+        <a class="result-form__button button button--bordered" href="#form" data-fancybox="form-popup">Получить консультацию</a>
+      </div>
+    </div>
+  </div>
+  <div id="form" class="form-popup">
+    <p class="form-popup__title">Заполните поля:</p>
+    <p>Наш менеджер свяжется с вами для консультации.</p>
+    <form action="/">
+      <label class="form-popup__label" for="name_cons">
+        <input id="name_cons" class="input input--dark" name="name_cons" type="text" value="" placeholder="Имя" tabindex="-1">
+      </label>
+      <label class="form-popup__label" for="phone_cons">
+        <input id="phone_cons" class="input input--dark" name="phone_cons" type="text" value="" placeholder="Телефон">
+      </label>
+      <label class="form-popup__label" for="email_cons">
+        <input id="email_cons" class="input input--dark" name="email_cons" type="text" value="" placeholder="E-mail">
+      </label>
+      <div class="form-popup__label">
+        <button class="form-popup__button button button--dark" type="submit">Отправить</button>
+      </div>
+    </form>
+  </div>
+
   <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
   <script type="text/javascript" src="js/main.js"></script>
   <script type="text/javascript" src="js/slick.min.js"></script>
+  <script type="text/javascript" src="js/jquery.fancybox.min.js"></script>
+  <script type="text/javascript" src="js/datepicker.min.js"></script>
+
+  <script>
+    var todayDate = new Date(Date.now()); //сегодня
+    var selectedDate = new Date(Date.now() + 24*60*60*1000); //завтра
+
+    $('#datepicker').datepicker({
+      multipleDates: 2,
+      multipleDatesSeparator: " - ",
+      range: true,
+      position: "bottom left",
+      moveToOtherMonthsOnSelect: false,
+      minDate: selectedDate
+    });
+  </script>
+  <style>
+    .datepicker.active {
+      left: 50% !important;
+      position: fixed !important;
+      top: 50% !important;
+      transform: translate(-50%, -50%) !important;
+      z-index: 99999
+    }
+  </style>
 </body>
 
 </html>
