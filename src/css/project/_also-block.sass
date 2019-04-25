@@ -35,7 +35,7 @@
         left: 0
 
       @media(min-width: 1200px)
-        left: -38px
+        left: -80px
 
     .slick-next
       right: -15px
@@ -44,7 +44,7 @@
         right: 0
 
       @media(min-width: 1200px)
-        right: -38px
+        right: -80px
 
     .slick-prev__icon,
     .slick-next__icon
@@ -81,6 +81,12 @@
     .also-link__title
       text-decoration: underline
 
+    .also-link__title--no_td
+      text-decoration: none
+
+    .also-link__name
+      text-decoration: underline
+
     .also-link__pseudo-link
       text-decoration: none
 
@@ -92,23 +98,22 @@
     min-height: 220px
     padding: 24px
 
-    @media(min-width: 480px)
-      padding: 48px
-
-    @media(min-width: 768px) and (max-width: 959px)
-      padding: 24px
-
-    //@media(min-width: 1200px)
-      padding: 62px
-
   &__title
     display: block
     font-size: 22px
     line-height: 1.6
-    margin-bottom: 34px
+    margin-bottom: 24px
 
     @media(min-width: 768px) and (max-width: 1199px)
       font-size: 18px
+
+  &__name
+    margin-right: 5px
+
+  &__area
+    color: #7c80aa
+    font-size: 0.8em
+    white-space: nowrap
 
   &__price-block
     display: flex
@@ -117,3 +122,24 @@
   &__pseudo-link
     color: #9ea1bd
     text-decoration: underline
+
+  &__props
+    margin-bottom: 24px
+
+  &__prop
+    align-items: center
+    color: #222
+    display: flex
+    font-size: 0.7em
+    line-height: 1.2
+    margin-bottom: 6px
+
+    &:last-child
+      margin-bottom: 0
+
+  &__prop-icon
+    fill: #97999b
+    height: 20px
+    margin-right: 10px
+    min-width: 20px
+    width: 20px

@@ -5,7 +5,8 @@
 
 .room
   background-color: #fff
-  display: block
+  display: flex
+  flex-direction: column
   margin-bottom: 20px
   max-width: 480px
   margin-left: auto
@@ -77,6 +78,9 @@
 
   &__description
     background-color: #fff
+    display: flex
+    flex-grow: 1
+    flex-direction: column
     padding: 24px
     text-decoration: none
 
@@ -98,12 +102,19 @@
       text-decoration: none
 
       &:hover
-        .room__more
-          text-decoration: none
+        .room__name
+          text-decoration: underline
+
+  &__name
+    margin-right: 5px
 
   &__area
     color: #7c80aa
-    margin-left: 15px
+    font-size: 0.8em
+    white-space: nowrap
+
+    @media(min-width: 1200px)
+      font-size: 0.7em
 
   &__more
     color: #9ea1bd
@@ -113,11 +124,15 @@
     @media(min-width: 1200px)
       font-size: 16px
 
+  &__props
+    flex-grow: 1
+
   &__prop
     align-items: center
     color: #222
     display: flex
-    margin-bottom: 12px
+    font-size: 0.9em
+    margin-bottom: 6px
 
   &__icon
     fill: #97999b
@@ -246,25 +261,36 @@
       font-size: 30px
 
     @media(min-width: 1200px)
-      font-size: 38px
+      font-size: 36px
       margin-bottom: 48px
+
+  &__name
+    margin-right: 5px
 
   &__area
     color: #7c80aa
-    margin-left: 15px
+    font-size: 0.8em
     white-space: nowrap
+
+    @media(min-width: 1200px)
+      font-size: 0.7em
 
   &__prop
     align-items: center
     color: #222
     display: flex
-    margin-bottom: 12px
+    font-size: 0.9em
+    margin-bottom: 6px
 
   &__prop-icon
     fill: #97999b
     height: 20px
     margin-right: 15px
     width: 20px
+
+  &__prop-val
+    font-size: 0.9em
+    padding-left: 35px
 
   &__bottom-block
     margin-top: 28px
@@ -333,3 +359,20 @@
     max-width: 1122px
     margin-left: auto
     margin-right: auto
+
+  &__cols
+    margin-bottom: 40px
+
+    @media(min-width: 768px)
+      display: flex
+
+    &:last-child
+      margin-bottom: 0
+
+  &__col
+    margin-bottom: 20px
+
+    @media(min-width: 768px)
+      margin-bottom: 0
+      padding-right: 30px
+      width: 33.333%
