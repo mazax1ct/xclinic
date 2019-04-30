@@ -15,7 +15,8 @@
     max-width: 100%
     margin-bottom: 0
 
-  &:hover
+  &:hover,
+  &:focus
     text-decoration: none
 
     .blog-big__title
@@ -23,6 +24,9 @@
 
     .blog-big__more
       text-decoration: none
+
+    .blog-big__image
+      opacity: 0.7
 
   &:last-child
     margin-bottom: 0
@@ -42,6 +46,8 @@
       padding-bottom: 38.888%
 
   &__image
+    transition: opacity 0.3s
+
     @media(min-width: 768px)
       height: 100%
       left: auto
@@ -110,7 +116,8 @@
     margin: 0
     width: 33.333%
 
-  &:hover
+  &:hover,
+  &:focus
     text-decoration: none
 
     .blog__title
@@ -118,6 +125,9 @@
 
     .blog__pseudo-link
       text-decoration: none
+
+    .blog__image
+      opacity: 0.7
 
   &--reverse
     @media(min-width: 768px)
@@ -155,6 +165,9 @@
   &__pseudo-link
     color: #9ea1bd
     text-decoration: underline
+
+  &__image
+    transition: opacity 0.3s
 
 .blog-detail
   position: relative
@@ -260,8 +273,9 @@
   vertical-align: top
   white-space: nowrap
 
-  &:hover
-    //text-decoration: none
+  &:hover,
+  &:focus
+    text-decoration: underline
 
   &--1
     background-color: #e2e3eb

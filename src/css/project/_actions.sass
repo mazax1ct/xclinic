@@ -22,11 +22,15 @@
   @media(min-width: 960px)
     width: 33.333%
 
-  &:hover
+  &:hover,
+  &:focus
     text-decoration: none
 
     .action__title
       text-decoration: underline
+
+    .action__image
+      opacity: 0.7
 
   &--reverse
     @media(min-width: 768px)
@@ -53,6 +57,9 @@
 
     @media(min-width: 1200px)
       font-size: 20px
+
+  &__image
+    transition: opacity 0.3s
 
   &__icon
     fill: #7c80aa
@@ -145,5 +152,7 @@
   &__link
     text-decoration: none
 
+    &:hover,
+    &:focus,
     &.selected
       text-decoration: underline

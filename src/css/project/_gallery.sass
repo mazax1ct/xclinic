@@ -3,6 +3,7 @@
   flex-wrap: wrap
 
   &__item
+    transition: opacity 0.3s
     width: 50%
 
     @media(min-width: 480px)
@@ -10,3 +11,7 @@
 
     @media(min-width: 600px)
       width: 20%
+
+    &:hover,
+    &:focus
+      opacity: 0.7

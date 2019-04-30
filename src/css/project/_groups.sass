@@ -16,12 +16,16 @@
     @media(min-width: 768px)
       flex-direction: row-reverse
 
-  &:hover
+  &:hover,
+  &:focus
     text-decoration: none
 
     .group__title,
     .group__more
       text-decoration: underline
+
+    .group__image
+      opacity: 0.7
 
   &:last-child
     margin-bottom: 0
@@ -40,6 +44,8 @@
       padding-bottom: 33.333%
 
   &__image
+    transition: opacity 0.3s
+
     @media(min-width: 768px)
       height: 100%
       left: auto
