@@ -84,10 +84,16 @@
 
 .slick-dots li button:focus,
 .slick-dots li button:hover {
+  border-color: #7b7faa;
   outline: none;
 }
 
-.slick-dots li button:before {
+.slick-dots li button:focus::before,
+.slick-dots li button:hover::before {
+  background-color: #7b7faa
+}
+
+.slick-dots li button::before {
   background-color: #222;
   border-radius: 50%;
   position: absolute;
@@ -104,7 +110,7 @@
   transition: background-color 0.3s;
 }
 
-.slick-dots li.slick-active button:before,
+.slick-dots li.slick-active button::before,
 .slick-dots li button:hover::before {
   background-color: #7b7faa
 }

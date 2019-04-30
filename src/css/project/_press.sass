@@ -28,11 +28,15 @@
     @media(min-width: 768px)
       flex-direction: row-reverse
 
-  &:hover
+  &:hover,
+  &:focus
     text-decoration: none
 
     .press__title
       text-decoration: underline
+
+    .press__logo
+      opacity: 0.7
 
     .press__pseudo-link
       text-decoration: none
@@ -46,6 +50,7 @@
     min-width: 120px
     padding: 24px
     text-align: center
+    transition: opacity 0.3s
     width: 120px
 
     @media(min-width: 768px)
