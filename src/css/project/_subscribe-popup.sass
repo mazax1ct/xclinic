@@ -1,0 +1,107 @@
+.subscribe-popup
+  background-color: #f1f2fa
+  display: none
+
+  &.fancybox-content
+    padding: 0
+
+  .fancybox-button
+    svg
+      path
+        fill: #fff
+
+  @media(min-width: 768px)
+    width: 660px
+
+  &__title-block
+    align-items: center
+    background: url('../images/backgrounds/subscribe_popup_bg.jpg') no-repeat 50% 50% transparent
+    display: flex
+    justify-content: center
+    height: 200px
+    padding: 30px
+    position: relative
+
+    &::after
+      background-color: rgba(0,0,0,0.3)
+      content: ''
+      height: 100%
+      left: 0
+      position: absolute
+      top: 0
+      width: 100%
+      z-index: 1
+
+  &__content
+    padding: 15px
+
+    @media(min-width: 768px)
+      padding: 30px
+
+  &__title
+    color: #fff
+    font-size: 26px
+    font-weight: 700
+    line-height: 1.4
+    position: relative
+    text-align: center
+    z-index: 2
+
+    @media(min-width: 768px)
+      font-size: 34px
+
+  &__form
+    margin-bottom: 15px
+
+    @media(min-width: 768px)
+      display: flex
+
+
+  &__label
+    display: block
+    margin-bottom: 10px
+
+    @media(min-width: 768px)
+      flex-grow: 1
+      margin-bottom: 0
+      margin-right: 10px
+
+  &__button
+    max-width: 320px
+    width: 100%
+
+    @media(min-width: 768px)
+      width: auto
+
+  &__subtitle
+    font-weight: 700
+    margin-bottom: 15px
+    text-align: center
+
+  &__features
+    @media(min-width: 768px)
+      display: flex
+
+  &__feature
+    font-size: 14px
+    line-height: 1.4
+    margin-bottom: 25px
+    padding-left: 15px
+    padding-right: 15px
+    text-align: center
+
+    @media(min-width: 768px)
+      margin-bottom: 0
+      width: 33.333%
+
+  &__feature-num
+    align-items: center
+    background-color: #9ea1bd
+    border-radius: 50%
+    color: #fff
+    display: flex
+    font-weight: 700
+    justify-content: center
+    height: 50px
+    margin: 0 auto 10px
+    width: 50px
