@@ -31,15 +31,11 @@ $(document).ready(function() {
     $('.js-dropdown').hover(
       function() {
         var uid = $(this).attr('id');
-        eval('tmIn' + uid +
-          ' = setTimeout(function(){ $("#"+uid+" > .sub-menu").slideDown(150); }, 400);');
-        eval('if (typeof tmOut' + uid + ' !== "undefined") clearTimeout(tmOut' + uid + ');');
+        $("#" + uid + " > .sub-menu").delay(400).slideDown(150);
       },
       function() {
         var uid = $(this).attr('id');
-        eval('clearTimeout(tmIn' + uid + ');');
-        eval('tmOut' + uid +
-          ' = setTimeout(function(){ $("#"+uid+" > .sub-menu").slideUp(150); }, 400);');
+        $("#" + uid + " > .sub-menu").stop(true,true).delay(400).slideUp(150);
       }
     );
   }
