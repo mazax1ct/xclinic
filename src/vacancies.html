@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+
+  <title>X-Clinic - вакансии</title>
+
+  <meta name="description" content="">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="format-detection" content="telephone=no">
+
+  //= template/favicon.html
+
+  //= template/style.html
+</head>
+
+<body class="no-js">
+  //= template/sprite.html
+  <div class="wrapper">
+    //= template/header.html
+    <div class="page-content">
+      <div class="page-banner" style="background-image: url('images/backgrounds/banner_method.jpg')">
+        <h1 class="page-banner__title">Вакансии</h1>
+      </div>
+      <div class="container">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo autem tempora doloribus, porro eos, iste! Voluptas, omnis pariatur nostrum iure quisquam hic possimus nulla excepturi tempora. Doloribus dicta modi dolor!</p>
+        <p><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit nam consequatur omnis, beatae eligendi dolor vero earum explicabo praesentium ipsum! Labore, magni consectetur culpa omnis sint veritatis, at veniam amet.</span>
+          <span>Nemo laboriosam voluptatum deserunt ducimus repellat quia natus blanditiis. Eligendi consequatur est sed unde aspernatur nobis ducimus soluta atque eveniet veniam consequuntur quae officiis blanditiis, voluptate, repellendus
+            voluptas, sapiente, molestias!</span>
+          <span>Libero et aspernatur architecto amet, totam nulla aliquam itaque quis quo, distinctio excepturi? Consequuntur esse voluptatum nesciunt laudantium deleniti veniam quae? Vel eligendi minima vero voluptas delectus eaque voluptatem,
+            quis.</span>
+          <span>Eos suscipit sequi soluta, voluptas officiis dignissimos excepturi. Numquam quisquam, cupiditate excepturi deserunt veniam consequuntur optio facere fuga. Eaque dolore sit dignissimos, quam tempora nulla commodi nemo at officiis
+            illo.</span>
+          <span>Architecto, molestiae nemo dolorum fuga eligendi. Illum molestiae sed iste quae recusandae autem laboriosam libero ab debitis nisi aspernatur, dolorem voluptatibus consequuntur hic labore nulla fugiat, sunt optio, repudiandae nobis!</span>
+        </p>
+        <div class="cols-3">
+          <div class="col">
+            Вакансия 1<br>
+            Вакансия 2<br>
+            Вакансия 3<br>
+            Вакансия 4<br>
+            Вакансия 5<br>
+            Вакансия 6<br>
+            Вакансия 7<br>
+            Вакансия 8
+          </div>
+          <div class="col">
+            Вакансия 1<br>
+            Вакансия 2<br>
+            Вакансия 3<br>
+            Вакансия 4<br>
+            Вакансия 5<br>
+            Вакансия 6<br>
+            Вакансия 7<br>
+            Вакансия 8
+          </div>
+          <div class="col">
+            Вакансия 1<br>
+            Вакансия 2<br>
+            Вакансия 3<br>
+            Вакансия 4<br>
+            Вакансия 5<br>
+            Вакансия 6<br>
+            Вакансия 7<br>
+            Вакансия 8
+          </div>
+        </div>
+        <h2>Откликнуться на вакансию</h2>
+        <form class="vacancies-form">
+          <div class="vacancies-form__label">
+            <select class="select select--dark" name="vacancy">
+              <option value="1">Вакансия 1</option>
+              <option value="2">Вакансия 2</option>
+              <option value="3">Вакансия 3</option>
+              <option value="4">Вакансия 4</option>
+              <option value="5">Вакансия 5</option>
+            </select>
+          </div>
+          <label class="vacancies-form__label" for="name">
+            <input id="name" class="input input--dark" name="name" type="text" value="" placeholder="Имя">
+          </label>
+          <label class="vacancies-form__label" for="phone">
+            <input id="phone" class="input input--dark" name="phone" type="text" value="" placeholder="Телефон">
+          </label>
+          <label class="vacancies-form__label" for="email">
+            <input id="email" class="input input--dark" name="email" type="text" value="" placeholder="E-mail">
+          </label>
+          <div class="vacancies-form__label">
+            <label class="file-input" for="file">
+              <span class="file-input__button">Обзор</span>
+              <span id="fileformlabel" class="file-input__title"></span>
+              <input id="file" class="file-input__input" name="file" type="file" onchange="getName(this.value);">
+            </label>
+          </div>
+          <div class="vacancies-form__label">
+            <button class="result-form__button button button--dark" type="submit">Забронировать</button>
+          </div>
+        </form>
+      </div>
+      //= template/subscribe.html
+    </div>
+  </div>
+  //= template/footer.html
+
+  //= template/scripts.html
+  <script type="text/javascript" src="js/slick.min.js"></script>
+</body>
+
+</html>
