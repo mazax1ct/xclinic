@@ -101,14 +101,11 @@
   background-color: #e6e8f6;
 }
 
-.datepicker--cell.-disabled- {
+.datepicker--cell.-disabled-,
+.datepicker--cell.-disabled-.-focus- {
   cursor: default;
   color: #dedede;
-}
-
-.datepicker--cell.-disabled-.-focus- {
-  background: #fbfbfc;
-  color: #dedede;
+  pointer-events: none
 }
 
 .datepicker--cell.-disabled-.-in-range- {
@@ -135,6 +132,7 @@
 .datepicker--cell.-selected-.-interval-class- {
   color: #fff;
   background: #7b7faa;
+  pointer-events: auto;
 }
 
 .datepicker--cell.-interval-class- {
@@ -244,7 +242,7 @@
   border: 1px solid #97999b;
   color: #97999b;
   width: 306px;
-  height: 306px;
+  min-height: 306px;
   padding: 12px;
   position: absolute;
   left: -100000px;
@@ -257,7 +255,7 @@
 
 @media(min-width: 768px) {
   .datepicker {
-    height: 500px;
+    min-height: 500px;
     padding: 24px;
     width: 500px;
   }

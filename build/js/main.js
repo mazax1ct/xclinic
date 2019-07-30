@@ -387,6 +387,13 @@ $(document).ready(function() {
       }
     }
   }
+
+  //открытие/закрытие тарифов программы
+  $('.js-tarif-open').on('click', function() {
+    $(this).toggleClass("is-active");
+    $(this).next('.tarifs__cells').toggleClass('is-open');
+    return false;
+  });
 });
 
 //открепляем и перезапускаем прилипающий блок при резайзе

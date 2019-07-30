@@ -2,18 +2,14 @@
   background-color: #fff
   padding: 24px 24px 0
 
-  @media(min-width: 768px)
+  @media(min-width: 992px)
     padding: 48px 48px 0
 
   &__inner
     @media(min-width: 768px)
       display: flex
-      margin-left: -5px
-      margin-right: -5px
-
-    @media(min-width: 1200px)
-      margin-left: -10px
-      margin-right: -10px
+      margin-left: -2px
+      margin-right: -2px
 
   &__column
     margin-bottom: 40px
@@ -21,8 +17,8 @@
     @media(min-width: 768px)
       font-size: 13px
       margin-bottom: 0
-      padding-left: 5px
-      padding-right: 5px
+      padding-left: 2px
+      padding-right: 2px
       width: 25%
 
     @media(min-width: 960px)
@@ -30,14 +26,18 @@
 
     @media(min-width: 1200px)
       font-size: 16px
-      padding-left: 10px
-      padding-right: 10px
 
     &--labels
       display: none
 
       @media(min-width: 768px)
         display: block
+        flex-grow: 1
+        min-width: 50%
+        width: 50%
+
+    &:last-child
+      margin-bottom: 0
 
   &__column-title
     align-items: center
@@ -49,6 +49,10 @@
     margin-bottom: 0
     padding-left: 12px
     padding-right: 12px
+    position: relative
+
+    @media(max-width: 767px)
+      cursor: pointer
 
     @media(min-width: 768px)
       font-size: 15px
@@ -69,6 +73,24 @@
       background-color: #dbd2cb
       font-weight: 700
 
+    &.is-active
+      .tarifs__column-title-icon
+        transform: translateY(-50%) rotate(180deg)
+
+  &__column-title-icon
+    display: none
+    fill: #fff
+    height: 14px
+    left: auto
+    position: absolute
+    right: 14px
+    top: 50%
+    transform: translateY(-50%)
+    width: 14px
+
+    @media(max-width: 767px)
+      display: block
+
   &__cells
     &--labels
       .tarifs__cell
@@ -76,12 +98,24 @@
           background-color: #fbfbfc
 
     &--features
+      display: none
+
+      @media(min-width: 768px)
+        display: block
+
+      &.is-open
+        display: block
+
       .tarifs__cell
         align-items: center
         display: flex
         justify-content: space-between
 
         @media(min-width: 768px)
+          justify-content: center
+
+      .tarifs__cell--separator
+        @media(max-width: 767px)
           justify-content: center
 
     &--standart
@@ -97,6 +131,9 @@
       .tarifs__minus
         color: #7b7faa
 
+      & + .tarifs__radio-block
+        background-color: #f9fafd
+
     &--premium
       background-color: #f5f8f7
 
@@ -109,6 +146,9 @@
 
       .tarifs__minus
         color: #9bb8ac
+
+      & + .tarifs__radio-block
+        background-color: #f5f8f7
 
     &--vip
       background-color: #f8f6f5
@@ -123,6 +163,9 @@
       .tarifs__minus
         color: #bbada3
 
+      & + .tarifs__radio-block
+        background-color: #f8f6f5
+
   &__cell
     align-items: center
     display: flex
@@ -132,6 +175,11 @@
     margin-bottom: 0
     padding-left: 12px
     padding-right: 12px
+
+    &--separator
+      background-color: #fff !important
+      font-size: 16px
+      font-weight: 700
 
   &__cell-label
     margin-right: 12px
@@ -150,7 +198,7 @@
 
   &__radio-block
     text-align: center
-    padding: 24px
+    padding: 12px
 
   &__radio-label
     align-items: center
@@ -215,19 +263,48 @@
   background-color: #fff
   padding: 24px 24px 0
 
-  @media(min-width: 768px)
-    display: flex
+  @media(min-width: 992px)
     padding: 48px 48px 0
+
+  &__inner
+    @media(min-width: 768px)
+      display: flex
+
+    &--quantity
+      margin-bottom: 24px
+
+      @media(min-width: 768px)
+        margin-bottom: 48px
+
+  &__inner-block
+    @media(min-width: 768px)
+      padding-right: 24px
+      width: 50%
+
+    @media(max-width: 767px)
+      margin-bottom: 12px
 
   &__duration-block
     margin-bottom: 40px
 
     @media(min-width: 768px)
+      flex-grow: 1
       min-width: 30%
       margin-bottom: 0
       padding-right: 24px
 
-  &__rooms-block
+  &__duration-list
+    @media(min-width: 768px)
+      display: flex
+      padding-top: 17px
+
+    .radio-label
+      @media(min-width: 768px)
+        margin-right: 25px
+        margin-bottom: 0
+        white-space: nowrap
+
+  &__date-block
     @media(min-width: 768px)
       padding-left: 24px
 
@@ -268,6 +345,9 @@
     &:hover
       .room-radio__image-caption
         display: flex
+
+    @media(min-width: 768px)
+      padding-bottom: 0
 
   &__radio
     position: absolute
@@ -325,6 +405,9 @@
     text-transform: uppercase
     width: 100%
 
+    @media(min-width: 768px)
+      display: none
+
   &__link
     align-items: center
     background-color: #adb0cb
@@ -340,12 +423,83 @@
     width: 100%
     z-index: 1
 
+    @media(min-width: 768px)
+      display: none
+
+  &__description
+    display: none
+    padding: 12px
+
+    @media(min-width: 768px)
+      display: block
+
+  &__title-block
+    display: block
+    font-size: 16px
+    line-height: 1.6
+    margin-bottom: 12px
+
+  &__name
+    margin-right: 5px
+
+  &__area
+    color: #7c80aa
+    font-size: 0.8em
+    white-space: nowrap
+
+  &__price-block
+    display: block
+    font-size: 14px
+
+    @media(min-width: 992px)
+      display: flex
+      font-size: 14px
+      justify-content: space-between
+
+  &__pseudo-link
+    color: #9ea1bd
+    display: block
+    padding: 5px
+    text-align: center
+    text-decoration: underline
+
+    @media(min-width: 992px)
+      padding: 0
+
+  &__price
+    display: block
+
+    @media(max-width: 991px)
+      text-align: center
+
+  &__props
+    display: block
+    margin-bottom: 12px
+
+  &__prop
+    align-items: center
+    color: #222
+    display: flex
+    font-size: 0.7em
+    line-height: 1.2
+    margin-bottom: 6px
+
+    &:last-child
+      margin-bottom: 0
+
+  &__prop-icon
+    fill: #97999b
+    height: 20px
+    margin-right: 10px
+    min-width: 20px
+    width: 20px
+
 .result-form
   background-color: #fff
   margin-bottom: 40px
   padding: 24px
 
-  @media(min-width: 768px)
+  @media(min-width: 992px)
     margin-bottom: 80px
     padding: 48px
 
