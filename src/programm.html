@@ -40,16 +40,49 @@
           </div>
         </div>
         <form action="">
+          <div class="residence">
+            <div class="residence__inner">
+              <div class="residence__duration-block">
+                <p class="residence__title">Длительность пребывания:</p>
+                <div class="residence__duration-list">
+                  <label class="radio-label" for="duration_7">
+                    <input id="duration_7" name="duration" type="radio" value="7" checked>
+                    <span class="radio-icon"></span>
+                    <span class="radio-text">7 дней</span>
+                  </label>
+                  <label class="radio-label" for="duration_14">
+                    <input id="duration_14" name="duration" type="radio" value="14">
+                    <span class="radio-icon"></span>
+                    <span class="radio-text">14 дней</span>
+                  </label>
+                  <label class="radio-label" for="duration_21">
+                    <input id="duration_21" name="duration" type="radio" value="21">
+                    <span class="radio-icon"></span>
+                    <span class="radio-text">21 день</span>
+                  </label>
+                </div>
+              </div>
+              <div class="residence__date-block">
+                <p class="residence__title">Выберите желаемую дату заезда:</p>
+                <label class="datepicker-label" for="datepicker">
+                  <input id="datepicker" type='text' class="datepicker-here" />
+                  <span class="datepicker-label__button"><svg class="datepicker-label__button-icon" aria-hidden="true">
+                      <use xlink:href="#calendar" /></svg></span>
+                </label>
+              </div>
+            </div>
+          </div>
           <div class="tarifs">
             <div class="tarifs__inner">
               <div class="tarifs__column tarifs__column--labels">
                 <p class="tarifs__column-title"></p>
                 <div class="tarifs__cells tarifs__cells--labels">
-                  <p class="tarifs__cell">Sed et risus nec velit dignissim auctor</p>
+                  <p class="tarifs__cell tarifs__cell--separator">Разделитель</p>
                   <p class="tarifs__cell">Vivamus tincidunt lectus</p>
                   <p class="tarifs__cell">Vivamus tincidunt lectus</p>
                   <p class="tarifs__cell">Vivamus tincidunt lectus</p>
                   <p class="tarifs__cell">Vivamus tincidunt lectus</p>
+                  <p class="tarifs__cell tarifs__cell--separator">Разделитель 2</p>
                   <p class="tarifs__cell">Vivamus tincidunt lectus</p>
                   <p class="tarifs__cell">Vivamus tincidunt lectus</p>
                   <p class="tarifs__cell">Vivamus tincidunt lectus</p>
@@ -58,34 +91,49 @@
                 </div>
               </div>
               <div class="tarifs__column">
-                <p class="tarifs__column-title tarifs__column-title--standart">Пакет «Стандарт»</p>
-                <div class="tarifs__cells tarifs__cells--features  tarifs__cells--standart">
-                  <p class="tarifs__cell"><span class="tarifs__cell-label">Sed et risus nec velit dignissim auctor</span> <svg class="tarifs__check" aria-hidden="true">
-                      <use xlink:href="#check" /></svg></p>
+                <p class="js-tarif-open tarifs__column-title tarifs__column-title--standart">
+                  «Стандарт»
+                  <svg class="tarifs__column-title-icon" aria-hidden="true">
+                    <use xlink:href="#arrow_down" /></svg>
+                </p>
+                <div class="tarifs__cells tarifs__cells--features tarifs__cells--standart">
+                  <p class="tarifs__cell tarifs__cell--separator">
+                    <span class="tarifs__cell-label">Разделитель</span>
+                  </p>
                   <p class="tarifs__cell"><span class="tarifs__cell-label">Vivamus tincidunt lectus</span> <svg class="tarifs__check" aria-hidden="true">
                       <use xlink:href="#check" /></svg></p>
                   <p class="tarifs__cell"><span class="tarifs__cell-label">Vivamus tincidunt lectus</span> <svg class="tarifs__check" aria-hidden="true">
                       <use xlink:href="#check" /></svg></p>
                   <p class="tarifs__cell"><span class="tarifs__cell-label">Vivamus tincidunt lectus</span> <span class="tarifs__minus">&mdash;</span></p>
                   <p class="tarifs__cell"><span class="tarifs__cell-label">Vivamus tincidunt lectus</span> <span class="tarifs__minus">&mdash;</span></p>
+                  <p class="tarifs__cell tarifs__cell--separator">
+                    <span class="tarifs__cell-label">Разделитель 2</span>
+                  </p>
                   <p class="tarifs__cell"><span class="tarifs__cell-label">Vivamus tincidunt lectus</span> <span class="tarifs__minus">&mdash;</span></p>
                   <p class="tarifs__cell"><span class="tarifs__cell-label">Vivamus tincidunt lectus</span> <svg class="tarifs__check" aria-hidden="true">
                       <use xlink:href="#check" /></svg></p>
                   <p class="tarifs__cell"><span class="tarifs__cell-label">Vivamus tincidunt lectus</span> <span class="tarifs__minus">&mdash;</span></p>
                   <p class="tarifs__cell"><span class="tarifs__cell-label">Vivamus tincidunt lectus</span> <span class="tarifs__minus">&mdash;</span></p>
                   <p class="tarifs__cell"><span class="tarifs__cell-label">Vivamus tincidunt lectus</span> <span class="tarifs__minus">&mdash;</span></p>
-                  <div class="tarifs__radio-block">
-                    <label class="tarifs__radio-label" for="standart">
-                      <input id="standart" class="tarifs__radio" name="tarif" type="radio" value="standart">
-                      <span class="tarifs__radio-text">Выбрать</span>
-                      <span class="tarifs__radio-checked-text">Выбрано</span>
-                    </label>
-                  </div>
+                </div>
+                <div class="tarifs__radio-block">
+                  <label class="tarifs__radio-label" for="standart">
+                    <input id="standart" class="tarifs__radio" name="tarif" type="radio" value="standart">
+                    <span class="tarifs__radio-text">Выбрать</span>
+                    <span class="tarifs__radio-checked-text">Выбрано</span>
+                  </label>
                 </div>
               </div>
               <div class="tarifs__column">
-                <p class="tarifs__column-title tarifs__column-title--premium">Пакет «Премиум»</p>
+                <p class="js-tarif-open tarifs__column-title tarifs__column-title--premium">
+                  «Премиум»
+                  <svg class="tarifs__column-title-icon" aria-hidden="true">
+                    <use xlink:href="#arrow_down" /></svg>
+                </p>
                 <div class="tarifs__cells tarifs__cells--features  tarifs__cells--premium">
+                  <p class="tarifs__cell tarifs__cell--separator">
+                    <span class="tarifs__cell-label">Разделитель</span>
+                  </p>
                   <p class="tarifs__cell"><span class="tarifs__cell-label">Vivamus tincidunt lectus</span> <svg class="tarifs__check" aria-hidden="true">
                       <use xlink:href="#check" /></svg></p>
                   <p class="tarifs__cell"><span class="tarifs__cell-label">Vivamus tincidunt lectus</span> <svg class="tarifs__check" aria-hidden="true">
@@ -94,8 +142,9 @@
                       <use xlink:href="#check" /></svg></p>
                   <p class="tarifs__cell"><span class="tarifs__cell-label">Vivamus tincidunt lectus</span> <svg class="tarifs__check" aria-hidden="true">
                       <use xlink:href="#check" /></svg></p>
-                  <p class="tarifs__cell"><span class="tarifs__cell-label">Vivamus tincidunt lectus</span> <svg class="tarifs__check" aria-hidden="true">
-                      <use xlink:href="#check" /></svg></p>
+                  <p class="tarifs__cell tarifs__cell--separator">
+                    <span class="tarifs__cell-label">Разделитель 2</span>
+                  </p>
                   <p class="tarifs__cell"><span class="tarifs__cell-label">Vivamus tincidunt lectus</span> <svg class="tarifs__check" aria-hidden="true">
                       <use xlink:href="#check" /></svg></p>
                   <p class="tarifs__cell"><span class="tarifs__cell-label">Vivamus tincidunt lectus</span> <svg class="tarifs__check" aria-hidden="true">
@@ -103,18 +152,36 @@
                   <p class="tarifs__cell"><span class="tarifs__cell-label">Vivamus tincidunt lectus</span> <span class="tarifs__minus">&mdash;</span></p>
                   <p class="tarifs__cell"><span class="tarifs__cell-label">Vivamus tincidunt lectus</span> <span class="tarifs__minus">&mdash;</span></p>
                   <p class="tarifs__cell"><span class="tarifs__cell-label">Vivamus tincidunt lectus</span> <span class="tarifs__minus">&mdash;</span></p>
-                  <div class="tarifs__radio-block">
-                    <label class="tarifs__radio-label" for="premium">
-                      <input id="premium" class="tarifs__radio" name="tarif" type="radio" value="premium">
-                      <span class="tarifs__radio-text">Выбрать</span>
-                      <span class="tarifs__radio-checked-text">Выбрано</span>
-                    </label>
-                  </div>
+                </div>
+                <div class="tarifs__radio-block">
+                  <label class="tarifs__radio-label" for="premium">
+                    <input id="premium" class="tarifs__radio" name="tarif" type="radio" value="premium">
+                    <span class="tarifs__radio-text">Выбрать</span>
+                    <span class="tarifs__radio-checked-text">Выбрано</span>
+                  </label>
                 </div>
               </div>
               <div class="tarifs__column">
-                <p class="tarifs__column-title tarifs__column-title--vip">Пакет «VIP»</p>
-                <div class="tarifs__cells tarifs__cells--features  tarifs__cells--vip">
+                <p class="js-tarif-open tarifs__column-title tarifs__column-title--vip">
+                  «VIP»
+                  <svg class="tarifs__column-title-icon" aria-hidden="true">
+                    <use xlink:href="#arrow_down" /></svg>
+                </p>
+                <div class="tarifs__cells tarifs__cells--features tarifs__cells--vip">
+                  <p class="tarifs__cell tarifs__cell--separator">
+                    <span class="tarifs__cell-label">Разделитель</span>
+                  </p>
+                  <p class="tarifs__cell"><span class="tarifs__cell-label">Vivamus tincidunt lectus</span> <svg class="tarifs__check" aria-hidden="true">
+                      <use xlink:href="#check" /></svg></p>
+                  <p class="tarifs__cell"><span class="tarifs__cell-label">Vivamus tincidunt lectus</span> <svg class="tarifs__check" aria-hidden="true">
+                      <use xlink:href="#check" /></svg></p>
+                  <p class="tarifs__cell"><span class="tarifs__cell-label">Vivamus tincidunt lectus</span> <svg class="tarifs__check" aria-hidden="true">
+                      <use xlink:href="#check" /></svg></p>
+                  <p class="tarifs__cell"><span class="tarifs__cell-label">Vivamus tincidunt lectus</span> <svg class="tarifs__check" aria-hidden="true">
+                      <use xlink:href="#check" /></svg></p>
+                  <p class="tarifs__cell tarifs__cell--separator">
+                    <span class="tarifs__cell-label">Разделитель 2</span>
+                  </p>
                   <p class="tarifs__cell"><span class="tarifs__cell-label">Vivamus tincidunt lectus</span> <svg class="tarifs__check" aria-hidden="true">
                       <use xlink:href="#check" /></svg></p>
                   <p class="tarifs__cell"><span class="tarifs__cell-label">Vivamus tincidunt lectus</span> <svg class="tarifs__check" aria-hidden="true">
@@ -125,116 +192,305 @@
                       <use xlink:href="#check" /></svg></p>
                   <p class="tarifs__cell"><span class="tarifs__cell-label">Vivamus tincidunt lectus</span> <svg class="tarifs__check" aria-hidden="true">
                       <use xlink:href="#check" /></svg></p>
-                  <p class="tarifs__cell"><span class="tarifs__cell-label">Vivamus tincidunt lectus</span> <svg class="tarifs__check" aria-hidden="true">
-                      <use xlink:href="#check" /></svg></p>
-                  <p class="tarifs__cell"><span class="tarifs__cell-label">Vivamus tincidunt lectus</span> <svg class="tarifs__check" aria-hidden="true">
-                      <use xlink:href="#check" /></svg></p>
-                  <p class="tarifs__cell"><span class="tarifs__cell-label">Vivamus tincidunt lectus</span> <svg class="tarifs__check" aria-hidden="true">
-                      <use xlink:href="#check" /></svg></p>
-                  <p class="tarifs__cell"><span class="tarifs__cell-label">Vivamus tincidunt lectus</span> <svg class="tarifs__check" aria-hidden="true">
-                      <use xlink:href="#check" /></svg></p>
-                  <p class="tarifs__cell"><span class="tarifs__cell-label">Vivamus tincidunt lectus</span> <svg class="tarifs__check" aria-hidden="true">
-                      <use xlink:href="#check" /></svg></p>
-                  <div class="tarifs__radio-block">
-                    <label class="tarifs__radio-label" for="vip">
-                      <input id="vip" class="tarifs__radio" name="tarif" type="radio" value="vip">
-                      <span class="tarifs__radio-text">Выбрать</span>
-                      <span class="tarifs__radio-checked-text">Выбрано</span>
-                    </label>
-                  </div>
+                </div>
+                <div class="tarifs__radio-block">
+                  <label class="tarifs__radio-label" for="vip">
+                    <input id="vip" class="tarifs__radio" name="tarif" type="radio" value="vip">
+                    <span class="tarifs__radio-text">Выбрать</span>
+                    <span class="tarifs__radio-checked-text">Выбрано</span>
+                  </label>
                 </div>
               </div>
             </div>
           </div>
           <div class="residence">
-            <div class="residence__duration-block">
-              <p class="residence__title">Длительность пребывания</p>
-              <label class="radio-label" for="duration_7">
-                <input id="duration_7" name="duration" type="radio" value="7" checked>
-                <span class="radio-icon"></span>
-                <span class="radio-text">7 дней</span>
-              </label>
-              <label class="radio-label" for="duration_14">
-                <input id="duration_14" name="duration" type="radio" value="14">
-                <span class="radio-icon"></span>
-                <span class="radio-text">14 дней</span>
-              </label>
-              <label class="radio-label" for="duration_21">
-                <input id="duration_21" name="duration" type="radio" value="21">
-                <span class="radio-icon"></span>
-                <span class="radio-text">21 день</span>
-              </label>
+            <div class="residence__inner residence__inner--quantity">
+              <div class="residence__inner-block">
+                <p class="residence__title">Количество гостей:</p>
+                <select class="select select--dark" name="guests">
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5</option>
+                </select>
+              </div>
+              <div class="residence__inner-block">
+                <p class="residence__title">Количество детей:</p>
+                <select class="select select--dark" name="kids">
+                  <option value="0">0</option>
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5</option>
+                </select>
+              </div>
             </div>
-            <div class="residence__rooms-block">
-              <p class="residence__title">Варианты размещения</p>
-              <div class="rooms">
-                <div class="rooms__item">
-                  <div class="room-radio">
-                    <input id="room_standart" class="room-radio__radio" name="room" type="radio" value="room_standart" checked>
-                    <label class="room-radio__label" for="room_standart">
-                      <span class="room-radio__image-block">
-                        <img src="images/content/img_126.jpg" alt="">
-                        <span class="room-radio__image-caption">
-                          <svg class="room-radio__image-caption-check" aria-hidden="true">
-                            <use xlink:href="#check" /></svg>
-                          СТАНДАРТ
+            <p class="residence__title">Варианты размещения</p>
+            <div class="rooms">
+              <div class="rooms__item">
+                <div class="room-radio">
+                  <input id="room_standart" class="room-radio__radio" name="room" type="radio" value="room_standart" checked>
+                  <label class="room-radio__label" for="room_standart">
+                    <span class="room-radio__image-block">
+                      <img src="images/content/img_126.jpg" alt="">
+                      <span class="room-radio__image-caption">
+                        <svg class="room-radio__image-caption-check" aria-hidden="true">
+                          <use xlink:href="#check" /></svg>
+                        СТАНДАРТ
+                      </span>
+                    </span>
+                    <span class="room-radio__title">СТАНДАРТ</span>
+                    <span class="room-radio__description">
+                      <span class="room-radio__title-block"><span class="room-radio__name">Номер ПОЛУЛЮКС</span> <span class="room-radio__area">80 м<sup>2</sup></span></span>
+                      <span class="room-radio__props">
+                        <span class="room-radio__prop">
+                          <svg class="room-radio__prop-icon" aria-hidden="true">
+                            <use xlink:href="#user-plus" />
+                          </svg> Вместимость: 4 человека + дополнительное место
+                        </span>
+                        <span class="room-radio__prop">
+                          <svg class="room-radio__prop-icon" aria-hidden="true">
+                            <use xlink:href="#bath" />
+                          </svg> 4 санузла
+                        </span>
+                        <span class="room-radio__prop">
+                          <svg class="room-radio__prop-icon" aria-hidden="true">
+                            <use xlink:href="#room-type" />
+                          </svg> 2 спальни и гостиная с кухонной зоной
+                        </span>
+                        <span class="room-radio__prop">
+                          <svg class="room-radio__prop-icon" aria-hidden="true">
+                            <use xlink:href="#proc" />
+                          </svg> Кушетка Yamaguchi для процедур
+                        </span>
+                        <span class="room-radio__prop">
+                          <svg class="room-radio__prop-icon" aria-hidden="true">
+                            <use xlink:href="#cond" />
+                          </svg> Система кондиционирования и москитные сетки
+                        </span>
+                        <span class="room-radio__prop">
+                          <svg class="room-radio__prop-icon" aria-hidden="true">
+                            <use xlink:href="#wifi" />
+                          </svg> Free Wi-Fi на всей территории Клиники
+                        </span>
+                        <span class="room-radio__prop">
+                          <svg class="room-radio__prop-icon" aria-hidden="true">
+                            <use xlink:href="#parking" />
+                          </svg> Подземная отапливаемая парковка
+                        </span>
+                        <span class="room-radio__prop">
+                          <svg class="room-radio__prop-icon" aria-hidden="true">
+                            <use xlink:href="#clean" />
+                          </svg> Ежедневная уборка номера
                         </span>
                       </span>
-                      <span class="room-radio__title">СТАНДАРТ</span>
-                    </label>
-                    <a class="room-radio__link" href="rooms-detail.html" target="_blank">Подробнее</a>
-                  </div>
+                      <span class="room-radio__price-block">
+                        <a class="room-radio__pseudo-link" href="rooms-detail.html" target="_blank">Подробнее</a>
+                        <span class="room-radio__price">от 25 000 р</span>
+                      </span>
+                    </span>
+                  </label>
+                  <a class="room-radio__link" href="rooms-detail.html" target="_blank">Подробнее</a>
                 </div>
-                <div class="rooms__item">
-                  <div class="room-radio">
-                    <input id="room_comfort" class="room-radio__radio" name="room" type="radio" value="room_comfort">
-                    <label class="room-radio__label" for="room_comfort">
-                      <span class="room-radio__image-block">
-                        <img src="images/content/img_127.jpg" alt="">
-                        <span class="room-radio__image-caption">
-                          <svg class="room-radio__image-caption-check" aria-hidden="true">
-                            <use xlink:href="#check" /></svg>
-                          КОМФОРТ
+              </div>
+              <div class="rooms__item">
+                <div class="room-radio">
+                  <input id="room_comfort" class="room-radio__radio" name="room" type="radio" value="room_comfort">
+                  <label class="room-radio__label" for="room_comfort">
+                    <span class="room-radio__image-block">
+                      <img src="images/content/img_127.jpg" alt="">
+                      <span class="room-radio__image-caption">
+                        <svg class="room-radio__image-caption-check" aria-hidden="true">
+                          <use xlink:href="#check" /></svg>
+                        КОМФОРТ
+                      </span>
+                    </span>
+                    <span class="room-radio__title">КОМФОРТ</span>
+                    <span class="room-radio__description">
+                      <span class="room-radio__title-block"><span class="room-radio__name">Номер ПОЛУЛЮКС</span> <span class="room-radio__area">80 м<sup>2</sup></span></span>
+                      <span class="room-radio__props">
+                        <span class="room-radio__prop">
+                          <svg class="room-radio__prop-icon" aria-hidden="true">
+                            <use xlink:href="#user-plus" />
+                          </svg> Вместимость: 4 человека + дополнительное место
+                        </span>
+                        <span class="room-radio__prop">
+                          <svg class="room-radio__prop-icon" aria-hidden="true">
+                            <use xlink:href="#bath" />
+                          </svg> 4 санузла
+                        </span>
+                        <span class="room-radio__prop">
+                          <svg class="room-radio__prop-icon" aria-hidden="true">
+                            <use xlink:href="#room-type" />
+                          </svg> 2 спальни и гостиная с кухонной зоной
+                        </span>
+                        <span class="room-radio__prop">
+                          <svg class="room-radio__prop-icon" aria-hidden="true">
+                            <use xlink:href="#proc" />
+                          </svg> Кушетка Yamaguchi для процедур
+                        </span>
+                        <span class="room-radio__prop">
+                          <svg class="room-radio__prop-icon" aria-hidden="true">
+                            <use xlink:href="#cond" />
+                          </svg> Система кондиционирования и москитные сетки
+                        </span>
+                        <span class="room-radio__prop">
+                          <svg class="room-radio__prop-icon" aria-hidden="true">
+                            <use xlink:href="#wifi" />
+                          </svg> Free Wi-Fi на всей территории Клиники
+                        </span>
+                        <span class="room-radio__prop">
+                          <svg class="room-radio__prop-icon" aria-hidden="true">
+                            <use xlink:href="#parking" />
+                          </svg> Подземная отапливаемая парковка
+                        </span>
+                        <span class="room-radio__prop">
+                          <svg class="room-radio__prop-icon" aria-hidden="true">
+                            <use xlink:href="#clean" />
+                          </svg> Ежедневная уборка номера
                         </span>
                       </span>
-                      <span class="room-radio__title">КОМФОРТ</span>
-                    </label>
-                    <a class="room-radio__link" href="rooms-detail.html" target="_blank">Подробнее</a>
-                  </div>
+                      <span class="room-radio__price-block">
+                        <a class="room-radio__pseudo-link" href="rooms-detail.html" target="_blank">Подробнее</a>
+                        <span class="room-radio__price">от 25 000 р</span>
+                      </span>
+                    </span>
+                  </label>
+                  <a class="room-radio__link" href="rooms-detail.html" target="_blank">Подробнее</a>
                 </div>
-                <div class="rooms__item">
-                  <div class="room-radio">
-                    <input id="room_semilux" class="room-radio__radio" name="room" type="radio" value="room_semilux">
-                    <label class="room-radio__label" for="room_semilux">
-                      <span class="room-radio__image-block">
-                        <img src="images/content/img_128.jpg" alt="">
-                        <span class="room-radio__image-caption">
-                          <svg class="room-radio__image-caption-check" aria-hidden="true">
-                            <use xlink:href="#check" /></svg>
-                          ПОЛУЛЮКС
+              </div>
+              <div class="rooms__item">
+                <div class="room-radio">
+                  <input id="room_semilux" class="room-radio__radio" name="room" type="radio" value="room_semilux">
+                  <label class="room-radio__label" for="room_semilux">
+                    <span class="room-radio__image-block">
+                      <img src="images/content/img_128.jpg" alt="">
+                      <span class="room-radio__image-caption">
+                        <svg class="room-radio__image-caption-check" aria-hidden="true">
+                          <use xlink:href="#check" /></svg>
+                        ПОЛУЛЮКС
+                      </span>
+                    </span>
+                    <span class="room-radio__title">ПОЛУЛЮКС</span>
+                    <span class="room-radio__description">
+                      <span class="room-radio__title-block"><span class="room-radio__name">Номер ПОЛУЛЮКС</span> <span class="room-radio__area">80 м<sup>2</sup></span></span>
+                      <span class="room-radio__props">
+                        <span class="room-radio__prop">
+                          <svg class="room-radio__prop-icon" aria-hidden="true">
+                            <use xlink:href="#user-plus" />
+                          </svg> Вместимость: 4 человека + дополнительное место
+                        </span>
+                        <span class="room-radio__prop">
+                          <svg class="room-radio__prop-icon" aria-hidden="true">
+                            <use xlink:href="#bath" />
+                          </svg> 4 санузла
+                        </span>
+                        <span class="room-radio__prop">
+                          <svg class="room-radio__prop-icon" aria-hidden="true">
+                            <use xlink:href="#room-type" />
+                          </svg> 2 спальни и гостиная с кухонной зоной
+                        </span>
+                        <span class="room-radio__prop">
+                          <svg class="room-radio__prop-icon" aria-hidden="true">
+                            <use xlink:href="#proc" />
+                          </svg> Кушетка Yamaguchi для процедур
+                        </span>
+                        <span class="room-radio__prop">
+                          <svg class="room-radio__prop-icon" aria-hidden="true">
+                            <use xlink:href="#cond" />
+                          </svg> Система кондиционирования и москитные сетки
+                        </span>
+                        <span class="room-radio__prop">
+                          <svg class="room-radio__prop-icon" aria-hidden="true">
+                            <use xlink:href="#wifi" />
+                          </svg> Free Wi-Fi на всей территории Клиники
+                        </span>
+                        <span class="room-radio__prop">
+                          <svg class="room-radio__prop-icon" aria-hidden="true">
+                            <use xlink:href="#parking" />
+                          </svg> Подземная отапливаемая парковка
+                        </span>
+                        <span class="room-radio__prop">
+                          <svg class="room-radio__prop-icon" aria-hidden="true">
+                            <use xlink:href="#clean" />
+                          </svg> Ежедневная уборка номера
                         </span>
                       </span>
-                      <span class="room-radio__title">ПОЛУЛЮКС</span>
-                    </label>
-                    <a class="room-radio__link" href="rooms-detail.html" target="_blank">Подробнее</a>
-                  </div>
+                      <span class="room-radio__price-block">
+                        <a class="room-radio__pseudo-link" href="rooms-detail.html" target="_blank">Подробнее</a>
+                        <span class="room-radio__price">от 25 000 р</span>
+                      </span>
+                    </span>
+                  </label>
+                  <a class="room-radio__link" href="rooms-detail.html" target="_blank">Подробнее</a>
                 </div>
-                <div class="rooms__item">
-                  <div class="room-radio">
-                    <input id="room_lux" class="room-radio__radio" name="room" type="radio" value="room_lux">
-                    <label class="room-radio__label" for="room_lux">
-                      <span class="room-radio__image-block">
-                        <img src="images/content/img_129.jpg" alt="">
-                        <span class="room-radio__image-caption">
-                          <svg class="room-radio__image-caption-check" aria-hidden="true">
-                            <use xlink:href="#check" /></svg>
-                          ЛЮКС
+              </div>
+              <div class="rooms__item">
+                <div class="room-radio">
+                  <input id="room_lux" class="room-radio__radio" name="room" type="radio" value="room_lux">
+                  <label class="room-radio__label" for="room_lux">
+                    <span class="room-radio__image-block">
+                      <img src="images/content/img_129.jpg" alt="">
+                      <span class="room-radio__image-caption">
+                        <svg class="room-radio__image-caption-check" aria-hidden="true">
+                          <use xlink:href="#check" /></svg>
+                        ЛЮКС
+                      </span>
+                    </span>
+                    <span class="room-radio__title">ЛЮКС</span>
+                    <span class="room-radio__description">
+                      <span class="room-radio__title-block"><span class="room-radio__name">Номер ПОЛУЛЮКС</span> <span class="room-radio__area">80 м<sup>2</sup></span></span>
+                      <span class="room-radio__props">
+                        <span class="room-radio__prop">
+                          <svg class="room-radio__prop-icon" aria-hidden="true">
+                            <use xlink:href="#user-plus" />
+                          </svg> Вместимость: 4 человека + дополнительное место
+                        </span>
+                        <span class="room-radio__prop">
+                          <svg class="room-radio__prop-icon" aria-hidden="true">
+                            <use xlink:href="#bath" />
+                          </svg> 4 санузла
+                        </span>
+                        <span class="room-radio__prop">
+                          <svg class="room-radio__prop-icon" aria-hidden="true">
+                            <use xlink:href="#room-type" />
+                          </svg> 2 спальни и гостиная с кухонной зоной
+                        </span>
+                        <span class="room-radio__prop">
+                          <svg class="room-radio__prop-icon" aria-hidden="true">
+                            <use xlink:href="#proc" />
+                          </svg> Кушетка Yamaguchi для процедур
+                        </span>
+                        <span class="room-radio__prop">
+                          <svg class="room-radio__prop-icon" aria-hidden="true">
+                            <use xlink:href="#cond" />
+                          </svg> Система кондиционирования и москитные сетки
+                        </span>
+                        <span class="room-radio__prop">
+                          <svg class="room-radio__prop-icon" aria-hidden="true">
+                            <use xlink:href="#wifi" />
+                          </svg> Free Wi-Fi на всей территории Клиники
+                        </span>
+                        <span class="room-radio__prop">
+                          <svg class="room-radio__prop-icon" aria-hidden="true">
+                            <use xlink:href="#parking" />
+                          </svg> Подземная отапливаемая парковка
+                        </span>
+                        <span class="room-radio__prop">
+                          <svg class="room-radio__prop-icon" aria-hidden="true">
+                            <use xlink:href="#clean" />
+                          </svg> Ежедневная уборка номера
                         </span>
                       </span>
-                      <span class="room-radio__title">ЛЮКС</span>
-                    </label>
-                    <a class="room-radio__link" href="rooms-detail.html" target="_blank">Подробнее</a>
-                  </div>
+                      <span class="room-radio__price-block">
+                        <a class="room-radio__pseudo-link" href="rooms-detail.html" target="_blank">Подробнее</a>
+                        <span class="room-radio__price">от 25 000 р</span>
+                      </span>
+                    </span>
+                  </label>
+                  <a class="room-radio__link" href="rooms-detail.html" target="_blank">Подробнее</a>
                 </div>
               </div>
             </div>
@@ -259,29 +515,6 @@
                     <span class="result-form__option-price">132 000 р</span>
                   </p>
                 </div>
-                <p class="result-form__subtitle">Выберите желаемую дату заезда:</p>
-                <label class="datepicker-label" for="datepicker">
-                  <input id="datepicker" type='text' class="datepicker-here" />
-                  <span class="datepicker-label__button"><svg class="datepicker-label__button-icon" aria-hidden="true">
-                      <use xlink:href="#calendar" /></svg></span>
-                </label>
-                <p class="result-form__subtitle">Количество гостей:</p>
-                <select class="select select--dark" name="guests">
-                  <option value="1">1</option>
-                  <option value="2">2</option>
-                  <option value="3">3</option>
-                  <option value="4">4</option>
-                  <option value="5">5</option>
-                </select>
-                <p class="result-form__subtitle">Количество детей:</p>
-                <select class="select select--dark" name="kids">
-                  <option value="0">0</option>
-                  <option value="1">1</option>
-                  <option value="2">2</option>
-                  <option value="3">3</option>
-                  <option value="4">4</option>
-                  <option value="5">5</option>
-                </select>
               </div>
               <div class="result-form__block">
                 <p class="result-form__subtitle">Пожалуйста, укажите ваши контактные данные:</p>
@@ -407,25 +640,42 @@
   <script type="text/javascript" src="js/datepicker.min.js"></script>
 
   <script>
-    var todayDate = new Date(Date.now()); //сегодня
-    var selectedDate = new Date(Date.now() + 24 * 60 * 60 * 1000); //завтра
+    var selectedDate;
     var daysInterval = 7; //период в днях
     var initCal = false;
+    var disabledDays = [1, 2, 3, 4, 5, 6];
 
     $('#datepicker').datepicker({
       position: "bottom left",
       moveToOtherMonthsOnSelect: false,
-      minDate: selectedDate,
+      minDate: new Date(),
       onSelect: function(formattedDate, date, inst) {
         selectedDate = date;
+        $('.-interval-class-').removeClass('-interval-class-');
         initCal = true;
         inst.update();
       },
 
       onRenderCell: function(date, cellType) {
+        var day = date.getDay(),
+          isDisabled = disabledDays.indexOf(day) != -1;
+
         if (initCal == true && cellType == 'day' && date.getTime() >= selectedDate.getTime() && (date.getTime() < selectedDate.getTime() + daysInterval * 24 * 60 * 60 * 1000)) {
+          if (disabledDays.indexOf(day) != -1) {
+            return {
+              disabled: true,
+              classes: '-interval-class-'
+            }
+          } else {
+            return {
+              classes: '-interval-class-'
+            }
+          }
+        }
+
+        if (cellType == 'day') {
           return {
-            classes: '-interval-class-'
+            disabled: isDisabled
           }
         }
       }
