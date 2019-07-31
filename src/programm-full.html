@@ -1,0 +1,1155 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+
+  <title>X-Clinic - программа</title>
+
+  <meta name="description" content="">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="format-detection" content="telephone=no">
+
+  //= template/favicon.html
+
+  //= template/style.html
+</head>
+
+<body class="no-js">
+  //= template/sprite.html
+  <div class="wrapper">
+    //= template/header.html
+    <div class="page-content">
+      <div class="page-banner page-banner--big" style="background-image: url('images/backgrounds/banner_programm.jpg')">
+        <h1 class="page-banner__title">
+          <span class="page-banner__title-small">Программы</span>
+          Программа полного восстановления ресурсов организма
+        </h1>
+      </div>
+      <div class="container">
+        <div class="text-block4">
+          <div class="text-block4__image-block">
+            <img class="text-block4__image" src="images/content/img_125.jpg" alt="">
+          </div>
+          <div class="text-block4__text">
+            <p>Suspendisse tincidunt libero sed leo venenatis, quis congue nulla eleifend. Sed vitae leo augue.</p>
+            <p>Nulla faucibus nec orci sit amet ornare. Aliquam interdum tempor scelerisque. Fusce sed dignissim ipsum. In tempus velit at purus cursus rhoncus. Vivamus tincidunt lectus sed magna laoreet finibus. Quisque efficitur iaculis eros at
+              eleifend.</p>
+          </div>
+        </div>
+        <form action="">
+          <div class="residence">
+            <div class="residence__inner">
+              <div class="residence__duration-block">
+                <p class="residence__title">Длительность пребывания:</p>
+                <div class="residence__duration-list">
+                  <label class="radio-label" for="duration_7">
+                    <input id="duration_7" name="duration" type="radio" value="7">
+                    <span class="radio-icon"></span>
+                    <span class="radio-text">7 дней</span>
+                  </label>
+                  <label class="radio-label" for="duration_10">
+                    <input id="duration_10" name="duration" type="radio" value="10" checked>
+                    <span class="radio-icon"></span>
+                    <span class="radio-text">10 дней</span>
+                  </label>
+                  <label class="radio-label" for="duration_14">
+                    <input id="duration_14" name="duration" type="radio" value="14">
+                    <span class="radio-icon"></span>
+                    <span class="radio-text">14 дней</span>
+                  </label>
+                </div>
+              </div>
+              <div class="residence__date-block">
+                <p class="residence__title">Выберите желаемую дату заезда:</p>
+                <label class="datepicker-label" for="datepicker">
+                  <input id="datepicker" type='text' class="datepicker-here" />
+                  <span class="datepicker-label__button"><svg class="datepicker-label__button-icon" aria-hidden="true">
+                      <use xlink:href="#calendar" /></svg></span>
+                </label>
+              </div>
+            </div>
+          </div>
+          <div class="tarifs">
+            <div class="tarifs__inner">
+              <div class="tarifs__column tarifs__column--labels">
+                <p class="tarifs__column-title"></p>
+                <div class="tarifs__cells tarifs__cells--labels">
+                  <p class="js-group-opener tarifs__cell tarifs__cell--separator is-active" data-href="1">
+                    Консультации врачей-специалистов
+                    <svg class="tarifs__separator-icon" aria-hidden="true">
+                      <use xlink:href="#arrow_down" /></svg>
+                  </p>
+                  <div class="tarifs__cells-group is-open" data-target="1">
+                    <p class="tarifs__cell">Прием лечащего врача, первичный</p>
+                    <p class="tarifs__cell">Прием лечащего врача, повторный</p>
+                    <p class="tarifs__cell">Заключительный прием врача с выдачей подробных рекомендаций по образу жизни, индивидуальный план здоровья</p>
+                    <p class="tarifs__cell">Консультация mind-терапевта, исследование и рекомендации по повышению адаптационных возможностей организма</p>
+                    <p class="tarifs__cell">Консультация косметолога-эстетиста по коррекции лица и тела с составлением индивидуальной программы</p>
+                    <p class="tarifs__cell">Консультация врача-гинеколога/уролога</p>
+                  </div>
+
+                  <p class="js-group-opener tarifs__cell tarifs__cell--separator" data-href="2">
+                    Диагностика
+                    <svg class="tarifs__separator-icon" aria-hidden="true">
+                      <use xlink:href="#arrow_down" /></svg>
+                  </p>
+                  <div class="tarifs__cells-group" data-target="2">
+                    <p class="tarifs__cell">Клинический анализ крови</p>
+                    <p class="tarifs__cell">Общий анализ мочи</p>
+                    <p class="tarifs__cell">Биохимический анализ крови (липидограмма, ливер-тест, глюкоза, креатинин, общий белок, коагулограмма, кортизол в слюне вечерний, малоновый диальдегид, гомоцистеин, 8-ОН-дезоксигуанозин)</p>
+                    <p class="tarifs__cell">Топографическое исследование позвоночника</p>
+                    <p class="tarifs__cell">Медискрин ВОП</p>
+                    <p class="tarifs__cell">УЗИ желчного пузыря, печени, почек</p>
+                    <p class="tarifs__cell">Электрокардиография</p>
+                    <p class="tarifs__cell">Биоимпендансметрия</p>
+                    <p class="tarifs__cell">Пульсовая диагностика для оценки функционального состояния (VEDA пульс)</p>
+                    <p class="tarifs__cell">Расширенный пакет диагностики</p>
+                    <p class="tarifs__cell">Лабораторная диагностика:</p>
+                    <p class="tarifs__cell">Углеводный обмен ( инсулин, гликированный гемоглобин, расчетный индекс НОМА)</p>
+                    <p class="tarifs__cell">Белковый обмен ( мочевина, мочевая кислота, цистатин С)</p>
+                    <p class="tarifs__cell">СРБ, высокочувствительный СРБ</p>
+                    <p class="tarifs__cell">IgE</p>
+                    <p class="tarifs__cell">Витамины D</p>
+                    <p class="tarifs__cell">Витамин B12</p>
+                    <p class="tarifs__cell">Ферритин</p>
+                    <p class="tarifs__cell">ПТИ+МНО</p>
+                    <p class="tarifs__cell">Гормоны щитовидной железы (ТТГ, Т3, Т4, АТ к ТПО)</p>
+                    <p class="tarifs__cell">Гормоны для женщин (ФСГ, ЛГ, Пролактин, Эстрадиол, Тестостерон)</p>
+                    <p class="tarifs__cell">Гормоны для мужчин (тестостерон, PSA свободный, PSA общий, глобулин связывающий гормон, Пролактин, ЛГ, Эстрадиол)</p>
+                    <p class="tarifs__cell">Инфекции (ВИЧ, сифилис, гепатиты)</p>
+                    <p class="tarifs__cell">Вирусы (ИФА крови: цитомегаловирус (IgM, IgG), вирус Эпштейн-Барр (IgM, IgG), герпес 1, 2, 6)</p>
+                    <p class="tarifs__cell">Электролиты крови (калий, натрий, хлор) Кальций</p>
+                    <p class="tarifs__cell">Онкомаркеры. Для женщин - СА 125, СА 15-3, СА 19-9, СА 72-4 (жен), РЭА, НЕ-4. Для мужчин — СА 19-9, СА 72-4, СА 15-3 (муж), РЭА.</p>
+                    <p class="tarifs__cell">Мазки на флору, цитологию - у женщин. Микроскопия мазка у мужчин.</p>
+                    <p class="tarifs__cell">Скрининг на ВПЧ</p>
+                    <p class="tarifs__cell">Инструментальная диагностика:</p>
+                    <p class="tarifs__cell">УЗИ сердца</p>
+                    <p class="tarifs__cell">УЗИ брахиоцефальных сосудов</p>
+                    <p class="tarifs__cell">УЗИ щитовидной железы</p>
+                    <p class="tarifs__cell">УЗИ молочных желез и органов малого таза трансвагинально у женщин</p>
+                    <p class="tarifs__cell">УЗИ ОМТ у мужчин трансабдоминально</p>
+                    <p class="tarifs__cell">ЭФГДС</p>
+                    <p class="tarifs__cell">Колоноскопия</p>
+                    <p class="tarifs__cell">Осмотры специалистов:</p>
+                    <p class="tarifs__cell">Кардиолог</p>
+                    <p class="tarifs__cell">Эндокринолог</p>
+                    <p class="tarifs__cell">Офтальмолог</p>
+                    <p class="tarifs__cell">ЛОР</p>
+                  </div>
+
+                  <p class="js-group-opener tarifs__cell tarifs__cell--separator" data-href="3">
+                    Лечебные процедуры
+                    <svg class="tarifs__separator-icon" aria-hidden="true">
+                      <use xlink:href="#arrow_down" /></svg>
+                  </p>
+                  <div class="tarifs__cells-group" data-target="3">
+                    <p class="tarifs__cell">Тюбаж с минеральной водой подготовительный</p>
+                    <p class="tarifs__cell">Тюбаж с минеральной водой основной</p>
+                    <p class="tarifs__cell">Тюбаж с минеральной водой заключительный</p>
+                    <p class="tarifs__cell">Грязелечение на печень</p>
+                    <p class="tarifs__cell">МОК/гидроколонотерапия</p>
+                    <p class="tarifs__cell">Очистительные клизмы</p>
+                    <p class="tarifs__cell">Микроклизмы с пробиотиком</p>
+                    <p class="tarifs__cell">Cеанс нормобарической оксигенации</p>
+                    <p class="tarifs__cell">Магнитотерапия</p>
+                    <p class="tarifs__cell">Душ Шарко/подводный душ-массаж</p>
+                    <p class="tarifs__cell">ИК-сауна+пилинг+детокс обертывание (в номере)</p>
+                    <p class="tarifs__cell">Талассотерапия</p>
+                    <p class="tarifs__cell">Детокс через стопы</p>
+                    <p class="tarifs__cell">Прессотерапия (лимфодренаж) ноги и живот</p>
+                    <p class="tarifs__cell">Массаж спины</p>
+                    <p class="tarifs__cell">Массаж общий</p>
+                    <p class="tarifs__cell">Внутривенное лазерное облучение крови</p>
+                    <p class="tarifs__cell">Криотерапия</p>
+                    <p class="tarifs__cell">Посещение СПА зоны (бассейн, финская сауна (без ограничения)</p>
+                    <p class="tarifs__cell">Физическая нагрузка (скандинавская ходьба, фитнес, ЛФК)</p>
+                    <p class="tarifs__cell">Блок лечения Мужское/Женское здоровье</p>
+                    <p class="tarifs__cell">Женское здоровье:</p>
+                    <p class="tarifs__cell">Профильная органотерапия/ антиоксидантная теапия</p>
+                    <p class="tarifs__cell">Лазеролечение на аппарате Латон</p>
+                    <p class="tarifs__cell">Озонотерапия</p>
+                    <p class="tarifs__cell">Грязелечение</p>
+                    <p class="tarifs__cell">Мужское здоровье:</p>
+                    <p class="tarifs__cell">Профильная органотерапия/ антиоксидантная теапия</p>
+                    <p class="tarifs__cell">Лечение на аппарате «Андрогин»</p>
+                    <p class="tarifs__cell">Массаж предстательной железы</p>
+                    <p class="tarifs__cell">Грязелечение</p>
+                    <p class="tarifs__cell">Озонотерапия</p>
+                  </div>
+
+                  <p class="js-group-opener tarifs__cell tarifs__cell--separator" data-href="4">
+                    Прием препаратов
+                    <svg class="tarifs__separator-icon" aria-hidden="true">
+                      <use xlink:href="#arrow_down" /></svg>
+                  </p>
+                  <div class="tarifs__cells-group" data-target="4">
+                    <p class="tarifs__cell">Прием препаратов, улучшающих лимфодренажную функцию</p>
+                    <p class="tarifs__cell">Прием препаратов очищающих кишечник</p>
+                    <p class="tarifs__cell">Антипаразитарная терапия</p>
+                    <p class="tarifs__cell">Прием препаратов, улучшающиих микрофлору кишечника</p>
+                    <p class="tarifs__cell">Персональная метаболическая терапия</p>
+                  </div>
+
+                  <p class="js-group-opener tarifs__cell tarifs__cell--separator" data-href="5">
+                    Питание
+                    <svg class="tarifs__separator-icon" aria-hidden="true">
+                      <use xlink:href="#arrow_down" /></svg>
+                  </p>
+                  <div class="tarifs__cells-group" data-target="5">
+                    <p class="tarifs__cell">Разгрузочно-диетическая терапия</p>
+                  </div>
+
+                  <p class="js-group-opener tarifs__cell tarifs__cell--separator" data-href="6">
+                    Информационный блок
+                    <svg class="tarifs__separator-icon" aria-hidden="true">
+                      <use xlink:href="#arrow_down" /></svg>
+                  </p>
+                  <div class="tarifs__cells-group" data-target="6">
+                    <p class="tarifs__cell">Лекции</p>
+                    <p class="tarifs__cell">Лекция вводная</p>
+                    <p class="tarifs__cell">Лекция по питанию</p>
+                    <p class="tarifs__cell">Лекция от эстетиста</p>
+                    <p class="tarifs__cell">Лекции от mind терапевта, уролога, гинеколога</p>
+                  </div>
+                </div>
+              </div>
+              <div class="tarifs__column">
+                <p class="js-tarif-open tarifs__column-title tarifs__column-title--standart">
+                  SILVER
+                  <svg class="tarifs__column-title-icon" aria-hidden="true">
+                    <use xlink:href="#arrow_down" /></svg>
+                </p>
+                <div class="tarifs__cells tarifs__cells--features tarifs__cells--standart">
+                  <p class="tarifs__cell tarifs__cell--separator">
+                    <span class="js-group-opener tarifs__cell-label is-active" data-href="1">Консультации врачей-специалистов <svg class="tarifs__separator-icon" aria-hidden="true">
+                        <use xlink:href="#arrow_down" /></svg></span>
+                  </p>
+                  <div class="tarifs__cells-group is-open" data-target="1">
+                    <p class="tarifs__cell">1</p>
+                    <p class="tarifs__cell">7</p>
+                    <p class="tarifs__cell">1</p>
+                    <p class="tarifs__cell">1</p>
+                    <p class="tarifs__cell">1</p>
+                    <p class="tarifs__cell">1</p>
+                  </div>
+
+                  <p class="tarifs__cell tarifs__cell--separator">
+                    <span class="js-group-opener tarifs__cell-label" data-href="2">Диагностика <svg class="tarifs__separator-icon" aria-hidden="true">
+                        <use xlink:href="#arrow_down" /></svg></span>
+                  </p>
+                  <div class="tarifs__cells-group" data-target="2">
+                    <p class="tarifs__cell">1</p>
+                    <p class="tarifs__cell">1</p>
+                    <p class="tarifs__cell">1</p>
+                    <p class="tarifs__cell">1</p>
+                    <p class="tarifs__cell">1</p>
+                    <p class="tarifs__cell">1</p>
+                    <p class="tarifs__cell">1</p>
+                    <p class="tarifs__cell">2</p>
+                    <p class="tarifs__cell">нет</p>
+                    <p class="tarifs__cell">нет</p>
+                    <p class="tarifs__cell">&nbsp;</p>
+                    <p class="tarifs__cell">нет</p>
+                    <p class="tarifs__cell">нет</p>
+                    <p class="tarifs__cell">нет</p>
+                    <p class="tarifs__cell">нет</p>
+                    <p class="tarifs__cell">нет</p>
+                    <p class="tarifs__cell">нет</p>
+                    <p class="tarifs__cell">нет</p>
+                    <p class="tarifs__cell">нет</p>
+                    <p class="tarifs__cell">нет</p>
+                    <p class="tarifs__cell">нет</p>
+                    <p class="tarifs__cell">нет</p>
+                    <p class="tarifs__cell">нет</p>
+                    <p class="tarifs__cell">нет</p>
+                    <p class="tarifs__cell">нет</p>
+                    <p class="tarifs__cell">РЭА</p>
+                    <p class="tarifs__cell">да</p>
+                    <p class="tarifs__cell">да</p>
+                    <p class="tarifs__cell">&nbsp;</p>
+                    <p class="tarifs__cell">нет</p>
+                    <p class="tarifs__cell">нет</p>
+                    <p class="tarifs__cell">нет</p>
+                    <p class="tarifs__cell">1</p>
+                    <p class="tarifs__cell">1</p>
+                    <p class="tarifs__cell">нет</p>
+                    <p class="tarifs__cell">нет</p>
+                    <p class="tarifs__cell">&nbsp;</p>
+                    <p class="tarifs__cell">нет</p>
+                    <p class="tarifs__cell">нет</p>
+                    <p class="tarifs__cell">нет</p>
+                    <p class="tarifs__cell">нет</p>
+                  </div>
+
+                  <p class="tarifs__cell tarifs__cell--separator">
+                    <span class="js-group-opener tarifs__cell-label" data-href="3">Лечебные процедуры <svg class="tarifs__separator-icon" aria-hidden="true">
+                        <use xlink:href="#arrow_down" /></svg></span>
+                  </p>
+                  <div class="tarifs__cells-group" data-target="3">
+                    <p class="tarifs__cell">1</p>
+                    <p class="tarifs__cell">3</p>
+                    <p class="tarifs__cell">1</p>
+                    <p class="tarifs__cell">5</p>
+                    <p class="tarifs__cell">4</p>
+                    <p class="tarifs__cell">14</p>
+                    <p class="tarifs__cell">5</p>
+                    <p class="tarifs__cell">нет</p>
+                    <p class="tarifs__cell">нет</p>
+                    <p class="tarifs__cell">8</p>
+                    <p class="tarifs__cell">3</p>
+                    <p class="tarifs__cell">2</p>
+                    <p class="tarifs__cell">5</p>
+                    <p class="tarifs__cell">2</p>
+                    <p class="tarifs__cell">7</p>
+                    <p class="tarifs__cell">нет</p>
+                    <p class="tarifs__cell">нет</p>
+                    <p class="tarifs__cell">нет</p>
+                    <p class="tarifs__cell">ежедневно</p>
+                    <p class="tarifs__cell">ежедневно</p>
+                    <p class="tarifs__cell">нет</p>
+                    <p class="tarifs__cell">&nbsp;</p>
+                    <p class="tarifs__cell">нет</p>
+                    <p class="tarifs__cell">нет</p>
+                    <p class="tarifs__cell">нет</p>
+                    <p class="tarifs__cell">нет</p>
+                    <p class="tarifs__cell">&nbsp;</p>
+                    <p class="tarifs__cell">нет</p>
+                    <p class="tarifs__cell">нет</p>
+                    <p class="tarifs__cell">нет</p>
+                    <p class="tarifs__cell">нет</p>
+                    <p class="tarifs__cell">нет</p>
+                  </div>
+
+                  <p class="tarifs__cell tarifs__cell--separator">
+                    <span class="js-group-opener tarifs__cell-label" data-href="4">Прием препаратов <svg class="tarifs__separator-icon" aria-hidden="true">
+                        <use xlink:href="#arrow_down" /></svg></span>
+                  </p>
+                  <div class="tarifs__cells-group" data-target="4">
+                    <p class="tarifs__cell">курс</p>
+                    <p class="tarifs__cell">курс</p>
+                    <p class="tarifs__cell">курс</p>
+                    <p class="tarifs__cell">курс</p>
+                    <p class="tarifs__cell">курс</p>
+                  </div>
+
+                  <p class="tarifs__cell tarifs__cell--separator">
+                    <span class="js-group-opener tarifs__cell-label" data-href="5">Питание <svg class="tarifs__separator-icon" aria-hidden="true">
+                        <use xlink:href="#arrow_down" /></svg></span>
+                  </p>
+                  <div class="tarifs__cells-group" data-target="5">
+                    <p class="tarifs__cell">10</p>
+                  </div>
+
+                  <p class="tarifs__cell tarifs__cell--separator">
+                    <span class="js-group-opener tarifs__cell-label" data-href="6">Информационный блок <svg class="tarifs__separator-icon" aria-hidden="true">
+                        <use xlink:href="#arrow_down" /></svg></span>
+                  </p>
+                  <div class="tarifs__cells-group" data-target="6">
+                    <p class="tarifs__cell">5</p>
+                    <p class="tarifs__cell">1</p>
+                    <p class="tarifs__cell">1</p>
+                    <p class="tarifs__cell">1</p>
+                    <p class="tarifs__cell">2</p>
+                  </div>
+                </div>
+                <div class="tarifs__radio-block">
+                  <label class="tarifs__radio-label" for="standart">
+                    <input id="standart" class="tarifs__radio" name="tarif" type="radio" value="standart">
+                    <span class="tarifs__radio-text">Выбрать</span>
+                    <span class="tarifs__radio-checked-text">Выбрано</span>
+                  </label>
+                </div>
+              </div>
+              <div class="tarifs__column">
+                <p class="js-tarif-open tarifs__column-title tarifs__column-title--premium">
+                  GOLD
+                  <svg class="tarifs__column-title-icon" aria-hidden="true">
+                    <use xlink:href="#arrow_down" /></svg>
+                </p>
+                <div class="tarifs__cells tarifs__cells--features  tarifs__cells--premium">
+                  <p class="tarifs__cell tarifs__cell--separator">
+                    <span class="js-group-opener tarifs__cell-label is-active" data-href="1">Консультации врачей-специалистов <svg class="tarifs__separator-icon" aria-hidden="true">
+                        <use xlink:href="#arrow_down" /></svg></span>
+                  </p>
+                  <div class="tarifs__cells-group is-open" data-target="1">
+                    <p class="tarifs__cell">1</p>
+                    <p class="tarifs__cell">7</p>
+                    <p class="tarifs__cell">1</p>
+                    <p class="tarifs__cell">1</p>
+                    <p class="tarifs__cell">1</p>
+                    <p class="tarifs__cell">1</p>
+                  </div>
+
+                  <p class="tarifs__cell tarifs__cell--separator">
+                    <span class="js-group-opener tarifs__cell-label" data-href="2">Диагностика <svg class="tarifs__separator-icon" aria-hidden="true">
+                        <use xlink:href="#arrow_down" /></svg></span>
+                  </p>
+                  <div class="tarifs__cells-group" data-target="2">
+                    <p class="tarifs__cell">1</p>
+                    <p class="tarifs__cell">1</p>
+                    <p class="tarifs__cell">1</p>
+                    <p class="tarifs__cell">1</p>
+                    <p class="tarifs__cell">1</p>
+                    <p class="tarifs__cell">1</p>
+                    <p class="tarifs__cell">1</p>
+                    <p class="tarifs__cell">2</p>
+                    <p class="tarifs__cell">1</p>
+                    <p class="tarifs__cell">1</p>
+                    <p class="tarifs__cell">&nbsp;</p>
+                    <p class="tarifs__cell">1</p>
+                    <p class="tarifs__cell">1</p>
+                    <p class="tarifs__cell">1</p>
+                    <p class="tarifs__cell">1</p>
+                    <p class="tarifs__cell">1</p>
+                    <p class="tarifs__cell">1</p>
+                    <p class="tarifs__cell">1</p>
+                    <p class="tarifs__cell">1</p>
+                    <p class="tarifs__cell">1</p>
+                    <p class="tarifs__cell">1</p>
+                    <p class="tarifs__cell">1</p>
+                    <p class="tarifs__cell">1</p>
+                    <p class="tarifs__cell">1</p>
+                    <p class="tarifs__cell">1</p>
+                    <p class="tarifs__cell">1</p>
+                    <p class="tarifs__cell">1</p>
+                    <p class="tarifs__cell">1</p>
+                    <p class="tarifs__cell">&nbsp;</p>
+                    <p class="tarifs__cell">нет</p>
+                    <p class="tarifs__cell">нет</p>
+                    <p class="tarifs__cell">1</p>
+                    <p class="tarifs__cell">1</p>
+                    <p class="tarifs__cell">1</p>
+                    <p class="tarifs__cell">нет</p>
+                    <p class="tarifs__cell">нет</p>
+                    <p class="tarifs__cell">&nbsp;</p>
+                    <p class="tarifs__cell">нет</p>
+                    <p class="tarifs__cell">нет</p>
+                    <p class="tarifs__cell">нет</p>
+                    <p class="tarifs__cell">нет</p>
+                  </div>
+
+                  <p class="tarifs__cell tarifs__cell--separator">
+                    <span class="js-group-opener tarifs__cell-label" data-href="4">Лечебные процедуры <svg class="tarifs__separator-icon" aria-hidden="true">
+                        <use xlink:href="#arrow_down" /></svg></span>
+                  </p>
+                  <div class="tarifs__cells-group" data-target="3">
+                    <p class="tarifs__cell">1</p>
+                    <p class="tarifs__cell">3</p>
+                    <p class="tarifs__cell">1</p>
+                    <p class="tarifs__cell">5</p>
+                    <p class="tarifs__cell">4</p>
+                    <p class="tarifs__cell">14</p>
+                    <p class="tarifs__cell">5</p>
+                    <p class="tarifs__cell">1</p>
+                    <p class="tarifs__cell">4</p>
+                    <p class="tarifs__cell">8</p>
+                    <p class="tarifs__cell">3</p>
+                    <p class="tarifs__cell">3</p>
+                    <p class="tarifs__cell">5</p>
+                    <p class="tarifs__cell">2</p>
+                    <p class="tarifs__cell">нет</p>
+                    <p class="tarifs__cell">7</p>
+                    <p class="tarifs__cell">1</p>
+                    <p class="tarifs__cell">1</p>
+                    <p class="tarifs__cell">ежедневно</p>
+                    <p class="tarifs__cell">ежедневно</p>
+                    <p class="tarifs__cell">да</p>
+                    <p class="tarifs__cell">&nbsp;</p>
+                    <p class="tarifs__cell">нет</p>
+                    <p class="tarifs__cell">4</p>
+                    <p class="tarifs__cell">4</p>
+                    <p class="tarifs__cell">нет</p>
+                    <p class="tarifs__cell">&nbsp;</p>
+                    <p class="tarifs__cell">нет</p>
+                    <p class="tarifs__cell">4</p>
+                    <p class="tarifs__cell">нет</p>
+                    <p class="tarifs__cell">нет</p>
+                    <p class="tarifs__cell">4</p>
+                  </div>
+
+                  <p class="tarifs__cell tarifs__cell--separator">
+                    <span class="js-group-opener tarifs__cell-label" data-href="4">Прием препаратов <svg class="tarifs__separator-icon" aria-hidden="true">
+                        <use xlink:href="#arrow_down" /></svg></span>
+                  </p>
+                  <div class="tarifs__cells-group" data-target="4">
+                    <p class="tarifs__cell">курс</p>
+                    <p class="tarifs__cell">курс</p>
+                    <p class="tarifs__cell">курс</p>
+                    <p class="tarifs__cell">курс</p>
+                    <p class="tarifs__cell">курс</p>
+                  </div>
+
+                  <p class="tarifs__cell tarifs__cell--separator">
+                    <span class="js-group-opener tarifs__cell-label" data-href="5">Питание <svg class="tarifs__separator-icon" aria-hidden="true">
+                        <use xlink:href="#arrow_down" /></svg></span>
+                  </p>
+                  <div class="tarifs__cells-group" data-target="5">
+                    <p class="tarifs__cell">10</p>
+                  </div>
+
+                  <p class="tarifs__cell tarifs__cell--separator">
+                    <span class="js-group-opener tarifs__cell-label" data-href="6">Информационный блок <svg class="tarifs__separator-icon" aria-hidden="true">
+                        <use xlink:href="#arrow_down" /></svg></span>
+                  </p>
+                  <div class="tarifs__cells-group" data-target="6">
+                    <p class="tarifs__cell">5</p>
+                    <p class="tarifs__cell">1</p>
+                    <p class="tarifs__cell">1</p>
+                    <p class="tarifs__cell">1</p>
+                    <p class="tarifs__cell">2</p>
+                  </div>
+                </div>
+                <div class="tarifs__radio-block">
+                  <label class="tarifs__radio-label" for="premium">
+                    <input id="premium" class="tarifs__radio" name="tarif" type="radio" value="premium">
+                    <span class="tarifs__radio-text">Выбрать</span>
+                    <span class="tarifs__radio-checked-text">Выбрано</span>
+                  </label>
+                </div>
+              </div>
+              <div class="tarifs__column">
+                <p class="js-tarif-open tarifs__column-title tarifs__column-title--vip">
+                  PLATINUM
+                  <svg class="tarifs__column-title-icon" aria-hidden="true">
+                    <use xlink:href="#arrow_down" /></svg>
+                </p>
+                <div class="tarifs__cells tarifs__cells--features tarifs__cells--vip">
+                  <p class="tarifs__cell tarifs__cell--separator">
+                    <span class="js-group-opener tarifs__cell-label is-active" data-href="1">Консультации врачей-специалистов <svg class="tarifs__separator-icon" aria-hidden="true">
+                        <use xlink:href="#arrow_down" /></svg></span>
+                  </p>
+                  <div class="tarifs__cells-group is-open" data-target="1">
+                    <p class="tarifs__cell">1</p>
+                    <p class="tarifs__cell">7</p>
+                    <p class="tarifs__cell">1</p>
+                    <p class="tarifs__cell">1</p>
+                    <p class="tarifs__cell">1</p>
+                    <p class="tarifs__cell">1</p>
+                  </div>
+
+                  <p class="tarifs__cell tarifs__cell--separator">
+                    <span class="js-group-opener tarifs__cell-label" data-href="2">Диагностика <svg class="tarifs__separator-icon" aria-hidden="true">
+                        <use xlink:href="#arrow_down" /></svg></span>
+                  </p>
+                  <div class="tarifs__cells-group" data-target="2">
+                    <p class="tarifs__cell">1</p>
+                    <p class="tarifs__cell">1</p>
+                    <p class="tarifs__cell">1</p>
+                    <p class="tarifs__cell">1</p>
+                    <p class="tarifs__cell">1</p>
+                    <p class="tarifs__cell">1</p>
+                    <p class="tarifs__cell">1</p>
+                    <p class="tarifs__cell">2</p>
+                    <p class="tarifs__cell">1</p>
+                    <p class="tarifs__cell">1</p>
+                    <p class="tarifs__cell">&nbsp;</p>
+                    <p class="tarifs__cell">1</p>
+                    <p class="tarifs__cell">1</p>
+                    <p class="tarifs__cell">1</p>
+                    <p class="tarifs__cell">1</p>
+                    <p class="tarifs__cell">1</p>
+                    <p class="tarifs__cell">1</p>
+                    <p class="tarifs__cell">1</p>
+                    <p class="tarifs__cell">1</p>
+                    <p class="tarifs__cell">1</p>
+                    <p class="tarifs__cell">1</p>
+                    <p class="tarifs__cell">1</p>
+                    <p class="tarifs__cell">1</p>
+                    <p class="tarifs__cell">1</p>
+                    <p class="tarifs__cell">1</p>
+                    <p class="tarifs__cell">1</p>
+                    <p class="tarifs__cell">1</p>
+                    <p class="tarifs__cell">1</p>
+                    <p class="tarifs__cell">&nbsp;</p>
+                    <p class="tarifs__cell">1</p>
+                    <p class="tarifs__cell">1</p>
+                    <p class="tarifs__cell">1</p>
+                    <p class="tarifs__cell">1</p>
+                    <p class="tarifs__cell">1</p>
+                    <p class="tarifs__cell">1</p>
+                    <p class="tarifs__cell">1</p>
+                    <p class="tarifs__cell">&nbsp;</p>
+                    <p class="tarifs__cell">1</p>
+                    <p class="tarifs__cell">1</p>
+                    <p class="tarifs__cell">1</p>
+                    <p class="tarifs__cell">1</p>
+                  </div>
+
+                  <p class="tarifs__cell tarifs__cell--separator">
+                    <span class="js-group-opener tarifs__cell-label" data-href="3">Лечебные процедуры <svg class="tarifs__separator-icon" aria-hidden="true">
+                        <use xlink:href="#arrow_down" /></svg></span>
+                  </p>
+                  <div class="tarifs__cells-group" data-target="3">
+                    <p class="tarifs__cell">1</p>
+                    <p class="tarifs__cell">3</p>
+                    <p class="tarifs__cell">1</p>
+                    <p class="tarifs__cell">5</p>
+                    <p class="tarifs__cell">4</p>
+                    <p class="tarifs__cell">14</p>
+                    <p class="tarifs__cell">5</p>
+                    <p class="tarifs__cell">1</p>
+                    <p class="tarifs__cell">4</p>
+                    <p class="tarifs__cell">8</p>
+                    <p class="tarifs__cell">3</p>
+                    <p class="tarifs__cell">3</p>
+                    <p class="tarifs__cell">5</p>
+                    <p class="tarifs__cell">3</p>
+                    <p class="tarifs__cell">нет</p>
+                    <p class="tarifs__cell">7</p>
+                    <p class="tarifs__cell">2</p>
+                    <p class="tarifs__cell">2</p>
+                    <p class="tarifs__cell">ежедневно</p>
+                    <p class="tarifs__cell">ежедневно</p>
+                    <p class="tarifs__cell">да</p>
+                    <p class="tarifs__cell">&nbsp;</p>
+                    <p class="tarifs__cell">8</p>
+                    <p class="tarifs__cell">6</p>
+                    <p class="tarifs__cell">3</p>
+                    <p class="tarifs__cell">3</p>
+                    <p class="tarifs__cell">&nbsp;</p>
+                    <p class="tarifs__cell">8</p>
+                    <p class="tarifs__cell">6</p>
+                    <p class="tarifs__cell">7</p>
+                    <p class="tarifs__cell">3</p>
+                    <p class="tarifs__cell">3</p>
+                  </div>
+
+                  <p class="tarifs__cell tarifs__cell--separator">
+                    <span class="js-group-opener tarifs__cell-label" data-href="4">Прием препаратов <svg class="tarifs__separator-icon" aria-hidden="true">
+                        <use xlink:href="#arrow_down" /></svg></span>
+                  </p>
+                  <div class="tarifs__cells-group" data-target="4">
+                    <p class="tarifs__cell">курс</p>
+                    <p class="tarifs__cell">курс</p>
+                    <p class="tarifs__cell">курс</p>
+                    <p class="tarifs__cell">курс</p>
+                    <p class="tarifs__cell">курс</p>
+                  </div>
+
+                  <p class="tarifs__cell tarifs__cell--separator">
+                    <span class="js-group-opener tarifs__cell-label" data-href="5">Питание <svg class="tarifs__separator-icon" aria-hidden="true">
+                        <use xlink:href="#arrow_down" /></svg></span>
+                  </p>
+                  <div class="tarifs__cells-group" data-target="5">
+                    <p class="tarifs__cell">10</p>
+                  </div>
+
+                  <p class="tarifs__cell tarifs__cell--separator">
+                    <span class="js-group-opener tarifs__cell-label" data-href="6">Информационный блок <svg class="tarifs__separator-icon" aria-hidden="true">
+                        <use xlink:href="#arrow_down" /></svg></span>
+                  </p>
+                  <div class="tarifs__cells-group" data-target="6">
+                    <p class="tarifs__cell">5</p>
+                    <p class="tarifs__cell">1</p>
+                    <p class="tarifs__cell">1</p>
+                    <p class="tarifs__cell">1</p>
+                    <p class="tarifs__cell">2</p>
+                  </div>
+                </div>
+                <div class="tarifs__radio-block">
+                  <label class="tarifs__radio-label" for="vip">
+                    <input id="vip" class="tarifs__radio" name="tarif" type="radio" value="vip">
+                    <span class="tarifs__radio-text">Выбрать</span>
+                    <span class="tarifs__radio-checked-text">Выбрано</span>
+                  </label>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="residence">
+            <div class="residence__inner residence__inner--quantity">
+              <div class="residence__inner-block">
+                <p class="residence__title">Количество гостей:</p>
+                <select class="select select--dark" name="guests">
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5</option>
+                </select>
+              </div>
+              <div class="residence__inner-block">
+                <p class="residence__title">Количество детей:</p>
+                <select class="select select--dark" name="kids">
+                  <option value="0">0</option>
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5</option>
+                </select>
+              </div>
+            </div>
+            <p class="residence__title">Варианты размещения</p>
+            <div class="rooms">
+              <div class="rooms__item">
+                <div class="room-radio">
+                  <input id="room_standart" class="room-radio__radio" name="room" type="radio" value="room_standart" checked>
+                  <label class="room-radio__label" for="room_standart">
+                    <span class="room-radio__image-block">
+                      <img src="images/content/img_126.jpg" alt="">
+                      <span class="room-radio__image-caption">
+                        <svg class="room-radio__image-caption-check" aria-hidden="true">
+                          <use xlink:href="#check" /></svg>
+                        СТАНДАРТ
+                      </span>
+                    </span>
+                    <span class="room-radio__title">СТАНДАРТ</span>
+                    <span class="room-radio__description">
+                      <span class="room-radio__title-block"><span class="room-radio__name">Номер ПОЛУЛЮКС</span> <span class="room-radio__area">80 м<sup>2</sup></span></span>
+                      <span class="room-radio__props">
+                        <span class="room-radio__prop">
+                          <svg class="room-radio__prop-icon" aria-hidden="true">
+                            <use xlink:href="#user-plus" />
+                          </svg> Вместимость: 4 человека + дополнительное место
+                        </span>
+                        <span class="room-radio__prop">
+                          <svg class="room-radio__prop-icon" aria-hidden="true">
+                            <use xlink:href="#bath" />
+                          </svg> 4 санузла
+                        </span>
+                        <span class="room-radio__prop">
+                          <svg class="room-radio__prop-icon" aria-hidden="true">
+                            <use xlink:href="#room-type" />
+                          </svg> 2 спальни и гостиная с кухонной зоной
+                        </span>
+                        <span class="room-radio__prop">
+                          <svg class="room-radio__prop-icon" aria-hidden="true">
+                            <use xlink:href="#proc" />
+                          </svg> Кушетка Yamaguchi для процедур
+                        </span>
+                        <span class="room-radio__prop">
+                          <svg class="room-radio__prop-icon" aria-hidden="true">
+                            <use xlink:href="#cond" />
+                          </svg> Система кондиционирования и москитные сетки
+                        </span>
+                        <span class="room-radio__prop">
+                          <svg class="room-radio__prop-icon" aria-hidden="true">
+                            <use xlink:href="#wifi" />
+                          </svg> Free Wi-Fi на всей территории Клиники
+                        </span>
+                        <span class="room-radio__prop">
+                          <svg class="room-radio__prop-icon" aria-hidden="true">
+                            <use xlink:href="#parking" />
+                          </svg> Подземная отапливаемая парковка
+                        </span>
+                        <span class="room-radio__prop">
+                          <svg class="room-radio__prop-icon" aria-hidden="true">
+                            <use xlink:href="#clean" />
+                          </svg> Ежедневная уборка номера
+                        </span>
+                      </span>
+                      <span class="room-radio__price-block">
+                        <a class="room-radio__pseudo-link" href="rooms-detail.html" target="_blank">Подробнее</a>
+                        <span class="room-radio__price">от 25 000 р</span>
+                      </span>
+                    </span>
+                  </label>
+                  <a class="room-radio__link" href="rooms-detail.html" target="_blank">Подробнее</a>
+                </div>
+              </div>
+              <div class="rooms__item">
+                <div class="room-radio">
+                  <input id="room_comfort" class="room-radio__radio" name="room" type="radio" value="room_comfort">
+                  <label class="room-radio__label" for="room_comfort">
+                    <span class="room-radio__image-block">
+                      <img src="images/content/img_127.jpg" alt="">
+                      <span class="room-radio__image-caption">
+                        <svg class="room-radio__image-caption-check" aria-hidden="true">
+                          <use xlink:href="#check" /></svg>
+                        КОМФОРТ
+                      </span>
+                    </span>
+                    <span class="room-radio__title">КОМФОРТ</span>
+                    <span class="room-radio__description">
+                      <span class="room-radio__title-block"><span class="room-radio__name">Номер ПОЛУЛЮКС</span> <span class="room-radio__area">80 м<sup>2</sup></span></span>
+                      <span class="room-radio__props">
+                        <span class="room-radio__prop">
+                          <svg class="room-radio__prop-icon" aria-hidden="true">
+                            <use xlink:href="#user-plus" />
+                          </svg> Вместимость: 4 человека + дополнительное место
+                        </span>
+                        <span class="room-radio__prop">
+                          <svg class="room-radio__prop-icon" aria-hidden="true">
+                            <use xlink:href="#bath" />
+                          </svg> 4 санузла
+                        </span>
+                        <span class="room-radio__prop">
+                          <svg class="room-radio__prop-icon" aria-hidden="true">
+                            <use xlink:href="#room-type" />
+                          </svg> 2 спальни и гостиная с кухонной зоной
+                        </span>
+                        <span class="room-radio__prop">
+                          <svg class="room-radio__prop-icon" aria-hidden="true">
+                            <use xlink:href="#proc" />
+                          </svg> Кушетка Yamaguchi для процедур
+                        </span>
+                        <span class="room-radio__prop">
+                          <svg class="room-radio__prop-icon" aria-hidden="true">
+                            <use xlink:href="#cond" />
+                          </svg> Система кондиционирования и москитные сетки
+                        </span>
+                        <span class="room-radio__prop">
+                          <svg class="room-radio__prop-icon" aria-hidden="true">
+                            <use xlink:href="#wifi" />
+                          </svg> Free Wi-Fi на всей территории Клиники
+                        </span>
+                        <span class="room-radio__prop">
+                          <svg class="room-radio__prop-icon" aria-hidden="true">
+                            <use xlink:href="#parking" />
+                          </svg> Подземная отапливаемая парковка
+                        </span>
+                        <span class="room-radio__prop">
+                          <svg class="room-radio__prop-icon" aria-hidden="true">
+                            <use xlink:href="#clean" />
+                          </svg> Ежедневная уборка номера
+                        </span>
+                      </span>
+                      <span class="room-radio__price-block">
+                        <a class="room-radio__pseudo-link" href="rooms-detail.html" target="_blank">Подробнее</a>
+                        <span class="room-radio__price">от 25 000 р</span>
+                      </span>
+                    </span>
+                  </label>
+                  <a class="room-radio__link" href="rooms-detail.html" target="_blank">Подробнее</a>
+                </div>
+              </div>
+              <div class="rooms__item">
+                <div class="room-radio">
+                  <input id="room_semilux" class="room-radio__radio" name="room" type="radio" value="room_semilux">
+                  <label class="room-radio__label" for="room_semilux">
+                    <span class="room-radio__image-block">
+                      <img src="images/content/img_128.jpg" alt="">
+                      <span class="room-radio__image-caption">
+                        <svg class="room-radio__image-caption-check" aria-hidden="true">
+                          <use xlink:href="#check" /></svg>
+                        ПОЛУЛЮКС
+                      </span>
+                    </span>
+                    <span class="room-radio__title">ПОЛУЛЮКС</span>
+                    <span class="room-radio__description">
+                      <span class="room-radio__title-block"><span class="room-radio__name">Номер ПОЛУЛЮКС</span> <span class="room-radio__area">80 м<sup>2</sup></span></span>
+                      <span class="room-radio__props">
+                        <span class="room-radio__prop">
+                          <svg class="room-radio__prop-icon" aria-hidden="true">
+                            <use xlink:href="#user-plus" />
+                          </svg> Вместимость: 4 человека + дополнительное место
+                        </span>
+                        <span class="room-radio__prop">
+                          <svg class="room-radio__prop-icon" aria-hidden="true">
+                            <use xlink:href="#bath" />
+                          </svg> 4 санузла
+                        </span>
+                        <span class="room-radio__prop">
+                          <svg class="room-radio__prop-icon" aria-hidden="true">
+                            <use xlink:href="#room-type" />
+                          </svg> 2 спальни и гостиная с кухонной зоной
+                        </span>
+                        <span class="room-radio__prop">
+                          <svg class="room-radio__prop-icon" aria-hidden="true">
+                            <use xlink:href="#proc" />
+                          </svg> Кушетка Yamaguchi для процедур
+                        </span>
+                        <span class="room-radio__prop">
+                          <svg class="room-radio__prop-icon" aria-hidden="true">
+                            <use xlink:href="#cond" />
+                          </svg> Система кондиционирования и москитные сетки
+                        </span>
+                        <span class="room-radio__prop">
+                          <svg class="room-radio__prop-icon" aria-hidden="true">
+                            <use xlink:href="#wifi" />
+                          </svg> Free Wi-Fi на всей территории Клиники
+                        </span>
+                        <span class="room-radio__prop">
+                          <svg class="room-radio__prop-icon" aria-hidden="true">
+                            <use xlink:href="#parking" />
+                          </svg> Подземная отапливаемая парковка
+                        </span>
+                        <span class="room-radio__prop">
+                          <svg class="room-radio__prop-icon" aria-hidden="true">
+                            <use xlink:href="#clean" />
+                          </svg> Ежедневная уборка номера
+                        </span>
+                      </span>
+                      <span class="room-radio__price-block">
+                        <a class="room-radio__pseudo-link" href="rooms-detail.html" target="_blank">Подробнее</a>
+                        <span class="room-radio__price">от 25 000 р</span>
+                      </span>
+                    </span>
+                  </label>
+                  <a class="room-radio__link" href="rooms-detail.html" target="_blank">Подробнее</a>
+                </div>
+              </div>
+              <div class="rooms__item">
+                <div class="room-radio">
+                  <input id="room_lux" class="room-radio__radio" name="room" type="radio" value="room_lux">
+                  <label class="room-radio__label" for="room_lux">
+                    <span class="room-radio__image-block">
+                      <img src="images/content/img_129.jpg" alt="">
+                      <span class="room-radio__image-caption">
+                        <svg class="room-radio__image-caption-check" aria-hidden="true">
+                          <use xlink:href="#check" /></svg>
+                        ЛЮКС
+                      </span>
+                    </span>
+                    <span class="room-radio__title">ЛЮКС</span>
+                    <span class="room-radio__description">
+                      <span class="room-radio__title-block"><span class="room-radio__name">Номер ПОЛУЛЮКС</span> <span class="room-radio__area">80 м<sup>2</sup></span></span>
+                      <span class="room-radio__props">
+                        <span class="room-radio__prop">
+                          <svg class="room-radio__prop-icon" aria-hidden="true">
+                            <use xlink:href="#user-plus" />
+                          </svg> Вместимость: 4 человека + дополнительное место
+                        </span>
+                        <span class="room-radio__prop">
+                          <svg class="room-radio__prop-icon" aria-hidden="true">
+                            <use xlink:href="#bath" />
+                          </svg> 4 санузла
+                        </span>
+                        <span class="room-radio__prop">
+                          <svg class="room-radio__prop-icon" aria-hidden="true">
+                            <use xlink:href="#room-type" />
+                          </svg> 2 спальни и гостиная с кухонной зоной
+                        </span>
+                        <span class="room-radio__prop">
+                          <svg class="room-radio__prop-icon" aria-hidden="true">
+                            <use xlink:href="#proc" />
+                          </svg> Кушетка Yamaguchi для процедур
+                        </span>
+                        <span class="room-radio__prop">
+                          <svg class="room-radio__prop-icon" aria-hidden="true">
+                            <use xlink:href="#cond" />
+                          </svg> Система кондиционирования и москитные сетки
+                        </span>
+                        <span class="room-radio__prop">
+                          <svg class="room-radio__prop-icon" aria-hidden="true">
+                            <use xlink:href="#wifi" />
+                          </svg> Free Wi-Fi на всей территории Клиники
+                        </span>
+                        <span class="room-radio__prop">
+                          <svg class="room-radio__prop-icon" aria-hidden="true">
+                            <use xlink:href="#parking" />
+                          </svg> Подземная отапливаемая парковка
+                        </span>
+                        <span class="room-radio__prop">
+                          <svg class="room-radio__prop-icon" aria-hidden="true">
+                            <use xlink:href="#clean" />
+                          </svg> Ежедневная уборка номера
+                        </span>
+                      </span>
+                      <span class="room-radio__price-block">
+                        <a class="room-radio__pseudo-link" href="rooms-detail.html" target="_blank">Подробнее</a>
+                        <span class="room-radio__price">от 25 000 р</span>
+                      </span>
+                    </span>
+                  </label>
+                  <a class="room-radio__link" href="rooms-detail.html" target="_blank">Подробнее</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="result-form">
+            <p class="result-form__title">Вы выбрали</p>
+            <div class="result-form__inner">
+              <div class="result-form__block">
+                <div class="result-form__options">
+                  <p class="result-form__option">
+                    <span class="result-form__option-title"><svg class="result-form__option-icon" aria-hidden="true">
+                        <use xlink:href="#check" /></svg> Программа «Полное восстановление организма» - пакет «Стандарт»</span>
+                    <span class="result-form__option-price">121 000 р</span>
+                  </p>
+                  <p class="result-form__option">
+                    <span class="result-form__option-title"><svg class="result-form__option-icon" aria-hidden="true">
+                        <use xlink:href="#check" /></svg> Размещение «Комфорт» на 14 дней</span>
+                    <span class="result-form__option-price">11 000 р</span>
+                  </p>
+                  <p class="result-form__option">
+                    <span class="result-form__option-title">Общая стоимость </span>
+                    <span class="result-form__option-price">132 000 р</span>
+                  </p>
+                </div>
+              </div>
+              <div class="result-form__block">
+                <p class="result-form__subtitle">Пожалуйста, укажите ваши контактные данные:</p>
+                <label class="result-form__label" for="name">
+                  <input id="name" class="input input--dark" name="name" type="text" value="" placeholder="Имя">
+                </label>
+                <label class="result-form__label" for="phone">
+                  <input id="phone" class="input input--dark" name="phone" type="text" value="" placeholder="Телефон">
+                </label>
+                <label class="result-form__label" for="email">
+                  <input id="email" class="input input--dark" name="email" type="text" value="" placeholder="E-mail">
+                </label>
+                <div class="result-form__label">
+                  <button class="result-form__button button button--dark" type="submit">Забронировать</button>
+                </div>
+                <a class="result-form__button button button--bordered" href="#form" data-fancybox="form-popup">Получить консультацию</a>
+              </div>
+            </div>
+          </div>
+        </form>
+        <div class="js-reviews-slider reviews-slider">
+          <div>
+            <div class="review">
+              <div class="review__avatar-block">
+                <div class="review__avatar"><img src="images/content/img_63.jpg" alt=""></div>
+                <p class="review__author-name">N.A. Vivamus</p>
+                <p class="review__author-about">Praesent scelerisque vitae</p>
+              </div>
+              <div class="review__text-block">
+                <p class="review__title">Duis sed ligula sit amet quam placerat luctus.</p>
+                <p>Aliquam interdum tempor scelerisque. Fusce sed dignissim ipsum. In tempus velit at purus cursus rhoncus. Vivamus tincidunt lectus sed magna laoreet finibus. Quisque efficitur iaculis eros at eleifend. Aenean efficitur ornare enim
+                  non eleifend. Maecenas non mi scelerisque, cursus tortor id, rhoncus diam.Pellentesque sit amet massa in ligula tempus sagittis. Quisque eget mollis libero. Sed et risus nec velit dignissim auctor sit amet sit amet nibh. Duis
+                  aliquam quam non nisl sagittis tincidunt. Suspendisse tincidunt libero sed leo venenatis, quis congue nulla eleifend.</p>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="review">
+              <div class="review__avatar-block">
+                <div class="review__avatar"><img src="images/content/img_63.jpg" alt=""></div>
+                <p class="review__author-name">N.A. Vivamus</p>
+                <p class="review__author-about">Praesent scelerisque vitae</p>
+              </div>
+              <div class="review__text-block">
+                <p class="review__title">Duis sed ligula sit amet quam placerat luctus.</p>
+                <p>Aliquam interdum tempor scelerisque. Fusce sed dignissim ipsum. In tempus velit at purus cursus rhoncus. Vivamus tincidunt lectus sed magna laoreet finibus. Quisque efficitur iaculis eros at eleifend. Aenean efficitur ornare enim
+                  non eleifend. Maecenas non mi scelerisque, cursus tortor id, rhoncus diam.Pellentesque sit amet massa in ligula tempus sagittis. Quisque eget mollis libero. Sed et risus nec velit dignissim auctor sit amet sit amet nibh. Duis
+                  aliquam quam non nisl sagittis tincidunt. Suspendisse tincidunt libero sed leo venenatis, quis congue nulla eleifend.</p>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="review">
+              <div class="review__avatar-block">
+                <div class="review__avatar"><img src="images/content/img_63.jpg" alt=""></div>
+                <p class="review__author-name">N.A. Vivamus</p>
+                <p class="review__author-about">Praesent scelerisque vitae</p>
+              </div>
+              <div class="review__text-block">
+                <p class="review__title">Duis sed ligula sit amet quam placerat luctus.</p>
+                <p>Aliquam interdum tempor scelerisque. Fusce sed dignissim ipsum. In tempus velit at purus cursus rhoncus. Vivamus tincidunt lectus sed magna laoreet finibus. Quisque efficitur iaculis eros at eleifend. Aenean efficitur ornare enim
+                  non eleifend. Maecenas non mi scelerisque, cursus tortor id, rhoncus diam.Pellentesque sit amet massa in ligula tempus sagittis. Quisque eget mollis libero. Sed et risus nec velit dignissim auctor sit amet sit amet nibh. Duis
+                  aliquam quam non nisl sagittis tincidunt. Suspendisse tincidunt libero sed leo venenatis, quis congue nulla eleifend.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="also-block">
+          <h2 class="also-block__title">Также вам подойдут</h2>
+          <div class="js-also-list also-list">
+            <div class="also-list__slide">
+              <a class="also-link" href="#">
+                <span class="also-link__description">
+                  <span class="also-link__title">Омоложение печени</span>
+                  <span class="also-link__pseudo-link">Подробнее</span>
+                </span>
+                <img src="images/content/img_34.jpg" alt="">
+              </a>
+            </div>
+            <div class="also-list__slide">
+              <a class="also-link" href="#">
+                <span class="also-link__description">
+                  <span class="also-link__title">Омоложение сердца</span>
+                  <span class="also-link__pseudo-link">Подробнее</span>
+                </span>
+                <img src="images/content/img_35.jpg" alt="">
+              </a>
+            </div>
+            <div class="also-list__slide">
+              <a class="also-link" href="#">
+                <span class="also-link__description">
+                  <span class="also-link__title">Выгоняем камни</span>
+                  <span class="also-link__pseudo-link">Подробнее</span>
+                </span>
+                <img src="images/content/img_36.jpg" alt="">
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      //= template/subscribe.html
+    </div>
+  </div>
+  <div id="form" class="form-popup">
+    <p class="form-popup__title">Заполните поля:</p>
+    <p>Наш менеджер свяжется с вами для консультации.</p>
+    <form action="/">
+      <label class="form-popup__label" for="name_cons">
+        <input id="name_cons" class="input input--dark" name="name_cons" type="text" value="" placeholder="Имя" tabindex="-1">
+      </label>
+      <label class="form-popup__label" for="phone_cons">
+        <input id="phone_cons" class="input input--dark" name="phone_cons" type="text" value="" placeholder="Телефон">
+      </label>
+      <label class="form-popup__label" for="email_cons">
+        <input id="email_cons" class="input input--dark" name="email_cons" type="text" value="" placeholder="E-mail">
+      </label>
+      <div class="form-popup__label">
+        <button class="form-popup__button button button--dark" type="submit">Отправить</button>
+      </div>
+    </form>
+  </div>
+  //= template/footer.html
+
+  //= template/scripts.html
+  <script type="text/javascript" src="js/jquery.fancybox.min.js"></script>
+  <script type="text/javascript" src="js/slick.min.js"></script>
+  <script type="text/javascript" src="js/datepicker.min.js"></script>
+
+  <script>
+    var selectedDate;
+    var daysInterval = 7; //период в днях
+    var initCal = false;
+    var disabledDays = [1, 2, 3, 4, 5, 6];
+
+    $('#datepicker').datepicker({
+      position: "bottom left",
+      moveToOtherMonthsOnSelect: false,
+      minDate: new Date(),
+      onSelect: function(formattedDate, date, inst) {
+        selectedDate = date;
+        $('.-interval-class-').removeClass('-interval-class-');
+        initCal = true;
+        inst.update();
+      },
+
+      onRenderCell: function(date, cellType) {
+        var day = date.getDay(),
+          isDisabled = disabledDays.indexOf(day) != -1;
+
+        if (initCal == true && cellType == 'day' && date.getTime() >= selectedDate.getTime() && (date.getTime() < selectedDate.getTime() + daysInterval * 24 * 60 * 60 * 1000)) {
+          if (disabledDays.indexOf(day) != -1) {
+            return {
+              disabled: true,
+              classes: '-interval-class-'
+            }
+          } else {
+            return {
+              classes: '-interval-class-'
+            }
+          }
+        }
+
+        if (cellType == 'day') {
+          return {
+            disabled: isDisabled
+          }
+        }
+      }
+    });
+
+    var datepicker = $('#datepicker').datepicker().data('datepicker');
+
+    $(document).on("change", "input[name=duration]", function() {
+      daysInterval = parseInt($(this).val());
+      datepicker.update();
+    });
+  </script>
+</body>
+
+</html>
