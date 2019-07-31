@@ -292,19 +292,19 @@
                 <p class="residence__title">Длительность пребывания:</p>
                 <div class="residence__duration-list">
                   <label class="radio-label" for="duration_7">
-                    <input id="duration_7" name="duration" type="radio" value="7" checked>
+                    <input id="duration_7" name="duration" type="radio" value="7">
                     <span class="radio-icon"></span>
                     <span class="radio-text">7 дней</span>
+                  </label>
+                  <label class="radio-label" for="duration_10">
+                    <input id="duration_10" name="duration" type="radio" value="10" checked>
+                    <span class="radio-icon"></span>
+                    <span class="radio-text">10 дней</span>
                   </label>
                   <label class="radio-label" for="duration_14">
                     <input id="duration_14" name="duration" type="radio" value="14">
                     <span class="radio-icon"></span>
                     <span class="radio-text">14 дней</span>
-                  </label>
-                  <label class="radio-label" for="duration_21">
-                    <input id="duration_21" name="duration" type="radio" value="21">
-                    <span class="radio-icon"></span>
-                    <span class="radio-text">21 день</span>
                   </label>
                 </div>
               </div>
@@ -323,44 +323,283 @@
               <div class="tarifs__column tarifs__column--labels">
                 <p class="tarifs__column-title"></p>
                 <div class="tarifs__cells tarifs__cells--labels">
-                  <p class="tarifs__cell tarifs__cell--separator">Разделитель</p>
-                  <p class="tarifs__cell">Vivamus tincidunt lectus</p>
-                  <p class="tarifs__cell">Vivamus tincidunt lectus</p>
-                  <p class="tarifs__cell">Vivamus tincidunt lectus</p>
-                  <p class="tarifs__cell">Vivamus tincidunt lectus</p>
-                  <p class="tarifs__cell tarifs__cell--separator">Разделитель 2</p>
-                  <p class="tarifs__cell">Vivamus tincidunt lectus</p>
-                  <p class="tarifs__cell">Vivamus tincidunt lectus</p>
-                  <p class="tarifs__cell">Vivamus tincidunt lectus</p>
-                  <p class="tarifs__cell">Vivamus tincidunt lectus</p>
-                  <p class="tarifs__cell">Vivamus tincidunt lectus</p>
+                  <p class="js-group-opener tarifs__cell tarifs__cell--separator is-active" data-href="1">
+                    Консультации врачей-специалистов
+                    <svg class="tarifs__separator-icon" aria-hidden="true">
+                      <use xlink:href="#arrow_down" /></svg>
+                  </p>
+                  <div class="tarifs__cells-group is-open" data-target="1">
+                    <p class="tarifs__cell">Прием лечащего врача, первичный</p>
+                    <p class="tarifs__cell">Прием лечащего врача, повторный</p>
+                    <p class="tarifs__cell">Заключительный прием врача с выдачей подробных рекомендаций по образу жизни, индивидуальный план здоровья</p>
+                    <p class="tarifs__cell">Консультация mind-терапевта, исследование и рекомендации по повышению адаптационных возможностей организма</p>
+                    <p class="tarifs__cell">Консультация косметолога-эстетиста по коррекции лица и тела с составлением индивидуальной программы</p>
+                    <p class="tarifs__cell">Консультация врача-гинеколога/уролога</p>
+                  </div>
+
+                  <p class="js-group-opener tarifs__cell tarifs__cell--separator" data-href="2">
+                    Диагностика
+                    <svg class="tarifs__separator-icon" aria-hidden="true">
+                      <use xlink:href="#arrow_down" /></svg>
+                  </p>
+                  <div class="tarifs__cells-group" data-target="2">
+                    <p class="tarifs__cell">Клинический анализ крови</p>
+                    <p class="tarifs__cell">Общий анализ мочи</p>
+                    <p class="tarifs__cell">Биохимический анализ крови (липидограмма, ливер-тест, глюкоза, креатинин, общий белок, коагулограмма, кортизол в слюне вечерний, малоновый диальдегид, гомоцистеин, 8-ОН-дезоксигуанозин)</p>
+                    <p class="tarifs__cell">Топографическое исследование позвоночника</p>
+                    <p class="tarifs__cell">Медискрин ВОП</p>
+                    <p class="tarifs__cell">УЗИ желчного пузыря, печени, почек</p>
+                    <p class="tarifs__cell">Электрокардиография</p>
+                    <p class="tarifs__cell">Биоимпендансметрия</p>
+                    <p class="tarifs__cell">Пульсовая диагностика для оценки функционального состояния (VEDA пульс)</p>
+                    <p class="tarifs__cell">Расширенный пакет диагностики</p>
+                    <p class="tarifs__cell">Лабораторная диагностика:</p>
+                    <p class="tarifs__cell">Углеводный обмен ( инсулин, гликированный гемоглобин, расчетный индекс НОМА)</p>
+                    <p class="tarifs__cell">Белковый обмен ( мочевина, мочевая кислота, цистатин С)</p>
+                    <p class="tarifs__cell">СРБ, высокочувствительный СРБ</p>
+                    <p class="tarifs__cell">IgE</p>
+                    <p class="tarifs__cell">Витамины D</p>
+                    <p class="tarifs__cell">Витамин B12</p>
+                    <p class="tarifs__cell">Ферритин</p>
+                    <p class="tarifs__cell">ПТИ+МНО</p>
+                    <p class="tarifs__cell">Гормоны щитовидной железы (ТТГ, Т3, Т4, АТ к ТПО)</p>
+                    <p class="tarifs__cell">Гормоны для женщин (ФСГ, ЛГ, Пролактин, Эстрадиол, Тестостерон)</p>
+                    <p class="tarifs__cell">Гормоны для мужчин (тестостерон, PSA свободный, PSA общий, глобулин связывающий гормон, Пролактин, ЛГ, Эстрадиол)</p>
+                    <p class="tarifs__cell">Инфекции (ВИЧ, сифилис, гепатиты)</p>
+                    <p class="tarifs__cell">Вирусы (ИФА крови: цитомегаловирус (IgM, IgG), вирус Эпштейн-Барр (IgM, IgG), герпес 1, 2, 6)</p>
+                    <p class="tarifs__cell">Электролиты крови (калий, натрий, хлор) Кальций</p>
+                    <p class="tarifs__cell">Онкомаркеры. Для женщин - СА 125, СА 15-3, СА 19-9, СА 72-4 (жен), РЭА, НЕ-4. Для мужчин — СА 19-9, СА 72-4, СА 15-3 (муж), РЭА.</p>
+                    <p class="tarifs__cell">Мазки на флору, цитологию - у женщин. Микроскопия мазка у мужчин.</p>
+                    <p class="tarifs__cell">Скрининг на ВПЧ</p>
+                    <p class="tarifs__cell">Инструментальная диагностика:</p>
+                    <p class="tarifs__cell">УЗИ сердца</p>
+                    <p class="tarifs__cell">УЗИ брахиоцефальных сосудов</p>
+                    <p class="tarifs__cell">УЗИ щитовидной железы</p>
+                    <p class="tarifs__cell">УЗИ молочных желез и органов малого таза трансвагинально у женщин</p>
+                    <p class="tarifs__cell">УЗИ ОМТ у мужчин трансабдоминально</p>
+                    <p class="tarifs__cell">ЭФГДС</p>
+                    <p class="tarifs__cell">Колоноскопия</p>
+                    <p class="tarifs__cell">Осмотры специалистов:</p>
+                    <p class="tarifs__cell">Кардиолог</p>
+                    <p class="tarifs__cell">Эндокринолог</p>
+                    <p class="tarifs__cell">Офтальмолог</p>
+                    <p class="tarifs__cell">ЛОР</p>
+                  </div>
+
+                  <p class="js-group-opener tarifs__cell tarifs__cell--separator" data-href="3">
+                    Лечебные процедуры
+                    <svg class="tarifs__separator-icon" aria-hidden="true">
+                      <use xlink:href="#arrow_down" /></svg>
+                  </p>
+                  <div class="tarifs__cells-group" data-target="3">
+                    <p class="tarifs__cell">Тюбаж с минеральной водой подготовительный</p>
+                    <p class="tarifs__cell">Тюбаж с минеральной водой основной</p>
+                    <p class="tarifs__cell">Тюбаж с минеральной водой заключительный</p>
+                    <p class="tarifs__cell">Грязелечение на печень</p>
+                    <p class="tarifs__cell">МОК/гидроколонотерапия</p>
+                    <p class="tarifs__cell">Очистительные клизмы</p>
+                    <p class="tarifs__cell">Микроклизмы с пробиотиком</p>
+                    <p class="tarifs__cell">Cеанс нормобарической оксигенации</p>
+                    <p class="tarifs__cell">Магнитотерапия</p>
+                    <p class="tarifs__cell">Душ Шарко/подводный душ-массаж</p>
+                    <p class="tarifs__cell">ИК-сауна+пилинг+детокс обертывание (в номере)</p>
+                    <p class="tarifs__cell">Талассотерапия</p>
+                    <p class="tarifs__cell">Детокс через стопы</p>
+                    <p class="tarifs__cell">Прессотерапия (лимфодренаж) ноги и живот</p>
+                    <p class="tarifs__cell">Массаж спины</p>
+                    <p class="tarifs__cell">Массаж общий</p>
+                    <p class="tarifs__cell">Внутривенное лазерное облучение крови</p>
+                    <p class="tarifs__cell">Криотерапия</p>
+                    <p class="tarifs__cell">Посещение СПА зоны (бассейн, финская сауна (без ограничения)</p>
+                    <p class="tarifs__cell">Физическая нагрузка (скандинавская ходьба, фитнес, ЛФК)</p>
+                    <p class="tarifs__cell">Блок лечения Мужское/Женское здоровье</p>
+                    <p class="tarifs__cell">Женское здоровье:</p>
+                    <p class="tarifs__cell">Профильная органотерапия/ антиоксидантная теапия</p>
+                    <p class="tarifs__cell">Лазеролечение на аппарате Латон</p>
+                    <p class="tarifs__cell">Озонотерапия</p>
+                    <p class="tarifs__cell">Грязелечение</p>
+                    <p class="tarifs__cell">Мужское здоровье:</p>
+                    <p class="tarifs__cell">Профильная органотерапия/ антиоксидантная теапия</p>
+                    <p class="tarifs__cell">Лечение на аппарате «Андрогин»</p>
+                    <p class="tarifs__cell">Массаж предстательной железы</p>
+                    <p class="tarifs__cell">Грязелечение</p>
+                    <p class="tarifs__cell">Озонотерапия</p>
+                  </div>
+
+                  <p class="js-group-opener tarifs__cell tarifs__cell--separator" data-href="4">
+                    Прием препаратов
+                    <svg class="tarifs__separator-icon" aria-hidden="true">
+                      <use xlink:href="#arrow_down" /></svg>
+                  </p>
+                  <div class="tarifs__cells-group" data-target="4">
+                    <p class="tarifs__cell">Прием препаратов, улучшающих лимфодренажную функцию</p>
+                    <p class="tarifs__cell">Прием препаратов очищающих кишечник</p>
+                    <p class="tarifs__cell">Антипаразитарная терапия</p>
+                    <p class="tarifs__cell">Прием препаратов, улучшающиих микрофлору кишечника</p>
+                    <p class="tarifs__cell">Персональная метаболическая терапия</p>
+                  </div>
+
+                  <p class="js-group-opener tarifs__cell tarifs__cell--separator" data-href="5">
+                    Питание
+                    <svg class="tarifs__separator-icon" aria-hidden="true">
+                      <use xlink:href="#arrow_down" /></svg>
+                  </p>
+                  <div class="tarifs__cells-group" data-target="5">
+                    <p class="tarifs__cell">Разгрузочно-диетическая терапия</p>
+                  </div>
+
+                  <p class="js-group-opener tarifs__cell tarifs__cell--separator" data-href="6">
+                    Информационный блок
+                    <svg class="tarifs__separator-icon" aria-hidden="true">
+                      <use xlink:href="#arrow_down" /></svg>
+                  </p>
+                  <div class="tarifs__cells-group" data-target="6">
+                    <p class="tarifs__cell">Лекции</p>
+                    <p class="tarifs__cell">Лекция вводная</p>
+                    <p class="tarifs__cell">Лекция по питанию</p>
+                    <p class="tarifs__cell">Лекция от эстетиста</p>
+                    <p class="tarifs__cell">Лекции от mind терапевта, уролога, гинеколога</p>
+                  </div>
                 </div>
               </div>
               <div class="tarifs__column">
                 <p class="js-tarif-open tarifs__column-title tarifs__column-title--standart">
-                  «Стандарт»
+                  SILVER
                   <svg class="tarifs__column-title-icon" aria-hidden="true">
                     <use xlink:href="#arrow_down" /></svg>
                 </p>
                 <div class="tarifs__cells tarifs__cells--features tarifs__cells--standart">
                   <p class="tarifs__cell tarifs__cell--separator">
-                    <span class="tarifs__cell-label">Разделитель</span>
+                    <span class="js-group-opener tarifs__cell-label is-active" data-href="1">Консультации врачей-специалистов <svg class="tarifs__separator-icon" aria-hidden="true">
+                        <use xlink:href="#arrow_down" /></svg></span>
                   </p>
-                  <p class="tarifs__cell"><span class="tarifs__cell-label">Vivamus tincidunt lectus</span> <svg class="tarifs__check" aria-hidden="true">
-                      <use xlink:href="#check" /></svg></p>
-                  <p class="tarifs__cell"><span class="tarifs__cell-label">Vivamus tincidunt lectus</span> <svg class="tarifs__check" aria-hidden="true">
-                      <use xlink:href="#check" /></svg></p>
-                  <p class="tarifs__cell"><span class="tarifs__cell-label">Vivamus tincidunt lectus</span> <span class="tarifs__minus">&mdash;</span></p>
-                  <p class="tarifs__cell"><span class="tarifs__cell-label">Vivamus tincidunt lectus</span> <span class="tarifs__minus">&mdash;</span></p>
+                  <div class="tarifs__cells-group is-open" data-target="1">
+                    <p class="tarifs__cell">1</p>
+                    <p class="tarifs__cell">7</p>
+                    <p class="tarifs__cell">1</p>
+                    <p class="tarifs__cell">1</p>
+                    <p class="tarifs__cell">1</p>
+                    <p class="tarifs__cell">1</p>
+                  </div>
+
                   <p class="tarifs__cell tarifs__cell--separator">
-                    <span class="tarifs__cell-label">Разделитель 2</span>
+                    <span class="js-group-opener tarifs__cell-label" data-href="2">Диагностика <svg class="tarifs__separator-icon" aria-hidden="true">
+                        <use xlink:href="#arrow_down" /></svg></span>
                   </p>
-                  <p class="tarifs__cell"><span class="tarifs__cell-label">Vivamus tincidunt lectus</span> <span class="tarifs__minus">&mdash;</span></p>
-                  <p class="tarifs__cell"><span class="tarifs__cell-label">Vivamus tincidunt lectus</span> <svg class="tarifs__check" aria-hidden="true">
-                      <use xlink:href="#check" /></svg></p>
-                  <p class="tarifs__cell"><span class="tarifs__cell-label">Vivamus tincidunt lectus</span> <span class="tarifs__minus">&mdash;</span></p>
-                  <p class="tarifs__cell"><span class="tarifs__cell-label">Vivamus tincidunt lectus</span> <span class="tarifs__minus">&mdash;</span></p>
-                  <p class="tarifs__cell"><span class="tarifs__cell-label">Vivamus tincidunt lectus</span> <span class="tarifs__minus">&mdash;</span></p>
+                  <div class="tarifs__cells-group" data-target="2">
+                    <p class="tarifs__cell">1</p>
+                    <p class="tarifs__cell">1</p>
+                    <p class="tarifs__cell">1</p>
+                    <p class="tarifs__cell">1</p>
+                    <p class="tarifs__cell">1</p>
+                    <p class="tarifs__cell">1</p>
+                    <p class="tarifs__cell">1</p>
+                    <p class="tarifs__cell">2</p>
+                    <p class="tarifs__cell">нет</p>
+                    <p class="tarifs__cell">нет</p>
+                    <p class="tarifs__cell">&nbsp;</p>
+                    <p class="tarifs__cell">нет</p>
+                    <p class="tarifs__cell">нет</p>
+                    <p class="tarifs__cell">нет</p>
+                    <p class="tarifs__cell">нет</p>
+                    <p class="tarifs__cell">нет</p>
+                    <p class="tarifs__cell">нет</p>
+                    <p class="tarifs__cell">нет</p>
+                    <p class="tarifs__cell">нет</p>
+                    <p class="tarifs__cell">нет</p>
+                    <p class="tarifs__cell">нет</p>
+                    <p class="tarifs__cell">нет</p>
+                    <p class="tarifs__cell">нет</p>
+                    <p class="tarifs__cell">нет</p>
+                    <p class="tarifs__cell">нет</p>
+                    <p class="tarifs__cell">РЭА</p>
+                    <p class="tarifs__cell">да</p>
+                    <p class="tarifs__cell">да</p>
+                    <p class="tarifs__cell">&nbsp;</p>
+                    <p class="tarifs__cell">нет</p>
+                    <p class="tarifs__cell">нет</p>
+                    <p class="tarifs__cell">нет</p>
+                    <p class="tarifs__cell">1</p>
+                    <p class="tarifs__cell">1</p>
+                    <p class="tarifs__cell">нет</p>
+                    <p class="tarifs__cell">нет</p>
+                    <p class="tarifs__cell">&nbsp;</p>
+                    <p class="tarifs__cell">нет</p>
+                    <p class="tarifs__cell">нет</p>
+                    <p class="tarifs__cell">нет</p>
+                    <p class="tarifs__cell">нет</p>
+                  </div>
+
+                  <p class="tarifs__cell tarifs__cell--separator">
+                    <span class="js-group-opener tarifs__cell-label" data-href="3">Лечебные процедуры <svg class="tarifs__separator-icon" aria-hidden="true">
+                        <use xlink:href="#arrow_down" /></svg></span>
+                  </p>
+                  <div class="tarifs__cells-group" data-target="3">
+                    <p class="tarifs__cell">1</p>
+                    <p class="tarifs__cell">3</p>
+                    <p class="tarifs__cell">1</p>
+                    <p class="tarifs__cell">5</p>
+                    <p class="tarifs__cell">4</p>
+                    <p class="tarifs__cell">14</p>
+                    <p class="tarifs__cell">5</p>
+                    <p class="tarifs__cell">нет</p>
+                    <p class="tarifs__cell">нет</p>
+                    <p class="tarifs__cell">8</p>
+                    <p class="tarifs__cell">3</p>
+                    <p class="tarifs__cell">2</p>
+                    <p class="tarifs__cell">5</p>
+                    <p class="tarifs__cell">2</p>
+                    <p class="tarifs__cell">7</p>
+                    <p class="tarifs__cell">нет</p>
+                    <p class="tarifs__cell">нет</p>
+                    <p class="tarifs__cell">нет</p>
+                    <p class="tarifs__cell">ежедневно</p>
+                    <p class="tarifs__cell">ежедневно</p>
+                    <p class="tarifs__cell">нет</p>
+                    <p class="tarifs__cell">&nbsp;</p>
+                    <p class="tarifs__cell">нет</p>
+                    <p class="tarifs__cell">нет</p>
+                    <p class="tarifs__cell">нет</p>
+                    <p class="tarifs__cell">нет</p>
+                    <p class="tarifs__cell">&nbsp;</p>
+                    <p class="tarifs__cell">нет</p>
+                    <p class="tarifs__cell">нет</p>
+                    <p class="tarifs__cell">нет</p>
+                    <p class="tarifs__cell">нет</p>
+                    <p class="tarifs__cell">нет</p>
+                  </div>
+
+                  <p class="tarifs__cell tarifs__cell--separator">
+                    <span class="js-group-opener tarifs__cell-label" data-href="4">Прием препаратов <svg class="tarifs__separator-icon" aria-hidden="true">
+                        <use xlink:href="#arrow_down" /></svg></span>
+                  </p>
+                  <div class="tarifs__cells-group" data-target="4">
+                    <p class="tarifs__cell">курс</p>
+                    <p class="tarifs__cell">курс</p>
+                    <p class="tarifs__cell">курс</p>
+                    <p class="tarifs__cell">курс</p>
+                    <p class="tarifs__cell">курс</p>
+                  </div>
+
+                  <p class="tarifs__cell tarifs__cell--separator">
+                    <span class="js-group-opener tarifs__cell-label" data-href="5">Питание <svg class="tarifs__separator-icon" aria-hidden="true">
+                        <use xlink:href="#arrow_down" /></svg></span>
+                  </p>
+                  <div class="tarifs__cells-group" data-target="5">
+                    <p class="tarifs__cell">10</p>
+                  </div>
+
+                  <p class="tarifs__cell tarifs__cell--separator">
+                    <span class="js-group-opener tarifs__cell-label" data-href="6">Информационный блок <svg class="tarifs__separator-icon" aria-hidden="true">
+                        <use xlink:href="#arrow_down" /></svg></span>
+                  </p>
+                  <div class="tarifs__cells-group" data-target="6">
+                    <p class="tarifs__cell">5</p>
+                    <p class="tarifs__cell">1</p>
+                    <p class="tarifs__cell">1</p>
+                    <p class="tarifs__cell">1</p>
+                    <p class="tarifs__cell">2</p>
+                  </div>
                 </div>
                 <div class="tarifs__radio-block">
                   <label class="tarifs__radio-label" for="standart">
@@ -372,32 +611,142 @@
               </div>
               <div class="tarifs__column">
                 <p class="js-tarif-open tarifs__column-title tarifs__column-title--premium">
-                  «Премиум»
+                  GOLD
                   <svg class="tarifs__column-title-icon" aria-hidden="true">
                     <use xlink:href="#arrow_down" /></svg>
                 </p>
                 <div class="tarifs__cells tarifs__cells--features  tarifs__cells--premium">
                   <p class="tarifs__cell tarifs__cell--separator">
-                    <span class="tarifs__cell-label">Разделитель</span>
+                    <span class="js-group-opener tarifs__cell-label is-active" data-href="1">Консультации врачей-специалистов <svg class="tarifs__separator-icon" aria-hidden="true">
+                        <use xlink:href="#arrow_down" /></svg></span>
                   </p>
-                  <p class="tarifs__cell"><span class="tarifs__cell-label">Vivamus tincidunt lectus</span> <svg class="tarifs__check" aria-hidden="true">
-                      <use xlink:href="#check" /></svg></p>
-                  <p class="tarifs__cell"><span class="tarifs__cell-label">Vivamus tincidunt lectus</span> <svg class="tarifs__check" aria-hidden="true">
-                      <use xlink:href="#check" /></svg></p>
-                  <p class="tarifs__cell"><span class="tarifs__cell-label">Vivamus tincidunt lectus</span> <svg class="tarifs__check" aria-hidden="true">
-                      <use xlink:href="#check" /></svg></p>
-                  <p class="tarifs__cell"><span class="tarifs__cell-label">Vivamus tincidunt lectus</span> <svg class="tarifs__check" aria-hidden="true">
-                      <use xlink:href="#check" /></svg></p>
+                  <div class="tarifs__cells-group is-open" data-target="1">
+                    <p class="tarifs__cell">1</p>
+                    <p class="tarifs__cell">7</p>
+                    <p class="tarifs__cell">1</p>
+                    <p class="tarifs__cell">1</p>
+                    <p class="tarifs__cell">1</p>
+                    <p class="tarifs__cell">1</p>
+                  </div>
+
                   <p class="tarifs__cell tarifs__cell--separator">
-                    <span class="tarifs__cell-label">Разделитель 2</span>
+                    <span class="js-group-opener tarifs__cell-label" data-href="2">Диагностика <svg class="tarifs__separator-icon" aria-hidden="true">
+                        <use xlink:href="#arrow_down" /></svg></span>
                   </p>
-                  <p class="tarifs__cell"><span class="tarifs__cell-label">Vivamus tincidunt lectus</span> <svg class="tarifs__check" aria-hidden="true">
-                      <use xlink:href="#check" /></svg></p>
-                  <p class="tarifs__cell"><span class="tarifs__cell-label">Vivamus tincidunt lectus</span> <svg class="tarifs__check" aria-hidden="true">
-                      <use xlink:href="#check" /></svg></p>
-                  <p class="tarifs__cell"><span class="tarifs__cell-label">Vivamus tincidunt lectus</span> <span class="tarifs__minus">&mdash;</span></p>
-                  <p class="tarifs__cell"><span class="tarifs__cell-label">Vivamus tincidunt lectus</span> <span class="tarifs__minus">&mdash;</span></p>
-                  <p class="tarifs__cell"><span class="tarifs__cell-label">Vivamus tincidunt lectus</span> <span class="tarifs__minus">&mdash;</span></p>
+                  <div class="tarifs__cells-group" data-target="2">
+                    <p class="tarifs__cell">1</p>
+                    <p class="tarifs__cell">1</p>
+                    <p class="tarifs__cell">1</p>
+                    <p class="tarifs__cell">1</p>
+                    <p class="tarifs__cell">1</p>
+                    <p class="tarifs__cell">1</p>
+                    <p class="tarifs__cell">1</p>
+                    <p class="tarifs__cell">2</p>
+                    <p class="tarifs__cell">1</p>
+                    <p class="tarifs__cell">1</p>
+                    <p class="tarifs__cell">&nbsp;</p>
+                    <p class="tarifs__cell">1</p>
+                    <p class="tarifs__cell">1</p>
+                    <p class="tarifs__cell">1</p>
+                    <p class="tarifs__cell">1</p>
+                    <p class="tarifs__cell">1</p>
+                    <p class="tarifs__cell">1</p>
+                    <p class="tarifs__cell">1</p>
+                    <p class="tarifs__cell">1</p>
+                    <p class="tarifs__cell">1</p>
+                    <p class="tarifs__cell">1</p>
+                    <p class="tarifs__cell">1</p>
+                    <p class="tarifs__cell">1</p>
+                    <p class="tarifs__cell">1</p>
+                    <p class="tarifs__cell">1</p>
+                    <p class="tarifs__cell">1</p>
+                    <p class="tarifs__cell">1</p>
+                    <p class="tarifs__cell">1</p>
+                    <p class="tarifs__cell">&nbsp;</p>
+                    <p class="tarifs__cell">нет</p>
+                    <p class="tarifs__cell">нет</p>
+                    <p class="tarifs__cell">1</p>
+                    <p class="tarifs__cell">1</p>
+                    <p class="tarifs__cell">1</p>
+                    <p class="tarifs__cell">нет</p>
+                    <p class="tarifs__cell">нет</p>
+                    <p class="tarifs__cell">&nbsp;</p>
+                    <p class="tarifs__cell">нет</p>
+                    <p class="tarifs__cell">нет</p>
+                    <p class="tarifs__cell">нет</p>
+                    <p class="tarifs__cell">нет</p>
+                  </div>
+
+                  <p class="tarifs__cell tarifs__cell--separator">
+                    <span class="js-group-opener tarifs__cell-label" data-href="4">Лечебные процедуры <svg class="tarifs__separator-icon" aria-hidden="true">
+                        <use xlink:href="#arrow_down" /></svg></span>
+                  </p>
+                  <div class="tarifs__cells-group" data-target="3">
+                    <p class="tarifs__cell">1</p>
+                    <p class="tarifs__cell">3</p>
+                    <p class="tarifs__cell">1</p>
+                    <p class="tarifs__cell">5</p>
+                    <p class="tarifs__cell">4</p>
+                    <p class="tarifs__cell">14</p>
+                    <p class="tarifs__cell">5</p>
+                    <p class="tarifs__cell">1</p>
+                    <p class="tarifs__cell">4</p>
+                    <p class="tarifs__cell">8</p>
+                    <p class="tarifs__cell">3</p>
+                    <p class="tarifs__cell">3</p>
+                    <p class="tarifs__cell">5</p>
+                    <p class="tarifs__cell">2</p>
+                    <p class="tarifs__cell">нет</p>
+                    <p class="tarifs__cell">7</p>
+                    <p class="tarifs__cell">1</p>
+                    <p class="tarifs__cell">1</p>
+                    <p class="tarifs__cell">ежедневно</p>
+                    <p class="tarifs__cell">ежедневно</p>
+                    <p class="tarifs__cell">да</p>
+                    <p class="tarifs__cell">&nbsp;</p>
+                    <p class="tarifs__cell">нет</p>
+                    <p class="tarifs__cell">4</p>
+                    <p class="tarifs__cell">4</p>
+                    <p class="tarifs__cell">нет</p>
+                    <p class="tarifs__cell">&nbsp;</p>
+                    <p class="tarifs__cell">нет</p>
+                    <p class="tarifs__cell">4</p>
+                    <p class="tarifs__cell">нет</p>
+                    <p class="tarifs__cell">нет</p>
+                    <p class="tarifs__cell">4</p>
+                  </div>
+
+                  <p class="tarifs__cell tarifs__cell--separator">
+                    <span class="js-group-opener tarifs__cell-label" data-href="4">Прием препаратов <svg class="tarifs__separator-icon" aria-hidden="true">
+                        <use xlink:href="#arrow_down" /></svg></span>
+                  </p>
+                  <div class="tarifs__cells-group" data-target="4">
+                    <p class="tarifs__cell">курс</p>
+                    <p class="tarifs__cell">курс</p>
+                    <p class="tarifs__cell">курс</p>
+                    <p class="tarifs__cell">курс</p>
+                    <p class="tarifs__cell">курс</p>
+                  </div>
+
+                  <p class="tarifs__cell tarifs__cell--separator">
+                    <span class="js-group-opener tarifs__cell-label" data-href="5">Питание <svg class="tarifs__separator-icon" aria-hidden="true">
+                        <use xlink:href="#arrow_down" /></svg></span>
+                  </p>
+                  <div class="tarifs__cells-group" data-target="5">
+                    <p class="tarifs__cell">10</p>
+                  </div>
+
+                  <p class="tarifs__cell tarifs__cell--separator">
+                    <span class="js-group-opener tarifs__cell-label" data-href="6">Информационный блок <svg class="tarifs__separator-icon" aria-hidden="true">
+                        <use xlink:href="#arrow_down" /></svg></span>
+                  </p>
+                  <div class="tarifs__cells-group" data-target="6">
+                    <p class="tarifs__cell">5</p>
+                    <p class="tarifs__cell">1</p>
+                    <p class="tarifs__cell">1</p>
+                    <p class="tarifs__cell">1</p>
+                    <p class="tarifs__cell">2</p>
+                  </div>
                 </div>
                 <div class="tarifs__radio-block">
                   <label class="tarifs__radio-label" for="premium">
@@ -409,35 +758,142 @@
               </div>
               <div class="tarifs__column">
                 <p class="js-tarif-open tarifs__column-title tarifs__column-title--vip">
-                  «VIP»
+                  PLATINUM
                   <svg class="tarifs__column-title-icon" aria-hidden="true">
                     <use xlink:href="#arrow_down" /></svg>
                 </p>
                 <div class="tarifs__cells tarifs__cells--features tarifs__cells--vip">
                   <p class="tarifs__cell tarifs__cell--separator">
-                    <span class="tarifs__cell-label">Разделитель</span>
+                    <span class="js-group-opener tarifs__cell-label is-active" data-href="1">Консультации врачей-специалистов <svg class="tarifs__separator-icon" aria-hidden="true">
+                        <use xlink:href="#arrow_down" /></svg></span>
                   </p>
-                  <p class="tarifs__cell"><span class="tarifs__cell-label">Vivamus tincidunt lectus</span> <svg class="tarifs__check" aria-hidden="true">
-                      <use xlink:href="#check" /></svg></p>
-                  <p class="tarifs__cell"><span class="tarifs__cell-label">Vivamus tincidunt lectus</span> <svg class="tarifs__check" aria-hidden="true">
-                      <use xlink:href="#check" /></svg></p>
-                  <p class="tarifs__cell"><span class="tarifs__cell-label">Vivamus tincidunt lectus</span> <svg class="tarifs__check" aria-hidden="true">
-                      <use xlink:href="#check" /></svg></p>
-                  <p class="tarifs__cell"><span class="tarifs__cell-label">Vivamus tincidunt lectus</span> <svg class="tarifs__check" aria-hidden="true">
-                      <use xlink:href="#check" /></svg></p>
+                  <div class="tarifs__cells-group is-open" data-target="1">
+                    <p class="tarifs__cell">1</p>
+                    <p class="tarifs__cell">7</p>
+                    <p class="tarifs__cell">1</p>
+                    <p class="tarifs__cell">1</p>
+                    <p class="tarifs__cell">1</p>
+                    <p class="tarifs__cell">1</p>
+                  </div>
+
                   <p class="tarifs__cell tarifs__cell--separator">
-                    <span class="tarifs__cell-label">Разделитель 2</span>
+                    <span class="js-group-opener tarifs__cell-label" data-href="2">Диагностика <svg class="tarifs__separator-icon" aria-hidden="true">
+                        <use xlink:href="#arrow_down" /></svg></span>
                   </p>
-                  <p class="tarifs__cell"><span class="tarifs__cell-label">Vivamus tincidunt lectus</span> <svg class="tarifs__check" aria-hidden="true">
-                      <use xlink:href="#check" /></svg></p>
-                  <p class="tarifs__cell"><span class="tarifs__cell-label">Vivamus tincidunt lectus</span> <svg class="tarifs__check" aria-hidden="true">
-                      <use xlink:href="#check" /></svg></p>
-                  <p class="tarifs__cell"><span class="tarifs__cell-label">Vivamus tincidunt lectus</span> <svg class="tarifs__check" aria-hidden="true">
-                      <use xlink:href="#check" /></svg></p>
-                  <p class="tarifs__cell"><span class="tarifs__cell-label">Vivamus tincidunt lectus</span> <svg class="tarifs__check" aria-hidden="true">
-                      <use xlink:href="#check" /></svg></p>
-                  <p class="tarifs__cell"><span class="tarifs__cell-label">Vivamus tincidunt lectus</span> <svg class="tarifs__check" aria-hidden="true">
-                      <use xlink:href="#check" /></svg></p>
+                  <div class="tarifs__cells-group" data-target="2">
+                    <p class="tarifs__cell">1</p>
+                    <p class="tarifs__cell">1</p>
+                    <p class="tarifs__cell">1</p>
+                    <p class="tarifs__cell">1</p>
+                    <p class="tarifs__cell">1</p>
+                    <p class="tarifs__cell">1</p>
+                    <p class="tarifs__cell">1</p>
+                    <p class="tarifs__cell">2</p>
+                    <p class="tarifs__cell">1</p>
+                    <p class="tarifs__cell">1</p>
+                    <p class="tarifs__cell">&nbsp;</p>
+                    <p class="tarifs__cell">1</p>
+                    <p class="tarifs__cell">1</p>
+                    <p class="tarifs__cell">1</p>
+                    <p class="tarifs__cell">1</p>
+                    <p class="tarifs__cell">1</p>
+                    <p class="tarifs__cell">1</p>
+                    <p class="tarifs__cell">1</p>
+                    <p class="tarifs__cell">1</p>
+                    <p class="tarifs__cell">1</p>
+                    <p class="tarifs__cell">1</p>
+                    <p class="tarifs__cell">1</p>
+                    <p class="tarifs__cell">1</p>
+                    <p class="tarifs__cell">1</p>
+                    <p class="tarifs__cell">1</p>
+                    <p class="tarifs__cell">1</p>
+                    <p class="tarifs__cell">1</p>
+                    <p class="tarifs__cell">1</p>
+                    <p class="tarifs__cell">&nbsp;</p>
+                    <p class="tarifs__cell">1</p>
+                    <p class="tarifs__cell">1</p>
+                    <p class="tarifs__cell">1</p>
+                    <p class="tarifs__cell">1</p>
+                    <p class="tarifs__cell">1</p>
+                    <p class="tarifs__cell">1</p>
+                    <p class="tarifs__cell">1</p>
+                    <p class="tarifs__cell">&nbsp;</p>
+                    <p class="tarifs__cell">1</p>
+                    <p class="tarifs__cell">1</p>
+                    <p class="tarifs__cell">1</p>
+                    <p class="tarifs__cell">1</p>
+                  </div>
+
+                  <p class="tarifs__cell tarifs__cell--separator">
+                    <span class="js-group-opener tarifs__cell-label" data-href="3">Лечебные процедуры <svg class="tarifs__separator-icon" aria-hidden="true">
+                        <use xlink:href="#arrow_down" /></svg></span>
+                  </p>
+                  <div class="tarifs__cells-group" data-target="3">
+                    <p class="tarifs__cell">1</p>
+                    <p class="tarifs__cell">3</p>
+                    <p class="tarifs__cell">1</p>
+                    <p class="tarifs__cell">5</p>
+                    <p class="tarifs__cell">4</p>
+                    <p class="tarifs__cell">14</p>
+                    <p class="tarifs__cell">5</p>
+                    <p class="tarifs__cell">1</p>
+                    <p class="tarifs__cell">4</p>
+                    <p class="tarifs__cell">8</p>
+                    <p class="tarifs__cell">3</p>
+                    <p class="tarifs__cell">3</p>
+                    <p class="tarifs__cell">5</p>
+                    <p class="tarifs__cell">3</p>
+                    <p class="tarifs__cell">нет</p>
+                    <p class="tarifs__cell">7</p>
+                    <p class="tarifs__cell">2</p>
+                    <p class="tarifs__cell">2</p>
+                    <p class="tarifs__cell">ежедневно</p>
+                    <p class="tarifs__cell">ежедневно</p>
+                    <p class="tarifs__cell">да</p>
+                    <p class="tarifs__cell">&nbsp;</p>
+                    <p class="tarifs__cell">8</p>
+                    <p class="tarifs__cell">6</p>
+                    <p class="tarifs__cell">3</p>
+                    <p class="tarifs__cell">3</p>
+                    <p class="tarifs__cell">&nbsp;</p>
+                    <p class="tarifs__cell">8</p>
+                    <p class="tarifs__cell">6</p>
+                    <p class="tarifs__cell">7</p>
+                    <p class="tarifs__cell">3</p>
+                    <p class="tarifs__cell">3</p>
+                  </div>
+
+                  <p class="tarifs__cell tarifs__cell--separator">
+                    <span class="js-group-opener tarifs__cell-label" data-href="4">Прием препаратов <svg class="tarifs__separator-icon" aria-hidden="true">
+                        <use xlink:href="#arrow_down" /></svg></span>
+                  </p>
+                  <div class="tarifs__cells-group" data-target="4">
+                    <p class="tarifs__cell">курс</p>
+                    <p class="tarifs__cell">курс</p>
+                    <p class="tarifs__cell">курс</p>
+                    <p class="tarifs__cell">курс</p>
+                    <p class="tarifs__cell">курс</p>
+                  </div>
+
+                  <p class="tarifs__cell tarifs__cell--separator">
+                    <span class="js-group-opener tarifs__cell-label" data-href="5">Питание <svg class="tarifs__separator-icon" aria-hidden="true">
+                        <use xlink:href="#arrow_down" /></svg></span>
+                  </p>
+                  <div class="tarifs__cells-group" data-target="5">
+                    <p class="tarifs__cell">10</p>
+                  </div>
+
+                  <p class="tarifs__cell tarifs__cell--separator">
+                    <span class="js-group-opener tarifs__cell-label" data-href="6">Информационный блок <svg class="tarifs__separator-icon" aria-hidden="true">
+                        <use xlink:href="#arrow_down" /></svg></span>
+                  </p>
+                  <div class="tarifs__cells-group" data-target="6">
+                    <p class="tarifs__cell">5</p>
+                    <p class="tarifs__cell">1</p>
+                    <p class="tarifs__cell">1</p>
+                    <p class="tarifs__cell">1</p>
+                    <p class="tarifs__cell">2</p>
+                  </div>
                 </div>
                 <div class="tarifs__radio-block">
                   <label class="tarifs__radio-label" for="vip">

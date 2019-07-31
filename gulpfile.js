@@ -90,7 +90,7 @@ gulp.task("style:build", function() {
 });
 
 gulp.task("image:build", function() {
-  gulp
+  /*gulp
     .src(path.src.img)
     .pipe(
       imagemin({
@@ -101,7 +101,7 @@ gulp.task("image:build", function() {
       })
     )
     .pipe(gulp.dest(path.build.img))
-    .pipe(reload({ stream: true }));
+    .pipe(reload({ stream: true }));*/
 });
 
 gulp.task("fonts:build", function() {
