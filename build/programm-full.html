@@ -1757,8 +1757,8 @@
     });
 
     //залипание заголовков тарифов на мобиле
-    var topOffet = $('.m-tarifs').offset().top + 160;
-    var height = $('.m-tarifs').height() + topOffet - 160;
+    var topOffet = $('.m-tarifs').offset().top;
+    var height = $('.m-tarifs').height() + topOffet;
 
     //открытие/закрытие групп процедур программы
     $('.js-group-opener').on('click', function() {
@@ -1771,7 +1771,7 @@
     $('.js-m-group-opener').on('click', function() {
       $(this).toggleClass('is-active');
       $('.m-tarifs__cells-group[data-target=' + $(this).attr("data-href") + ']').toggleClass("is-open");
-      height = $('.m-tarifs').height() + topOffet - 160;
+      height = $('.m-tarifs').height() + topOffet;
       return false;
     });
 
