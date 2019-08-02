@@ -394,18 +394,6 @@ $(document).ready(function() {
     $(this).next('.tarifs__cells').toggleClass('is-open');
     return false;
   });
-
-  //открытие/закрытие групп процедур программы
-  $('.js-group-opener').on('click', function() {
-    $(this).toggleClass('is-active');
-
-    if($('body').width() < 768) {
-      $(this).parent('.tarifs__cell--separator').next('.tarifs__cells-group').toggleClass("is-open");
-    } else {
-      $('.tarifs__cells-group[data-target=' + $(this).attr("data-href") + ']').toggleClass("is-open");
-    }
-    return false;
-  });
 });
 
 //открепляем и перезапускаем прилипающий блок при резайзе
