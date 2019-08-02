@@ -1708,6 +1708,12 @@
   <script type="text/javascript" src="js/datepicker.min.js"></script>
 
   <script>
+    //компенсация высоты окна при скрытии адресной строки для мобильных
+    window.onresize = function() {
+      document.body.height = window.innerHeight;
+    };
+    window.onresize();
+
     var selectedDate;
     var daysInterval = 7; //период в днях
     var initCal = false;
