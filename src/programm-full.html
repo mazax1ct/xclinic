@@ -502,7 +502,7 @@
                 </div>
               </div>
               <div class="tarifs__column">
-                <p class="js-tarif-open tarifs__column-title tarifs__column-title--standart">
+                <p class="tarifs__column-title tarifs__column-title--standart">
                   SILVER
                   <svg class="tarifs__column-title-icon" aria-hidden="true">
                     <use xlink:href="#arrow_down" /></svg>
@@ -649,7 +649,7 @@
                 </div>
               </div>
               <div class="tarifs__column">
-                <p class="js-tarif-open tarifs__column-title tarifs__column-title--premium">
+                <p class="tarifs__column-title tarifs__column-title--premium">
                   GOLD
                   <svg class="tarifs__column-title-icon" aria-hidden="true">
                     <use xlink:href="#arrow_down" /></svg>
@@ -796,7 +796,7 @@
                 </div>
               </div>
               <div class="tarifs__column">
-                <p class="js-tarif-open tarifs__column-title tarifs__column-title--vip">
+                <p class="tarifs__column-title tarifs__column-title--vip">
                   PLATINUM
                   <svg class="tarifs__column-title-icon" aria-hidden="true">
                     <use xlink:href="#arrow_down" /></svg>
@@ -1439,18 +1439,6 @@
     var topOffet = $('.m-tarifs').offset().top + 160;
     var height = $('.m-tarifs').height() + topOffet - 160;
 
-    $(window).scroll(function() {
-      if ($(this).scrollTop() >= topOffet) {
-        $('.m-tarifs').addClass('fixed');
-      } else {
-        $('.m-tarifs').removeClass('fixed');
-      }
-
-      if ($(this).scrollTop() >= height) {
-        $('.m-tarifs').removeClass('fixed');
-      }
-    });
-
     //открытие/закрытие групп процедур программы
     $('.js-group-opener').on('click', function() {
       $(this).toggleClass('is-active');
@@ -1464,6 +1452,18 @@
       $('.m-tarifs__cells-group[data-target=' + $(this).attr("data-href") + ']').toggleClass("is-open");
       height = $('.m-tarifs').height() + topOffet - 160;
       return false;
+    });
+
+    $(window).scroll(function() {
+      if ($(this).scrollTop() >= topOffet) {
+        $('.m-tarifs').addClass('fixed');
+      } else {
+        $('.m-tarifs').removeClass('fixed');
+      }
+
+      if ($(this).scrollTop() >= height) {
+        $('.m-tarifs').removeClass('fixed');
+      }
     });
   </script>
 </body>
