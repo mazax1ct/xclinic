@@ -1,15 +1,231 @@
+.m-tarifs
+  &.fixed
+    padding-top: 40px
+
+    .m-tarifs__titles
+      left: 0
+      position: fixed
+      padding-left: 15px
+      padding-right: 15px
+      top: 80px
+      width: 100%
+      z-index: 1
+
+  &__row
+    display: flex
+
+  &__column
+    width: 33.33%
+
+  &__column-title
+    align-items: center
+    color: #fff
+    display: flex
+    font-size: 16px
+    justify-content: center
+    min-height: 40px
+    margin-bottom: 0
+    padding-left: 12px
+    padding-right: 12px
+    position: relative
+
+    &--standart
+      background-color: #7b7faa
+
+    &--premium
+      background-color: #9bb8ac
+
+    &--vip
+      background-color: #dbd2cb
+      font-weight: 700
+
+  &__cells
+    &--standart
+      background-color: #f9fafd
+
+      .m-tarifs__check
+        fill: #7b7faa
+
+      .m-tarifs__minus
+        color: #7b7faa
+
+    &--premium
+      background-color: #f5f8f7
+
+      .m-tarifs__check
+        fill: #9bb8ac
+
+      .m-tarifs__minus
+        color: #9bb8ac
+
+    &--vip
+      background-color: #f8f6f5
+
+      .m-tarifs__check
+        fill: #bbada3
+
+      .m-tarifs__minus
+        color: #bbada3
+
+  &__group-title
+    align-items: center
+    color: #222
+    cursor: pointer
+    display: flex
+    font-size: 13px
+    justify-content: center
+    line-height: 1.3
+    min-height: 60px
+    margin-bottom: 0
+    padding: 4px 8px
+
+    &.is-active
+      .m-tarifs__group-title-icon
+        transform: rotate(180deg)
+
+    span
+      text-align: center
+
+  &__group-title-icon
+    display: inline-block
+    fill: #222
+    height: 12px
+    margin-left: 5px
+    vertical-align: middle
+    width: 12px
+
+  &__cells-group
+    display: none
+
+    &.is-open
+      display: block
+
+  &__cell
+    align-items: center
+    display: flex
+    color: #222
+    font-size: 13px
+    justify-content: center
+    line-height: 1.3
+    min-height: 30px
+    margin-bottom: 0
+    padding: 4px 8px
+
+    &--standart
+      background-color: #f9fafd
+
+    &--premium
+      background-color: #f5f8f7
+
+    &--vip
+      background-color: #f8f6f5
+
+  &__check
+    height: 20px
+    min-width: 20px
+    width: 20px
+
+  &__minus
+    min-width: 20px
+    text-align: center
+
+  &__radio-block
+    text-align: center
+    padding: 12px
+
+    &--standart
+      background-color: #f9fafd
+
+    &--premium
+      background-color: #f5f8f7
+
+    &--vip
+      background-color: #f8f6f5
+
+  &__radio-label
+    align-items: center
+    border: 1px solid #7b7faa
+    color: #7b7faa
+    cursor: pointer
+    display: inline-flex
+    font-size: 16px
+    justify-content: center
+    height: 60px
+    max-width: 320px
+    text-align: center
+    transition: background-color 0.3s, color 0.3s
+    width: 100%
+
+    @media(min-width: 768px) and (max-width: 959px)
+      font-size: 16px
+
+    &:hover,
+    &:focus
+      background-color: #7b7faa
+      color: #fff
+
+  &__radio
+    position: absolute
+    height: 1px
+    overflow: hidden
+    clip: rect(0 0 0 0)
+    width: 1px
+
+    &:focus
+      & + .m-tarifs__radio-text
+        background-color: #7b7faa
+        color: #fff
+
+    &:checked
+      & + .m-tarifs__radio-text
+        display: none
+
+      & ~ .m-tarifs__radio-checked-text
+        display: flex
+
+  &__radio-text
+    align-items: center
+    display: flex
+    height: 100%
+    justify-content: center
+    min-height: 60px
+    width: 100%
+
+  &__radio-checked-text
+    align-items: center
+    background-color: #7b7faa
+    color: #fff
+    display: none
+    height: 100%
+    justify-content: center
+    min-height: 60px
+    width: 100%
+
 .tarifs
   background-color: #fff
-  padding: 24px 24px 0
+  padding-top: 24px
+
+  @media(min-width: 768px)
+    padding-left: 24px
+    padding-right: 24px
 
   @media(min-width: 992px)
-    padding: 48px 48px 0
+    padding-top: 48px
+    padding-left: 48px
+    padding-right: 48px
 
   &__inner
-    @media(min-width: 768px)
-      display: flex
-      margin-left: -2px
-      margin-right: -2px
+    &--small
+      @media(min-width: 768px)
+        display: none
+
+    &--big
+      display: none
+
+      @media(min-width: 768px)
+        display: flex
+        margin-left: -2px
+        margin-right: -2px
 
   &__column
     margin-bottom: 40px
@@ -20,12 +236,6 @@
       padding-left: 2px
       padding-right: 2px
       width: 25%
-
-    //@media(min-width: 960px)
-      font-size: 15px
-
-    //@media(min-width: 1200px)
-      font-size: 16px
 
     &--labels
       display: none
