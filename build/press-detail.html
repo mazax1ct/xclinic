@@ -141,13 +141,15 @@
       </a>
       <button class="js-menu-opener menu-opener" type="button" title="Открыть меню">
         <span class="menu-opener__burger"></span>
-        <span class="menu-opener__arrow"><svg class="menu-opener__arrow-icon" aria-hidden="true"><use xlink:href="#arrow_left"/></svg></span>
+        <span class="menu-opener__arrow"><svg class="menu-opener__arrow-icon" aria-hidden="true">
+            <use xlink:href="#arrow_left" /></svg></span>
       </button>
       <nav class="main-menu">
         <ul class="main-menu__list">
           <li id="m1" class="js-dropdown main-menu__list-item">
             <button class="js-sub-menu-opener main-menu__pseudo-link main-menu__pseudo-link--color_1" type="button">
-              <span class="main-menu__pseudo-link-arrow"><svg class="main-menu__pseudo-link-icon" aria-hidden="true"><use xlink:href="#arrow_left"/></svg></span>
+              <span class="main-menu__pseudo-link-arrow"><svg class="main-menu__pseudo-link-icon" aria-hidden="true">
+                  <use xlink:href="#arrow_left" /></svg></span>
               <span class="main-menu__pseudo-link-text">Клиника</span>
             </button>
             <a class="main-menu__link main-menu__link--root_link  main-menu__link--color_1" href="clinic.html"><span class="main-menu__link-text">Клиника</span></a>
@@ -188,7 +190,8 @@
           </li>
           <li id="m2" class="js-dropdown main-menu__list-item">
             <button class="js-sub-menu-opener main-menu__pseudo-link main-menu__pseudo-link--color_2" type="button">
-              <span class="main-menu__pseudo-link-arrow"><svg class="main-menu__pseudo-link-icon" aria-hidden="true"><use xlink:href="#arrow_left"/></svg></span>
+              <span class="main-menu__pseudo-link-arrow"><svg class="main-menu__pseudo-link-icon" aria-hidden="true">
+                  <use xlink:href="#arrow_left" /></svg></span>
               <span class="main-menu__pseudo-link-text">X-медицина</span>
             </button>
             <a class="main-menu__link main-menu__link--root_link main-menu__link--color_2" href="xmed.html"><span class="main-menu__link-text">X-медицина</span></a>
@@ -217,7 +220,8 @@
           </li>
           <li id="m3" class="js-dropdown main-menu__list-item">
             <button class="js-sub-menu-opener main-menu__pseudo-link main-menu__pseudo-link--color_3" type="button">
-              <span class="main-menu__pseudo-link-arrow"><svg class="main-menu__pseudo-link-icon" aria-hidden="true"><use xlink:href="#arrow_left"/></svg></span>
+              <span class="main-menu__pseudo-link-arrow"><svg class="main-menu__pseudo-link-icon" aria-hidden="true">
+                  <use xlink:href="#arrow_left" /></svg></span>
               <span class="main-menu__pseudo-link-text">Программы</span>
             </button>
             <a class="main-menu__link main-menu__link--root_link main-menu__link--color_3" href="programms.html"><span class="main-menu__link-text">Программы</span></a>
@@ -246,7 +250,8 @@
           </li>
           <li class="main-menu__list-item main-menu__list-item--no_desktop">
             <button class="js-sub-menu-opener main-menu__pseudo-link main-menu__pseudo-link--color_4" type="button">
-              <span class="main-menu__pseudo-link-arrow"><svg class="main-menu__pseudo-link-icon" aria-hidden="true"><use xlink:href="#arrow_left"/></svg></span>
+              <span class="main-menu__pseudo-link-arrow"><svg class="main-menu__pseudo-link-icon" aria-hidden="true">
+                  <use xlink:href="#arrow_left" /></svg></span>
               <span class="main-menu__pseudo-link-text">Бронирование</span>
             </button>
             <a class="main-menu__link main-menu__link--root_link main-menu__link--color_4" href="#"><span class="main-menu__link-text">Бронирование</span></a>
@@ -265,7 +270,7 @@
           </li>
         </ul>
       </nav>
-      <a class="header__booking-button" href="#">On-line бронирование</a>
+      <a class="header__booking-button" href="#bookingForm" data-fancybox="form-popup">On-line бронирование</a>
     </header>
     <div class="page-content">
       <div class="page-banner page-banner--big" style="background-image: url('images/backgrounds/banner_press_detail.jpg')">
@@ -276,14 +281,25 @@
       </div>
       <div class="container">
         <div class="press-detail">
-          <p>Aenean efficitur ornare enim non eleifend. Maecenas non mi scelerisque, cursus tortor id, rhoncus diam. Pellentesque sit amet massa in ligula tempus sagittis. Quisque eget mollis libero. Sed et risus nec velit dignissim auctor sit amet sit amet nibh. Duis aliquam quam non nisl sagittis tincidunt. Suspendisse tincidunt libero sed leo venenatis, quis congue nulla eleifend. Maecenas non mi scelerisque, cursus tortor id, rhoncus diam. Pellentesque sit amet massa in ligula tempus sagittis. Quisque eget mollis libero. Sed et risus nec velit dignissim auctor sit amet sit amet nibh. Duis aliquam quam non nisl sagittis tincidunt.</p>
-          <p>Suspendisse tincidunt libero sed leo venenatis, quis congue nulla eleifend. Sed vitae leo augue. Nulla faucibus nec orci sit amet ornare. Aliquam interdum tempor scelerisque. Fusce sed dignissim ipsum. In tempus velit at purus cursus rhoncus. Vivamus tincidunt lectus sed magna laoreet finibus.</p>
+          <p>Aenean efficitur ornare enim non eleifend. Maecenas non mi scelerisque, cursus tortor id, rhoncus diam. Pellentesque sit amet massa in ligula tempus sagittis. Quisque eget mollis libero. Sed et risus nec velit dignissim auctor sit amet
+            sit amet nibh. Duis aliquam quam non nisl sagittis tincidunt. Suspendisse tincidunt libero sed leo venenatis, quis congue nulla eleifend. Maecenas non mi scelerisque, cursus tortor id, rhoncus diam. Pellentesque sit amet massa in ligula
+            tempus sagittis. Quisque eget mollis libero. Sed et risus nec velit dignissim auctor sit amet sit amet nibh. Duis aliquam quam non nisl sagittis tincidunt.</p>
+          <p>Suspendisse tincidunt libero sed leo venenatis, quis congue nulla eleifend. Sed vitae leo augue. Nulla faucibus nec orci sit amet ornare. Aliquam interdum tempor scelerisque. Fusce sed dignissim ipsum. In tempus velit at purus cursus
+            rhoncus. Vivamus tincidunt lectus sed magna laoreet finibus.</p>
           <p><img src="images/content/img_78.jpg" alt=""></p>
-          <p>Quisque efficitur iaculis eros at eleifend. Aenean efficitur ornare enim non eleifend. Maecenas non mi scelerisque, cursus tortor id, rhoncus diam. Pellentesque sit amet massa in ligula tempus sagittis. Quisque eget mollis libero. Sed et risus nec velit dignissim auctor sit amet sit amet nibh. Duis aliquam quam non nisl sagittis tincidunt. Suspendisse tincidunt libero sed leo venenatis, quis congue nulla eleifend. Maecenas non mi scelerisque, cursus tortor id, rhoncus diam.</p>
-          <p>Pellentesque sit amet massa in ligula tempus sagittis. Quisque eget mollis libero. Sed et risus nec velit dignissim auctor sit amet sit amet nibh. Duis aliquam quam non nisl sagittis tincidunt. Suspendisse tincidunt libero sed leo venenatis, quis congue nulla eleifend. Sed vitae leo augue. Nulla faucibus nec orci sit amet ornare. Aliquam interdum tempor scelerisque. Fusce sed dignissim ipsum. In tempus velit at purus cursus rhoncus. Vivamus tincidunt lectus sed magna laoreet finibus. Quisque efficitur iaculis eros at eleifend. Aenean efficitur ornare enim non eleifend. Maecenas non mi scelerisque, cursus tortor id, rhoncus diam. Pellentesque sit amet massa in ligula tempus sagittis. Quisque eget mollis libero. Sed et risus nec velit dignissim auctor sit amet sit amet nibh. Duis aliquam quam non nisl sagittis tincidunt. Suspendisse tincidunt libero sed leo venenatis, quis congue nulla eleifend.</p>
-          <p class="press-detail__back-block"><a class="back-link" href="press.html"><svg class="back-link__icon" aria-hidden="true"><use xlink:href="#arrow_left"/></svg> Назад к списку</a></p>
-          <a class="press-detail__prev" href="#" title="Предыдущая статья"><svg class="press-detail__prev-icon" aria-hidden="true"><use xlink:href="#arrow_left"/></svg></a>
-          <a class="press-detail__next" href="#" title="Следующая статья"><svg class="press-detail__next-icon" aria-hidden="true"><use xlink:href="#arrow_right"/></svg></a>
+          <p>Quisque efficitur iaculis eros at eleifend. Aenean efficitur ornare enim non eleifend. Maecenas non mi scelerisque, cursus tortor id, rhoncus diam. Pellentesque sit amet massa in ligula tempus sagittis. Quisque eget mollis libero. Sed
+            et risus nec velit dignissim auctor sit amet sit amet nibh. Duis aliquam quam non nisl sagittis tincidunt. Suspendisse tincidunt libero sed leo venenatis, quis congue nulla eleifend. Maecenas non mi scelerisque, cursus tortor id, rhoncus
+            diam.</p>
+          <p>Pellentesque sit amet massa in ligula tempus sagittis. Quisque eget mollis libero. Sed et risus nec velit dignissim auctor sit amet sit amet nibh. Duis aliquam quam non nisl sagittis tincidunt. Suspendisse tincidunt libero sed leo
+            venenatis, quis congue nulla eleifend. Sed vitae leo augue. Nulla faucibus nec orci sit amet ornare. Aliquam interdum tempor scelerisque. Fusce sed dignissim ipsum. In tempus velit at purus cursus rhoncus. Vivamus tincidunt lectus sed
+            magna laoreet finibus. Quisque efficitur iaculis eros at eleifend. Aenean efficitur ornare enim non eleifend. Maecenas non mi scelerisque, cursus tortor id, rhoncus diam. Pellentesque sit amet massa in ligula tempus sagittis. Quisque
+            eget mollis libero. Sed et risus nec velit dignissim auctor sit amet sit amet nibh. Duis aliquam quam non nisl sagittis tincidunt. Suspendisse tincidunt libero sed leo venenatis, quis congue nulla eleifend.</p>
+          <p class="press-detail__back-block"><a class="back-link" href="press.html"><svg class="back-link__icon" aria-hidden="true">
+                <use xlink:href="#arrow_left" /></svg> Назад к списку</a></p>
+          <a class="press-detail__prev" href="#" title="Предыдущая статья"><svg class="press-detail__prev-icon" aria-hidden="true">
+              <use xlink:href="#arrow_left" /></svg></a>
+          <a class="press-detail__next" href="#" title="Следующая статья"><svg class="press-detail__next-icon" aria-hidden="true">
+              <use xlink:href="#arrow_right" /></svg></a>
         </div>
       </div>
       <div class="subscribe">
@@ -365,9 +381,37 @@
     </div>
   </footer>
 
+  <div id="bookingForm" class="form-popup">
+    <p class="form-popup__title">Заполните поля:</p>
+    <p>Наш менеджер свяжется с вами для консультации.</p>
+    <form action="">
+      <input name="program_name" type="hidden" value="On-line бронирование">
+      <label class="form-popup__label" for="booking_name">
+        <input id="booking_name" class="input input--dark" name="name_cons" type="text" value="" placeholder="Имя" tabindex="-1">
+      </label>
+      <label class="form-popup__label" for="booking_phone">
+        <input id="booking_phone" class="input input--dark" name="phone_cons" type="text" value="" placeholder="Телефон">
+      </label>
+      <label class="form-popup__label" for="booking_email">
+        <input id="booking_email" class="input input--dark" name="email_cons" type="text" value="" placeholder="E-mail">
+      </label>
+      <div class="form-popup__row">
+        <div>
+          <input id="booking_email" class="input input--dark" name="email_cons" type="text" value="" placeholder="Введите название клиники">
+        </div>
+        <div>
+          <p class="form-popup__caption">Хотите сохранить персональную скидку из другого медицинского учреждения?<br> Укажите её название, наш отдел бронирования сделать вам персональное предложение!</p>
+        </div>
+      </div>
+      <div class="form-popup__label">
+        <button class="form-popup__button button button--dark" type="submit">Отправить</button>
+      </div>
+    </form>
+  </div>
+
   <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
-  <script type="text/javascript" src="js/main.js"></script>
   <script type="text/javascript" src="js/jquery.fancybox.min.js"></script>
+  <script type="text/javascript" src="js/main.js"></script>
 </body>
 
 </html>
