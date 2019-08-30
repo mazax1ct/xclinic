@@ -1,0 +1,136 @@
+.action-detail + .discount-form
+  margin-top: -48px
+
+  @media(min-width: 1200px)
+    margin-top: -96px
+
+.discount-form
+  background-color: #e6e8f6
+  margin-bottom: 80px
+  padding: 50px 12px 55px
+
+  @media(min-width: 384px)
+    padding-left: 24px
+    padding-right: 24px
+
+  @media(min-width: 768px)
+    margin-bottom: 120px
+
+  @media(min-width: 960px)
+    padding-top: 50px
+    padding-bottom: 50px
+
+  &__inner
+    margin-left: auto
+    margin-right: auto
+    max-width: 580px
+
+    @media(min-width: 960px)
+      max-width: 600px
+      width: 600px
+
+  &__title
+    font-size: 20px
+    font-weight: 900
+    line-height: 26px
+    margin-bottom: 15px
+    text-align: center
+    text-transform: uppercase
+
+    @media(min-width: 768px)
+      font-size: 20px
+
+  &__row
+    margin-bottom: 10px
+
+    @media(min-width: 768px)
+      display: flex
+
+    & > div
+      @media(min-width: 768px)
+        width: 50%
+
+      &:first-child
+        @media(min-width: 768px)
+          padding-right: 5px
+
+      &:last-child
+        @media(min-width: 768px)
+          padding-left: 5px
+
+  &__form-label
+    display: block
+    margin-bottom: 6px
+
+    @media(min-width: 768px)
+      margin-bottom: 0
+      flex-grow: 1
+
+  &__form-input
+    background-color: #fff
+    border: 1px solid #fff
+    font-size: 16px
+    height: 60px
+    line-height: 60px
+    text-align: center
+    transition: border-color 0.3s, background-color 0.3s
+    width: 100%
+
+    &:focus
+      border-color: #9ea1bd
+
+    @media(min-width: 768px)
+      padding-left: 30px
+      padding-right: 30px
+      text-align: left
+
+    @media(min-width: 960px)
+      height: 50px
+      line-height: 50px
+
+    &::-webkit-input-placeholder
+      color: #b8b8b8
+      opacity: 1
+
+    &::-moz-placeholder
+      color: #b8b8b8
+      opacity: 1
+
+    &:-ms-input-placeholder
+      color: #b8b8b8
+      opacity: 1
+
+  &__form-button
+    background-color: #9ea1bd
+    border: 1px solid #9ea1bd
+    color: #fff
+    cursor: pointer
+    display: block
+    font-family: 'Raleway', sans-serif
+    font-size: 15px
+    font-weight: 700
+    height: 60px
+    padding: 0
+    text-align: center
+    text-transform: uppercase
+    transition: all 0.3s
+    width: 100%
+
+    @media(min-width: 960px)
+      height: 50px
+      font-size: 13px
+
+    &:hover,
+    &:focus,
+    &:active
+      opacity: 0.7
+
+  &__note
+    color: #9ea1bd
+    font-size: 14px
+    margin-bottom: 15px
+    opacity: 0.5
+    text-align: center
+
+    a
+      color: #9ea1bd
