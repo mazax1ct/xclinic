@@ -387,6 +387,21 @@ $(document).ready(function() {
       }
     }
   }
+
+  //слайдер списка размещения в программе
+  if ($('.js-rooms').length && $('body').width() > 767) {
+    $('.js-rooms').slick({
+      auto: false,
+      infinite: true,
+      edgeFriction: 0,
+      dots: false,
+      mobileFirst: true,
+      arrows: true,
+      prevArrow: '<button type="button" class="slick-prev" title="Назад"><svg class="slick-prev__icon" aria-hidden="true"><use xlink:href="#arrow_left"/></svg></button>',
+      nextArrow: '<button type="button" class="slick-next" title="Вперед"><svg class="slick-next__icon" aria-hidden="true"><use xlink:href="#arrow_right"/></svg></button>',
+      slidesToShow: 4
+    });
+  }
 });
 
 //открепляем и перезапускаем прилипающий блок при резайзе
