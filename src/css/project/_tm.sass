@@ -1,0 +1,88 @@
+.tm
+  &__row
+    @media(min-width: 768px)
+      display: flex
+      margin-left: -2px
+      margin-right: -2px
+
+  &__cell
+    @media(min-width: 768px)
+      padding-left: 2px
+      padding-right: 2px
+
+    &--w_50
+      @media(min-width: 768px)
+        width: 50%
+
+    &--w_70
+      @media(min-width: 768px)
+        width: 66.66666%
+
+    &--w_30
+      display: flex
+
+      @media(min-width: 768px)
+        padding-bottom: 4px
+        width: 33.33333%
+
+  &__link
+    display: block
+    background-color: #000
+    background-position: 50% 50%
+    background-size: cover
+    background-repeat: no-repeat
+    height: 0
+    margin-bottom: 4px
+    padding-bottom: 56%
+    position: relative
+    text-decoration: none
+    width: 100%
+
+    &:hover,
+    &:focus
+      text-decoration: none
+
+      .tm__link-title
+        &::after
+          opacity: 1
+
+    &--h_1
+      @media(min-width: 768px)
+        padding-bottom: 40%
+
+    &--h_2
+      @media(min-width: 768px)
+        padding-bottom: 80%
+
+    &--h_3
+      @media(min-width: 768px)
+        height: 100%
+        padding-bottom: 0
+
+    &--b_b
+      background-position: 50% 100%
+
+  &__link-title
+    color: #fff
+    font-size: 15px
+    font-weight: 600
+    left: 50%
+    position: absolute
+    top: 50%
+    transform: translate(-50%, -50%)
+    text-transform: uppercase
+    text-shadow: 0 1px 3px #000
+    white-space: nowrap
+
+    &::after
+      border-bottom: 3px solid #fff
+      box-shadow: 0 1px 5px 1px rgba(0,0,0,0.3)
+      bottom: -20px
+      content: ""
+      height: 2px
+      left: 0
+      opacity: 0
+      position: absolute
+      top: auto
+      transition: opacity 0.3s
+      width: 100%

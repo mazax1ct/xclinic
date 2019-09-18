@@ -1,65 +1,94 @@
 .methods-list
   @media(min-width: 768px)
-    align-items: flex-start
     display: flex
     flex-wrap: wrap
 
+  &__item
+    max-width: 480px
+    margin-bottom: 20px
+    margin-left: auto
+    margin-right: auto
+
+    @media(min-width: 768px)
+      display: flex
+      max-width: 100%
+      margin-bottom: 48px
+      width: calc(50% - 24px)
+
+    &:nth-child(even)
+      @media(min-width: 768px)
+        margin-left: 24px
+        margin-right: 0
+
+    &:nth-child(odd)
+      @media(min-width: 768px)
+        margin-right: 24px
+        margin-left: 0
+
+    &:last-child
+      margin-bottom: 0
+
+    &:nth-last-child(2)
+      @media(min-width: 768px)
+        margin-bottom: 0
+
 .method
   background-color: #fff
+  box-shadow: 0 1px 5px 1px rgba(0,0,0,0.1)
   display: block
-  margin-bottom: 20px
-  max-width: 480px
-  margin-left: auto
-  margin-right: auto
   text-decoration: none
 
   @media(min-width: 768px)
-    max-width: 100%
-    margin-bottom: 48px
-    width: calc(50% - 24px)
-
-  &:nth-child(even)
-    @media(min-width: 768px)
-      margin-left: 24px
-      margin-right: 0
-
-  &:nth-child(odd)
-    @media(min-width: 768px)
-      margin-right: 24px
-      margin-left: 0
-
-  &:last-child
-    margin-bottom: 0
-
-  &:nth-last-child(2)
-    @media(min-width: 768px)
-      margin-bottom: 0
+    display: flex
+    flex-direction: column
 
   &:hover,
   &:focus
     text-decoration: none
 
-    .method__title,
+    //.method__title,
     .method__more
       text-decoration: underline
 
     img
       opacity: 0.7
 
+  &__image-block,
   &__description,
   &__title,
   &__preview-text,
   &__more
     display: block
 
+  &__image-block
+    position: relative
+
+    .method__title
+      background-color: #fff
+      margin: 0
+      position: absolute
+      padding: 10px 20px
+      text-transform: uppercase
+
+      &--t_l
+        left: 0
+        top: 0
+
+      &--b_r
+        bottom: 0
+        left: auto
+        right: 0
+        top: auto
+
   &__description
+    color: #222
     display: block
     padding: 24px
 
     @media(min-width: 768px)
       display: flex
       flex-direction: column
-      justify-content: space-between
+      flex-grow: 1
 
     @media(min-width: 960px)
       padding: 48px
@@ -77,9 +106,10 @@
 
   &__preview-text,
   &__more
-    color: #97999b
+    color: #222
 
   &__preview-text
+    flex-grow: 1
     margin-bottom: 28px
 
   &__more-icon
