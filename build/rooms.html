@@ -141,8 +141,11 @@
       </a>
       <button class="js-menu-opener menu-opener" type="button" title="Открыть меню">
         <span class="menu-opener__burger"></span>
-        <span class="menu-opener__arrow"><svg class="menu-opener__arrow-icon" aria-hidden="true">
-            <use xlink:href="#arrow_left" /></svg></span>
+        <span class="menu-opener__arrow">
+          <svg class="menu-opener__arrow-icon" aria-hidden="true">
+            <use xlink:href="#arrow_left" />
+          </svg>
+        </span>
       </button>
       <nav class="main-menu">
         <ul class="main-menu__list">
@@ -248,10 +251,13 @@
               </ul>
             </div>
           </li>
-          <li class="main-menu__list-item main-menu__list-item--no_desktop">
+          <!--<li class="main-menu__list-item main-menu__list-item--no_desktop">
             <button class="js-sub-menu-opener main-menu__pseudo-link main-menu__pseudo-link--color_4" type="button">
-              <span class="main-menu__pseudo-link-arrow"><svg class="main-menu__pseudo-link-icon" aria-hidden="true">
-                  <use xlink:href="#arrow_left" /></svg></span>
+              <span class="main-menu__pseudo-link-arrow">
+                <svg class="main-menu__pseudo-link-icon" aria-hidden="true">
+                  <use xlink:href="#arrow_left" />
+                </svg>
+              </span>
               <span class="main-menu__pseudo-link-text">Бронирование</span>
             </button>
             <a class="main-menu__link main-menu__link--root_link main-menu__link--color_4" href="#"><span class="main-menu__link-text">Бронирование</span></a>
@@ -264,13 +270,16 @@
                 <li class="sub-menu__list-item sub-menu__list-item--third"><a class="sub-menu__link" href="#"><span class="sub-menu__link-text">Способы оплаты</span></a></li>
               </ul>
             </div>
+          </li>-->
+          <li class="main-menu__list-item main-menu__list-item--no_desktop">
+            <a class="main-menu__link main-menu__pseudo-link--color_4" data-fancybox data-src="#bookingForm" href="javascript:;"><span class="main-menu__link-text">Бронирование</span></a>
           </li>
           <li class="main-menu__list-item">
             <a class="main-menu__link main-menu__link--color_5" href="contacts.html"><span class="main-menu__link-text">Контакты</span></a>
           </li>
         </ul>
       </nav>
-      <a class="header__booking-button" href="#bookingForm" data-fancybox="form-popup">On-line бронирование</a>
+      <a class="header__booking-button" data-fancybox data-src="#bookingForm" href="javascript:;">On-line бронирование</a>
     </header>
     <div class="page-content">
       <div class="page-banner" style="background-image: url('images/backgrounds/banner_rooms.jpg')">
@@ -483,7 +492,7 @@
               <li class="footer-menu__list-item"><a class="footer-menu__link" href="about.html"><span class="footer-menu__link-text">О клинике</span></a></li>
               <li class="footer-menu__list-item"><a class="footer-menu__link" href="#"><span class="footer-menu__link-text">О компании</span></a></li>
               <li class="footer-menu__list-item"><a class="footer-menu__link" href="news.html"><span class="footer-menu__link-text">Новости</span></a></li>
-              <li class="footer-menu__list-item"><a class="footer-menu__link" href="actions.html"><span class="footer-menu__link-text">Акции</span></a></li>
+              <li class="footer-menu__list-item"><a class="footer-menu__link" href="news.html"><span class="footer-menu__link-text">Пресса о нас</span></a></li>
               <li class="footer-menu__list-item"><a class="footer-menu__link" href="blog.html"><span class="footer-menu__link-text">X-Блог</span></a></li>
               <li class="footer-menu__list-item"><a class="footer-menu__link" href="partners.html"><span class="footer-menu__link-text">Партнеры</span></a></li>
               <li class="footer-menu__list-item"><a class="footer-menu__link" href="reviews.html"><span class="footer-menu__link-text">Отзывы</span></a></li>
@@ -524,10 +533,14 @@
       </div>
       <div class="footer__bottom">
         <div class="footer__social">
-          <a class="social-link" href="#" title="vk.com" rel="noreferrer noopener"><svg class="social-link__icon social-link__icon--vk" aria-hidden="true"><use xlink:href="#vk"/></svg></a>
-          <a class="social-link" href="#" title="facebook.com" rel="noreferrer noopener"><svg class="social-link__icon social-link__icon--fb" aria-hidden="true"><use xlink:href="#fb"/></svg></a>
-          <a class="social-link" href="#" title="twitter.com" rel="noreferrer noopener"><svg class="social-link__icon social-link__icon--tw" aria-hidden="true"><use xlink:href="#tw"/></svg></a>
-          <a class="social-link" href="#" title="instagram.com" rel="noreferrer noopener"><svg class="social-link__icon social-link__icon--inst" aria-hidden="true"><use xlink:href="#inst"/></svg></a>
+          <a class="social-link" href="#" title="vk.com" rel="noreferrer noopener"><svg class="social-link__icon social-link__icon--vk" aria-hidden="true">
+              <use xlink:href="#vk" /></svg></a>
+          <a class="social-link" href="#" title="facebook.com" rel="noreferrer noopener"><svg class="social-link__icon social-link__icon--fb" aria-hidden="true">
+              <use xlink:href="#fb" /></svg></a>
+          <a class="social-link" href="#" title="twitter.com" rel="noreferrer noopener"><svg class="social-link__icon social-link__icon--tw" aria-hidden="true">
+              <use xlink:href="#tw" /></svg></a>
+          <a class="social-link" href="#" title="instagram.com" rel="noreferrer noopener"><svg class="social-link__icon social-link__icon--inst" aria-hidden="true">
+              <use xlink:href="#inst" /></svg></a>
         </div>
         <div class="footer__copyright-block">
           <!--<div class="footer__logo"><img src="images/logo.svg" alt="XClinic"></div>-->

@@ -7,7 +7,7 @@
 
   @media(min-width: 768px)
     height: 704px
-    margin-bottom: -128px
+    //margin-bottom: -128px
 
   &__slide
     align-items: center
@@ -35,6 +35,9 @@
 
     &--dark_text
       color: #101820
+
+      .main-slider__slide-text
+        text-shadow: none
 
   &__image
     flex-shrink: 0
@@ -77,6 +80,7 @@
     font-size: 30px
     line-height: 1.1
     margin-bottom: 0
+    text-shadow: 0 1px 3px #000
 
     @media(min-width: 384px)
       font-size: 40px
@@ -107,20 +111,25 @@
     width: 192px
 
   .slick-dots
-    bottom: 80px
+    //bottom: 80px
+    bottom: 20px
 
-    @media(min-width: 768px)
+    //@media(min-width: 768px)
       bottom: 200px
 
     li
-
       button
         &::before
           background-color: #fff
+          box-shadow: 0 1px 3px rgba(0,0,0,0.5)
+
+        &:hover
+          box-shadow: 0 1px 3px rgba(0,0,0,0.5)
 
       &.slick-active
         button
           border-color: #fff
+          box-shadow: 0 1px 3px rgba(0,0,0,0.5)
 
           &::before
             background-color: #fff
@@ -143,3 +152,7 @@
     &:focus
       svg
         fill: #000
+
+  .slick-prev__icon,
+  .slick-next__icon
+    filter: drop-shadow(0 1px 3px rgba(0,0,0,1))

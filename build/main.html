@@ -141,8 +141,11 @@
       </a>
       <button class="js-menu-opener menu-opener" type="button" title="Открыть меню">
         <span class="menu-opener__burger"></span>
-        <span class="menu-opener__arrow"><svg class="menu-opener__arrow-icon" aria-hidden="true">
-            <use xlink:href="#arrow_left" /></svg></span>
+        <span class="menu-opener__arrow">
+          <svg class="menu-opener__arrow-icon" aria-hidden="true">
+            <use xlink:href="#arrow_left" />
+          </svg>
+        </span>
       </button>
       <nav class="main-menu">
         <ul class="main-menu__list">
@@ -248,10 +251,13 @@
               </ul>
             </div>
           </li>
-          <li class="main-menu__list-item main-menu__list-item--no_desktop">
+          <!--<li class="main-menu__list-item main-menu__list-item--no_desktop">
             <button class="js-sub-menu-opener main-menu__pseudo-link main-menu__pseudo-link--color_4" type="button">
-              <span class="main-menu__pseudo-link-arrow"><svg class="main-menu__pseudo-link-icon" aria-hidden="true">
-                  <use xlink:href="#arrow_left" /></svg></span>
+              <span class="main-menu__pseudo-link-arrow">
+                <svg class="main-menu__pseudo-link-icon" aria-hidden="true">
+                  <use xlink:href="#arrow_left" />
+                </svg>
+              </span>
               <span class="main-menu__pseudo-link-text">Бронирование</span>
             </button>
             <a class="main-menu__link main-menu__link--root_link main-menu__link--color_4" href="#"><span class="main-menu__link-text">Бронирование</span></a>
@@ -264,13 +270,16 @@
                 <li class="sub-menu__list-item sub-menu__list-item--third"><a class="sub-menu__link" href="#"><span class="sub-menu__link-text">Способы оплаты</span></a></li>
               </ul>
             </div>
+          </li>-->
+          <li class="main-menu__list-item main-menu__list-item--no_desktop">
+            <a class="main-menu__link main-menu__pseudo-link--color_4" data-fancybox data-src="#bookingForm" href="javascript:;"><span class="main-menu__link-text">Бронирование</span></a>
           </li>
           <li class="main-menu__list-item">
             <a class="main-menu__link main-menu__link--color_5" href="contacts.html"><span class="main-menu__link-text">Контакты</span></a>
           </li>
         </ul>
       </nav>
-      <a class="header__booking-button" href="#bookingForm" data-fancybox="form-popup">On-line бронирование</a>
+      <a class="header__booking-button" data-fancybox data-src="#bookingForm" href="javascript:;">On-line бронирование</a>
     </header>
     <div class="page-content page-content--main_page">
       <div class="js-main-slider main-slider">
@@ -280,8 +289,8 @@
           <p class="main-slider__slide-text">Думай иначе. Живи иначе.</p>
           <p class="main-slider__slide-button-block"><span class="main-slider__slide-button">Подробнее</span></p>
         </a>-->
-        <div class="main-slider__slide main-slider__slide--dark_text">
-          <img class="main-slider__image" src="images/content/img_20.jpg" alt="">
+        <div class="main-slider__slide">
+          <img class="main-slider__image" src="images/content/slider_img.jpg" alt="">
           <p class="main-slider__slide-text">Думай иначе. Живи иначе.</p>
         </div>
         <div class="main-slider__slide main-slider__slide--dark_text">
@@ -301,7 +310,7 @@
           <p class="main-slider__slide-text">Думай иначе. Живи иначе.</p>
         </div>
       </div>
-      <div class="container container--no_paddings">
+      <!--<div class="container container--no_paddings">
         <div class="lines">
           <a class="line line--bg_1" href="#">
             <span class="line__description">
@@ -334,13 +343,13 @@
             <img class="line__image" src="images/content/img_4.jpg" alt="Body Inspection">
           </a>
         </div>
-      </div>
+      </div>-->
       <div class="about-block">
-        <div class="container container--no_paddings">
+        <div class="container">
           <p class="about-block__small-title bordered-title"><span class="bordered-title__text">Немного о нас</span></p>
           <div class="about-block__inner">
             <div class="about-block__left">
-              <img src="images/content/img_15_1.png" alt="">
+              <img src="images/content/img_main_1.jpg" alt="">
             </div>
             <div class="about-block__right">
               <div class="about-block__text">
@@ -365,204 +374,238 @@
         </div>
       </div>
       <div class="programs-block">
-        <div class="programs-block__inner container container--no_paddings">
+        <div class="programs-block__inner container">
           <div class="programs-block__title-block">
             <h2 class="programs-block__title">Программы</h2>
-            <a class="programs-block__link" href="#">Более 100 услуг</a>
+            <!--<a class="programs-block__link" href="#">Более 100 услуг</a>-->
           </div>
-          <div class="programs-block__filter-menu filter-menu">
-            <button class="js-programs-tab filter-menu__button is-active" type="button" data-type="all">Все</button>
-            <button class="js-programs-tab filter-menu__button" type="button" data-type="heal">Лечебные</button>
-            <button class="js-programs-tab filter-menu__button" type="button" data-type="diagnostic">Диагностические</button>
-            <button class="js-programs-tab filter-menu__button" type="button" data-type="child">Для детей</button>
-          </div>
-          <div class="programs-tabs">
-            <div class="programs-tab is-active" data-type="all">
-              <div class="programs-list programs-list--main">
-                <a class="program program--big" href="#">
-                  <img class="program__image" src="images/content/img_16.jpg" alt="">
-                  <span class="program__inner">
-                    <span class="program__type">Лечебная</span>
-                    <span class="program__title">Контроль за весом<br> и Детокс</span>
-                    <svg class="program__icon" aria-hidden="true">
-                      <use xlink:href="#arrow_right" /></svg>
+          <div class="methods-list">
+            <div class="methods-list__item">
+              <a class="method" href="programm-full.html">
+                <span class="method__image-block">
+                  <img src="images/content/main_img_1.jpg" alt="Upgrade BODY">
+                  <span class="method__title method__title--t_l">Upgrade BODY</span>
+                </span>
+                <span class="method__description">
+                  <span class="method__preview-text">Классическая программа детоксикации (очищения) организма на клеточном уровне, дополненая диагностикой общего состояния и адаптационного потенциала.</span>
+                  <span class="method__more">Подробнее
+                    <svg class="method__more-icon" aria-hidden="true">
+                      <use xlink:href="#arrow_right" />
+                    </svg>
                   </span>
-                </a>
-                <a class="program program--small" href="#">
-                  <span class="program__inner">
-                    <span class="program__type">Лечебная</span>
-                    <span class="program__title">Реабилитация</span>
-                    <svg class="program__icon" aria-hidden="true">
-                      <use xlink:href="#arrow_right" /></svg>
-                  </span>
-                  <img class="program__image" src="images/content/img_18.jpg" alt="">
-                </a>
-                <a class="program program--small" href="#">
-                  <img class="program__image" src="images/content/img_19.jpg" alt="">
-                  <span class="program__inner">
-                    <span class="program__type">Диагностическая</span>
-                    <span class="program__title">Омоложение</span>
-                    <svg class="program__icon" aria-hidden="true">
-                      <use xlink:href="#arrow_right" /></svg>
-                  </span>
-                </a>
-                <a class="program program--small" href="#">
-                  <span class="program__inner">
-                    <span class="program__type">Лечебная</span>
-                    <span class="program__title">Хорошее самочувствие</span>
-                    <svg class="program__icon" aria-hidden="true">
-                      <use xlink:href="#arrow_right" /></svg>
-                  </span>
-                  <img class="program__image" src="images/content/img_17.jpg" alt="">
-                </a>
-                <a class="program program--small" href="#">
-                  <img class="program__image" src="images/content/img_19.jpg" alt="">
-                  <span class="program__inner">
-                    <span class="program__type">Лечебная</span>
-                    <span class="program__title">Реабилитация</span>
-                    <svg class="program__icon" aria-hidden="true">
-                      <use xlink:href="#arrow_right" /></svg>
-                  </span>
-                </a>
-              </div>
+                </span>
+              </a>
             </div>
-            <div class="programs-tab" data-type="heal">
-              <div class="programs-list programs-list--main">
-                <a class="program program--big" href="#">
-                  <img class="program__image" src="images/content/img_130.png" alt="">
-                  <span class="program__inner">
-                    <span class="program__type">Другая</span>
-                    <span class="program__title">Название программы</span>
-                    <svg class="program__icon" aria-hidden="true">
-                      <use xlink:href="#arrow_right" /></svg>
+            <div class="methods-list__item">
+              <a class="method" href="programm-full.html">
+                <span class="method__image-block">
+                  <img src="images/content/main_img_2.jpg" alt="Upgrade MIND">
+                  <span class="method__title method__title--b_r">Upgrade BODY&MIND</span>
+                </span>
+                <span class="method__description">
+                  <span class="method__preview-text">Перезагрузка физического и психоэмоционального состояния в симбиозе</span>
+                  <span class="method__more">Подробнее
+                    <svg class="method__more-icon" aria-hidden="true">
+                      <use xlink:href="#arrow_right" />
+                    </svg>
                   </span>
-                </a>
-                <a class="program program--small" href="#">
-                  <span class="program__inner">
-                    <span class="program__type">Лечебная</span>
-                    <span class="program__title">Хорошее самочувствие</span>
-                    <svg class="program__icon" aria-hidden="true">
-                      <use xlink:href="#arrow_right" /></svg>
-                  </span>
-                  <img class="program__image" src="images/content/img_17.jpg" alt="">
-                </a>
-                <a class="program program--small" href="#">
-                  <span class="program__inner">
-                    <span class="program__type">Лечебная</span>
-                    <span class="program__title">Реабилитация</span>
-                    <svg class="program__icon" aria-hidden="true">
-                      <use xlink:href="#arrow_right" /></svg>
-                  </span>
-                  <img class="program__image" src="images/content/img_18.jpg" alt="">
-                </a>
-                <a class="program program--small" href="#">
-                  <img class="program__image" src="images/content/img_19.jpg" alt="">
-                  <span class="program__inner">
-                    <span class="program__type">Диагностическая</span>
-                    <span class="program__title">Омоложение</span>
-                    <svg class="program__icon" aria-hidden="true">
-                      <use xlink:href="#arrow_right" /></svg>
-                  </span>
-                </a>
-                <a class="program program--small" href="#">
-                  <span class="program__inner">
-                    <span class="program__type">Лечебная</span>
-                    <span class="program__title">Реабилитация</span>
-                    <svg class="program__icon" aria-hidden="true">
-                      <use xlink:href="#arrow_right" /></svg>
-                  </span>
-                  <img class="program__image" src="images/content/img_18.jpg" alt="">
-                </a>
-              </div>
-            </div>
-            <div class="programs-tab" data-type="diagnostic">
-              <div class="programs-list programs-list--main">
-                <a class="program program--big" href="#">
-                  <img class="program__image" src="images/content/img_16.jpg" alt="">
-                  <span class="program__inner">
-                    <span class="program__type">Диагностическая</span>
-                    <span class="program__title">Контроль за всем</span>
-                    <svg class="program__icon" aria-hidden="true">
-                      <use xlink:href="#arrow_right" /></svg>
-                  </span>
-                </a>
-                <a class="program program--small" href="#">
-                  <span class="program__inner">
-                    <span class="program__type">Лечебная</span>
-                    <span class="program__title">Реабилитация</span>
-                    <svg class="program__icon" aria-hidden="true">
-                      <use xlink:href="#arrow_right" /></svg>
-                  </span>
-                  <img class="program__image" src="images/content/img_18.jpg" alt="">
-                </a>
-                <a class="program program--small" href="#">
-                  <img class="program__image" src="images/content/img_19.jpg" alt="">
-                  <span class="program__inner">
-                    <span class="program__type">Диагностическая</span>
-                    <span class="program__title">Омоложение</span>
-                    <svg class="program__icon" aria-hidden="true">
-                      <use xlink:href="#arrow_right" /></svg>
-                  </span>
-                </a>
-                <a class="program program--small" href="#">
-                  <span class="program__inner">
-                    <span class="program__type">Лечебная</span>
-                    <span class="program__title">Хорошее самочувствие</span>
-                    <svg class="program__icon" aria-hidden="true">
-                      <use xlink:href="#arrow_right" /></svg>
-                  </span>
-                  <img class="program__image" src="images/content/img_17.jpg" alt="">
-                </a>
-              </div>
-            </div>
-            <div class="programs-tab" data-type="child">
-              <div class="programs-list programs-list--main">
-                <a class="program program--big" href="#">
-                  <img class="program__image" src="images/content/img_16.jpg" alt="">
-                  <span class="program__inner">
-                    <span class="program__type">Детская</span>
-                    <span class="program__title">Ути-пути</span>
-                    <svg class="program__icon" aria-hidden="true">
-                      <use xlink:href="#arrow_right" /></svg>
-                  </span>
-                </a>
-                <a class="program program--small" href="#">
-                  <span class="program__inner">
-                    <span class="program__type">Лечебная</span>
-                    <span class="program__title">Реабилитация</span>
-                    <svg class="program__icon" aria-hidden="true">
-                      <use xlink:href="#arrow_right" /></svg>
-                  </span>
-                  <img class="program__image" src="images/content/img_18.jpg" alt="">
-                </a>
-                <a class="program program--small" href="#">
-                  <img class="program__image" src="images/content/img_19.jpg" alt="">
-                  <span class="program__inner">
-                    <span class="program__type">Диагностическая</span>
-                    <span class="program__title">Омоложение</span>
-                    <svg class="program__icon" aria-hidden="true">
-                      <use xlink:href="#arrow_right" /></svg>
-                  </span>
-                </a>
-                <a class="program program--small" href="#">
-                  <span class="program__inner">
-                    <span class="program__type">Лечебная</span>
-                    <span class="program__title">Хорошее самочувствие</span>
-                    <svg class="program__icon" aria-hidden="true">
-                      <use xlink:href="#arrow_right" /></svg>
-                  </span>
-                  <img class="program__image" src="images/content/img_17.jpg" alt="">
-                </a>
-              </div>
+                </span>
+              </a>
             </div>
           </div>
-          <div class="more-block">
-            <a class="button" href="#">Смотреть все</a>
+          <!--<div class="programs-block__filter-menu filter-menu">
+          <button class="js-programs-tab filter-menu__button is-active" type="button" data-type="all">Все</button>
+          <button class="js-programs-tab filter-menu__button" type="button" data-type="heal">Лечебные</button>
+          <button class="js-programs-tab filter-menu__button" type="button" data-type="diagnostic">Диагностические</button>
+          <button class="js-programs-tab filter-menu__button" type="button" data-type="child">Для детей</button>
+        </div>
+        <div class="programs-tabs">
+          <div class="programs-tab is-active" data-type="all">
+            <div class="programs-list programs-list--main">
+              <a class="program program--big" href="#">
+                <img class="program__image" src="images/content/img_16.jpg" alt="">
+                <span class="program__inner">
+                  <span class="program__type">Лечебная</span>
+                  <span class="program__title">Контроль за весом<br> и Детокс</span>
+                  <svg class="program__icon" aria-hidden="true">
+                    <use xlink:href="#arrow_right" /></svg>
+                </span>
+              </a>
+              <a class="program program--small" href="#">
+                <span class="program__inner">
+                  <span class="program__type">Лечебная</span>
+                  <span class="program__title">Реабилитация</span>
+                  <svg class="program__icon" aria-hidden="true">
+                    <use xlink:href="#arrow_right" /></svg>
+                </span>
+                <img class="program__image" src="images/content/img_18.jpg" alt="">
+              </a>
+              <a class="program program--small" href="#">
+                <img class="program__image" src="images/content/img_19.jpg" alt="">
+                <span class="program__inner">
+                  <span class="program__type">Диагностическая</span>
+                  <span class="program__title">Омоложение</span>
+                  <svg class="program__icon" aria-hidden="true">
+                    <use xlink:href="#arrow_right" /></svg>
+                </span>
+              </a>
+              <a class="program program--small" href="#">
+                <span class="program__inner">
+                  <span class="program__type">Лечебная</span>
+                  <span class="program__title">Хорошее самочувствие</span>
+                  <svg class="program__icon" aria-hidden="true">
+                    <use xlink:href="#arrow_right" /></svg>
+                </span>
+                <img class="program__image" src="images/content/img_17.jpg" alt="">
+              </a>
+              <a class="program program--small" href="#">
+                <img class="program__image" src="images/content/img_19.jpg" alt="">
+                <span class="program__inner">
+                  <span class="program__type">Лечебная</span>
+                  <span class="program__title">Реабилитация</span>
+                  <svg class="program__icon" aria-hidden="true">
+                    <use xlink:href="#arrow_right" /></svg>
+                </span>
+              </a>
+            </div>
           </div>
+          <div class="programs-tab" data-type="heal">
+            <div class="programs-list programs-list--main">
+              <a class="program program--big" href="#">
+                <img class="program__image" src="images/content/img_130.png" alt="">
+                <span class="program__inner">
+                  <span class="program__type">Другая</span>
+                  <span class="program__title">Название программы</span>
+                  <svg class="program__icon" aria-hidden="true">
+                    <use xlink:href="#arrow_right" /></svg>
+                </span>
+              </a>
+              <a class="program program--small" href="#">
+                <span class="program__inner">
+                  <span class="program__type">Лечебная</span>
+                  <span class="program__title">Хорошее самочувствие</span>
+                  <svg class="program__icon" aria-hidden="true">
+                    <use xlink:href="#arrow_right" /></svg>
+                </span>
+                <img class="program__image" src="images/content/img_17.jpg" alt="">
+              </a>
+              <a class="program program--small" href="#">
+                <span class="program__inner">
+                  <span class="program__type">Лечебная</span>
+                  <span class="program__title">Реабилитация</span>
+                  <svg class="program__icon" aria-hidden="true">
+                    <use xlink:href="#arrow_right" /></svg>
+                </span>
+                <img class="program__image" src="images/content/img_18.jpg" alt="">
+              </a>
+              <a class="program program--small" href="#">
+                <img class="program__image" src="images/content/img_19.jpg" alt="">
+                <span class="program__inner">
+                  <span class="program__type">Диагностическая</span>
+                  <span class="program__title">Омоложение</span>
+                  <svg class="program__icon" aria-hidden="true">
+                    <use xlink:href="#arrow_right" /></svg>
+                </span>
+              </a>
+              <a class="program program--small" href="#">
+                <span class="program__inner">
+                  <span class="program__type">Лечебная</span>
+                  <span class="program__title">Реабилитация</span>
+                  <svg class="program__icon" aria-hidden="true">
+                    <use xlink:href="#arrow_right" /></svg>
+                </span>
+                <img class="program__image" src="images/content/img_18.jpg" alt="">
+              </a>
+            </div>
+          </div>
+          <div class="programs-tab" data-type="diagnostic">
+            <div class="programs-list programs-list--main">
+              <a class="program program--big" href="#">
+                <img class="program__image" src="images/content/img_16.jpg" alt="">
+                <span class="program__inner">
+                  <span class="program__type">Диагностическая</span>
+                  <span class="program__title">Контроль за всем</span>
+                  <svg class="program__icon" aria-hidden="true">
+                    <use xlink:href="#arrow_right" /></svg>
+                </span>
+              </a>
+              <a class="program program--small" href="#">
+                <span class="program__inner">
+                  <span class="program__type">Лечебная</span>
+                  <span class="program__title">Реабилитация</span>
+                  <svg class="program__icon" aria-hidden="true">
+                    <use xlink:href="#arrow_right" /></svg>
+                </span>
+                <img class="program__image" src="images/content/img_18.jpg" alt="">
+              </a>
+              <a class="program program--small" href="#">
+                <img class="program__image" src="images/content/img_19.jpg" alt="">
+                <span class="program__inner">
+                  <span class="program__type">Диагностическая</span>
+                  <span class="program__title">Омоложение</span>
+                  <svg class="program__icon" aria-hidden="true">
+                    <use xlink:href="#arrow_right" /></svg>
+                </span>
+              </a>
+              <a class="program program--small" href="#">
+                <span class="program__inner">
+                  <span class="program__type">Лечебная</span>
+                  <span class="program__title">Хорошее самочувствие</span>
+                  <svg class="program__icon" aria-hidden="true">
+                    <use xlink:href="#arrow_right" /></svg>
+                </span>
+                <img class="program__image" src="images/content/img_17.jpg" alt="">
+              </a>
+            </div>
+          </div>
+          <div class="programs-tab" data-type="child">
+            <div class="programs-list programs-list--main">
+              <a class="program program--big" href="#">
+                <img class="program__image" src="images/content/img_16.jpg" alt="">
+                <span class="program__inner">
+                  <span class="program__type">Детская</span>
+                  <span class="program__title">Ути-пути</span>
+                  <svg class="program__icon" aria-hidden="true">
+                    <use xlink:href="#arrow_right" /></svg>
+                </span>
+              </a>
+              <a class="program program--small" href="#">
+                <span class="program__inner">
+                  <span class="program__type">Лечебная</span>
+                  <span class="program__title">Реабилитация</span>
+                  <svg class="program__icon" aria-hidden="true">
+                    <use xlink:href="#arrow_right" /></svg>
+                </span>
+                <img class="program__image" src="images/content/img_18.jpg" alt="">
+              </a>
+              <a class="program program--small" href="#">
+                <img class="program__image" src="images/content/img_19.jpg" alt="">
+                <span class="program__inner">
+                  <span class="program__type">Диагностическая</span>
+                  <span class="program__title">Омоложение</span>
+                  <svg class="program__icon" aria-hidden="true">
+                    <use xlink:href="#arrow_right" /></svg>
+                </span>
+              </a>
+              <a class="program program--small" href="#">
+                <span class="program__inner">
+                  <span class="program__type">Лечебная</span>
+                  <span class="program__title">Хорошее самочувствие</span>
+                  <svg class="program__icon" aria-hidden="true">
+                    <use xlink:href="#arrow_right" /></svg>
+                </span>
+                <img class="program__image" src="images/content/img_17.jpg" alt="">
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="more-block">
+          <a class="button" href="#">Смотреть все</a>
+        </div>-->
         </div>
       </div>
       <div class="today-block">
-        <div class="container container--no_paddings">
+        <div class="container">
           <p class="today-block__small-title bordered-title"><span class="bordered-title__text">X-Clinic сегодня</span></p>
           <h2 class="today-block__title">X-Clinic —&nbsp;современный подход к здоровью</h2>
           <div class="today-block__content">
@@ -591,7 +634,45 @@
       </div>
       <div class="links-block">
         <div class="container">
-          <div class="tile-menu clearfix">
+          <div class="tm">
+            <div class="tm__row">
+              <div class="tm__cell tm__cell--w_70">
+                <a class="tm__link tm__link--h_1" href="#" style="background-image: url('images/content/tm/img_2.jpg')">
+                  <span class="tm__link-title">ПРОЦЕДУРЫ</span>
+                </a>
+                <div class="tm__row">
+                  <div class="tm__cell tm__cell--w_50">
+                    <a class="tm__link tm__link--h_2 tm__link--b_b" href="#" style="background-image: url('images/content/tm/img_4.jpg')">
+                      <span class="tm__link-title">ФИЛОСОФИЯ</span>
+                    </a>
+                  </div>
+                  <div class="tm__cell tm__cell--w_50">
+                    <a class="tm__link tm__link--h_2" style="background-image: url('images/content/tm/img_5.jpg')">
+                      <span class="tm__link-title">О КЛИНИКЕ</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="tm__cell tm__cell--w_30">
+                <a class="tm__link tm__link--h_3" href="#" style="background-image: url('images/content/tm/img_1.jpg')">
+                  <span class="tm__link-title">НОМЕРА</span>
+                </a>
+              </div>
+            </div>
+            <div class="tm__row">
+              <div class="tm__cell tm__cell--w_50">
+                <a class="tm__link" href="#" style="background-image: url('images/content/tm/img_6.jpg')">
+                  <span class="tm__link-title">ДОСУГ</span>
+                </a>
+              </div>
+              <div class="tm__cell tm__cell--w_50">
+                <a class="tm__link" href="#" style="background-image: url('images/content/tm/img_3.jpg')">
+                  <span class="tm__link-title">РЕСТОРАН</span>
+                </a>
+              </div>
+            </div>
+          </div>
+          <!--<div class="tile-menu clearfix">
             <a class="tile-menu__link tile-menu__link--bg_1" href="#">
               <span class="tile-menu__link-text">НОМЕРА</span>
             </a>
@@ -603,21 +684,21 @@
               <span class="tile-menu__link-text">ЭКОМАРКЕТ</span>
               <img class="tile-menu__link-image" src="images/content/img_120.jpg" alt="ЭКОМАРКЕТ">
             </a>
-          </div>
+          </div>-->
         </div>
       </div>
       <div class="last-news-block">
-        <div class="container container--no_paddings">
+        <div class="container">
           <p class="last-news-block__small-title bordered-title"><span class="bordered-title__text">Новости и акции</span></p>
           <h2 class="last-news-block__title">Что у нас происходит интересного?</h2>
           <div class="filter-menu">
             <button class="js-filter-remove filter-menu__button is-active" type="button" data-type="all" data-link="#">Все</button>
-            <button class="js-filter filter-menu__button" type="button" data-type="news" data-link="#news">Новости</button>
-            <button class="js-filter filter-menu__button" type="button" data-type="actions" data-link="#actions">Акции</button>
+            <button class="js-filter filter-menu__button" type="button" data-type="press" data-link="#press">Пресса</button>
             <button class="js-filter filter-menu__button" type="button" data-type="blog" data-link="#blog">X-блог</button>
+            <button class="js-filter filter-menu__button" type="button" data-type="actions" data-link="#actions">Новости</button>
           </div>
           <div class="js-last-news-slider last-news-slider">
-            <div class="last-news-slider__slide" data-type="news">
+            <div class="last-news-slider__slide" data-type="press">
               <a class="last-news" href="#">
                 <span class="last-news__image"><img src="images/content/img_11.jpg" alt="Новое в клинике"></span>
                 <span class="last-news__description">
@@ -628,8 +709,8 @@
                 </span>
               </a>
             </div>
-            <div class="last-news-slider__slide" data-type="news">
-              <a class="last-news last-news--reverse" href="#">
+            <div class="last-news-slider__slide" data-type="press">
+              <a class="last-news" href="#">
                 <span class="last-news__image"><img src="images/content/img_12.jpg" alt="Хорошее самочувствие"></span>
                 <span class="last-news__description">
                   <span class="last-news__date">21 апреля 2018</span>
@@ -639,7 +720,7 @@
                 </span>
               </a>
             </div>
-            <div class="last-news-slider__slide" data-type="news">
+            <div class="last-news-slider__slide" data-type="press">
               <a class="last-news" href="#">
                 <span class="last-news__image"><img src="images/content/img_13.jpg" alt="Сауна после зала"></span>
                 <span class="last-news__description">
@@ -651,7 +732,7 @@
               </a>
             </div>
             <div class="last-news-slider__slide" data-type="actions">
-              <a class="last-news last-news--reverse" href="#">
+              <a class="last-news" href="#">
                 <span class="last-news__image"><img src="images/content/img_11.jpg" alt="Новое в клинике"></span>
                 <span class="last-news__description">
                   <span class="last-news__date">22 апреля 2018</span>
@@ -673,7 +754,7 @@
               </a>
             </div>
             <div class="last-news-slider__slide" data-type="actions">
-              <a class="last-news last-news--reverse" href="#">
+              <a class="last-news" href="#">
                 <span class="last-news__image"><img src="images/content/img_13.jpg" alt="Сауна после зала"></span>
                 <span class="last-news__description">
                   <span class="last-news__date">20 апреля 2018</span>
@@ -695,7 +776,7 @@
               </a>
             </div>
             <div class="last-news-slider__slide" data-type="blog">
-              <a class="last-news last-news--reverse" href="#">
+              <a class="last-news" href="#">
                 <span class="last-news__image"><img src="images/content/img_3.jpg" alt="Хорошее самочувствие"></span>
                 <span class="last-news__description">
                   <span class="last-news__date">21 апреля 2018</span>
@@ -723,18 +804,18 @@
         </div>
       </div>
       <!--<div class="partners-block">
-        <div class="container container--no_paddings">
-          <div class="partners-slider-block">
-            <div class="js-partners-slider partners-slider">
-              <div class="partners-slider__slide"><img class="partners-slider__image" src="images/content/img_6.png" alt="партнер"></div>
-              <div class="partners-slider__slide"><img class="partners-slider__image" src="images/content/img_7.png" alt="партнер"></div>
-              <div class="partners-slider__slide"><img class="partners-slider__image" src="images/content/img_8.png" alt="партнер"></div>
-              <div class="partners-slider__slide"><img class="partners-slider__image" src="images/content/img_9.png" alt="партнер"></div>
-              <div class="partners-slider__slide"><img class="partners-slider__image" src="images/content/img_10.png" alt="партнер"></div>
-            </div>
+      <div class="container container--no_paddings">
+        <div class="partners-slider-block">
+          <div class="js-partners-slider partners-slider">
+            <div class="partners-slider__slide"><img class="partners-slider__image" src="images/content/img_6.png" alt="партнер"></div>
+            <div class="partners-slider__slide"><img class="partners-slider__image" src="images/content/img_7.png" alt="партнер"></div>
+            <div class="partners-slider__slide"><img class="partners-slider__image" src="images/content/img_8.png" alt="партнер"></div>
+            <div class="partners-slider__slide"><img class="partners-slider__image" src="images/content/img_9.png" alt="партнер"></div>
+            <div class="partners-slider__slide"><img class="partners-slider__image" src="images/content/img_10.png" alt="партнер"></div>
           </div>
         </div>
-      </div>-->
+      </div>
+    </div>-->
       <div class="subscribe">
         <div class="subscribe__inner">
           <h3 class="subscribe__title">Подписаться на новости</h3>
@@ -760,7 +841,7 @@
               <li class="footer-menu__list-item"><a class="footer-menu__link" href="about.html"><span class="footer-menu__link-text">О клинике</span></a></li>
               <li class="footer-menu__list-item"><a class="footer-menu__link" href="#"><span class="footer-menu__link-text">О компании</span></a></li>
               <li class="footer-menu__list-item"><a class="footer-menu__link" href="news.html"><span class="footer-menu__link-text">Новости</span></a></li>
-              <li class="footer-menu__list-item"><a class="footer-menu__link" href="actions.html"><span class="footer-menu__link-text">Акции</span></a></li>
+              <li class="footer-menu__list-item"><a class="footer-menu__link" href="news.html"><span class="footer-menu__link-text">Пресса о нас</span></a></li>
               <li class="footer-menu__list-item"><a class="footer-menu__link" href="blog.html"><span class="footer-menu__link-text">X-Блог</span></a></li>
               <li class="footer-menu__list-item"><a class="footer-menu__link" href="partners.html"><span class="footer-menu__link-text">Партнеры</span></a></li>
               <li class="footer-menu__list-item"><a class="footer-menu__link" href="reviews.html"><span class="footer-menu__link-text">Отзывы</span></a></li>
@@ -801,10 +882,14 @@
       </div>
       <div class="footer__bottom">
         <div class="footer__social">
-          <a class="social-link" href="#" title="vk.com" rel="noreferrer noopener"><svg class="social-link__icon social-link__icon--vk" aria-hidden="true"><use xlink:href="#vk"/></svg></a>
-          <a class="social-link" href="#" title="facebook.com" rel="noreferrer noopener"><svg class="social-link__icon social-link__icon--fb" aria-hidden="true"><use xlink:href="#fb"/></svg></a>
-          <a class="social-link" href="#" title="twitter.com" rel="noreferrer noopener"><svg class="social-link__icon social-link__icon--tw" aria-hidden="true"><use xlink:href="#tw"/></svg></a>
-          <a class="social-link" href="#" title="instagram.com" rel="noreferrer noopener"><svg class="social-link__icon social-link__icon--inst" aria-hidden="true"><use xlink:href="#inst"/></svg></a>
+          <a class="social-link" href="#" title="vk.com" rel="noreferrer noopener"><svg class="social-link__icon social-link__icon--vk" aria-hidden="true">
+              <use xlink:href="#vk" /></svg></a>
+          <a class="social-link" href="#" title="facebook.com" rel="noreferrer noopener"><svg class="social-link__icon social-link__icon--fb" aria-hidden="true">
+              <use xlink:href="#fb" /></svg></a>
+          <a class="social-link" href="#" title="twitter.com" rel="noreferrer noopener"><svg class="social-link__icon social-link__icon--tw" aria-hidden="true">
+              <use xlink:href="#tw" /></svg></a>
+          <a class="social-link" href="#" title="instagram.com" rel="noreferrer noopener"><svg class="social-link__icon social-link__icon--inst" aria-hidden="true">
+              <use xlink:href="#inst" /></svg></a>
         </div>
         <div class="footer__copyright-block">
           <!--<div class="footer__logo"><img src="images/logo.svg" alt="XClinic"></div>-->
@@ -901,7 +986,7 @@
         }
       }]);
     }
-    setTimeout(showSubscribe, 1000);
+    //setTimeout(showSubscribe, 1000);
   </script>
 </body>
 
