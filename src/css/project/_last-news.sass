@@ -60,6 +60,10 @@
 
   .slick-track
     background-color: #fff
+    display: flex
+
+  .slick-slide
+    height: auto
 
   .slick-dots
     bottom: -54px
@@ -73,6 +77,7 @@
   background-color: #fff
   display: flex
   flex-direction: column
+  height: 100%
   max-width: 480px
   text-decoration: none
 
@@ -94,25 +99,26 @@
       opacity: 0.7
 
   &__image
+    align-items: center
+    display: flex
+    flex-grow: 1
+    justify-content: center
     transition: opacity 0.3s
 
   &__description
     display: flex
     flex-direction: column
-    justify-content: center
     padding: 24px
 
     @media(min-width: 768px)
       min-height: 384px
       padding: 48px
 
-    //@media(min-width: 1600px)
-      padding: 62px
-
   &__date
     color: #7c80aa
     font-size: 15px
     line-height: 24px
+    min-height: 24px
     margin-bottom: 24px
 
   &__title

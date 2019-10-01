@@ -371,7 +371,7 @@
     </div>
   </footer>
 
-  <div id="bookingForm" class="form-popup">
+  <!--<div id="bookingForm" class="form-popup">
     <p class="form-popup__title">Заполните поля:</p>
     <p>Наш менеджер свяжется с вами для консультации.</p>
     <form action="">
@@ -395,6 +395,254 @@
       </div>
       <div class="form-popup__label">
         <button class="form-popup__button button button--dark" type="submit">Отправить</button>
+      </div>
+    </form>
+  </div>-->
+  
+  <div id="bookingForm" class="form-popup form-popup--big">
+    <form action="">
+      <div class="booking-step is-active">
+        <div class="form-popup__row">
+          <div>
+            <div class="form-popup__section">
+              <p class="form-popup__subtitle">Программа:</p>
+              <label class="radio-label" for="1">
+                <input id="1" name="prog" type="radio" value="1">
+                <span class="radio-icon"></span>
+                <span class="radio-text">BODY & MIND</span>
+              </label>
+              <label class="radio-label" for="2">
+                <input id="2" name="prog" type="radio" value="2">
+                <span class="radio-icon"></span>
+                <span class="radio-text">Upgrade Body</span>
+              </label>
+            </div>
+            <div class="form-popup__section">
+              <p class="form-popup__subtitle">Дительность пребывания:</p>
+              <label class="radio-label" for="3">
+                <input id="3" name="duration" type="radio" value="1">
+                <span class="radio-icon"></span>
+                <span class="radio-text">7 дней</span>
+              </label>
+              <label class="radio-label" for="4">
+                <input id="4" name="duration" type="radio" value="2">
+                <span class="radio-icon"></span>
+                <span class="radio-text">14 дней</span>
+              </label>
+              <label class="radio-label" for="5">
+                <input id="5" name="duration" type="radio" value="3">
+                <span class="radio-icon"></span>
+                <span class="radio-text">21 день</span>
+              </label>
+            </div>
+            <div class="form-popup__section">
+              <p class="form-popup__subtitle">Пакет:</p>
+              <label class="radio-label" for="6">
+                <input id="6" name="pack" type="radio" value="4">
+                <span class="radio-icon"></span>
+                <span class="radio-text">Silver</span>
+              </label>
+              <label class="radio-label" for="7">
+                <input id="7" name="pack" type="radio" value="5">
+                <span class="radio-icon"></span>
+                <span class="radio-text">Gold</span>
+              </label>
+              <label class="radio-label" for="8">
+                <input id="8" name="pack" type="radio" value="6">
+                <span class="radio-icon"></span>
+                <span class="radio-text">Platinum</span>
+              </label>
+            </div>
+            <div class="form-popup__section">
+              <p class="form-popup__subtitle">Количество гостей:</p>
+              <select class="select select--dark" name="guests">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+              </select>
+            </div>
+            <div class="form-popup__section">
+              <p class="form-popup__subtitle">Из них участников программы:</p>
+              <select class="select select--dark" name="guests_">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+              </select>
+            </div>
+          </div>
+          <div>
+            <div class="form-popup__section">
+              <p class="form-popup__subtitle">Тип номера:</p>
+              <div class="form-popup__row">
+                <div class="form-popup__section">
+                  <label class="radio-label" for="9">
+                    <input id="9" name="number" type="radio" value="1">
+                    <span class="radio-icon"></span>
+                    <span class="radio-text">Студия 1</span>
+                  </label>
+                  <label class="radio-label" for="10">
+                    <input id="10" name="number" type="radio" value="2">
+                    <span class="radio-icon"></span>
+                    <span class="radio-text">Студия 2</span>
+                  </label>
+                  <label class="radio-label" for="11">
+                    <input id="11" name="number" type="radio" value="3">
+                    <span class="radio-icon"></span>
+                    <span class="radio-text">Студия Делюкс</span>
+                  </label>
+                </div>
+                <div class="form-popup__section">
+                  <label class="radio-label" for="9">
+                    <input id="9" name="number" type="radio" value="4">
+                    <span class="radio-icon"></span>
+                    <span class="radio-text">Сьюит 1</span>
+                  </label>
+                  <label class="radio-label" for="10">
+                    <input id="10" name="number" type="radio" value="5">
+                    <span class="radio-icon"></span>
+                    <span class="radio-text">Сьюит 2</span>
+                  </label>
+                  <label class="radio-label" for="11">
+                    <input id="11" name="number" type="radio" value="6">
+                    <span class="radio-icon"></span>
+                    <span class="radio-text">Сьюит Премиум</span>
+                  </label>
+                </div>
+              </div>
+            </div>
+            <div class="form-popup__section">
+              <p class="form-popup__subtitle">Дата заезда:</p>
+              <p class="form-popup__caption">Заезды в клинику на программы осуществляются по воскресеньям</p>
+              <div class="calendar">
+                <div class="calendar__nav">
+                  <button class="js-calend-prev calendar__button" type="button">«</button>
+                  <span class="calendar__month is-active">Сентябрь 2019</span>
+                  <span class="calendar__month">Октябрь 2019</span>
+                  <span class="calendar__month">Ноябрь 2019</span>
+                  <button class="js-calend-next calendar__button" type="button">»</button>
+                </div>
+                <div class="calendar__blocks">
+                  <div class="calendar__block is-active">
+                    <label class="radio-label" for="cal_1">
+                      <input id="cal_1" name="day" type="radio" value="1">
+                      <span class="radio-icon"></span>
+                      <span class="radio-text">1 Сентября</span>
+                    </label>
+                    <label class="radio-label" for="cal_2">
+                      <input id="cal_2" name="day" type="radio" value="2">
+                      <span class="radio-icon"></span>
+                      <span class="radio-text">8 Сентября</span>
+                    </label>
+                    <label class="radio-label" for="cal_3">
+                      <input id="cal_3" name="day" type="radio" value="3">
+                      <span class="radio-icon"></span>
+                      <span class="radio-text">15 Сентября</span>
+                    </label>
+                    <label class="radio-label" for="cal_4">
+                      <input id="cal_4" name="day" type="radio" value="4">
+                      <span class="radio-icon"></span>
+                      <span class="radio-text">22 Сентября</span>
+                    </label>
+                    <label class="radio-label" for="cal_5">
+                      <input id="cal_5" name="day" type="radio" value="5">
+                      <span class="radio-icon"></span>
+                      <span class="radio-text">29 Сентября</span>
+                    </label>
+                  </div>
+                  <div class="calendar__block">
+                    <label class="radio-label" for="cal_6">
+                      <input id="cal_6" name="day" type="radio" value="6">
+                      <span class="radio-icon"></span>
+                      <span class="radio-text">6 Октября</span>
+                    </label>
+                    <label class="radio-label" for="cal_7">
+                      <input id="cal_7" name="day" type="radio" value="7">
+                      <span class="radio-icon"></span>
+                      <span class="radio-text">13 Октября</span>
+                    </label>
+                    <label class="radio-label" for="cal_8">
+                      <input id="cal_8" name="day" type="radio" value="8">
+                      <span class="radio-icon"></span>
+                      <span class="radio-text">20 Октября</span>
+                    </label>
+                    <label class="radio-label" for="cal_9">
+                      <input id="cal_9" name="day" type="radio" value="9">
+                      <span class="radio-icon"></span>
+                      <span class="radio-text">27 Октября</span>
+                    </label>
+                  </div>
+                  <div class="calendar__block">
+                    <label class="radio-label" for="cal_10">
+                      <input id="cal_10" name="day" type="radio" value="10">
+                      <span class="radio-icon"></span>
+                      <span class="radio-text">3 Ноября</span>
+                    </label>
+                    <label class="radio-label" for="cal_11">
+                      <input id="cal_11" name="day" type="radio" value="11">
+                      <span class="radio-icon"></span>
+                      <span class="radio-text">10 Ноября</span>
+                    </label>
+                    <label class="radio-label" for="cal_12">
+                      <input id="cal_12" name="day" type="radio" value="12">
+                      <span class="radio-icon"></span>
+                      <span class="radio-text">17 Ноября</span>
+                    </label>
+                    <label class="radio-label" for="cal_13">
+                      <input id="cal_13" name="day" type="radio" value="13">
+                      <span class="radio-icon"></span>
+                      <span class="radio-text">24 Ноября</span>
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="form-popup__section">
+              <p class="doublePrice">
+                <span id="tarifName1">Программа UpGrade Body & Mind - SILVER</span><br>
+                <span id="roomName1">Размещение «СТУДИЯ 1» на 7 дней</span><br>
+                <span>Общая стоимость:</span>
+                <span id="totalPrice1">0 р</span>
+              </p>
+            </div>
+            <div class="form-popup__button-block">
+              <button class="js-next-step form-popup__button button button--dark" type="button">ДАЛЕЕ</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="booking-step">
+        <div class="booking-result-form">
+          <p class="doublePrice">
+            <span id="tarifName1">Программа UpGrade Body & Mind - SILVER</span><br>
+            <span id="roomName1">Размещение «СТУДИЯ 1» на 7 дней</span><br>
+            <span>Общая стоимость:</span>
+            <span id="totalPrice1">0 р</span>
+          </p>
+          <label class="form-popup__label" for="booking_name">
+            <input id="booking_name" class="input input--dark" name="name_cons" type="text" value="" placeholder="Имя" tabindex="-1">
+          </label>
+          <label class="form-popup__label" for="booking_phone">
+            <input id="booking_phone" class="input input--dark" name="phone_cons" type="text" value="" placeholder="Телефон">
+          </label>
+          <label class="form-popup__label" for="booking_email">
+            <input id="booking_email" class="input input--dark" name="email_cons" type="text" value="" placeholder="E-mail">
+          </label>
+          <label class="form-popup__label" for="booking_email">
+            <textarea class="textarea" placeholder="Комментарии"></textarea>
+          </label>
+          <div class="form-popup__row">
+            <div>
+              <button class="js-next-step form-popup__button button button--dark" type="button">НАЗАД</button>
+            </div>
+            <div>
+              <button class="form-popup__button button button--dark" type="submit">Отправить</button>
+            </div>
+          </div>
+        </div>
       </div>
     </form>
   </div>

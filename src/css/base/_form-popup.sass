@@ -4,13 +4,16 @@
   &.fancybox-content
     padding: 24px
 
-    @media(min-width: 768px)
+    @media(min-width: 1200px)
       padding: 48px
 
   @media(min-width: 768px)
     width: 660px
 
   &--big
+    @media(min-width: 992px)
+      width: 880px
+
     @media(min-width: 1200px)
       width: 1024px
 
@@ -23,6 +26,18 @@
 
     @media(min-width: 768px)
       font-size: 34px
+
+  &__section
+    margin-bottom: 15px
+
+    &:last-child
+      @media(min-width: 768px)
+        margin-bottom: 0
+
+  &__subtitle
+    font-size: 20px
+    font-weight: 700
+    margin-bottom: 5px
 
   &__label
     display: block
@@ -67,3 +82,26 @@
   &__button
     max-width: 320px
     width: 100%
+
+.booking-step
+  display: none
+
+  &.is-active
+    display: block
+
+  .form-popup__row
+    & > div
+      display: flex
+      flex-direction: column
+
+  .form-popup__button-block
+    margin-top: auto
+    text-align: left
+
+    @media(min-width: 768px)
+      text-align: right
+
+.booking-result-form
+  max-width: 600px
+  margin-left: auto
+  margin-right: auto

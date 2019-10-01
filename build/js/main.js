@@ -402,6 +402,30 @@ $(document).ready(function() {
       slidesToShow: 4
     });
   }
+
+  //переклюение месяца в календаре вперед
+  $('.js-calend-next').click(function () {
+    $('.calendar__month.is-active').next('.calendar__month').addClass('is-active');
+    $('.calendar__month.is-active').prev('.calendar__month').removeClass('is-active');
+    $('.calendar__block.is-active').next('.calendar__block').addClass('is-active');
+    $('.calendar__block.is-active').prev('.calendar__block').removeClass('is-active');
+    return false;
+  });
+
+  //переклюение месяца в календаре назад
+  $('.js-calend-prev').click(function () {
+    $('.calendar__month.is-active').prev('.calendar__month').addClass('is-active');
+    $('.calendar__month.is-active').next('.calendar__month').removeClass('is-active');
+    $('.calendar__block.is-active').prev('.calendar__block').addClass('is-active');
+    $('.calendar__block.is-active').next('.calendar__block').removeClass('is-active');
+    return false;
+  });
+
+  //переклюение шага в форме бронирования
+  $('.js-next-step').click(function () {
+    $('.booking-step').toggleClass('is-active');
+    return false;
+  });
 });
 
 //открепляем и перезапускаем прилипающий блок при резайзе
