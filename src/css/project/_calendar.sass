@@ -1,0 +1,45 @@
+.calendar
+  &__nav
+    align-items: center
+    display: flex
+    font-size: 18px
+    margin-bottom: 15px
+
+  &__month
+    display: none
+    padding-left: 25px
+    padding-right: 25px
+
+    &.is-active
+      display: block
+
+  &__button
+    align-items: center
+    background-color: #a3a3ff
+    border: none
+    box-shadow: 0 1px 5px 1px rgba(0,0,0,.1)
+    color: #fff
+    cursor: pointer
+    display: flex
+    font-size: 16px
+    font-weight: 700
+    justify-content: center
+    height: 40px
+    padding: 0
+    width: 40px
+
+  &__block
+    display: none
+
+    &.is-active
+      display: block
+
+    .radio-label
+      margin-bottom: 10px
+      padding-left: 25px
+
+    .radio-icon
+      height: 19px
+      top: 50%
+      transform: translateY(-50%)
+      width: 19px
