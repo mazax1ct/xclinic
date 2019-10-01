@@ -28,7 +28,7 @@
       font-size: 34px
 
   &__section
-    margin-bottom: 15px
+    margin-bottom: 10px
 
     &:last-child
       @media(min-width: 768px)
@@ -61,11 +61,19 @@
 
       &:first-child
         @media(min-width: 768px)
+          margin-bottom: 0
           padding-right: 10px
+
+        @media(min-width: 1200px)
+          padding-right: 20px
 
       &:last-child
         @media(min-width: 768px)
+          margin-bottom: 0
           padding-left: 10px
+
+        @media(min-width: 1200px)
+          padding-left: 20px
 
   &__caption
     color: #97999b
@@ -98,10 +106,26 @@
     margin-top: auto
     text-align: left
 
-    @media(min-width: 768px)
-      text-align: right
+    .button
+      max-width: 100%
+      width: 100%
 
 .booking-result-form
   max-width: 600px
   margin-left: auto
   margin-right: auto
+
+.inline-radio
+  @media(min-width: 768px)
+    display: flex
+    margin-bottom: 10px
+
+  .radio-label
+    @media(min-width: 768px)
+      margin-bottom: 0
+      margin-right: 15px
+      min-width: 80px
+
+    &:last-child
+      @media(min-width: 768px)
+        margin-right: 0
