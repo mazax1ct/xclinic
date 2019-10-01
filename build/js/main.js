@@ -424,6 +424,10 @@ $(document).ready(function() {
   //переклюение шага в форме бронирования
   $('.js-next-step').click(function () {
     $('.booking-step').toggleClass('is-active');
+
+    $('.fancybox-content, .fancybox-slide').animate({
+      scrollTop: 0
+    }, 200);
     return false;
   });
 });
