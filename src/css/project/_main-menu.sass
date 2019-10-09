@@ -170,9 +170,12 @@
     display: block
     font-size: 22px
     line-height: 36px
-    padding-top: 46px
-    padding-bottom: 46px
-    text-align: center
+    padding-left: 24px
+    padding-top: 12px
+    padding-bottom: 12px
+    //padding-top: 46px
+    //padding-bottom: 46px
+    //text-align: center
     text-decoration: none
     transition: color 0.3s
 
@@ -197,29 +200,27 @@
           @media(min-width: 1200px)
             opacity: 1
 
-    &--color_1
+    //&--color_1
       @media(max-width: 1199px)
         background-color: #ced0de
 
-    &--color_2
+    //&--color_2
       @media(max-width: 1199px)
         background-color: #c7c7ff
-        //background-color: #bdbfd4
 
-    &--color_3
+    //&--color_3
       @media(max-width: 1199px)
         background-color: #9be8a8
 
-    &--color_4
+    //&--color_4
       @media(max-width: 1199px)
         background-color: #ede8e5
 
-    &--color_5
+    //&--color_5
       @media(max-width: 1199px)
         background-color: #fff
-        //background-color: #f1f2fa
 
-    &--root_link
+    //&--root_link
       @media(max-width: 1199px)
         display: none
 
@@ -244,6 +245,7 @@
   &__pseudo-link
     border: none
     cursor: pointer
+    display: none
     width: 100%
 
     &.is-active
@@ -295,9 +297,9 @@
     width: 68px
 
 .sub-menu
-  display: none
-  padding-top: 30px
-  padding-bottom: 30px
+  //display: none
+  //padding-top: 30px
+  //padding-bottom: 30px
 
   @media(min-width: 1200px)
     background-color: #fff
@@ -308,10 +310,6 @@
     position: absolute
     top: 100%
     width: 100%
-
-  //@media(min-width: 1600px)
-    padding-top: 76px
-    padding-bottom: 76px
 
   &.is-open
     display: block
@@ -347,19 +345,6 @@
       max-width: 180px
       width: 20%
 
-    //&--third
-      @media(min-width: 1200px)
-        flex-basis: 33.3333%
-        width: 33.3333%
-
-    //&--fourth
-      @media(min-width: 1200px)
-        flex-basis: 12.5%
-        width: 12.5%
-
-      //.sub-menu__link-image
-        padding-bottom: 60px
-
   &__link
     background-position: 50% 50%
     background-repeat: no-repeat
@@ -367,8 +352,8 @@
     display: block
     font-size: 16px
     line-height: 26px
-    padding-top: 27px
-    padding-bottom: 27px
+    padding-top: 12px
+    padding-bottom: 12px
     padding-left: 48px
     text-decoration: none
 
