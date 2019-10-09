@@ -142,14 +142,14 @@
     @media(min-width: 1200px)
       width: 25%
 
-    &:nth-child(2)
+    &:nth-child(3)
       @media(min-width: 1200px)
         margin-right: 80px
 
       @media(min-width: 1600px)
         margin-right: 144px
 
-    &:nth-child(3)
+    &:nth-child(4)
       @media(min-width: 1200px)
         margin-left: 80px
 
@@ -200,23 +200,23 @@
           @media(min-width: 1200px)
             opacity: 1
 
-    //&--color_1
+    &--color_1
       @media(max-width: 1199px)
         background-color: #ced0de
 
-    //&--color_2
+    &--color_2
       @media(max-width: 1199px)
         background-color: #c7c7ff
 
-    //&--color_3
+    &--color_3
       @media(max-width: 1199px)
         background-color: #9be8a8
 
-    //&--color_4
+    &--color_4
       @media(max-width: 1199px)
         background-color: #ede8e5
 
-    //&--color_5
+    &--color_5
       @media(max-width: 1199px)
         background-color: #fff
 
@@ -297,15 +297,13 @@
     width: 68px
 
 .sub-menu
-  //display: none
-  //padding-top: 30px
-  //padding-bottom: 30px
-
   @media(min-width: 1200px)
     background-color: #fff
     border-top: 1px solid #f1f2fa
     box-shadow: inset 0 15px 15px -10px rgba(0,0,0,0.15)
+    display: none
     left: 0
+    padding-top: 20px
     padding-bottom: 20px
     position: absolute
     top: 100%
@@ -352,8 +350,8 @@
     display: block
     font-size: 16px
     line-height: 26px
-    padding-top: 12px
-    padding-bottom: 12px
+    padding-top: 8px
+    padding-bottom: 8px
     padding-left: 48px
     text-decoration: none
 
@@ -366,7 +364,6 @@
     @media(min-width: 1200px)
       align-items: center
       background-color: transparent
-      //color: #fff
       display: flex
       font-size: 14px
       flex-direction: column
@@ -378,19 +375,8 @@
       position: relative
       text-transform: uppercase
 
-    //@media(min-width: 1400px)
-      padding-top: 67px
-      padding-bottom: 67px
-
-    //@media(min-width: 1400px)
-      font-size: 14px
-
     &:hover
       text-decoration: none
-
-      //.sub-menu__link-image
-        &::after
-          opacity: 0
 
       .sub-menu__link-img
         transform: translate(-50%, -50%) scale(1.05)
@@ -410,19 +396,6 @@
     @media(max-width: 1199px)
       display: none
 
-    //&::after
-      @media(min-width: 1200px)
-        background-color: #9ea1bd
-        content: ""
-        height: 100%
-        left: 0
-        opacity: 0.5
-        position: absolute
-        top: 0
-        transition: opacity 0.3s
-        width: 100%
-        z-index: 1
-
   &__link-img
     height: 100%
     left: 50%
@@ -430,7 +403,6 @@
     position: absolute
     top: 50%
     transition: transform 0.3s
-    //transform: translate(-50%, -50%)
     transform: translate(-50%, -50%) scale(1)
 
   &__link-text
