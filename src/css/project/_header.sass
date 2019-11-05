@@ -26,6 +26,9 @@
       right: auto
       transform: translate(-50%, -50%)
 
+    @media(min-width: 768px)
+      display: none
+
     @media(min-width: 1200px)
       align-items: flex-start
       display: flex
@@ -107,7 +110,6 @@
   right: 0
   position: absolute
   transform: translateY(-50%)
-  transition: opacity 0.3s
   top: 50%
   text-align: center
   width: 96px
@@ -126,10 +128,13 @@
 
   &:hover,
   &:focus
-    opacity: 0.8
+    .logo__image
+      opacity: 0.8
 
   &__image
     flex-shrink: 0
+    opacity: 1
+    transition: opacity 0.3s
     width: 54px
 
     @media(min-width: 768px)
